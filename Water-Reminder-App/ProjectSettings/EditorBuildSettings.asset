@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Splash.unity
+    guid: bca7f182c580046859fbf728202dedf9
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 261fbdff4edd143918da5ce475b74838
+  - enabled: 1
+    path: Assets/Scenes/LoginScreen.unity
+    guid: 122f87787950d4ec0992f15bca79510c
+  - enabled: 1
+    path: Assets/Scenes/WaterReminder.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

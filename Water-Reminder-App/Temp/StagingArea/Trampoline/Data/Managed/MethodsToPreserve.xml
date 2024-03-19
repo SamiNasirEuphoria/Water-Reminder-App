@@ -1,0 +1,17 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="LoginScreenHandler">
+			<method name="CheckforInputValueCallAnimation"/>
+			<method name="SetAnimatorTrigger"/>
+			<method name="SwitchScene"/>
+		</type>
+		<type fullname="MainMenuHandler">
+			<method name="SetAnimatorTrigger"/>
+			<method name="SetAnimatorTrigger"/>
+			<method name="SwitchScene"/>
+		</type>
+		<type fullname="NotificationManager">
+			<method name="NotificationAlertDialoug"/>
+		</type>
+	</assembly>
+</linker>
