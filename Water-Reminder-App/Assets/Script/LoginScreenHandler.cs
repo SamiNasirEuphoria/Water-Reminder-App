@@ -33,16 +33,16 @@ public class LoginScreenHandler : MonoBehaviour
     }
     public void WeightPlaceholder()
     {
-        if (!(UIReferenceContainerMenu.Instance.weightField.text.Contains("Kg")))
+        if (!(UIReferenceContainerMenu.Instance.weightField.text.Contains(" Kg")))
         {
-            UIReferenceContainerMenu.Instance.weightField.text = UIReferenceContainerMenu.Instance.weightField.text + "Kg";
+            UIReferenceContainerMenu.Instance.weightField.text = UIReferenceContainerMenu.Instance.weightField.text + " Kg";
         }
     }
     public void WaterPlaceholder()
     {
-        if (!(UIReferenceContainerMenu.Instance.quantityOfWaterToShow.text.Contains("ml")))
+        if (!(UIReferenceContainerMenu.Instance.quantityOfWaterToShow.text.Contains(" ml")))
         {
-            UIReferenceContainerMenu.Instance.quantityOfWaterToShow.text = UIReferenceContainerMenu.Instance.quantityOfWaterToShow.text + "ml";
+            UIReferenceContainerMenu.Instance.quantityOfWaterToShow.text = UIReferenceContainerMenu.Instance.quantityOfWaterToShow.text + " ml";
         }
     }
     public void CheckforInputValueCallAnimation(string triggerName)
@@ -54,7 +54,7 @@ public class LoginScreenHandler : MonoBehaviour
         else
         {
             //use player prefs handler to store the value
-            int weight = int.Parse(UIReferenceContainerMenu.Instance.weightField.text.Replace("Kg",""));
+            int weight = int.Parse(UIReferenceContainerMenu.Instance.weightField.text.Replace(" Kg",""));
             int water = weight * 35;
             UIReferenceContainerMenu.Instance.quantityOfWaterToShow.text = water.ToString()+" ml";
             myAnimator.SetTrigger(triggerName);
@@ -64,5 +64,6 @@ public class LoginScreenHandler : MonoBehaviour
     {
         PlayerPrefsHandler.Weight = UIReferenceContainerMenu.Instance.weightField.text;
         PlayerPrefsHandler.WaterLimit = UIReferenceContainerMenu.Instance.quantityOfWaterToShow.text;
+        PlayerPrefsHandler.ImageFillAmount = 0;
     }
 }

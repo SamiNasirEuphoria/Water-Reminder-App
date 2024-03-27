@@ -11,11 +11,16 @@ public class WaterCalculator : MonoBehaviour
     {
         if (weightField.text.ToString() != "")
         {
+            //7-digits means 9000 kg
+            if (weightField.text.Length>7)
+            {
+                weightField.text = weightField.text.Substring(0, 4);
+            }
             if (!weightField.text.Contains("Kg"))
             {
                 weightField.text = weightField.text + " Kg";
             }
-            string str = weightField.text.Replace("Kg", "");
+            string str = weightField.text.Replace(" Kg", "");
             if (str == "")
             {
                 int num = 0;
