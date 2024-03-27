@@ -4,9 +4,20 @@ public class LoginScreenHandler : MonoBehaviour
 {
     public Animator myAnimator;
     // Start is called before the first frame update
+   
     void Start()
     {
-        myAnimator.SetTrigger("Menu_1");
+        myAnimator.SetTrigger("Menu1");
+        UIReferenceContainerMenu.Instance.backToMenu_1.onClick.AddListener(BacktoMenuOne);
+        UIReferenceContainerMenu.Instance.backToMenu_2.onClick.AddListener(BacktoMenuTwo);
+    }
+    public void BacktoMenuOne()
+    {
+        myAnimator.SetTrigger("BackToMenu1");
+    }
+    public void BacktoMenuTwo()
+    {
+        myAnimator.SetTrigger("BackToMenu2");
     }
     public void SetAnimatorTrigger(string triggerName)
     {
@@ -15,6 +26,10 @@ public class LoginScreenHandler : MonoBehaviour
     public void SwitchScene(string sceneName)
     {
         SceneHandler.Instance.LoadScene(sceneName);
+    }
+    public void LoginAttempted()
+    {
+        PlayerPrefsHandler.FirstRun = 1;
     }
     public void WeightPlaceholder()
     {
@@ -39,10 +54,15 @@ public class LoginScreenHandler : MonoBehaviour
         else
         {
             //use player prefs handler to store the value
-            int weight = int.Parse(UIReferenceContainerMenu.Instance.weightField.text);
+            int weight = int.Parse(UIReferenceContainerMenu.Instance.weightField.text.Replace("Kg",""));
             int water = weight * 35;
-            UIReferenceContainerMenu.Instance.quantityOfWaterToShow.text = water.ToString()+"ml";
+            UIReferenceContainerMenu.Instance.quantityOfWaterToShow.text = water.ToString()+" ml";
             myAnimator.SetTrigger(triggerName);
         }
+    }
+    public void PlayerPrefsSetter()
+    {
+        PlayerPrefsHandler.Weight = UIReferenceContainerMenu.Instance.weightField.text;
+        PlayerPrefsHandler.WaterLimit = UIReferenceContainerMenu.Instance.quantityOfWaterToShow.text;
     }
 }

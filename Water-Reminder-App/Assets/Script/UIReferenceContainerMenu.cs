@@ -11,7 +11,7 @@ public class UIReferenceContainerMenu : MonoBehaviour
             return instance;
         }
     }
-    private void Start()
+    private void Awake()
     {
         if (instance == null)
         {
@@ -22,6 +22,6 @@ public class UIReferenceContainerMenu : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-    public TMP_InputField weightField;
-    public TMP_InputField quantityOfWaterToShow;
+    public TMP_InputField weightField,quantityOfWaterToShow;
+    public Button backToMenu_1, backToMenu_2;
 }

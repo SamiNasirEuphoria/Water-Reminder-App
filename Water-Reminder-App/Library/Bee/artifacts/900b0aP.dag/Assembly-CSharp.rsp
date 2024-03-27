@@ -303,13 +303,20 @@
 -r:"Library/Bee/artifacts/900b0aP.dag/UnityEngine.UI.ref.dll"
 "Assets/IOS_Native/iOSPlugin.cs"
 "Assets/IOS_Native/iOSPluginCallBacks.cs"
+"Assets/Script/DrinkWaterController.cs"
+"Assets/Script/Entities.cs"
 "Assets/Script/LoginScreenHandler.cs"
 "Assets/Script/MainMenuHandler.cs"
 "Assets/Script/NotificationManager.cs"
+"Assets/Script/Notifications.cs"
+"Assets/Script/ObjectReferenceContainer.cs"
 "Assets/Script/PlayerPrefsHandler.cs"
 "Assets/Script/SceneHandler.cs"
 "Assets/Script/SplashScreen.cs"
+"Assets/Script/UIReferenceContainer.cs"
 "Assets/Script/UIReferenceContainerMenu.cs"
+"Assets/Script/UnitConversions.cs"
+"Assets/Script/WaterCalculator.cs"
 -langversion:9.0
 
 /deterministic

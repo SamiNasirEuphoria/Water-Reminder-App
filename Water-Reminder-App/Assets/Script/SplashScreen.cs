@@ -54,6 +54,15 @@ public class SplashScreen : MonoBehaviour
         colorFilledImage.fillAmount = targetFillAmount;
 
         yield return new WaitForSeconds(sceneChangeTimer);
-        SceneHandler.Instance.LoadScene("MainMenu");
+
+        if(PlayerPrefsHandler.FirstRun == 1)
+        {
+            SceneHandler.Instance.LoadScene("WaterReminder");
+        }
+        else
+        {
+            SceneHandler.Instance.LoadScene("MainMenu");
+        }
+       
     }
 }

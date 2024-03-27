@@ -16,6 +16,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "DrinkWaterController",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "EditorExtension",
             "fullManagedTypeName": "",
@@ -26,6 +33,13 @@
                 "Assets/Scenes/Splash.unity",
                 "Assets/Scenes/WaterReminder.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Entities",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "",
@@ -107,6 +121,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "NotificationManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ObjectReferenceContainer",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -197,7 +218,21 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "UIReferenceContainer",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "UIReferenceContainerMenu",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnitConversions",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -209,7 +244,8 @@
             "usedInScenes": [
                 "Assets/Scenes/LoginScreen.unity",
                 "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/Splash.unity"
+                "Assets/Scenes/Splash.unity",
+                "Assets/Scenes/WaterReminder.unity"
             ]
         },
         {
@@ -241,7 +277,8 @@
             "usedInScenes": [
                 "Assets/Scenes/LoginScreen.unity",
                 "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/Splash.unity"
+                "Assets/Scenes/Splash.unity",
+                "Assets/Scenes/WaterReminder.unity"
             ]
         },
         {
@@ -303,7 +340,8 @@
             "usedInScenes": [
                 "Assets/Scenes/LoginScreen.unity",
                 "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/Splash.unity"
+                "Assets/Scenes/Splash.unity",
+                "Assets/Scenes/WaterReminder.unity"
             ]
         },
         {
@@ -314,7 +352,8 @@
             "usedInScenes": [
                 "Assets/Scenes/LoginScreen.unity",
                 "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/Splash.unity"
+                "Assets/Scenes/Splash.unity",
+                "Assets/Scenes/WaterReminder.unity"
             ]
         },
         {
@@ -373,7 +412,8 @@
             "usedInScenes": [
                 "Assets/Scenes/LoginScreen.unity",
                 "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/Splash.unity"
+                "Assets/Scenes/Splash.unity",
+                "Assets/Scenes/WaterReminder.unity"
             ]
         },
         {
@@ -382,7 +422,9 @@
             "fullManagedTypeName": "UnityEngine.CanvasGroup",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/Splash.unity"
+                "Assets/Scenes/MainMenu.unity",
+                "Assets/Scenes/Splash.unity",
+                "Assets/Scenes/WaterReminder.unity"
             ]
         },
         {
@@ -393,7 +435,8 @@
             "usedInScenes": [
                 "Assets/Scenes/LoginScreen.unity",
                 "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/Splash.unity"
+                "Assets/Scenes/Splash.unity",
+                "Assets/Scenes/WaterReminder.unity"
             ]
         },
         {
@@ -442,7 +485,8 @@
             "usedInScenes": [
                 "Assets/Scenes/LoginScreen.unity",
                 "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/Splash.unity"
+                "Assets/Scenes/Splash.unity",
+                "Assets/Scenes/WaterReminder.unity"
             ]
         },
         {
@@ -501,7 +545,8 @@
             "usedInScenes": [
                 "Assets/Scenes/LoginScreen.unity",
                 "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/Splash.unity"
+                "Assets/Scenes/Splash.unity",
+                "Assets/Scenes/WaterReminder.unity"
             ]
         },
         {
@@ -512,7 +557,8 @@
             "usedInScenes": [
                 "Assets/Scenes/LoginScreen.unity",
                 "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/Splash.unity"
+                "Assets/Scenes/Splash.unity",
+                "Assets/Scenes/WaterReminder.unity"
             ]
         },
         {
@@ -542,7 +588,8 @@
             "usedInScenes": [
                 "Assets/Scenes/LoginScreen.unity",
                 "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/Splash.unity"
+                "Assets/Scenes/Splash.unity",
+                "Assets/Scenes/WaterReminder.unity"
             ]
         },
         {
@@ -572,7 +619,8 @@
             "usedInScenes": [
                 "Assets/Scenes/LoginScreen.unity",
                 "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/Splash.unity"
+                "Assets/Scenes/Splash.unity",
+                "Assets/Scenes/WaterReminder.unity"
             ]
         },
         {
@@ -595,7 +643,8 @@
             "usedInScenes": [
                 "Assets/Scenes/LoginScreen.unity",
                 "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/Splash.unity"
+                "Assets/Scenes/Splash.unity",
+                "Assets/Scenes/WaterReminder.unity"
             ]
         },
         {
@@ -606,7 +655,8 @@
             "usedInScenes": [
                 "Assets/Scenes/LoginScreen.unity",
                 "Assets/Scenes/MainMenu.unity",
-                "Assets/Scenes/Splash.unity"
+                "Assets/Scenes/Splash.unity",
+                "Assets/Scenes/WaterReminder.unity"
             ]
         },
         {
@@ -683,6 +733,13 @@
         {
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Mask",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.Outline",
             "moduleName": "",
             "usedInScenes": []
@@ -697,7 +754,28 @@
         {
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.ScrollRect",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.Text",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.VerticalLayoutGroup",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "WaterCalculator",
             "moduleName": "",
             "usedInScenes": []
         }
