@@ -10,9 +10,27 @@ public class DrinkWaterController : MonoBehaviour
     public float fadeInDuration = 2f;
     private bool check;
     public static int waterDrinkAmount;
+    private string currentWaterUnit;
     private void Start()
     {
+        SceneStartConfigurations();
+        ButtonDelegates();
+    }
+    private void SceneStartConfigurations()
+    {
         waterLevelSliderCanves = ObjectReferenceContainer.Instance.waterLimitSlider.GetComponent<CanvasGroup>();
+        waterLevelSliderCanves.alpha = 0;
+        waterLevelSliderCanves.blocksRaycasts = false;
+        if (UIReferenceContainer.Instance.waterLimit.text != null)
+        {
+            UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit.ToString();
+        }
+        myAnimator = ObjectReferenceContainer.Instance.MainScreenAnimator;
+        UIReferenceContainer.Instance.drinkWaterFiller.fillAmount = PlayerPrefsHandler.ImageFillAmount;
+        currentWaterUnit = PlayerPrefsHandler.WaterUnit;
+    }
+    public void ButtonDelegates()
+    {
         //passing reference to all UI buttons from Reference Container
         UIReferenceContainer.Instance.drinkWaterButton.onClick.AddListener(DrinkWater);
         UIReferenceContainer.Instance.sliderCancelButton.onClick.AddListener(CloseButton);
@@ -22,22 +40,11 @@ public class DrinkWaterController : MonoBehaviour
         UIReferenceContainer.Instance.CalenderButton.onClick.AddListener(CalenderMenu);
         UIReferenceContainer.Instance.calculatorButton.onClick.AddListener(OpenCalculator);
         UIReferenceContainer.Instance.unitButton.onClick.AddListener(OpenUnitPanel);
-        myAnimator = ObjectReferenceContainer.Instance.MainScreenAnimator;
-        UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit.ToString();
-        UIReferenceContainer.Instance.drinkWaterFiller.fillAmount = PlayerPrefsHandler.ImageFillAmount;
-        SceneStartConfigurations();
+        UIReferenceContainer.Instance.unitDoneButton.onClick.AddListener(CloseUnitPanel);
     }
-    private void SceneStartConfigurations()
-    {
-        Debug.Log("here the plsyerprefs is " + PlayerPrefsHandler.WaterLimit);
-        waterLevelSliderCanves.alpha = 0;
-        waterLevelSliderCanves.blocksRaycasts = false;
-        if (UIReferenceContainer.Instance.waterLimit.text != null)
-        {
-           UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit.ToString();
-        }
-    }
+
     #region WaterSliderMenu
+    //Drink water button basically open slider
     public void DrinkWater()
     {
         StartCoroutine(WaterFlowLevel());   
@@ -81,14 +88,20 @@ public class DrinkWaterController : MonoBehaviour
     IEnumerator WaterLevelRaise()
     {
         yield return new WaitWhile(() => check);
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.75f);
         if (PlayerPrefsHandler.ImageFillAmount < 1)
         { 
-        PlayerPrefsHandler.DateTime = DateTime.Now.ToString("h:mm tt");
-        UIReferenceContainer.Instance.lastIntake.text = PlayerPrefsHandler.DateTime;
-        UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit.ToString();
-        
-        CalculatePercentage();
+            PlayerPrefsHandler.DateTime = DateTime.Now.ToString("h:mm tt");
+            UIReferenceContainer.Instance.lastIntake.text = PlayerPrefsHandler.DateTime;
+            UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit.ToString();
+            if (currentWaterUnit == "ml")
+            {
+                CalculatePercentageML();
+            }
+            else if (currentWaterUnit == "oz")
+            {
+                CalculatePercentageOZ();
+            }
         }
         else
         {
@@ -96,13 +109,35 @@ public class DrinkWaterController : MonoBehaviour
             UIReferenceContainer.Instance.waterLimit.text = "Done";
         }
     }
-    public void UpdateRemainingAmount(float total, float consumed)
+    //these method specified for Oz water unit
+    public void CalculatePercentageOZ()
+    {
+        string abc = (PlayerPrefsHandler.WaterLimit).Replace("oz", "");
+        int x = int.Parse(abc);
+        int y = waterDrinkAmount;
+        float result = y * 100;
+        float percentage = result / x;
+        Debug.Log("You drink of water" + percentage);
+        _UpdateRemainingAmount(x, y);
+        _FillSprite(percentage);
+    }
+    public void _UpdateRemainingAmount(float total, float consumed)
     {
         total = total - consumed;
-        PlayerPrefsHandler.WaterLimit = total.ToString() + "ml";
-        UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit.ToString();
+        //implement a method here, where it checks if it reaches daily goals then it perform ceratin actions upon
+        PlayerPrefsHandler.WaterLimit = total.ToString() + "oz";
+        UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
     }
-    public void CalculatePercentage()
+    public void _FillSprite(float result)
+    {
+        float final = result / 100;
+        PlayerPrefsHandler.ImageFillAmount += final;
+        Debug.Log("The percentage we get is " + final);
+        Debug.Log("The value saved in player prefs is " + PlayerPrefsHandler.ImageFillAmount);
+        UIReferenceContainer.Instance.drinkWaterFiller.fillAmount += final;
+    }
+    // these method specified for Millilitter water unit
+    public void CalculatePercentageML()
     {
         string abc = (PlayerPrefsHandler.WaterLimit).Replace("ml","");
         int x = int.Parse(abc);
@@ -112,6 +147,12 @@ public class DrinkWaterController : MonoBehaviour
         Debug.Log("You drink of water"+ percentage);
         UpdateRemainingAmount(x,y);
         FillSprite(percentage);
+    }
+    public void UpdateRemainingAmount(float total, float consumed)
+    {
+        total = total - consumed;
+        PlayerPrefsHandler.WaterLimit = total.ToString() + "ml";
+        UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
     }
     public void FillSprite(float result)
     {
@@ -158,10 +199,15 @@ public class DrinkWaterController : MonoBehaviour
     public void OpenUnitPanel()
     {
         myAnimator.SetTrigger("UnitOpen");
+        UnitConversions.Instance.check = false;
     }
     public void CloseUnitPanel()
     {
         myAnimator.SetTrigger("UnitClose");
+        if (UnitConversions.Instance.check)
+        {
+            SceneHandler.Instance.LoadScene("Splash");
+        }   
     }
     #endregion
 }

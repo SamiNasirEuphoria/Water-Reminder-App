@@ -27,7 +27,7 @@ public static class PlayerPrefsHandler
             return PlayerPrefs.GetString(waterLimit);
         }
     }
-    private static string waterUnit = "WaterString";
+    private static string waterUnit = "WaterUnit";
     public static string WaterUnit
     {
         set
@@ -36,7 +36,19 @@ public static class PlayerPrefsHandler
         }
         get
         {
-            return PlayerPrefs.GetString(waterLimit);
+            return PlayerPrefs.GetString(waterUnit);
+        }
+    }
+    private static string lastWaterUnit = "LastWaterUnit";
+    public static string LastWaterUnit
+    {
+        get
+        {
+            return PlayerPrefs.GetString(lastWaterUnit);
+        }
+        set
+        {
+            PlayerPrefs.SetString(lastWaterUnit,value);
         }
     }
     private static string weightUnit = "WeightUnit";
@@ -85,6 +97,18 @@ public static class PlayerPrefsHandler
         set
         {
             PlayerPrefs.SetFloat(imageFillAmount,value);
+        }
+    }
+    private static string conversion = "Conversion";
+    public static int Conversion
+    {
+        get
+        {
+           return PlayerPrefs.GetInt(conversion);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(conversion,value);
         }
     }
 }

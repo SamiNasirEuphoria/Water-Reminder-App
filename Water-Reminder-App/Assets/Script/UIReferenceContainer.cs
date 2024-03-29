@@ -28,6 +28,6 @@ public class UIReferenceContainer : MonoBehaviour
     public Text waterLimit, lastIntake, lastIntakeObject;
     [Header("Setting Panel References")]
     public Button calculatorButton;
-    public Button unitButton;
+    public Button unitButton, unitDoneButton;
    
 }

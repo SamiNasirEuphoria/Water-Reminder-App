@@ -65,5 +65,9 @@ public class LoginScreenHandler : MonoBehaviour
         PlayerPrefsHandler.Weight = UIReferenceContainerMenu.Instance.weightField.text;
         PlayerPrefsHandler.WaterLimit = UIReferenceContainerMenu.Instance.quantityOfWaterToShow.text;
         PlayerPrefsHandler.ImageFillAmount = 0;
+        PlayerPrefsHandler.DateTime = null;
+        PlayerPrefsHandler.WaterUnit = "ml";
+        PlayerPrefsHandler.WeightUnit = "kg";
+        PlayerPrefsHandler.Conversion = 0;
     }
 }

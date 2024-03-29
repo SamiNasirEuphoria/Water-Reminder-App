@@ -355,6 +355,8 @@
 "Assets/Script/Entities.cs"
 "Assets/Script/LoginScreenHandler.cs"
 "Assets/Script/MainMenuHandler.cs"
+"Assets/Script/MyWaterIntake.cs"
+"Assets/Script/MyWeight.cs"
 "Assets/Script/NotificationManager.cs"
 "Assets/Script/Notifications.cs"
 "Assets/Script/ObjectReferenceContainer.cs"
