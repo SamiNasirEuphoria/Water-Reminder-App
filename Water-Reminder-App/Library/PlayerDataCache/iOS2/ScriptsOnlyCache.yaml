@@ -5,6 +5,8 @@ ScriptsOnlyBuild:
     - Entities
     - LoginScreenHandler
     - MainMenuHandler
+    - MyWaterIntake
+    - MyWeight
     - NotificationManager
     - ObjectReferenceContainer
     - SceneHandler
@@ -109,6 +111,9 @@ ScriptsOnlyBuild:
     methodName: SwitchScene
   - assembly: Assembly-CSharp
     fullTypeName: LoginScreenHandler
+    methodName: LoginAttempted
+  - assembly: Assembly-CSharp
+    fullTypeName: LoginScreenHandler
     methodName: WeightPlaceholder
   - assembly: Assembly-CSharp
     fullTypeName: LoginScreenHandler
@@ -126,11 +131,26 @@ ScriptsOnlyBuild:
     fullTypeName: DrinkWaterController
     methodName: NotificationPanelDone
   - assembly: Assembly-CSharp
-    fullTypeName: DrinkWaterController
-    methodName: CloseUnitPanel
+    fullTypeName: MyWeight
+    methodName: OkButton
+  - assembly: Assembly-CSharp
+    fullTypeName: MyWaterIntake
+    methodName: OkButton
+  - assembly: Assembly-CSharp
+    fullTypeName: MyWaterIntake
+    methodName: OpenPanel
+  - assembly: Assembly-CSharp
+    fullTypeName: MyWeight
+    methodName: OpenPanel
   - assembly: Assembly-CSharp
     fullTypeName: WaterCalculator
     methodName: CalculateWater
+  - assembly: Assembly-CSharp
+    fullTypeName: MyWeight
+    methodName: ClosePanel
+  - assembly: Assembly-CSharp
+    fullTypeName: MyWaterIntake
+    methodName: ClosePanel
   - assembly: Assembly-CSharp
     fullTypeName: DrinkWaterController
     methodName: CloseCalculator
@@ -174,27 +194,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2566}
     - Class: 114
-      Script: {instanceID: 2770}
+      Script: {instanceID: 2772}
     - Class: 114
-      Script: {instanceID: 3044}
+      Script: {instanceID: 3046}
     - Class: 114
-      Script: {instanceID: 4006}
+      Script: {instanceID: 4008}
     - Class: 114
-      Script: {instanceID: 4770}
+      Script: {instanceID: 4774}
     - Class: 114
-      Script: {instanceID: 4946}
+      Script: {instanceID: 4950}
     - Class: 114
-      Script: {instanceID: 5188}
+      Script: {instanceID: 5192}
     - Class: 114
-      Script: {instanceID: 5482}
+      Script: {instanceID: 5486}
     - Class: 114
-      Script: {instanceID: 5626}
+      Script: {instanceID: 5630}
     - Class: 114
-      Script: {instanceID: 5934}
+      Script: {instanceID: 5938}
     - Class: 114
-      Script: {instanceID: 6706}
+      Script: {instanceID: 6710}
     - Class: 114
-      Script: {instanceID: 6832}
+      Script: {instanceID: 6836}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -220,9 +240,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
@@ -243,19 +271,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2566}
     - Class: 114
-      Script: {instanceID: 2770}
+      Script: {instanceID: 2772}
     - Class: 114
-      Script: {instanceID: 3044}
+      Script: {instanceID: 3046}
     - Class: 114
-      Script: {instanceID: 5188}
+      Script: {instanceID: 5192}
     - Class: 114
-      Script: {instanceID: 5482}
+      Script: {instanceID: 5486}
     - Class: 114
-      Script: {instanceID: 5934}
+      Script: {instanceID: 5938}
     - Class: 114
-      Script: {instanceID: 6086}
+      Script: {instanceID: 6090}
     - Class: 114
-      Script: {instanceID: 6258}
+      Script: {instanceID: 6262}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -314,19 +342,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2566}
     - Class: 114
-      Script: {instanceID: 2770}
+      Script: {instanceID: 2772}
     - Class: 114
-      Script: {instanceID: 4020}
+      Script: {instanceID: 4022}
     - Class: 114
-      Script: {instanceID: 4266}
+      Script: {instanceID: 4270}
     - Class: 114
-      Script: {instanceID: 4946}
+      Script: {instanceID: 4950}
     - Class: 114
-      Script: {instanceID: 5482}
+      Script: {instanceID: 5486}
     - Class: 114
-      Script: {instanceID: 5934}
+      Script: {instanceID: 5938}
     - Class: 114
-      Script: {instanceID: 6504}
+      Script: {instanceID: 6508}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -383,37 +411,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2668}
     - Class: 114
-      Script: {instanceID: 2770}
+      Script: {instanceID: 2690}
     - Class: 114
-      Script: {instanceID: 3014}
+      Script: {instanceID: 2772}
     - Class: 114
-      Script: {instanceID: 3044}
+      Script: {instanceID: 3016}
     - Class: 114
-      Script: {instanceID: 3792}
+      Script: {instanceID: 3046}
     - Class: 114
-      Script: {instanceID: 4006}
+      Script: {instanceID: 3794}
     - Class: 114
-      Script: {instanceID: 4396}
+      Script: {instanceID: 4008}
     - Class: 114
-      Script: {instanceID: 4770}
+      Script: {instanceID: 4130}
     - Class: 114
-      Script: {instanceID: 4946}
+      Script: {instanceID: 4400}
     - Class: 114
-      Script: {instanceID: 5188}
+      Script: {instanceID: 4774}
     - Class: 114
-      Script: {instanceID: 5482}
+      Script: {instanceID: 4950}
     - Class: 114
-      Script: {instanceID: 5626}
+      Script: {instanceID: 5192}
     - Class: 114
-      Script: {instanceID: 5934}
+      Script: {instanceID: 5486}
     - Class: 114
-      Script: {instanceID: 6336}
+      Script: {instanceID: 5630}
     - Class: 114
-      Script: {instanceID: 6964}
+      Script: {instanceID: 5938}
     - Class: 114
-      Script: {instanceID: 99796}
+      Script: {instanceID: 6340}
     - Class: 114
-      Script: {instanceID: 163704}
+      Script: {instanceID: 6968}
+    - Class: 114
+      Script: {instanceID: 40362}
+    - Class: 114
+      Script: {instanceID: 40368}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -591,10 +623,16 @@ ScriptsOnlyBuild:
     className: ObjectReferenceContainer
   - hash:
       serializedVersion: 2
-      Hash: 049ea296567279f216daa43d0b9a2761
+      Hash: 93ddb64704e24dc23fd9586058824499
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Entities
+  - hash:
+      serializedVersion: 2
+      Hash: d83fe3770eef694c4c4f3c2d294e409b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WaterCalculator
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -849,6 +887,12 @@ ScriptsOnlyBuild:
     className: DictionaryAsset
   - hash:
       serializedVersion: 2
+      Hash: 7d0d6c0aa31a6f1a2ee303775a5afbdc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UnitConversions
+  - hash:
+      serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -867,7 +911,7 @@ ScriptsOnlyBuild:
     className: UnityOnCancelMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 342a35bf6ca8bb46c61be832a436a049
+      Hash: d38e4176fc2c704aa9bb2a06153e2719
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIReferenceContainer
@@ -1287,16 +1331,16 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: d83fe3770eef694c4c4f3c2d294e409b
+      Hash: 2266cd4987bdd064e8620ef85aaabc1d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: WaterCalculator
+    className: MyWaterIntake
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: b3fd394feeb5b6b30782518aea2e393d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: UnitConversions
+    className: MyWeight
   platform: 9
   scenePathNames:
   - Assets/Scenes/Splash.unity

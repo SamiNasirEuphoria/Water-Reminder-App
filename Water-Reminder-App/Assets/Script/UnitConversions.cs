@@ -117,16 +117,24 @@ public class UnitConversions : MonoBehaviour
         int value;
         value = int.Parse(PlayerPrefsHandler.WaterLimit.Replace("ml", ""));
         value = (int)MillilitersToFluidOunces(value);
-        //UIReferenceContainer.Instance.waterLimit.text = value.ToString() + "oz";
         PlayerPrefsHandler.WaterLimit = value.ToString() + "oz";
+
+        int _value;
+        _value = int.Parse(PlayerPrefsHandler.WaterGoal.Replace("ml",""));
+        _value = (int)MillilitersToFluidOunces(_value);
+        PlayerPrefsHandler.WaterGoal = _value.ToString() + "oz";
     }
     public void OzToML()
     {
         int value;
         value = int.Parse(PlayerPrefsHandler.WaterLimit.Replace("oz", ""));
         value = (int)FluidOuncesToMilliliters(value);
-        //UIReferenceContainer.Instance.waterLimit.text = value.ToString() + "ml";
         PlayerPrefsHandler.WaterLimit = value.ToString() + "ml";
+
+        int _value;
+        _value = int.Parse(PlayerPrefsHandler.WaterGoal.Replace("oz", ""));
+        _value = (int)MillilitersToFluidOunces(_value);
+        PlayerPrefsHandler.WaterGoal = _value.ToString() + "ml";
     } 
     public double MillilitersToFluidOunces(int milliliters)
     {

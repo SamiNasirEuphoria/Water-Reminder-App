@@ -326,6 +326,7 @@
 -r:"/Applications/Unity/Hub/Editor/2021.3.21f1/Unity.app/Contents/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"/Users/mac/Desktop/Projects/Water-Reminder-App/Water-Reminder-App/Library/PackageCache/com.unity.testtools.codecoverage@1.2.2/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"/Users/mac/Desktop/Projects/Water-Reminder-App/Water-Reminder-App/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"/Users/mac/Desktop/Projects/Water-Reminder-App/Water-Reminder-App/Library/PackageCache/jillejr.newtonsoft.json-for-unity@13.0.102/Plugins/Newtonsoft.Json Editor/Newtonsoft.Json.dll"
 -r:"Library/Bee/artifacts/900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -363,10 +364,12 @@
 "Assets/Script/PlayerPrefsHandler.cs"
 "Assets/Script/SceneHandler.cs"
 "Assets/Script/SplashScreen.cs"
+"Assets/Script/StringConcatenation.cs"
 "Assets/Script/UIReferenceContainer.cs"
 "Assets/Script/UIReferenceContainerMenu.cs"
 "Assets/Script/UnitConversions.cs"
 "Assets/Script/WaterCalculator.cs"
+"Assets/Script/WaterIntakeList.cs"
 -langversion:9.0
 
 /deterministic

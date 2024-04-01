@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI;
+using System;
 public class LoginScreenHandler : MonoBehaviour
 {
     public Animator myAnimator;
@@ -63,11 +63,19 @@ public class LoginScreenHandler : MonoBehaviour
     public void PlayerPrefsSetter()
     {
         PlayerPrefsHandler.Weight = UIReferenceContainerMenu.Instance.weightField.text;
-        PlayerPrefsHandler.WaterLimit = UIReferenceContainerMenu.Instance.quantityOfWaterToShow.text;
+        PlayerPrefsHandler.WaterGoal = UIReferenceContainerMenu.Instance.quantityOfWaterToShow.text;
         PlayerPrefsHandler.ImageFillAmount = 0;
         PlayerPrefsHandler.DateTime = null;
         PlayerPrefsHandler.WaterUnit = "ml";
         PlayerPrefsHandler.WeightUnit = "kg";
-        PlayerPrefsHandler.Conversion = 0;
+        PlayerPrefsHandler.ReachedTodayGoal = 0;
+        SetDate();
+    }
+    public void SetDate()
+    {
+        long unixTime = (long)(DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalSeconds;
+        DateTime dateTime = new DateTime(1970, 1, 1).AddSeconds(unixTime);
+        var date = dateTime.Day;
+        PlayerPrefsHandler.LastSavedDate = date.ToString();
     }
 }

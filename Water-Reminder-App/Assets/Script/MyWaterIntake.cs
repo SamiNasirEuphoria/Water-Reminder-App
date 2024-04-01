@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 using TMPro;
 [RequireComponent(typeof(CanvasGroup))]
 
@@ -9,10 +10,12 @@ public class MyWaterIntake : MonoBehaviour
     public float fadeTimer;
     private float elapsedTime;
     public TMP_InputField inputField;
+    public Text currentGoalText;
     private void Start()
     {
         myCanvesGroup = GetComponent<CanvasGroup>();
         IntialMethod();
+        currentGoalText.text = PlayerPrefsHandler.WaterGoal;
     }
     public void IntialMethod()
     {
@@ -31,7 +34,7 @@ public class MyWaterIntake : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(inputField.text))
         {
-            PlayerPrefsHandler.WaterLimit = inputField.text.ToString()+ PlayerPrefsHandler.WaterUnit;
+            PlayerPrefsHandler.WaterGoal = inputField.text.ToString()+ PlayerPrefsHandler.WaterUnit;
         }
         ClosePanel();
     }

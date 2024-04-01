@@ -15,6 +15,7 @@ public class Entities : MonoBehaviour
     }
     public void SelectAmount()
     {
+        Debug.Log("consume amount set is"+ waterLevel);
         DrinkWaterController.waterDrinkAmount = waterLevel;
     }
     public void waterLevelConverter()

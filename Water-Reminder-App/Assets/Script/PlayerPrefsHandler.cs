@@ -39,16 +39,16 @@ public static class PlayerPrefsHandler
             return PlayerPrefs.GetString(waterUnit);
         }
     }
-    private static string lastWaterUnit = "LastWaterUnit";
-    public static string LastWaterUnit
+    private static string waterGoal = "WaterGoal";
+    public static string WaterGoal
     {
         get
         {
-            return PlayerPrefs.GetString(lastWaterUnit);
+            return PlayerPrefs.GetString(waterGoal);
         }
         set
         {
-            PlayerPrefs.SetString(lastWaterUnit,value);
+            PlayerPrefs.SetString(waterGoal,value);
         }
     }
     private static string weightUnit = "WeightUnit";
@@ -99,16 +99,30 @@ public static class PlayerPrefsHandler
             PlayerPrefs.SetFloat(imageFillAmount,value);
         }
     }
-    private static string conversion = "Conversion";
-    public static int Conversion
+    //this prefs isn't get using anywhere
+    private static string reachedGoal = "ReachedTodayGoal";
+    public static int ReachedTodayGoal
     {
         get
         {
-           return PlayerPrefs.GetInt(conversion);
+           return PlayerPrefs.GetInt(reachedGoal);
         }
         set
         {
-            PlayerPrefs.SetInt(conversion,value);
+            PlayerPrefs.SetInt(reachedGoal,value);
         }
     }
+    private static string lastSavedDate = "LastSavedDate";
+    public static string LastSavedDate
+    {
+        get
+        {
+            return PlayerPrefs.GetString(lastSavedDate);
+        }
+        set
+        {
+            PlayerPrefs.SetString(lastSavedDate,value);
+        }
+    }
+
 }

@@ -1,18 +1,24 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.EventSystems;
 
 public class DrinkWaterController : MonoBehaviour
 {
-
     private CanvasGroup waterLevelSliderCanves;
     Animator myAnimator;
     public float fadeInDuration = 2f;
     private bool check;
     public static int waterDrinkAmount;
     private string currentWaterUnit;
+    private List<int> item = new List<int>();
+
+    public WaterIntakeList obj;
+
     private void Start()
     {
+        obj = new WaterIntakeList();
         SceneStartConfigurations();
         ButtonDelegates();
     }
@@ -21,13 +27,44 @@ public class DrinkWaterController : MonoBehaviour
         waterLevelSliderCanves = ObjectReferenceContainer.Instance.waterLimitSlider.GetComponent<CanvasGroup>();
         waterLevelSliderCanves.alpha = 0;
         waterLevelSliderCanves.blocksRaycasts = false;
-        if (UIReferenceContainer.Instance.waterLimit.text != null)
-        {
-            UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit.ToString();
-        }
         myAnimator = ObjectReferenceContainer.Instance.MainScreenAnimator;
-        UIReferenceContainer.Instance.drinkWaterFiller.fillAmount = PlayerPrefsHandler.ImageFillAmount;
+       
         currentWaterUnit = PlayerPrefsHandler.WaterUnit;
+        if (PlayerPrefsHandler.ReachedTodayGoal==0)
+        {
+            UIReferenceContainer.Instance.mainScreenText.text = "Today you need to drink water: ";
+        }
+        else
+        {
+            UIReferenceContainer.Instance.mainScreenText.text = "You've reached today's goal";
+        }
+
+        if (LastSavedTime() == TodayTime())
+        {
+            //make current date check and assign water limit accordingly
+            if (!string.IsNullOrEmpty(PlayerPrefsHandler.WaterLimit))
+            {
+                UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
+            }
+            else
+            {
+                PlayerPrefsHandler.WaterLimit = PlayerPrefsHandler.WaterGoal;
+                UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
+            }
+        }
+        else
+        {
+            //make sure to clear all related player prefs here
+            //like water intake list, water limit , filler image
+            //like scene get refreshed and assign scene start values to vars
+            PlayerPrefsHandler.WaterLimit = PlayerPrefsHandler.WaterGoal;
+            UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
+            PlayerPrefsHandler.ImageFillAmount = 0;
+            PlayerPrefsHandler.ReachedTodayGoal = 0;
+            var num = TodayTime();
+            PlayerPrefsHandler.LastSavedDate = num.ToString();
+        }
+        UIReferenceContainer.Instance.drinkWaterFiller.fillAmount = PlayerPrefsHandler.ImageFillAmount;
     }
     public void ButtonDelegates()
     {
@@ -42,7 +79,6 @@ public class DrinkWaterController : MonoBehaviour
         UIReferenceContainer.Instance.unitButton.onClick.AddListener(OpenUnitPanel);
         UIReferenceContainer.Instance.unitDoneButton.onClick.AddListener(CloseUnitPanel);
     }
-
     #region WaterSliderMenu
     //Drink water button basically open slider
     public void DrinkWater()
@@ -60,6 +96,13 @@ public class DrinkWaterController : MonoBehaviour
         }
         waterLevelSliderCanves.alpha = 1;
         waterLevelSliderCanves.blocksRaycasts = true;
+        if (UIReferenceContainer.Instance.defaultEntityButton != null)
+        {
+            UIReferenceContainer.Instance.defaultEntityButton.onClick.Invoke();
+            ExecuteEvents.Execute(UIReferenceContainer.Instance.defaultEntityButton.gameObject, new PointerEventData(EventSystem.current), ExecuteEvents.pointerDownHandler);
+            ExecuteEvents.Execute(UIReferenceContainer.Instance.defaultEntityButton.gameObject, new PointerEventData(EventSystem.current), ExecuteEvents.pointerUpHandler);
+        }
+
     }
     public void CloseButton()
     {
@@ -79,6 +122,15 @@ public class DrinkWaterController : MonoBehaviour
         waterLevelSliderCanves.blocksRaycasts = false;
         check = false;
     }
+    public int StringToIntConversion(string abc)
+    {
+        int num = int.Parse(abc.Replace("ml", ""));
+        return num;
+    }
+    #region UndoOperation
+   
+    
+    #endregion
     //in this method drink water button action has performed
     public void DrinkWaterOkButton()
     {
@@ -89,8 +141,6 @@ public class DrinkWaterController : MonoBehaviour
     {
         yield return new WaitWhile(() => check);
         yield return new WaitForSeconds(0.75f);
-        if (PlayerPrefsHandler.ImageFillAmount < 1)
-        { 
             PlayerPrefsHandler.DateTime = DateTime.Now.ToString("h:mm tt");
             UIReferenceContainer.Instance.lastIntake.text = PlayerPrefsHandler.DateTime;
             UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit.ToString();
@@ -102,12 +152,6 @@ public class DrinkWaterController : MonoBehaviour
             {
                 CalculatePercentageOZ();
             }
-        }
-        else
-        {
-            UIReferenceContainer.Instance.lastIntake.text = "Done Todays Goals";
-            UIReferenceContainer.Instance.waterLimit.text = "Done";
-        }
     }
     //these method specified for Oz water unit
     public void CalculatePercentageOZ()
@@ -123,18 +167,43 @@ public class DrinkWaterController : MonoBehaviour
     }
     public void _UpdateRemainingAmount(float total, float consumed)
     {
-        total = total - consumed;
-        //implement a method here, where it checks if it reaches daily goals then it perform ceratin actions upon
-        PlayerPrefsHandler.WaterLimit = total.ToString() + "oz";
-        UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
+        if (PlayerPrefsHandler.ReachedTodayGoal == 0)
+        {
+            total = total - consumed;
+            if (total > 0)
+            {
+                PlayerPrefsHandler.WaterLimit = total.ToString() + "oz";
+                UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
+            }
+            else
+            {
+                PlayerPrefsHandler.ReachedTodayGoal = 1;
+                var num = StringToIntConversion(PlayerPrefsHandler.WaterGoal);
+                int _num = (int)UnitConversions.Instance.MillilitersToFluidOunces(num);
+                PlayerPrefsHandler.WaterLimit = _num.ToString()+"oz";
+                UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
+                UIReferenceContainer.Instance.lastIntake.text = "Done Todays Goals";
+                UIReferenceContainer.Instance.mainScreenText.text = "You've reached today's goal";
+            }
+        }
+        else
+        {
+            float number = int.Parse(PlayerPrefsHandler.WaterLimit.Replace("oz", ""));
+            number = number + consumed;
+            PlayerPrefsHandler.WaterLimit = number.ToString() + "oz";
+            UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
+        }
     }
     public void _FillSprite(float result)
     {
-        float final = result / 100;
-        PlayerPrefsHandler.ImageFillAmount += final;
-        Debug.Log("The percentage we get is " + final);
-        Debug.Log("The value saved in player prefs is " + PlayerPrefsHandler.ImageFillAmount);
-        UIReferenceContainer.Instance.drinkWaterFiller.fillAmount += final;
+        if (PlayerPrefsHandler.ImageFillAmount < 1)
+        {
+            float final = result / 100;
+            PlayerPrefsHandler.ImageFillAmount += final;
+            Debug.Log("The percentage we get is " + final);
+            Debug.Log("The value saved in player prefs is " + PlayerPrefsHandler.ImageFillAmount);
+            UIReferenceContainer.Instance.drinkWaterFiller.fillAmount += final;
+        }
     }
     // these method specified for Millilitter water unit
     public void CalculatePercentageML()
@@ -150,17 +219,58 @@ public class DrinkWaterController : MonoBehaviour
     }
     public void UpdateRemainingAmount(float total, float consumed)
     {
-        total = total - consumed;
-        PlayerPrefsHandler.WaterLimit = total.ToString() + "ml";
-        UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
+        if (PlayerPrefsHandler.ReachedTodayGoal ==0)
+        {
+            total = total - consumed;
+            if (total >0)
+            {
+                PlayerPrefsHandler.WaterLimit = total.ToString() + "ml";
+                UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
+            }
+            else
+            {
+                PlayerPrefsHandler.ReachedTodayGoal = 1;
+                PlayerPrefsHandler.WaterLimit = PlayerPrefsHandler.WaterGoal;
+                UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
+                UIReferenceContainer.Instance.lastIntake.text = "Done Todays Goals";
+                UIReferenceContainer.Instance.mainScreenText.text = "You've reached today's goal";
+            }  
+        }
+        else
+        {
+            float number = int.Parse(PlayerPrefsHandler.WaterLimit.Replace("ml",""));
+            number = number + consumed;
+            PlayerPrefsHandler.WaterLimit = number.ToString() + "ml";
+            UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;  
+        }
     }
     public void FillSprite(float result)
     {
-        float final = result / 100;
-        PlayerPrefsHandler.ImageFillAmount += final;
-        Debug.Log("The percentage we get is "+ final);
-        Debug.Log("The value saved in player prefs is " + PlayerPrefsHandler.ImageFillAmount);
-        UIReferenceContainer.Instance.drinkWaterFiller.fillAmount += final;
+        if (PlayerPrefsHandler.ImageFillAmount < 1)
+        {
+            float final = result / 100;
+            PlayerPrefsHandler.ImageFillAmount += final;
+            Debug.Log("The percentage we get is " + final);
+            Debug.Log("The value saved in player prefs is " + PlayerPrefsHandler.ImageFillAmount);
+            UIReferenceContainer.Instance.drinkWaterFiller.fillAmount += final;
+        }
+    }
+    public int LastSavedTime()
+    {
+        Debug.Log("Last saved date is"+ PlayerPrefsHandler.LastSavedDate);
+        int date = int.Parse(PlayerPrefsHandler.LastSavedDate);
+        DateTime savedDate=  new DateTime(DateTime.Now.Year, DateTime.Now.Month, date);
+        var _date = savedDate.Day;
+        return _date;
+    }
+    public int TodayTime()
+    {
+       
+        long unixTime = (long)(DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalSeconds;
+        DateTime dateTime = new DateTime(1970, 1, 1).AddSeconds(unixTime);
+        var date = dateTime.Day;
+        Debug.Log("today's date is "+date);
+        return date;
     }
     #endregion
     #region BottomMenu
