@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.EventSystems;
+using System.IO;
+using Newtonsoft.Json;
 
 public class DrinkWaterController : MonoBehaviour
 {
@@ -12,15 +14,24 @@ public class DrinkWaterController : MonoBehaviour
     private bool check;
     public static int waterDrinkAmount;
     private string currentWaterUnit;
-    private List<int> item = new List<int>();
-
-    public WaterIntakeList obj;
+    private string jsonFilePath;
+    public DataHolder dataHolder;
+    //public Stack<int> undoOperation = new Stack<int>();
 
     private void Start()
     {
-        obj = new WaterIntakeList();
+        dataHolder = new DataHolder();
+        jsonFilePath = Application.dataPath + "/UndoOperation.json";
         SceneStartConfigurations();
         ButtonDelegates();
+        ReadDataFromJson();
+    }
+    public void ClearAllDataFromJsonFile()
+    {
+        //to clear data from file
+        File.WriteAllText(jsonFilePath, "{}");
+        //to complete delete file
+        File.Delete(jsonFilePath);
     }
     private void SceneStartConfigurations()
     {
@@ -57,6 +68,7 @@ public class DrinkWaterController : MonoBehaviour
             //make sure to clear all related player prefs here
             //like water intake list, water limit , filler image
             //like scene get refreshed and assign scene start values to vars
+            //clear Json files to load/unload new data 
             PlayerPrefsHandler.WaterLimit = PlayerPrefsHandler.WaterGoal;
             UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
             PlayerPrefsHandler.ImageFillAmount = 0;
@@ -102,7 +114,6 @@ public class DrinkWaterController : MonoBehaviour
             ExecuteEvents.Execute(UIReferenceContainer.Instance.defaultEntityButton.gameObject, new PointerEventData(EventSystem.current), ExecuteEvents.pointerDownHandler);
             ExecuteEvents.Execute(UIReferenceContainer.Instance.defaultEntityButton.gameObject, new PointerEventData(EventSystem.current), ExecuteEvents.pointerUpHandler);
         }
-
     }
     public void CloseButton()
     {
@@ -128,14 +139,58 @@ public class DrinkWaterController : MonoBehaviour
         return num;
     }
     #region UndoOperation
-   
-    
+    public void UndoOperation()
+    {
+        if (dataHolder.waterIntakeAmount.Count>0)
+        {
+            Debug.Log("The values comes out to be" + dataHolder.waterIntakeAmount.Pop());
+            SaveDataIntoJson(dataHolder);
+        } 
+    }
+    public void SaveDataToJson()
+    {
+        dataHolder.waterIntakeAmount.Push(waterDrinkAmount);
+        // Save data to JSON file
+        SaveDataIntoJson(dataHolder);
+    }
+    public void SaveDataIntoJson(DataHolder data)
+    {
+        string json = JsonConvert.SerializeObject(data);
+        if (string.IsNullOrEmpty(jsonFilePath))
+        {
+            jsonFilePath = Application.dataPath + "/UndoOperation.json";
+        }
+        File.WriteAllText(jsonFilePath, json);
+    }
+    public void ReadDataFromJson()
+    {
+        if (File.Exists(jsonFilePath))
+        {
+            string jsonString = File.ReadAllText(jsonFilePath);
+            DataHolder deserializedData = JsonConvert.DeserializeObject<DataHolder>(jsonString);
+            if (deserializedData != null)
+            {
+                dataHolder = deserializedData;
+                Debug.Log("Reading data from file: " + string.Join(", ", dataHolder.waterIntakeAmount));
+            }
+            else
+            {
+                Debug.LogWarning("Failed to deserialize JSON data.");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("JSON file not found at path: " + jsonFilePath);
+        }
+    }
+
     #endregion
     //in this method drink water button action has performed
     public void DrinkWaterOkButton()
     {
         StartCoroutine(WaterFlowDown());
         StartCoroutine(WaterLevelRaise());
+        SaveDataToJson();
     }
     IEnumerator WaterLevelRaise()
     {
@@ -143,6 +198,7 @@ public class DrinkWaterController : MonoBehaviour
         yield return new WaitForSeconds(0.75f);
             PlayerPrefsHandler.DateTime = DateTime.Now.ToString("h:mm tt");
             UIReferenceContainer.Instance.lastIntake.text = PlayerPrefsHandler.DateTime;
+            dataHolder.currentTime.Push(PlayerPrefsHandler.DateTime);
             UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit.ToString();
             if (currentWaterUnit == "ml")
             {
@@ -265,7 +321,6 @@ public class DrinkWaterController : MonoBehaviour
     }
     public int TodayTime()
     {
-       
         long unixTime = (long)(DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalSeconds;
         DateTime dateTime = new DateTime(1970, 1, 1).AddSeconds(unixTime);
         var date = dateTime.Day;

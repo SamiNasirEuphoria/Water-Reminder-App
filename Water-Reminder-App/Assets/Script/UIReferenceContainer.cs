@@ -25,7 +25,7 @@ public class UIReferenceContainer : MonoBehaviour
     public Button drinkWaterButton, sliderCancelButton, sliderOkButton, defaultEntityButton,
         settingButton, NotificationButton, CalenderButton;
     public Image drinkWaterFiller;
-    public Text waterLimit, lastIntake, lastIntakeObject, mainScreenText;
+    public Text waterLimit, lastIntake, lastIntakeObject, undoButton,mainScreenText;
     [Header("Setting Panel References")]
     public Button calculatorButton;
     public Button unitButton, unitDoneButton;
