@@ -8,16 +8,21 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         myAnimator = ObjectReferenceContainer.Instance.MainScreenAnimator;
+        ButtonDelegates();
     }
     public void ButtonDelegates()
     {
         //passing reference to all UI buttons from Reference Container
         UIReferenceContainer.Instance.settingButton.onClick.AddListener(SettingButton);
-        UIReferenceContainer.Instance.NotificationButton.onClick.AddListener(NotificationPanel);
-        UIReferenceContainer.Instance.CalenderButton.onClick.AddListener(CalenderMenu);
+        UIReferenceContainer.Instance.settingCloseButton.onClick.AddListener(SettingDone);
+        UIReferenceContainer.Instance.notificationButton.onClick.AddListener(NotificationPanel);
+        UIReferenceContainer.Instance.notifcationCloseButton.onClick.AddListener(NotificationPanelDone);
+        UIReferenceContainer.Instance.calenderButton.onClick.AddListener(CalenderMenu);
+        UIReferenceContainer.Instance.calenderCloseButton.onClick.AddListener(CalenderDone);
         UIReferenceContainer.Instance.calculatorButton.onClick.AddListener(OpenCalculator);
+        UIReferenceContainer.Instance.calculatorCloseButton.onClick.AddListener(CloseCalculator);
         UIReferenceContainer.Instance.unitButton.onClick.AddListener(OpenUnitPanel);
-        UIReferenceContainer.Instance.unitDoneButton.onClick.AddListener(CloseUnitPanel);
+        UIReferenceContainer.Instance.unitCloseButton.onClick.AddListener(CloseUnitPanel);
     }
     public void SettingButton()
     {

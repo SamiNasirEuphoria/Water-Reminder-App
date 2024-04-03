@@ -206,19 +206,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 22357727}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1419496184}
-        m_TargetAssemblyTypeName: DrinkWaterController, Assembly-CSharp
-        m_MethodName: CalenderDone
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &22357727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6581,19 +6569,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 772364893}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1419496184}
-        m_TargetAssemblyTypeName: DrinkWaterController, Assembly-CSharp
-        m_MethodName: NotificationPanelDone
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &772364893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8458,7 +8434,7 @@ GameObject:
   - component: {fileID: 934980987}
   - component: {fileID: 934980986}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Calender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11864,8 +11840,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultEntityButton: {fileID: 1830770716}
   settingButton: {fileID: 1829872020}
-  NotificationButton: {fileID: 1907859518}
-  CalenderButton: {fileID: 934980986}
+  settingCloseButton: {fileID: 2095121423}
+  notificationButton: {fileID: 1907859518}
+  notifcationCloseButton: {fileID: 772364892}
+  calenderButton: {fileID: 934980986}
+  calenderCloseButton: {fileID: 22357726}
   undoButton: {fileID: 1667154322}
   drinkWaterFiller: {fileID: 871993094}
   waterLimit: {fileID: 877155722}
@@ -11873,8 +11852,9 @@ MonoBehaviour:
   lastIntakeObject: {fileID: 1880791052}
   mainScreenText: {fileID: 980179150}
   calculatorButton: {fileID: 1192607423}
+  calculatorCloseButton: {fileID: 2004584773}
   unitButton: {fileID: 515020356}
-  unitDoneButton: {fileID: 1422503169}
+  unitCloseButton: {fileID: 1422503169}
 --- !u!1 &1279387523
 GameObject:
   m_ObjectHideFlags: 0
@@ -18037,7 +18017,7 @@ GameObject:
   - component: {fileID: 1829872021}
   - component: {fileID: 1829872020}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: Setting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19067,7 +19047,7 @@ GameObject:
   - component: {fileID: 1907859519}
   - component: {fileID: 1907859518}
   m_Layer: 5
-  m_Name: Button (Legacy) (1)
+  m_Name: Notification
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20225,19 +20205,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2004584774}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1419496184}
-        m_TargetAssemblyTypeName: DrinkWaterController, Assembly-CSharp
-        m_MethodName: CloseCalculator
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2004584774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21463,19 +21431,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2095121424}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1419496184}
-        m_TargetAssemblyTypeName: DrinkWaterController, Assembly-CSharp
-        m_MethodName: SettingDone
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2095121424
 MonoBehaviour:
   m_ObjectHideFlags: 0

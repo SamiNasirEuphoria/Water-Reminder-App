@@ -24,6 +24,9 @@ public class DrinkWaterController : MonoBehaviour
         SceneStartConfigurations();
         ReadDataFromJson();
         UndoButtonStatus();
+        UnitConversions.Instance.jsonFilePath = jsonFilePath;
+        UnitConversions.Instance.ConvertWaterIntakeData(dataHolder);
+        Debug.Log("water goal is " + PlayerPrefsHandler.WaterGoal);
     }
     public void ClearAllDataFromJsonFile()
     {
@@ -80,6 +83,7 @@ public class DrinkWaterController : MonoBehaviour
         UIReferenceContainer.Instance.drinkWaterFiller.fillAmount = PlayerPrefsHandler.ImageFillAmount;
         currentWaterUnit = PlayerPrefsHandler.WaterUnit;
         UIReferenceContainer.Instance.lastIntake.text = PlayerPrefsHandler.DateTime;
+        dataHolder.dataUnit = PlayerPrefsHandler.WaterUnit;
     }
     
     #region WaterSliderMenu
@@ -112,6 +116,7 @@ public class DrinkWaterController : MonoBehaviour
         dataHolder.waterIntakeAmount.Push(int.Parse(PlayerPrefsHandler.WaterLimit.Replace("ml","").Replace("oz","")));
         dataHolder.currentTime.Push(PlayerPrefsHandler.DateTime);
         dataHolder.imageFiller.Push(PlayerPrefsHandler.ImageFillAmount);
+        dataHolder.dataUnit = PlayerPrefsHandler.WaterUnit;
         SaveDataIntoJson(dataHolder);
     }
     public void UndoButtonStatus()
@@ -196,7 +201,7 @@ public class DrinkWaterController : MonoBehaviour
                 dataHolder.waterIntakeAmount = new Stack<int>(deserializedData.waterIntakeAmount);
                 dataHolder.currentTime = new Stack<string>(deserializedData.currentTime);
                 dataHolder.imageFiller = new Stack<float>(deserializedData.imageFiller);
-
+                dataHolder.dataUnit = deserializedData.dataUnit;
                 Debug.Log("Reading data from file: " + string.Join(", ", dataHolder.waterIntakeAmount));
                 Debug.Log("Reading data from file: " + string.Join(", ", dataHolder.currentTime));
                 Debug.Log("Reading data from file: " + string.Join(", ", dataHolder.imageFiller));
@@ -269,15 +274,18 @@ public class DrinkWaterController : MonoBehaviour
     }
     public void FillSprite()
     {
+        Debug.Log("Hence the goal is " + PlayerPrefsHandler.WaterGoal + " and new image fill amount is " + PlayerPrefsHandler.ImageFillAmount);
         string divider = PlayerPrefsHandler.WaterGoal.Replace("ml", "").Replace("oz", "");
         int divided = int.Parse(divider);
         int _divider = waterDrinkAmount;
         float per = (_divider  *100f) / divided;
         float final = (per / 100f)*1f;
-        float cal = Mathf.Round(final * 100f) / 100;
+        //float cal = Mathf.Round(final * 100f) / 100;
         float initial = PlayerPrefsHandler.ImageFillAmount;
-        PlayerPrefsHandler.ImageFillAmount += cal;
+        PlayerPrefsHandler.ImageFillAmount += final;
         float _final = PlayerPrefsHandler.ImageFillAmount;
+
+        Debug.Log("the initial value is" + initial + " and the final value is " + _final);
         // UIReferenceContainer.Instance.drinkWaterFiller.fillAmount= PlayerPrefsHandler.ImageFillAmount;
         StartCoroutine(AnimateFill(initial, _final, 0.25f));
     }

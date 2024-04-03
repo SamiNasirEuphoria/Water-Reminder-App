@@ -23,11 +23,11 @@ public class UIReferenceContainer : MonoBehaviour
         }
     }
     public Button defaultEntityButton,
-        settingButton, NotificationButton, CalenderButton, undoButton;
+        settingButton,settingCloseButton, notificationButton,notifcationCloseButton, calenderButton,calenderCloseButton, undoButton;
     public Image drinkWaterFiller;
     public Text waterLimit, lastIntake, lastIntakeObject,mainScreenText;
     [Header("Setting Panel References")]
-    public Button calculatorButton;
-    public Button unitButton, unitDoneButton;
+    public Button calculatorButton, calculatorCloseButton;
+    public Button unitButton, unitCloseButton;
    
 }
