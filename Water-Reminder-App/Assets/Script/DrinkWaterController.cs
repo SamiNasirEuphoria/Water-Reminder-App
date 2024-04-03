@@ -79,6 +79,7 @@ public class DrinkWaterController : MonoBehaviour
         }
         UIReferenceContainer.Instance.drinkWaterFiller.fillAmount = PlayerPrefsHandler.ImageFillAmount;
         currentWaterUnit = PlayerPrefsHandler.WaterUnit;
+        UIReferenceContainer.Instance.lastIntake.text = PlayerPrefsHandler.DateTime;
     }
     
     #region WaterSliderMenu
