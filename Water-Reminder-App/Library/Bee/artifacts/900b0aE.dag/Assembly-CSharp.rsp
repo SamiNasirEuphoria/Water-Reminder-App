@@ -366,6 +366,7 @@
 "Assets/Script/SceneHandler.cs"
 "Assets/Script/SplashScreen.cs"
 "Assets/Script/StringConcatenation.cs"
+"Assets/Script/UIManager.cs"
 "Assets/Script/UIReferenceContainer.cs"
 "Assets/Script/UIReferenceContainerMenu.cs"
 "Assets/Script/UnitConversions.cs"

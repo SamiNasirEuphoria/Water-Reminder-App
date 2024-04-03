@@ -22,10 +22,10 @@ public class UIReferenceContainer : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-    public Button drinkWaterButton, sliderCancelButton, sliderOkButton, defaultEntityButton,
-        settingButton, NotificationButton, CalenderButton;
+    public Button defaultEntityButton,
+        settingButton, NotificationButton, CalenderButton, undoButton;
     public Image drinkWaterFiller;
-    public Text waterLimit, lastIntake, lastIntakeObject, undoButton,mainScreenText;
+    public Text waterLimit, lastIntake, lastIntakeObject,mainScreenText;
     [Header("Setting Panel References")]
     public Button calculatorButton;
     public Button unitButton, unitDoneButton;

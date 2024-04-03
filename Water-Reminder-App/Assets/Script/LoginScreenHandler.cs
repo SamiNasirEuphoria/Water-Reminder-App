@@ -73,7 +73,8 @@ public class LoginScreenHandler : MonoBehaviour
     }
     public void SetDate()
     {
-        long unixTime = (long)(DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalSeconds;
+        DateTime yesterday = DateTime.UtcNow.AddDays(-1);
+        long unixTime = (long)(yesterday - new DateTime(1970, 1, 1)).TotalSeconds;
         DateTime dateTime = new DateTime(1970, 1, 1).AddSeconds(unixTime);
         var date = dateTime.Day;
         PlayerPrefsHandler.LastSavedDate = date.ToString();
