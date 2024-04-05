@@ -20,13 +20,12 @@ public class DrinkWaterController : MonoBehaviour
     private void Start()
     {
         dataHolder = new DataHolder();
-        jsonFilePath = Application.dataPath + "/UndoOperation.json";
+        jsonFilePath = Application.persistentDataPath + "/UndoOperation.json";
         SceneStartConfigurations();
         ReadDataFromJson();
         UndoButtonStatus();
         UnitConversions.Instance.jsonFilePath = jsonFilePath;
         UnitConversions.Instance.ConvertWaterIntakeData(dataHolder);
-        Debug.Log("water goal is " + PlayerPrefsHandler.WaterGoal);
     }
     public void ClearAllDataFromJsonFile()
     {
@@ -46,13 +45,22 @@ public class DrinkWaterController : MonoBehaviour
             //make current date check and assign water limit accordingly
             if (!string.IsNullOrEmpty(PlayerPrefsHandler.WaterLimit))
             {
-                UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
+                if (PlayerPrefsHandler.WaterLimit.Contains("ml")|| PlayerPrefsHandler.WaterLimit.Contains("oz"))
+                {
+                    UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
+                }
+                else
+                {
+                    UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit + PlayerPrefsHandler.WaterUnit;
+                    Debug.Log("null method running");
+                }
             }
             else
             {
                 PlayerPrefsHandler.WaterLimit = PlayerPrefsHandler.WaterGoal;
                 UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
                 PlayerPrefsHandler.ImageFillAmount = 0;
+                Debug.Log("this method is running");
             }
         }
         else
@@ -69,6 +77,7 @@ public class DrinkWaterController : MonoBehaviour
             PlayerPrefsHandler.LastSavedDate = num.ToString();
             // clear all data stored in Json class
             DataHolder emptyObject = new DataHolder();
+            emptyObject.dataUnit = PlayerPrefsHandler.WaterUnit;
             SaveDataIntoJson(emptyObject);
         }
         if (PlayerPrefsHandler.ReachedTodayGoal == 0)
@@ -176,6 +185,12 @@ public class DrinkWaterController : MonoBehaviour
             StartCoroutine(AnimateFill(initial,final, 0.25f));
             UndoButtonStatus();
             UpdateScreenText();
+        }
+        else if (dataHolder.waterIntakeAmount.Count == 0)
+        {
+            PlayerPrefsHandler.WaterLimit = PlayerPrefsHandler.WaterGoal;
+            UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
+
         } 
     }
     public void SaveDataIntoJson(DataHolder data)
@@ -183,7 +198,7 @@ public class DrinkWaterController : MonoBehaviour
         string json = JsonConvert.SerializeObject(data);
         if (string.IsNullOrEmpty(jsonFilePath))
         {
-            jsonFilePath = Application.dataPath + "/UndoOperation.json";
+            jsonFilePath = Application.persistentDataPath + "/UndoOperation.json";
         }
         File.WriteAllText(jsonFilePath, json);
     }
@@ -220,6 +235,7 @@ public class DrinkWaterController : MonoBehaviour
     //in this method drink water button action has performed
     public void DrinkWaterOkButton()
     {
+        Debug.Log("Ok button is pressed");
         SetDataToJson();
         StartCoroutine(WaterFlowDown());
         StartCoroutine(WaterLevelRaise());

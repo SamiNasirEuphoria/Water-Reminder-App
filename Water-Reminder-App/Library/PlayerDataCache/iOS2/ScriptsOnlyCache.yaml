@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AnimationEvent
     - DrinkWaterController
     - Entities
     - LoginScreenHandler
@@ -8,9 +9,11 @@ ScriptsOnlyBuild:
     - MyWaterIntake
     - MyWeight
     - NotificationManager
+    - NotificationTesting
     - ObjectReferenceContainer
     - SceneHandler
     - SplashScreen
+    - UIManager
     - UIReferenceContainer
     - UIReferenceContainerMenu
     - UnitConversions
@@ -51,6 +54,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
+    Assembly-CSharp:
+    - DataHolder
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
     - TMPro.FontAssetCreationSettings
@@ -96,10 +101,16 @@ ScriptsOnlyBuild:
     methodName: SetAnimatorTrigger
   - assembly: Assembly-CSharp
     fullTypeName: MainMenuHandler
+    methodName: SetRingBool
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenuHandler
     methodName: SwitchScene
   - assembly: Assembly-CSharp
     fullTypeName: MainMenuHandler
     methodName: SetAnimatorTrigger
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenuHandler
+    methodName: ResetRingBool
   - assembly: Assembly-CSharp
     fullTypeName: LoginScreenHandler
     methodName: WaterPlaceholder
@@ -126,10 +137,10 @@ ScriptsOnlyBuild:
     methodName: PlayerPrefsSetter
   - assembly: Assembly-CSharp
     fullTypeName: DrinkWaterController
-    methodName: CalenderDone
+    methodName: DrinkWater
   - assembly: Assembly-CSharp
     fullTypeName: DrinkWaterController
-    methodName: NotificationPanelDone
+    methodName: DrinkWaterOkButton
   - assembly: Assembly-CSharp
     fullTypeName: MyWeight
     methodName: OkButton
@@ -146,17 +157,17 @@ ScriptsOnlyBuild:
     fullTypeName: WaterCalculator
     methodName: CalculateWater
   - assembly: Assembly-CSharp
+    fullTypeName: DrinkWaterController
+    methodName: CloseButton
+  - assembly: Assembly-CSharp
+    fullTypeName: DrinkWaterController
+    methodName: UndoOperation
+  - assembly: Assembly-CSharp
     fullTypeName: MyWeight
     methodName: ClosePanel
   - assembly: Assembly-CSharp
     fullTypeName: MyWaterIntake
     methodName: ClosePanel
-  - assembly: Assembly-CSharp
-    fullTypeName: DrinkWaterController
-    methodName: CloseCalculator
-  - assembly: Assembly-CSharp
-    fullTypeName: DrinkWaterController
-    methodName: SettingDone
   sceneClasses:
     Assets/Scenes/LoginScreen.unity:
     - Class: 1
@@ -186,35 +197,35 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1544}
+      Script: {instanceID: 1548}
     - Class: 114
-      Script: {instanceID: 1578}
+      Script: {instanceID: 1582}
     - Class: 114
-      Script: {instanceID: 1708}
+      Script: {instanceID: 1714}
     - Class: 114
-      Script: {instanceID: 2566}
+      Script: {instanceID: 2574}
     - Class: 114
-      Script: {instanceID: 2772}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 3046}
+      Script: {instanceID: 3056}
     - Class: 114
-      Script: {instanceID: 4008}
+      Script: {instanceID: 4018}
     - Class: 114
-      Script: {instanceID: 4774}
+      Script: {instanceID: 4788}
     - Class: 114
-      Script: {instanceID: 4950}
+      Script: {instanceID: 4966}
     - Class: 114
-      Script: {instanceID: 5192}
+      Script: {instanceID: 5208}
     - Class: 114
-      Script: {instanceID: 5486}
+      Script: {instanceID: 5504}
     - Class: 114
-      Script: {instanceID: 5630}
+      Script: {instanceID: 5648}
     - Class: 114
-      Script: {instanceID: 5938}
+      Script: {instanceID: 5956}
     - Class: 114
-      Script: {instanceID: 6710}
+      Script: {instanceID: 6728}
     - Class: 114
-      Script: {instanceID: 6836}
+      Script: {instanceID: 6856}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -240,21 +251,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
     - Class: 48
-      Script: {instanceID: 0}
-    - Class: 65
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -267,23 +274,25 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1544}
+      Script: {instanceID: 1548}
     - Class: 114
-      Script: {instanceID: 2566}
+      Script: {instanceID: 2574}
     - Class: 114
-      Script: {instanceID: 2772}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 3046}
+      Script: {instanceID: 2878}
     - Class: 114
-      Script: {instanceID: 5192}
+      Script: {instanceID: 3056}
     - Class: 114
-      Script: {instanceID: 5486}
+      Script: {instanceID: 5208}
     - Class: 114
-      Script: {instanceID: 5938}
+      Script: {instanceID: 5504}
     - Class: 114
-      Script: {instanceID: 6090}
+      Script: {instanceID: 5956}
     - Class: 114
-      Script: {instanceID: 6262}
+      Script: {instanceID: 6108}
+    - Class: 114
+      Script: {instanceID: 6280}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -334,27 +343,27 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1544}
+      Script: {instanceID: 1548}
     - Class: 114
-      Script: {instanceID: 1838}
+      Script: {instanceID: 1844}
     - Class: 114
-      Script: {instanceID: 2158}
+      Script: {instanceID: 2164}
     - Class: 114
-      Script: {instanceID: 2566}
+      Script: {instanceID: 2574}
     - Class: 114
-      Script: {instanceID: 2772}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 4022}
+      Script: {instanceID: 4032}
     - Class: 114
-      Script: {instanceID: 4270}
+      Script: {instanceID: 4280}
     - Class: 114
-      Script: {instanceID: 4950}
+      Script: {instanceID: 4966}
     - Class: 114
-      Script: {instanceID: 5486}
+      Script: {instanceID: 5504}
     - Class: 114
-      Script: {instanceID: 5938}
+      Script: {instanceID: 5956}
     - Class: 114
-      Script: {instanceID: 6508}
+      Script: {instanceID: 6526}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -401,51 +410,55 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1544}
+      Script: {instanceID: 1548}
     - Class: 114
-      Script: {instanceID: 1708}
+      Script: {instanceID: 1652}
     - Class: 114
-      Script: {instanceID: 2566}
+      Script: {instanceID: 1714}
     - Class: 114
-      Script: {instanceID: 2648}
+      Script: {instanceID: 2516}
     - Class: 114
-      Script: {instanceID: 2668}
+      Script: {instanceID: 2574}
     - Class: 114
-      Script: {instanceID: 2690}
+      Script: {instanceID: 2656}
     - Class: 114
-      Script: {instanceID: 2772}
+      Script: {instanceID: 2676}
     - Class: 114
-      Script: {instanceID: 3016}
+      Script: {instanceID: 2698}
     - Class: 114
-      Script: {instanceID: 3046}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 3794}
+      Script: {instanceID: 3026}
     - Class: 114
-      Script: {instanceID: 4008}
+      Script: {instanceID: 3056}
     - Class: 114
-      Script: {instanceID: 4130}
+      Script: {instanceID: 3804}
     - Class: 114
-      Script: {instanceID: 4400}
+      Script: {instanceID: 4018}
     - Class: 114
-      Script: {instanceID: 4774}
+      Script: {instanceID: 4140}
     - Class: 114
-      Script: {instanceID: 4950}
+      Script: {instanceID: 4410}
     - Class: 114
-      Script: {instanceID: 5192}
+      Script: {instanceID: 4692}
     - Class: 114
-      Script: {instanceID: 5486}
+      Script: {instanceID: 4746}
     - Class: 114
-      Script: {instanceID: 5630}
+      Script: {instanceID: 4788}
     - Class: 114
-      Script: {instanceID: 5938}
+      Script: {instanceID: 4966}
     - Class: 114
-      Script: {instanceID: 6340}
+      Script: {instanceID: 5208}
     - Class: 114
-      Script: {instanceID: 6968}
+      Script: {instanceID: 5504}
     - Class: 114
-      Script: {instanceID: 40362}
+      Script: {instanceID: 5648}
     - Class: 114
-      Script: {instanceID: 40368}
+      Script: {instanceID: 5956}
+    - Class: 114
+      Script: {instanceID: 6358}
+    - Class: 114
+      Script: {instanceID: 6988}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -483,6 +496,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LoginScreenHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -579,6 +598,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameVisibleMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: b3fd394feeb5b6b30782518aea2e393d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MyWeight
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -689,13 +714,19 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: cfbf7ed2bc128b89e80fcfd1296a92fd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AnimationEvent
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnDropdownValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 0646681751742a361365b1bbc418a964
+      Hash: 7c438a41a9b63bf40ae5173a25983968
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DrinkWaterController
@@ -887,7 +918,7 @@ ScriptsOnlyBuild:
     className: DictionaryAsset
   - hash:
       serializedVersion: 2
-      Hash: 7d0d6c0aa31a6f1a2ee303775a5afbdc
+      Hash: 748d1b79249e1cb0d6451ee82fdfc5bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UnitConversions
@@ -911,7 +942,7 @@ ScriptsOnlyBuild:
     className: UnityOnCancelMessageListener
   - hash:
       serializedVersion: 2
-      Hash: d38e4176fc2c704aa9bb2a06153e2719
+      Hash: 8378489af52a0624efdf3d2aa2ee8995
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIReferenceContainer
@@ -953,10 +984,22 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 2266cd4987bdd064e8620ef85aaabc1d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MyWaterIntake
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnEndDragMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NotificationTesting
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1115,7 +1158,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 7e2517216787239ec34811dd91ebf113
+      Hash: 2ef6da55b6db98e1446481057b9a283e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainMenuHandler
@@ -1329,22 +1372,10 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 2266cd4987bdd064e8620ef85aaabc1d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MyWaterIntake
-  - hash:
-      serializedVersion: 2
-      Hash: b3fd394feeb5b6b30782518aea2e393d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MyWeight
   platform: 9
   scenePathNames:
   - Assets/Scenes/Splash.unity
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/LoginScreen.unity
   - Assets/Scenes/WaterReminder.unity
-  playerPath: /Users/mac/Downloads/NotificationSystem_IOS
+  playerPath: /Users/mac/Downloads/WaterApp

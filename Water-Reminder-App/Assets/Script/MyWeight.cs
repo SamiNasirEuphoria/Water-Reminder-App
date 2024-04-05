@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 using TMPro;
 
 
@@ -10,6 +11,7 @@ public class MyWeight : MonoBehaviour
     public float fadeTimer;
     private float elapsedTime;
     public TMP_InputField inputField;
+    public Text myCurrentWeight;
     private void Start()
     {
         myCanvesGroup = GetComponent<CanvasGroup>();
@@ -23,6 +25,8 @@ public class MyWeight : MonoBehaviour
     public void OpenPanel()
     {
         StartCoroutine(FadeScreenIn());
+        myCurrentWeight.text = PlayerPrefsHandler.Weight;
+        Debug.Log("current weight is " + PlayerPrefsHandler.Weight);
     }
     public void ClosePanel()
     {

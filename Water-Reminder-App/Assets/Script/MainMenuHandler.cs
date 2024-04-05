@@ -3,6 +3,7 @@ using UnityEngine;
 public class MainMenuHandler : MonoBehaviour
 {
     public Animator myAnimator;
+    public Animator notificationRing;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +16,13 @@ public class MainMenuHandler : MonoBehaviour
     public void SwitchScene(string sceneName)
     {
         SceneHandler.Instance.LoadScene(sceneName);
+    }
+    public void SetRingBool()
+    {
+        notificationRing.SetTrigger("SoundNotification");
+    }
+    public void ResetRingBool()
+    {
+        notificationRing.SetTrigger("OffNotification");
     }
 }
