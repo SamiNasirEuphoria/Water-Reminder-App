@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using System;
 using UnityEngine.EventSystems;
 using System.IO;
@@ -14,19 +15,66 @@ public class DrinkWaterController : MonoBehaviour
     private bool check;
     public static int waterDrinkAmount;
     private string currentWaterUnit;
-    private string jsonFilePath;
+    private string jsonFilePath, jsonFileCalender;
+    public UnityEvent confetti,updateCalenderData;
     public DataHolder dataHolder;
+    public CalenderRoot calenderDataHolder;
 
     private void Start()
     {
         dataHolder = new DataHolder();
-        jsonFilePath = Application.persistentDataPath + "/UndoOperation.json";
+        calenderDataHolder = new CalenderRoot();
+        jsonFilePath = StringConcatenation.JsonDataFilePath;
+        jsonFileCalender = StringConcatenation.JsonCalenderFilePath;
         SceneStartConfigurations();
         ReadDataFromJson();
         UndoButtonStatus();
         UnitConversions.Instance.jsonFilePath = jsonFilePath;
         UnitConversions.Instance.ConvertWaterIntakeData(dataHolder);
     }
+    //json data handler for calender
+    public void SaveCalenderData()
+    {
+        if (calenderDataHolder.root == null)
+        {
+            calenderDataHolder.root = new List<CalenderDataHolder>();
+        }
+
+        if (File.Exists(jsonFileCalender))
+        {
+            //reading data from previous json file
+            string jsonString = File.ReadAllText(jsonFileCalender);
+            CalenderRoot deserializedData = JsonUtility.FromJson<CalenderRoot>(jsonString);
+
+            if (deserializedData != null)
+            {
+                calenderDataHolder = deserializedData;
+            }
+        }
+       
+        //creating and new instance and passing data into it
+        calenderDataHolder.root.Add(new CalenderDataHolder());
+        calenderDataHolder.root[calenderDataHolder.root.Count - 1].date = CalenderDate();
+        calenderDataHolder.root[calenderDataHolder.root.Count - 1].waterIntakeAmount = PlayerPrefsHandler.WaterLimit;
+        calenderDataHolder.root[calenderDataHolder.root.Count - 1].imageFillAmount = PlayerPrefsHandler.ImageFillAmount;
+        calenderDataHolder.root[calenderDataHolder.root.Count - 1].percentage =Mathf.Round((PlayerPrefsHandler.ImageFillAmount * 100)).ToString() + "%";
+
+        //saving all the data into json
+        SaveDataIntoJsonCalender(calenderDataHolder);
+        updateCalenderData.Invoke();
+
+    }
+    public void SaveDataIntoJsonCalender(CalenderRoot data)
+    {
+        string json = JsonUtility.ToJson(data);
+        if (string.IsNullOrEmpty(jsonFileCalender))
+        {
+            Debug.Log("Saving data into calender json");
+            jsonFileCalender = StringConcatenation.JsonCalenderFilePath;
+        }
+        File.WriteAllText(jsonFileCalender, json);
+    }
+
     public void ClearAllDataFromJsonFile()
     {
         //to clear data from file
@@ -52,7 +100,6 @@ public class DrinkWaterController : MonoBehaviour
                 else
                 {
                     UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit + PlayerPrefsHandler.WaterUnit;
-                    Debug.Log("null method running");
                 }
             }
             else
@@ -68,7 +115,11 @@ public class DrinkWaterController : MonoBehaviour
             //make sure to clear all related player prefs here
             //like water intake list, water limit , filler image
             //like scene get refreshed and assign scene start values to vars
-            //clear Json files to load/unload new data 1`    
+            //clear Json files to load/unload new data 1`
+
+            //to save recent day's data into calender and update visual calender
+            SaveCalenderData();
+
             PlayerPrefsHandler.WaterLimit = PlayerPrefsHandler.WaterGoal;
             UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
             PlayerPrefsHandler.ImageFillAmount = 0;
@@ -198,7 +249,7 @@ public class DrinkWaterController : MonoBehaviour
         string json = JsonConvert.SerializeObject(data);
         if (string.IsNullOrEmpty(jsonFilePath))
         {
-            jsonFilePath = Application.persistentDataPath + "/UndoOperation.json";
+            jsonFilePath = StringConcatenation.JsonDataFilePath;
         }
         File.WriteAllText(jsonFilePath, json);
     }
@@ -210,9 +261,6 @@ public class DrinkWaterController : MonoBehaviour
             DataHolder deserializedData = JsonConvert.DeserializeObject<DataHolder>(jsonString);
             if (deserializedData != null)
             {
-                //old method
-                //dataHolder = deserializedData;
-                //new method
                 dataHolder.waterIntakeAmount = new Stack<int>(deserializedData.waterIntakeAmount);
                 dataHolder.currentTime = new Stack<string>(deserializedData.currentTime);
                 dataHolder.imageFiller = new Stack<float>(deserializedData.imageFiller);
@@ -271,6 +319,8 @@ public class DrinkWaterController : MonoBehaviour
             }
             else
             {
+                //call for the confetti method over here
+                confetti.Invoke();
                 PlayerPrefsHandler.ReachedTodayGoal = 1;
                 PlayerPrefsHandler.WaterLimit = PlayerPrefsHandler.WaterGoal;
                 UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
@@ -348,6 +398,14 @@ public class DrinkWaterController : MonoBehaviour
         int date = int.Parse(PlayerPrefsHandler.LastSavedDate);
         DateTime savedDate=  new DateTime(DateTime.Now.Year, DateTime.Now.Month, date);
         var _date = savedDate.Day;
+        return _date;
+    }
+    public string CalenderDate()
+    {
+        Debug.Log("Last saved date is" + PlayerPrefsHandler.LastSavedDate);
+        int date = int.Parse(PlayerPrefsHandler.LastSavedDate);
+        DateTime savedDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, date);
+        var _date = savedDate.Day+ "/"+savedDate.Month+ "/"+savedDate.Year;
         return _date;
     }
     public int TodayTime()

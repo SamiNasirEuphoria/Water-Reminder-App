@@ -23,6 +23,7 @@ public class UIManager : MonoBehaviour
         UIReferenceContainer.Instance.calculatorCloseButton.onClick.AddListener(CloseCalculator);
         UIReferenceContainer.Instance.unitButton.onClick.AddListener(OpenUnitPanel);
         UIReferenceContainer.Instance.unitCloseButton.onClick.AddListener(CloseUnitPanel);
+        UIReferenceContainer.Instance.confettiCloseButton.onClick.AddListener(CloseConfetti);
     }
     public void SettingButton()
     {
@@ -43,6 +44,14 @@ public class UIManager : MonoBehaviour
     public void CalenderMenu()
     {
         myAnimator.SetTrigger("Calender");
+    }
+    public void Confetti()
+    {
+        myAnimator.SetTrigger("Confetti");
+    }
+    public void CloseConfetti()
+    {
+        myAnimator.SetTrigger("ConfettiClose");
     }
     public void CalenderDone()
     {

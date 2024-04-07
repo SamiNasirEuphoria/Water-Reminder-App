@@ -171,7 +171,7 @@ MonoBehaviour:
   logoImage: {fileID: 1164383642}
   colorFilledImage: {fileID: 1734757746}
   fadeInDuration: 1
-  fillAmountDuration: 1.5
+  fillAmountDuration: 0.5
   sceneChangeTimer: 0.5
 --- !u!1 &222848659
 GameObject:
