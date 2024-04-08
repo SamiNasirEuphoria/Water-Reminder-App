@@ -363,6 +363,7 @@
 "Assets/Script/MainMenuHandler.cs"
 "Assets/Script/MyWaterIntake.cs"
 "Assets/Script/MyWeight.cs"
+"Assets/Script/NotificationInterval.cs"
 "Assets/Script/NotificationManager.cs"
 "Assets/Script/Notifications.cs"
 "Assets/Script/NotificationTesting.cs"
