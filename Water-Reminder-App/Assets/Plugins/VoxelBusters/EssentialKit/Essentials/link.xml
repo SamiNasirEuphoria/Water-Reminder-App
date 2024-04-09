@@ -1,0 +1,6 @@
+﻿<linker>
+  <assembly fullname="VoxelBusters.EssentialKit.iOSModule">
+    <namespace fullname="VoxelBusters.EssentialKit.NativeUICore.iOS" preserve="all" />
+    <namespace fullname="VoxelBusters.EssentialKit.ExtrasCore.iOS" preserve="all" />
+  </assembly>
+</linker>

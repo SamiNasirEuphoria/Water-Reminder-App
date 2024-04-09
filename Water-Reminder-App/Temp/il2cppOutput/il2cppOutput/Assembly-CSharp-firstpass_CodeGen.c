@@ -1,0 +1,361 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::add_OnInitializeStoreComplete(VoxelBusters.CoreLibrary.EventCallback`1<VoxelBusters.EssentialKit.BillingServicesInitializeStoreResult>)
+extern void IAPManager_add_OnInitializeStoreComplete_m8566E6170BA77D98525A286F03A4042B79309701 (void);
+// 0x00000002 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::remove_OnInitializeStoreComplete(VoxelBusters.CoreLibrary.EventCallback`1<VoxelBusters.EssentialKit.BillingServicesInitializeStoreResult>)
+extern void IAPManager_remove_OnInitializeStoreComplete_mE4223D69C5C970CCD79312DD610BAFFCC0625C13 (void);
+// 0x00000003 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::add_OnTransactionStateChange(VoxelBusters.CoreLibrary.Callback`1<VoxelBusters.EssentialKit.BillingServicesTransactionStateChangeResult>)
+extern void IAPManager_add_OnTransactionStateChange_m13C08A2543D68D06CADCF1864028E3C8E8B03A27 (void);
+// 0x00000004 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::remove_OnTransactionStateChange(VoxelBusters.CoreLibrary.Callback`1<VoxelBusters.EssentialKit.BillingServicesTransactionStateChangeResult>)
+extern void IAPManager_remove_OnTransactionStateChange_m51237A28CFD460C9B41CDC197969D647A65D6BF2 (void);
+// 0x00000005 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::add_OnRestorePurchasesComplete(VoxelBusters.CoreLibrary.EventCallback`1<VoxelBusters.EssentialKit.BillingServicesRestorePurchasesResult>)
+extern void IAPManager_add_OnRestorePurchasesComplete_mC99C6AE95148E891C7F86AACDD04E6127426184E (void);
+// 0x00000006 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::remove_OnRestorePurchasesComplete(VoxelBusters.CoreLibrary.EventCallback`1<VoxelBusters.EssentialKit.BillingServicesRestorePurchasesResult>)
+extern void IAPManager_remove_OnRestorePurchasesComplete_mFE8E0BAE1887A14C0C694546577AE26E20C89868 (void);
+// 0x00000007 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::.cctor()
+extern void IAPManager__cctor_mE473901BAAA64C9EC1F90DBAA4197D4A4FD04CDB (void);
+// 0x00000008 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::SetDirty()
+extern void IAPManager_SetDirty_m4477F321EFD28EC47BAF6437905D344CC59CD35A (void);
+// 0x00000009 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::GetBillingProducts(VoxelBusters.CoreLibrary.EventCallback`1<VoxelBusters.EssentialKit.IBillingProduct[]>)
+extern void IAPManager_GetBillingProducts_m46C6445D765A3591A02DA3E12974F9025ECF907A (void);
+// 0x0000000A System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::BuyProduct(System.String,VoxelBusters.CoreLibrary.EventCallback`1<VoxelBusters.EssentialKit.IBillingTransaction>,System.String)
+extern void IAPManager_BuyProduct_m897AA1CAA4B064BA446D57D68E267A8DF89AF0FE (void);
+// 0x0000000B System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::RestorePurchases(VoxelBusters.CoreLibrary.EventCallback`1<VoxelBusters.EssentialKit.IBillingTransaction[]>,System.String)
+extern void IAPManager_RestorePurchases_m0C466F548747DCCF150DC336EED857453B4BA3AC (void);
+// 0x0000000C System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::RegisterForCallbacks()
+extern void IAPManager_RegisterForCallbacks_m414AC8C06173AB3EE262EDDF909370FFF8B7D716 (void);
+// 0x0000000D System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::InitializeStore()
+extern void IAPManager_InitializeStore_mCE7880F52D9B2D639CD384C689E5BCA9780715DC (void);
+// 0x0000000E System.Boolean VoxelBusters.EssentialKit.Extensions.IAPManager::TryInitializeStore(VoxelBusters.CoreLibrary.EventCallback`1<VoxelBusters.EssentialKit.IBillingProduct[]>)
+extern void IAPManager_TryInitializeStore_mD9E9DB514B6942C85C12C420C707A74335C5C91E (void);
+// 0x0000000F System.Boolean VoxelBusters.EssentialKit.Extensions.IAPManager::IsStoreAvailable()
+extern void IAPManager_IsStoreAvailable_mE722A7D948939BAD894E24D00D76406E79FA9FBE (void);
+// 0x00000010 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::HandleOnInitializeStore(VoxelBusters.EssentialKit.BillingServicesInitializeStoreResult,VoxelBusters.CoreLibrary.Error)
+extern void IAPManager_HandleOnInitializeStore_mE11CAF82CE221893B9554F5B5F6155739E889199 (void);
+// 0x00000011 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::HandleOnTransactionStateChange(VoxelBusters.EssentialKit.BillingServicesTransactionStateChangeResult)
+extern void IAPManager_HandleOnTransactionStateChange_mD4F4635BA996C7BAA7EFF9BD898619343CA685A4 (void);
+// 0x00000012 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager::HandleOnRestorePurchasesComplete(VoxelBusters.EssentialKit.BillingServicesRestorePurchasesResult,VoxelBusters.CoreLibrary.Error)
+extern void IAPManager_HandleOnRestorePurchasesComplete_m148B7924ADD9F09FD97DFB4E1F7BD08006349918 (void);
+// 0x00000013 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager/<>c__DisplayClass20_0::.ctor()
+extern void U3CU3Ec__DisplayClass20_0__ctor_m890A06695DF072867CB97BFC7E90DF926D35FFCB (void);
+// 0x00000014 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager/<>c__DisplayClass20_0::<BuyProduct>b__0(VoxelBusters.EssentialKit.IBillingProduct[],VoxelBusters.CoreLibrary.Error)
+extern void U3CU3Ec__DisplayClass20_0_U3CBuyProductU3Eb__0_mFB4CC8282C2ECF5AE557461078EA61BAE42976E6 (void);
+// 0x00000015 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager/<>c__DisplayClass21_0::.ctor()
+extern void U3CU3Ec__DisplayClass21_0__ctor_m7125B064D5DEA4224DA4A6A3C1FAF8FC270FBEAE (void);
+// 0x00000016 System.Void VoxelBusters.EssentialKit.Extensions.IAPManager/<>c__DisplayClass21_0::<RestorePurchases>b__0(VoxelBusters.EssentialKit.IBillingProduct[],VoxelBusters.CoreLibrary.Error)
+extern void U3CU3Ec__DisplayClass21_0_U3CRestorePurchasesU3Eb__0_m1FC8C0CDB97F0459CE480ADD8A86661934BDEF17 (void);
+// 0x00000017 System.Int32 VoxelBusters.EssentialKit.Extensions.TMP_DatePicker::GetDropdownValue(TMPro.TMP_Dropdown)
+extern void TMP_DatePicker_GetDropdownValue_mE592445FC696FA94BF888EB92F4930284B2EFFF6 (void);
+// 0x00000018 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePicker::SelectDropdownValue(TMPro.TMP_Dropdown,System.Int32)
+extern void TMP_DatePicker_SelectDropdownValue_m60B68C245C93690D82A3DFFC41F848AD348A6E0B (void);
+// 0x00000019 System.Collections.Generic.List`1<System.String> VoxelBusters.EssentialKit.Extensions.TMP_DatePicker::ConvertIntegerToStringNames(System.Int32,System.Int32,System.String)
+extern void TMP_DatePicker_ConvertIntegerToStringNames_mD55BE7854881493CE5DF92091A9F6B8F77713802 (void);
+// 0x0000001A System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePicker::Awake()
+extern void TMP_DatePicker_Awake_m4D7E0668AB452CF2175756C38C52BD2C3281B962 (void);
+// 0x0000001B System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePicker::Start()
+extern void TMP_DatePicker_Start_m7D0ABE716DD8F763D3A6F90BA734D9ED0A744041 (void);
+// 0x0000001C System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePicker::Show()
+extern void TMP_DatePicker_Show_m1DB771FD342DF2613E50C6BCEC9B3BA7F7013354 (void);
+// 0x0000001D System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePicker::ConfigureYearDropdown()
+extern void TMP_DatePicker_ConfigureYearDropdown_m3083F8327379E054C3E00BCA32D656015E94167D (void);
+// 0x0000001E System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePicker::ConfigureMonthDropdown()
+extern void TMP_DatePicker_ConfigureMonthDropdown_m2ED554ADB7ECA11123B02622D339758CC7FEA8F3 (void);
+// 0x0000001F System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePicker::ConfigureDayDropdown(System.Int32,System.Int32)
+extern void TMP_DatePicker_ConfigureDayDropdown_m5276EF7612FC0CCCFC72442862EFBA68D9A1B487 (void);
+// 0x00000020 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePicker::ConfigureHourDropdown()
+extern void TMP_DatePicker_ConfigureHourDropdown_mFA6E23395B65CB37349125E039EF071B97FAE228 (void);
+// 0x00000021 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePicker::ConfigureMinuteDropdown()
+extern void TMP_DatePicker_ConfigureMinuteDropdown_m2D67767060B0CA133668459C04307FFF3AB565E1 (void);
+// 0x00000022 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePicker::OnSubmit()
+extern void TMP_DatePicker_OnSubmit_m3DD65457BD6549A3EF11B38565F4E0E19CEE63B7 (void);
+// 0x00000023 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePicker::OnDismiss()
+extern void TMP_DatePicker_OnDismiss_mA55946466EE3C7A11A045423955F4C37A302A13C (void);
+// 0x00000024 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePicker::OnDropdownValueChange(UnityEngine.UI.Dropdown)
+extern void TMP_DatePicker_OnDropdownValueChange_mC259CA5EBC20677EDAF5A91424351D4CB76B4594 (void);
+// 0x00000025 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePicker::.ctor()
+extern void TMP_DatePicker__ctor_m7C2F85916F1C438365DBC41E810B2B19AA53259D (void);
+// 0x00000026 System.DateTimeKind VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::get_Kind()
+extern void TMP_DatePickerInputField_get_Kind_m8C4D88ACF5F2BA949A442F472CC1331B9EB0170F (void);
+// 0x00000027 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::set_Kind(System.DateTimeKind)
+extern void TMP_DatePickerInputField_set_Kind_m8163BDCA3CAA8156EFC1DB2BCD9A60461F5BB166 (void);
+// 0x00000028 VoxelBusters.EssentialKit.DatePickerMode VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::get_Mode()
+extern void TMP_DatePickerInputField_get_Mode_mCA25C98E486545C4E3622207C6CD46365AE9AD2C (void);
+// 0x00000029 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::set_Mode(VoxelBusters.EssentialKit.DatePickerMode)
+extern void TMP_DatePickerInputField_set_Mode_mBB736C745D569D10B14F08347BC9B58A7AFB6123 (void);
+// 0x0000002A System.String VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::get_DisplayFormat()
+extern void TMP_DatePickerInputField_get_DisplayFormat_m193E573E92388EFD59B30F261B77784C9B10859F (void);
+// 0x0000002B System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::set_DisplayFormat(System.String)
+extern void TMP_DatePickerInputField_set_DisplayFormat_m63EAE6C9300BF2E53568E494C178ABE6829FEFEA (void);
+// 0x0000002C System.Nullable`1<System.DateTime> VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::get_MinimumDate()
+extern void TMP_DatePickerInputField_get_MinimumDate_mF8E17EF6D7A29B14E22ED7077C0B4102CF019D3B (void);
+// 0x0000002D System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::set_MinimumDate(System.Nullable`1<System.DateTime>)
+extern void TMP_DatePickerInputField_set_MinimumDate_mBF4C380D884980F3B8F67DC1739D68CBAF77390A (void);
+// 0x0000002E System.Nullable`1<System.DateTime> VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::get_MaximumDate()
+extern void TMP_DatePickerInputField_get_MaximumDate_m76C5078A463A39640025546E3F126E727771BBFD (void);
+// 0x0000002F System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::set_MaximumDate(System.Nullable`1<System.DateTime>)
+extern void TMP_DatePickerInputField_set_MaximumDate_m6805C49D4D3256D71340363C3CCA8DD260F3DED6 (void);
+// 0x00000030 System.Nullable`1<System.DateTime> VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::get_InitialDate()
+extern void TMP_DatePickerInputField_get_InitialDate_m23ADC7D9B47354B1EAE05C73D8D7D0B47FA22262 (void);
+// 0x00000031 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::set_InitialDate(System.Nullable`1<System.DateTime>)
+extern void TMP_DatePickerInputField_set_InitialDate_mDCA02B4A02F5B2FF07C191FD6D959BE8FF5F6666 (void);
+// 0x00000032 System.Nullable`1<System.DateTime> VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::get_Date()
+extern void TMP_DatePickerInputField_get_Date_mB3FBD6644D00465B7462012C1951C5DABC66F159 (void);
+// 0x00000033 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::set_Date(System.Nullable`1<System.DateTime>)
+extern void TMP_DatePickerInputField_set_Date_m994FD77C47E9C90DEBF52BA49E856C8B20F5A7EB (void);
+// 0x00000034 UnityEngine.Events.UnityEvent VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::get_OnValueChange()
+extern void TMP_DatePickerInputField_get_OnValueChange_m94955FDF436254680F763924FF351D2403C79D91 (void);
+// 0x00000035 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::Awake()
+extern void TMP_DatePickerInputField_Awake_m391B0BF21B69E68DAAC0CA1E689A294D63FCD7EB (void);
+// 0x00000036 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::Show()
+extern void TMP_DatePickerInputField_Show_m8F00385FBB7EBD0B173AB549C4B6D3EE0EB5727C (void);
+// 0x00000037 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::SetText(System.String)
+extern void TMP_DatePickerInputField_SetText_m0BE23BA1943A454B0D514022C87DECAC476B06B6 (void);
+// 0x00000038 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+extern void TMP_DatePickerInputField_OnPointerClick_m24198F27990C0903865428656EB888ADE224FD86 (void);
+// 0x00000039 System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::OnSubmit(UnityEngine.EventSystems.BaseEventData)
+extern void TMP_DatePickerInputField_OnSubmit_m6063EC94D6B16A29CA991CFEF45FD9B1133EEA6B (void);
+// 0x0000003A System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::OnCancel(UnityEngine.EventSystems.BaseEventData)
+extern void TMP_DatePickerInputField_OnCancel_m5984DE44C2BF99A9F228413EB5498D062EA449B6 (void);
+// 0x0000003B System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::OnDatePickerClose(VoxelBusters.EssentialKit.DatePickerResult)
+extern void TMP_DatePickerInputField_OnDatePickerClose_m0D23A9574406FCF0D1F161BAFD38758E2ED1DA54 (void);
+// 0x0000003C System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::OnDatePickerValueChange(System.Nullable`1<System.DateTime>)
+extern void TMP_DatePickerInputField_OnDatePickerValueChange_m17838C561C92DF3027E6A0A0DDB73975D56B129B (void);
+// 0x0000003D System.Void VoxelBusters.EssentialKit.Extensions.TMP_DatePickerInputField::.ctor()
+extern void TMP_DatePickerInputField__ctor_m41FADF3A30BC09AB57219DC0B1A64D8169D14585 (void);
+// 0x0000003E System.Void VoxelBusters.CoreLibrary.Helpers.DefaultJsonServiceProvider::OnLoad()
+extern void DefaultJsonServiceProvider_OnLoad_m56925A274AACF83490EFEFAB9A03A022D3C5C728 (void);
+// 0x0000003F System.String VoxelBusters.CoreLibrary.Helpers.DefaultJsonServiceProvider::ToJson(System.Object)
+extern void DefaultJsonServiceProvider_ToJson_mB6D36CE7C8FE6B10922D177F568046BBEED44D77 (void);
+// 0x00000040 System.Object VoxelBusters.CoreLibrary.Helpers.DefaultJsonServiceProvider::FromJson(System.String)
+extern void DefaultJsonServiceProvider_FromJson_m04BF8C518BCC46075F70BDFFD0176A163BEACFD9 (void);
+// 0x00000041 System.Void VoxelBusters.CoreLibrary.Helpers.DefaultJsonServiceProvider::.ctor()
+extern void DefaultJsonServiceProvider__ctor_m463CBA91C7CD32D623D0D35483C3BFF2FB6849CA (void);
+// 0x00000042 System.Void VoxelBusters.CoreLibrary.Helpers.DefaultLocalisationServiceProvider::OnLoad()
+extern void DefaultLocalisationServiceProvider_OnLoad_mAB797E0B6A42544B2A4866F8895D72CF195A913F (void);
+// 0x00000043 System.String VoxelBusters.CoreLibrary.Helpers.DefaultLocalisationServiceProvider::GetLocalisedString(System.String,System.String)
+extern void DefaultLocalisationServiceProvider_GetLocalisedString_mA4F8360EC8806F2F6FFE42C1E0C7ABE3A4C823A0 (void);
+// 0x00000044 System.Void VoxelBusters.CoreLibrary.Helpers.DefaultLocalisationServiceProvider::.ctor()
+extern void DefaultLocalisationServiceProvider__ctor_mF89D0E030F10C5AB9136A151C96DAB3573B73801 (void);
+// 0x00000045 System.Void VoxelBusters.CoreLibrary.Helpers.DefaultSaveServiceProvider::OnLoad()
+extern void DefaultSaveServiceProvider_OnLoad_m75B1E701587FE5359BB1372A8B1C825F5CACFE17 (void);
+// 0x00000046 System.Int32 VoxelBusters.CoreLibrary.Helpers.DefaultSaveServiceProvider::GetInt(System.String,System.Int32)
+extern void DefaultSaveServiceProvider_GetInt_m35B8C1A3003C100C2AC1B75261D24F8240F084CB (void);
+// 0x00000047 System.Single VoxelBusters.CoreLibrary.Helpers.DefaultSaveServiceProvider::GetFloat(System.String,System.Single)
+extern void DefaultSaveServiceProvider_GetFloat_mA8E0D1CED4E7E014C8711493F66DCC2202A5295E (void);
+// 0x00000048 System.String VoxelBusters.CoreLibrary.Helpers.DefaultSaveServiceProvider::GetString(System.String,System.String)
+extern void DefaultSaveServiceProvider_GetString_m21A7A025D91AC4947DA669B14AF5F3167745CE1B (void);
+// 0x00000049 System.String[] VoxelBusters.CoreLibrary.Helpers.DefaultSaveServiceProvider::GetStringArray(System.String,System.String[])
+extern void DefaultSaveServiceProvider_GetStringArray_m77D226C2F506FEE0DC7A7B0338E71670DDD689E0 (void);
+// 0x0000004A System.Void VoxelBusters.CoreLibrary.Helpers.DefaultSaveServiceProvider::SetInt(System.String,System.Int32)
+extern void DefaultSaveServiceProvider_SetInt_m5C1880898E36A871DABE8544ACD2BAF3554E6F8C (void);
+// 0x0000004B System.Void VoxelBusters.CoreLibrary.Helpers.DefaultSaveServiceProvider::SetFloat(System.String,System.Single)
+extern void DefaultSaveServiceProvider_SetFloat_mEC1355F971F1EA0A4438852E7BE4F423A72853B7 (void);
+// 0x0000004C System.Void VoxelBusters.CoreLibrary.Helpers.DefaultSaveServiceProvider::SetString(System.String,System.String)
+extern void DefaultSaveServiceProvider_SetString_m592BA0327DB844BA23C2847E4B1504733080F8D6 (void);
+// 0x0000004D System.Void VoxelBusters.CoreLibrary.Helpers.DefaultSaveServiceProvider::SetStringArray(System.String,System.String[])
+extern void DefaultSaveServiceProvider_SetStringArray_mB10174D58AD2024C7E246B7AF7A3990611181674 (void);
+// 0x0000004E System.Void VoxelBusters.CoreLibrary.Helpers.DefaultSaveServiceProvider::RemoveKey(System.String)
+extern void DefaultSaveServiceProvider_RemoveKey_mF0D3084F31FD665B3B97A727C7F8EF3BA2915B42 (void);
+// 0x0000004F System.Void VoxelBusters.CoreLibrary.Helpers.DefaultSaveServiceProvider::Save()
+extern void DefaultSaveServiceProvider_Save_mA6A78532BF032EAB5D1EAEB4DEFDE2F60BFB12E5 (void);
+// 0x00000050 System.Void VoxelBusters.CoreLibrary.Helpers.DefaultSaveServiceProvider::.ctor()
+extern void DefaultSaveServiceProvider__ctor_m32E7440D02AD3BF5FFCD9FC1B8C1D2F7A79AEEEE (void);
+static Il2CppMethodPointer s_methodPointers[80] = 
+{
+	IAPManager_add_OnInitializeStoreComplete_m8566E6170BA77D98525A286F03A4042B79309701,
+	IAPManager_remove_OnInitializeStoreComplete_mE4223D69C5C970CCD79312DD610BAFFCC0625C13,
+	IAPManager_add_OnTransactionStateChange_m13C08A2543D68D06CADCF1864028E3C8E8B03A27,
+	IAPManager_remove_OnTransactionStateChange_m51237A28CFD460C9B41CDC197969D647A65D6BF2,
+	IAPManager_add_OnRestorePurchasesComplete_mC99C6AE95148E891C7F86AACDD04E6127426184E,
+	IAPManager_remove_OnRestorePurchasesComplete_mFE8E0BAE1887A14C0C694546577AE26E20C89868,
+	IAPManager__cctor_mE473901BAAA64C9EC1F90DBAA4197D4A4FD04CDB,
+	IAPManager_SetDirty_m4477F321EFD28EC47BAF6437905D344CC59CD35A,
+	IAPManager_GetBillingProducts_m46C6445D765A3591A02DA3E12974F9025ECF907A,
+	IAPManager_BuyProduct_m897AA1CAA4B064BA446D57D68E267A8DF89AF0FE,
+	IAPManager_RestorePurchases_m0C466F548747DCCF150DC336EED857453B4BA3AC,
+	IAPManager_RegisterForCallbacks_m414AC8C06173AB3EE262EDDF909370FFF8B7D716,
+	IAPManager_InitializeStore_mCE7880F52D9B2D639CD384C689E5BCA9780715DC,
+	IAPManager_TryInitializeStore_mD9E9DB514B6942C85C12C420C707A74335C5C91E,
+	IAPManager_IsStoreAvailable_mE722A7D948939BAD894E24D00D76406E79FA9FBE,
+	IAPManager_HandleOnInitializeStore_mE11CAF82CE221893B9554F5B5F6155739E889199,
+	IAPManager_HandleOnTransactionStateChange_mD4F4635BA996C7BAA7EFF9BD898619343CA685A4,
+	IAPManager_HandleOnRestorePurchasesComplete_m148B7924ADD9F09FD97DFB4E1F7BD08006349918,
+	U3CU3Ec__DisplayClass20_0__ctor_m890A06695DF072867CB97BFC7E90DF926D35FFCB,
+	U3CU3Ec__DisplayClass20_0_U3CBuyProductU3Eb__0_mFB4CC8282C2ECF5AE557461078EA61BAE42976E6,
+	U3CU3Ec__DisplayClass21_0__ctor_m7125B064D5DEA4224DA4A6A3C1FAF8FC270FBEAE,
+	U3CU3Ec__DisplayClass21_0_U3CRestorePurchasesU3Eb__0_m1FC8C0CDB97F0459CE480ADD8A86661934BDEF17,
+	TMP_DatePicker_GetDropdownValue_mE592445FC696FA94BF888EB92F4930284B2EFFF6,
+	TMP_DatePicker_SelectDropdownValue_m60B68C245C93690D82A3DFFC41F848AD348A6E0B,
+	TMP_DatePicker_ConvertIntegerToStringNames_mD55BE7854881493CE5DF92091A9F6B8F77713802,
+	TMP_DatePicker_Awake_m4D7E0668AB452CF2175756C38C52BD2C3281B962,
+	TMP_DatePicker_Start_m7D0ABE716DD8F763D3A6F90BA734D9ED0A744041,
+	TMP_DatePicker_Show_m1DB771FD342DF2613E50C6BCEC9B3BA7F7013354,
+	TMP_DatePicker_ConfigureYearDropdown_m3083F8327379E054C3E00BCA32D656015E94167D,
+	TMP_DatePicker_ConfigureMonthDropdown_m2ED554ADB7ECA11123B02622D339758CC7FEA8F3,
+	TMP_DatePicker_ConfigureDayDropdown_m5276EF7612FC0CCCFC72442862EFBA68D9A1B487,
+	TMP_DatePicker_ConfigureHourDropdown_mFA6E23395B65CB37349125E039EF071B97FAE228,
+	TMP_DatePicker_ConfigureMinuteDropdown_m2D67767060B0CA133668459C04307FFF3AB565E1,
+	TMP_DatePicker_OnSubmit_m3DD65457BD6549A3EF11B38565F4E0E19CEE63B7,
+	TMP_DatePicker_OnDismiss_mA55946466EE3C7A11A045423955F4C37A302A13C,
+	TMP_DatePicker_OnDropdownValueChange_mC259CA5EBC20677EDAF5A91424351D4CB76B4594,
+	TMP_DatePicker__ctor_m7C2F85916F1C438365DBC41E810B2B19AA53259D,
+	TMP_DatePickerInputField_get_Kind_m8C4D88ACF5F2BA949A442F472CC1331B9EB0170F,
+	TMP_DatePickerInputField_set_Kind_m8163BDCA3CAA8156EFC1DB2BCD9A60461F5BB166,
+	TMP_DatePickerInputField_get_Mode_mCA25C98E486545C4E3622207C6CD46365AE9AD2C,
+	TMP_DatePickerInputField_set_Mode_mBB736C745D569D10B14F08347BC9B58A7AFB6123,
+	TMP_DatePickerInputField_get_DisplayFormat_m193E573E92388EFD59B30F261B77784C9B10859F,
+	TMP_DatePickerInputField_set_DisplayFormat_m63EAE6C9300BF2E53568E494C178ABE6829FEFEA,
+	TMP_DatePickerInputField_get_MinimumDate_mF8E17EF6D7A29B14E22ED7077C0B4102CF019D3B,
+	TMP_DatePickerInputField_set_MinimumDate_mBF4C380D884980F3B8F67DC1739D68CBAF77390A,
+	TMP_DatePickerInputField_get_MaximumDate_m76C5078A463A39640025546E3F126E727771BBFD,
+	TMP_DatePickerInputField_set_MaximumDate_m6805C49D4D3256D71340363C3CCA8DD260F3DED6,
+	TMP_DatePickerInputField_get_InitialDate_m23ADC7D9B47354B1EAE05C73D8D7D0B47FA22262,
+	TMP_DatePickerInputField_set_InitialDate_mDCA02B4A02F5B2FF07C191FD6D959BE8FF5F6666,
+	TMP_DatePickerInputField_get_Date_mB3FBD6644D00465B7462012C1951C5DABC66F159,
+	TMP_DatePickerInputField_set_Date_m994FD77C47E9C90DEBF52BA49E856C8B20F5A7EB,
+	TMP_DatePickerInputField_get_OnValueChange_m94955FDF436254680F763924FF351D2403C79D91,
+	TMP_DatePickerInputField_Awake_m391B0BF21B69E68DAAC0CA1E689A294D63FCD7EB,
+	TMP_DatePickerInputField_Show_m8F00385FBB7EBD0B173AB549C4B6D3EE0EB5727C,
+	TMP_DatePickerInputField_SetText_m0BE23BA1943A454B0D514022C87DECAC476B06B6,
+	TMP_DatePickerInputField_OnPointerClick_m24198F27990C0903865428656EB888ADE224FD86,
+	TMP_DatePickerInputField_OnSubmit_m6063EC94D6B16A29CA991CFEF45FD9B1133EEA6B,
+	TMP_DatePickerInputField_OnCancel_m5984DE44C2BF99A9F228413EB5498D062EA449B6,
+	TMP_DatePickerInputField_OnDatePickerClose_m0D23A9574406FCF0D1F161BAFD38758E2ED1DA54,
+	TMP_DatePickerInputField_OnDatePickerValueChange_m17838C561C92DF3027E6A0A0DDB73975D56B129B,
+	TMP_DatePickerInputField__ctor_m41FADF3A30BC09AB57219DC0B1A64D8169D14585,
+	DefaultJsonServiceProvider_OnLoad_m56925A274AACF83490EFEFAB9A03A022D3C5C728,
+	DefaultJsonServiceProvider_ToJson_mB6D36CE7C8FE6B10922D177F568046BBEED44D77,
+	DefaultJsonServiceProvider_FromJson_m04BF8C518BCC46075F70BDFFD0176A163BEACFD9,
+	DefaultJsonServiceProvider__ctor_m463CBA91C7CD32D623D0D35483C3BFF2FB6849CA,
+	DefaultLocalisationServiceProvider_OnLoad_mAB797E0B6A42544B2A4866F8895D72CF195A913F,
+	DefaultLocalisationServiceProvider_GetLocalisedString_mA4F8360EC8806F2F6FFE42C1E0C7ABE3A4C823A0,
+	DefaultLocalisationServiceProvider__ctor_mF89D0E030F10C5AB9136A151C96DAB3573B73801,
+	DefaultSaveServiceProvider_OnLoad_m75B1E701587FE5359BB1372A8B1C825F5CACFE17,
+	DefaultSaveServiceProvider_GetInt_m35B8C1A3003C100C2AC1B75261D24F8240F084CB,
+	DefaultSaveServiceProvider_GetFloat_mA8E0D1CED4E7E014C8711493F66DCC2202A5295E,
+	DefaultSaveServiceProvider_GetString_m21A7A025D91AC4947DA669B14AF5F3167745CE1B,
+	DefaultSaveServiceProvider_GetStringArray_m77D226C2F506FEE0DC7A7B0338E71670DDD689E0,
+	DefaultSaveServiceProvider_SetInt_m5C1880898E36A871DABE8544ACD2BAF3554E6F8C,
+	DefaultSaveServiceProvider_SetFloat_mEC1355F971F1EA0A4438852E7BE4F423A72853B7,
+	DefaultSaveServiceProvider_SetString_m592BA0327DB844BA23C2847E4B1504733080F8D6,
+	DefaultSaveServiceProvider_SetStringArray_mB10174D58AD2024C7E246B7AF7A3990611181674,
+	DefaultSaveServiceProvider_RemoveKey_mF0D3084F31FD665B3B97A727C7F8EF3BA2915B42,
+	DefaultSaveServiceProvider_Save_mA6A78532BF032EAB5D1EAEB4DEFDE2F60BFB12E5,
+	DefaultSaveServiceProvider__ctor_m32E7440D02AD3BF5FFCD9FC1B8C1D2F7A79AEEEE,
+};
+static const int32_t s_InvokerIndices[80] = 
+{
+	7053,
+	7053,
+	7053,
+	7053,
+	7053,
+	7053,
+	7175,
+	7175,
+	7053,
+	5971,
+	6487,
+	7175,
+	7175,
+	6628,
+	7129,
+	6487,
+	7053,
+	6487,
+	4739,
+	2223,
+	4739,
+	2223,
+	6728,
+	6482,
+	5782,
+	4739,
+	4739,
+	4739,
+	4739,
+	4739,
+	2028,
+	4739,
+	4739,
+	4739,
+	4739,
+	3861,
+	4739,
+	4602,
+	3839,
+	4602,
+	3839,
+	4626,
+	3861,
+	4459,
+	3690,
+	4459,
+	3690,
+	4459,
+	3690,
+	4459,
+	3690,
+	4626,
+	4739,
+	4739,
+	3861,
+	3861,
+	3861,
+	3861,
+	3861,
+	3690,
+	4739,
+	7175,
+	3426,
+	3426,
+	4739,
+	7175,
+	1770,
+	4739,
+	7175,
+	1617,
+	1790,
+	1770,
+	1770,
+	2219,
+	2227,
+	2223,
+	2223,
+	3861,
+	4739,
+	4739,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule = 
+{
+	"Assembly-CSharp-firstpass.dll",
+	80,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

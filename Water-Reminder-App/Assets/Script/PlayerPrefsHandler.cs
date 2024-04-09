@@ -124,5 +124,40 @@ public static class PlayerPrefsHandler
             PlayerPrefs.SetString(lastSavedDate,value);
         }
     }
-
+    private static string wakeupHour = "WakeupHour";
+    public static int WakeupHour
+    {
+        get
+        {
+           return PlayerPrefs.GetInt(wakeupHour);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(wakeupHour, value);
+        }
+    }
+    private static string sleepHour = "SleepHour";
+    public static int SleepHour
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(sleepHour);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(sleepHour, value);
+        }
+    }
+    private static string notificationInterval = "NotificationInterval";
+    public static int NotificationInterval
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(notificationInterval);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(notificationInterval, value);
+        }
+    }
 }

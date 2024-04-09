@@ -1,0 +1,170 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+extern const RuntimeMethod* IosNativePluginsUtility_HandleLoadImageCallbackInternal_m04B7B88ED3F5AA154A48DE5D65126D368E9179A4_RuntimeMethod_var;
+
+
+
+// 0x00000001 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativeObjectRef::.ctor(System.IntPtr,System.Boolean)
+extern void IosNativeObjectRef__ctor_m9F74C7AA80CB223096DBD50BAB91784AA92B1F02 (void);
+// 0x00000002 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativeObjectRef::RetainInternal(System.IntPtr)
+extern void IosNativeObjectRef_RetainInternal_m33A746A1AE752429F1E7CAFB8972BA46452E3EFB (void);
+// 0x00000003 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativeObjectRef::ReleaseInternal(System.IntPtr)
+extern void IosNativeObjectRef_ReleaseInternal_m07D634336F140EEF9693B26BE97F80E3CDF38BBD (void);
+// 0x00000004 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::NPUtilityRegisterCallbacks(VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility/LoadImageNativeCallback)
+extern void IosNativePluginsUtility_NPUtilityRegisterCallbacks_m088B4DAB91DBAB4FA2E8007FD14A0817A05F70DE (void);
+// 0x00000005 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::NPUtilityLoadImage(System.IntPtr,System.IntPtr)
+extern void IosNativePluginsUtility_NPUtilityLoadImage_mEFB44D15A70DBEF57133794BCFD129585B393141 (void);
+// 0x00000006 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::NPUtilityTakeScreenshot(System.IntPtr)
+extern void IosNativePluginsUtility_NPUtilityTakeScreenshot_m7657534794333BA32E0D14E103CDC73912939FEF (void);
+// 0x00000007 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::NPUtilityRetainObject(System.IntPtr)
+extern void IosNativePluginsUtility_NPUtilityRetainObject_mF6AD4BC80A6A755EC4D121F2A0EB2D90F6465295 (void);
+// 0x00000008 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::NPUtilityReleaseObject(System.IntPtr)
+extern void IosNativePluginsUtility_NPUtilityReleaseObject_mD71FD4E8FFB6E0F8A1E53A9E3B8EF44A8D32751A (void);
+// 0x00000009 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::NPUtilityOpenSettings()
+extern void IosNativePluginsUtility_NPUtilityOpenSettings_m9D199712D3A9584511B976E1CF67E5A8B964CA19 (void);
+// 0x0000000A System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::NPUtilityFreeCPointerObject(System.IntPtr)
+extern void IosNativePluginsUtility_NPUtilityFreeCPointerObject_m962261BDEE020E347D134D45DE90B7BD42BAA355 (void);
+// 0x0000000B System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::NPUtilitySetLastTouchPosition(System.Single,System.Single)
+extern void IosNativePluginsUtility_NPUtilitySetLastTouchPosition_m895744A619FA38DEC3B5383764D210821C3BCA21 (void);
+// 0x0000000C System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::.cctor()
+extern void IosNativePluginsUtility__cctor_mA1490EA64B6CA4EF95F27D1A063410E4A41DDDC3 (void);
+// 0x0000000D System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::RetainNativeObject(System.IntPtr)
+extern void IosNativePluginsUtility_RetainNativeObject_m249A62DCCF686E99E40C8C34CFC0A79C6C466DB7 (void);
+// 0x0000000E System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::ReleaseNativeObject(System.IntPtr)
+extern void IosNativePluginsUtility_ReleaseNativeObject_mC2FA52769993227DD6AE13C3333823967409BE14 (void);
+// 0x0000000F System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::FreeCPointerObject(System.IntPtr)
+extern void IosNativePluginsUtility_FreeCPointerObject_m1404431809BE6714184DD2E3EEFEEC4588B32E6D (void);
+// 0x00000010 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::LoadImage(System.IntPtr,VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility/LoadImageCallback)
+extern void IosNativePluginsUtility_LoadImage_mBFE1F9CAE8895432B4A6C54FE765B2BE15DFDA6A (void);
+// 0x00000011 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::TakeScreenshot(VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility/LoadImageCallback)
+extern void IosNativePluginsUtility_TakeScreenshot_m91FD1B3A4E3508B8B5400979501E8082245DCE83 (void);
+// 0x00000012 System.DateTime VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::ParseDateTimeStringInUTCFormat(System.String)
+extern void IosNativePluginsUtility_ParseDateTimeStringInUTCFormat_mA2C43F02F9802CDAC4332D8F1BB3FD7DA0F21187 (void);
+// 0x00000013 System.String VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::ToZuluFormatString(System.DateTime)
+extern void IosNativePluginsUtility_ToZuluFormatString_m9F9D8504AD16D7A7D5ECB21313D2A2FC566BD054 (void);
+// 0x00000014 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::OpenApplicationSettings()
+extern void IosNativePluginsUtility_OpenApplicationSettings_m177477BB627197D7C760F689ECC729A1981C86F6 (void);
+// 0x00000015 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::SetLastTouchPosition(UnityEngine.Vector2)
+extern void IosNativePluginsUtility_SetLastTouchPosition_m843C993A8610297A5FB073ACAE09267E58D932ED (void);
+// 0x00000016 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::SetLastTouchPosition()
+extern void IosNativePluginsUtility_SetLastTouchPosition_m8148BF9D13269FF3B07F4FF6BA093DD140AF1E22 (void);
+// 0x00000017 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility::HandleLoadImageCallbackInternal(System.IntPtr,System.Int32,System.IntPtr)
+extern void IosNativePluginsUtility_HandleLoadImageCallbackInternal_m04B7B88ED3F5AA154A48DE5D65126D368E9179A4 (void);
+// 0x00000018 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility/LoadImageCallback::.ctor(System.Object,System.IntPtr)
+extern void LoadImageCallback__ctor_mD4D3350B709D582D34D388DDB3896529BE6078F9 (void);
+// 0x00000019 System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility/LoadImageCallback::Invoke(System.Byte[],VoxelBusters.CoreLibrary.Error)
+extern void LoadImageCallback_Invoke_m55EC2909262B50E0C820AEDF34036AD24A89BE0F (void);
+// 0x0000001A System.IAsyncResult VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility/LoadImageCallback::BeginInvoke(System.Byte[],VoxelBusters.CoreLibrary.Error,System.AsyncCallback,System.Object)
+extern void LoadImageCallback_BeginInvoke_mAB953FF8070B8385B4AC1D1CDBAC7DDFF311D7FB (void);
+// 0x0000001B System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility/LoadImageCallback::EndInvoke(System.IAsyncResult)
+extern void LoadImageCallback_EndInvoke_mC6E9F2F90C0B4B39377DD84E341A957BEF389C11 (void);
+// 0x0000001C System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility/LoadImageNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void LoadImageNativeCallback__ctor_m6E79BBBACC3CB092EADD79DF8860688AF499A7A0 (void);
+// 0x0000001D System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility/LoadImageNativeCallback::Invoke(System.IntPtr,System.Int32,System.IntPtr)
+extern void LoadImageNativeCallback_Invoke_mB72597C6178B8640700C78849B70527263D68C39 (void);
+// 0x0000001E System.IAsyncResult VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility/LoadImageNativeCallback::BeginInvoke(System.IntPtr,System.Int32,System.IntPtr,System.AsyncCallback,System.Object)
+extern void LoadImageNativeCallback_BeginInvoke_m04F27D130927BB6BFDACF8C1E4AE77A714E8B0FC (void);
+// 0x0000001F System.Void VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativePluginsUtility/LoadImageNativeCallback::EndInvoke(System.IAsyncResult)
+extern void LoadImageNativeCallback_EndInvoke_mA6DB14CCB0B39C817A04533B43D8DFA8BE9EA9E9 (void);
+static Il2CppMethodPointer s_methodPointers[31] = 
+{
+	IosNativeObjectRef__ctor_m9F74C7AA80CB223096DBD50BAB91784AA92B1F02,
+	IosNativeObjectRef_RetainInternal_m33A746A1AE752429F1E7CAFB8972BA46452E3EFB,
+	IosNativeObjectRef_ReleaseInternal_m07D634336F140EEF9693B26BE97F80E3CDF38BBD,
+	IosNativePluginsUtility_NPUtilityRegisterCallbacks_m088B4DAB91DBAB4FA2E8007FD14A0817A05F70DE,
+	IosNativePluginsUtility_NPUtilityLoadImage_mEFB44D15A70DBEF57133794BCFD129585B393141,
+	IosNativePluginsUtility_NPUtilityTakeScreenshot_m7657534794333BA32E0D14E103CDC73912939FEF,
+	IosNativePluginsUtility_NPUtilityRetainObject_mF6AD4BC80A6A755EC4D121F2A0EB2D90F6465295,
+	IosNativePluginsUtility_NPUtilityReleaseObject_mD71FD4E8FFB6E0F8A1E53A9E3B8EF44A8D32751A,
+	IosNativePluginsUtility_NPUtilityOpenSettings_m9D199712D3A9584511B976E1CF67E5A8B964CA19,
+	IosNativePluginsUtility_NPUtilityFreeCPointerObject_m962261BDEE020E347D134D45DE90B7BD42BAA355,
+	IosNativePluginsUtility_NPUtilitySetLastTouchPosition_m895744A619FA38DEC3B5383764D210821C3BCA21,
+	IosNativePluginsUtility__cctor_mA1490EA64B6CA4EF95F27D1A063410E4A41DDDC3,
+	IosNativePluginsUtility_RetainNativeObject_m249A62DCCF686E99E40C8C34CFC0A79C6C466DB7,
+	IosNativePluginsUtility_ReleaseNativeObject_mC2FA52769993227DD6AE13C3333823967409BE14,
+	IosNativePluginsUtility_FreeCPointerObject_m1404431809BE6714184DD2E3EEFEEC4588B32E6D,
+	IosNativePluginsUtility_LoadImage_mBFE1F9CAE8895432B4A6C54FE765B2BE15DFDA6A,
+	IosNativePluginsUtility_TakeScreenshot_m91FD1B3A4E3508B8B5400979501E8082245DCE83,
+	IosNativePluginsUtility_ParseDateTimeStringInUTCFormat_mA2C43F02F9802CDAC4332D8F1BB3FD7DA0F21187,
+	IosNativePluginsUtility_ToZuluFormatString_m9F9D8504AD16D7A7D5ECB21313D2A2FC566BD054,
+	IosNativePluginsUtility_OpenApplicationSettings_m177477BB627197D7C760F689ECC729A1981C86F6,
+	IosNativePluginsUtility_SetLastTouchPosition_m843C993A8610297A5FB073ACAE09267E58D932ED,
+	IosNativePluginsUtility_SetLastTouchPosition_m8148BF9D13269FF3B07F4FF6BA093DD140AF1E22,
+	IosNativePluginsUtility_HandleLoadImageCallbackInternal_m04B7B88ED3F5AA154A48DE5D65126D368E9179A4,
+	LoadImageCallback__ctor_mD4D3350B709D582D34D388DDB3896529BE6078F9,
+	LoadImageCallback_Invoke_m55EC2909262B50E0C820AEDF34036AD24A89BE0F,
+	LoadImageCallback_BeginInvoke_mAB953FF8070B8385B4AC1D1CDBAC7DDFF311D7FB,
+	LoadImageCallback_EndInvoke_mC6E9F2F90C0B4B39377DD84E341A957BEF389C11,
+	LoadImageNativeCallback__ctor_m6E79BBBACC3CB092EADD79DF8860688AF499A7A0,
+	LoadImageNativeCallback_Invoke_mB72597C6178B8640700C78849B70527263D68C39,
+	LoadImageNativeCallback_BeginInvoke_m04F27D130927BB6BFDACF8C1E4AE77A714E8B0FC,
+	LoadImageNativeCallback_EndInvoke_mA6DB14CCB0B39C817A04533B43D8DFA8BE9EA9E9,
+};
+static const int32_t s_InvokerIndices[31] = 
+{
+	2198,
+	3841,
+	3841,
+	7053,
+	6454,
+	7051,
+	7051,
+	7051,
+	7175,
+	7051,
+	6501,
+	7175,
+	7051,
+	7051,
+	7051,
+	6455,
+	7053,
+	6656,
+	6809,
+	7175,
+	7062,
+	7175,
+	5928,
+	2221,
+	2223,
+	788,
+	3861,
+	2221,
+	1246,
+	414,
+	3861,
+};
+static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[1] = 
+{
+	{ 0x06000017, 15,  (void**)&IosNativePluginsUtility_HandleLoadImageCallbackInternal_m04B7B88ED3F5AA154A48DE5D65126D368E9179A4_RuntimeMethod_var, 0 },
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_VoxelBusters_CoreLibrary_NativePlugins_iOSModule_CodeGenModule;
+const Il2CppCodeGenModule g_VoxelBusters_CoreLibrary_NativePlugins_iOSModule_CodeGenModule = 
+{
+	"VoxelBusters.CoreLibrary.NativePlugins.iOSModule.dll",
+	31,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	1,
+	s_reversePInvokeIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

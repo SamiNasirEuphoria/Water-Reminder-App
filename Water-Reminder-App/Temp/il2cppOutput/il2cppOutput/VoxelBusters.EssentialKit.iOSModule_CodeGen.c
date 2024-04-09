@@ -1,0 +1,3753 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+extern const RuntimeMethod* AchievementDescription_HandleLoadAchievementDescriptionsNativeCallback_m502F6BCBAC111DFCD78B7EE3D8AF5F38728538E8_RuntimeMethod_var;
+extern const RuntimeMethod* Achievement_HandleLoadAchievementsCallbackInternal_mCBD1CAC30BD451E773E76E9362898E88E2BB587E_RuntimeMethod_var;
+extern const RuntimeMethod* Achievement_HandleReportProgressCallbackInternal_mE714390B2F083331A49CDB043BF57674F84F13EA_RuntimeMethod_var;
+extern const RuntimeMethod* AddressBookInterface_HandleReadContactsCallbackInternal_mF89348C1C2235EEE87CA0DE614E1CA15EAEFDB7C_RuntimeMethod_var;
+extern const RuntimeMethod* AddressBookInterface_HandleRequestContactsAccessCallbackInternal_mC68A861D3014FAD19E317A9BDCA7ECED7FAFF572_RuntimeMethod_var;
+extern const RuntimeMethod* BillingServicesInterface_HandlePaymentStateChangeCallbackInternal_m841AEF90F9935AFDBCF86ACD457786A9EE24F45B_RuntimeMethod_var;
+extern const RuntimeMethod* BillingServicesInterface_HandleRequestForProductsCallbackInternal_m1505F702D6F8AA6E350004B6F392C5BDA93E17E2_RuntimeMethod_var;
+extern const RuntimeMethod* BillingServicesInterface_HandleRestorePurchasesCallbackInternal_mED170030D942FDA2CCF714A5D9CC94C1B5457EBD_RuntimeMethod_var;
+extern const RuntimeMethod* CloudServicesInterface_HandleSavedDataChangeNativeCallback_m0A0745F745EDEA2DCBDCA51004FFB9F3183DDEBC_RuntimeMethod_var;
+extern const RuntimeMethod* CloudServicesInterface_HandleUserChangeNativeCallback_m190142192112FAC1ED5F013185AFFFD19E0C1BEC_RuntimeMethod_var;
+extern const RuntimeMethod* DeepLinkServicesInterface_HandleCustomSchemeUrl_m65B78807114B0E19DB4DF867637657DC78C9005F_RuntimeMethod_var;
+extern const RuntimeMethod* DeepLinkServicesInterface_HandleUniversalLink_m62FDCC19EEA99A1D642182FBE23539AC16620C70_RuntimeMethod_var;
+extern const RuntimeMethod* Leaderboard_HandleLoadLeaderboardsNativeCallback_mA7B29842F0E1467654ACD4C7C99F6228363B3326_RuntimeMethod_var;
+extern const RuntimeMethod* Leaderboard_HandleLoadScoresNativeCallback_mF7130D740D784A61BD01D4769B46FF905D55468E_RuntimeMethod_var;
+extern const RuntimeMethod* LocalPlayer_HandleAuthChangeNativeCallback_mB67E04756D8D26E2CE10883808B39B401A3BE960_RuntimeMethod_var;
+extern const RuntimeMethod* MediaServicesInterface_HandlePickImageFromPhotoLibraryNativeCallback_mED7EE60AEFED3C8417AE612E78A29437BAB51FA3_RuntimeMethod_var;
+extern const RuntimeMethod* MediaServicesInterface_HandleRequestCameraAccessNativeCallback_m9B7F07C07F9E205570FB0C111C1D32BDB45BDAA4_RuntimeMethod_var;
+extern const RuntimeMethod* MediaServicesInterface_HandleRequestPhotoLibraryAccessNativeCallback_m7539F3AD6217D45FA2FEA1408994CC0A955D852B_RuntimeMethod_var;
+extern const RuntimeMethod* MediaServicesInterface_HandleSaveImageToAlbumNativeCallback_m6AD880AD39B5836F115D8E24DD2ADAEE39D821A7_RuntimeMethod_var;
+extern const RuntimeMethod* NativeAlertDialog_HandleAlertActionSelectCallbackInternal_m2CBD957C5AD2A0AF628824F8F2820DC448672C05_RuntimeMethod_var;
+extern const RuntimeMethod* NativeCallbackResponder_HandleLoadImageNativeCallback_mE3C35CEAF7DEAA5DFD2F9FC96A88FFD5C0E3D6FC_RuntimeMethod_var;
+extern const RuntimeMethod* NativeCallbackResponder_HandleLoadServerCredentialsNativeCallback_mDD58A7B6B4D00C98CC22E2EF76B68323B198A5FF_RuntimeMethod_var;
+extern const RuntimeMethod* NativeCallbackResponder_HandleViewClosedNativeCallback_m4F4835E469C78317A6B3AA0AB6509174B8070599_RuntimeMethod_var;
+extern const RuntimeMethod* NativeDatePicker_HandleDatePickerControllerCallbackInternal_m79EEAC25E61E9EED0E77DE5B6E967773538C39FB_RuntimeMethod_var;
+extern const RuntimeMethod* NativeMailComposer_HandleMailComposerClosedCallbackInternal_mD6682278CDA21C280FFF2D006BD142FCE4CEFAFB_RuntimeMethod_var;
+extern const RuntimeMethod* NativeMessageComposer_HandleMessageComposerClosedCallbackInternal_mD350A5B8910CFDECB28D2024F1BEAD637C14879A_RuntimeMethod_var;
+extern const RuntimeMethod* NativeShareSheet_HandleShareSheetClosedCallbackInternal_mBDCA2CFFA718B4FF737E1084CE6745F9923D501E_RuntimeMethod_var;
+extern const RuntimeMethod* NativeSocialShareComposer_HandleSocialShareComposerClosedCallbackInternal_mB32D2E49D308E868DAFDCB1CAC52C917FDE09485_RuntimeMethod_var;
+extern const RuntimeMethod* NativeWebView_HandleLoadFinishNativeCallback_m35BAC891099CD5DAE245C0B13470F3FAEA8A277B_RuntimeMethod_var;
+extern const RuntimeMethod* NativeWebView_HandleLoadStartNativeCallback_m1653467843D5FF4C76CDF5E06730F19760A58383_RuntimeMethod_var;
+extern const RuntimeMethod* NativeWebView_HandleOnHideNativeCallback_m0991C9B4558A69B0620C7AD44E8B8E830D82C16A_RuntimeMethod_var;
+extern const RuntimeMethod* NativeWebView_HandleOnShowNativeCallback_m4D9EBA005D5CE70CF06E2C87B907DD0CDDF44CDF_RuntimeMethod_var;
+extern const RuntimeMethod* NativeWebView_HandleRunJavaScriptNativeCallback_m215024C684D92D5898479EF047C53C1AA3D0E11C_RuntimeMethod_var;
+extern const RuntimeMethod* NativeWebView_HandleURLSchemeMatchFoundNativeCallback_mE32C28EE586AD7B0333504BA0D27E8BE246191B3_RuntimeMethod_var;
+extern const RuntimeMethod* NetworkServicesInterface_HandleHostReachabilityChangeNativeCallback_mA68D8241CDBF15720B063E9E53DE98355A7D3422_RuntimeMethod_var;
+extern const RuntimeMethod* NetworkServicesInterface_HandleInternetReachabilityChangeNativeCallback_m690E3CBE594FD3A928EEE2EFEFF80214B6A89CAD_RuntimeMethod_var;
+extern const RuntimeMethod* NotificationCenterInterface_HandleGetDeliveredNotificationsCallback_mC484B56AE83B671BE0614608FE914905828AC0DF_RuntimeMethod_var;
+extern const RuntimeMethod* NotificationCenterInterface_HandleGetScheduledNotificationsCallback_m639FE987836E63088B18C2CB2A730DC04D4DBA1F_RuntimeMethod_var;
+extern const RuntimeMethod* NotificationCenterInterface_HandleGetSettingsCallback_m3FF291499E564CFBD71653D2C60354ACB1172C67_RuntimeMethod_var;
+extern const RuntimeMethod* NotificationCenterInterface_HandleNotificationReceivedCallback_m638EE2EDFD00241808CBEE8B6013F05D5C9D183F_RuntimeMethod_var;
+extern const RuntimeMethod* NotificationCenterInterface_HandleRegisterForRemoteNotificationsCallback_m314EE2F4005A17969975581A6A2837F2D3B3BF67_RuntimeMethod_var;
+extern const RuntimeMethod* NotificationCenterInterface_HandleRequestAuthorizationCallback_m4308D218C567B29C8BFD86699552617CDE99F1FE_RuntimeMethod_var;
+extern const RuntimeMethod* NotificationCenterInterface_HandleScheduleNotificationCallback_mB5EE6AA98903B9D92B023ABA798538E12D75694A_RuntimeMethod_var;
+extern const RuntimeMethod* Player_HandleLoadPlayersNativeCallback_m74711BA3472C617A0D469D5CADDF5A51072D97EA_RuntimeMethod_var;
+extern const RuntimeMethod* Score_HandleReportScoreCallbackInternal_m36385F6E43FE7FF0E40BECDCB61F094D274C8809_RuntimeMethod_var;
+
+
+
+// 0x00000001 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void WebViewNativeCallback__ctor_mAD011038972E0E354FD25E446DD6B43EAD93717D (void);
+// 0x00000002 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewNativeCallback::Invoke(System.IntPtr,System.String)
+extern void WebViewNativeCallback_Invoke_mCB5DC5FBC2CAAF1C5F43A63D2E6F61670C6599C7 (void);
+// 0x00000003 System.IAsyncResult VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewNativeCallback::BeginInvoke(System.IntPtr,System.String,System.AsyncCallback,System.Object)
+extern void WebViewNativeCallback_BeginInvoke_mEAE47D8D72D340DCA3C2C636ED0CB693C49AEE02 (void);
+// 0x00000004 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewNativeCallback::EndInvoke(System.IAsyncResult)
+extern void WebViewNativeCallback_EndInvoke_mDB1BE750F63C813D2B88508B3BCD6829FEA08AC9 (void);
+// 0x00000005 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewRunJavaScriptNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void WebViewRunJavaScriptNativeCallback__ctor_m1BB91FB1C93AD9DE279A52FB250D93A6CDE5C978 (void);
+// 0x00000006 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewRunJavaScriptNativeCallback::Invoke(System.IntPtr,System.String,System.String,System.IntPtr)
+extern void WebViewRunJavaScriptNativeCallback_Invoke_m83550751446AFCF0D02352DFC0E92C468215301E (void);
+// 0x00000007 System.IAsyncResult VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewRunJavaScriptNativeCallback::BeginInvoke(System.IntPtr,System.String,System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void WebViewRunJavaScriptNativeCallback_BeginInvoke_m9AD8E01AC2801EA7F9543B345288E94C816C9FB1 (void);
+// 0x00000008 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewRunJavaScriptNativeCallback::EndInvoke(System.IAsyncResult)
+extern void WebViewRunJavaScriptNativeCallback_EndInvoke_m0F1B637ADBD72D525DF8FC9E17B12DDEBB29B0DD (void);
+// 0x00000009 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewURLSchemeMatchFoundNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void WebViewURLSchemeMatchFoundNativeCallback__ctor_mD7EE0EDD2DBE4454DB6EA07CF3B40BECD8E23B57 (void);
+// 0x0000000A System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewURLSchemeMatchFoundNativeCallback::Invoke(System.IntPtr,System.String)
+extern void WebViewURLSchemeMatchFoundNativeCallback_Invoke_mE539579BDC9782D9E1FFBAD0D55ABD7DCDFDE351 (void);
+// 0x0000000B System.IAsyncResult VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewURLSchemeMatchFoundNativeCallback::BeginInvoke(System.IntPtr,System.String,System.AsyncCallback,System.Object)
+extern void WebViewURLSchemeMatchFoundNativeCallback_BeginInvoke_mABF12233DA87E523101A62956BB6B9E755EF6E8A (void);
+// 0x0000000C System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewURLSchemeMatchFoundNativeCallback::EndInvoke(System.IAsyncResult)
+extern void WebViewURLSchemeMatchFoundNativeCallback_EndInvoke_mF19309AD3847284D066B6C4025FE0C4FCB08817D (void);
+// 0x0000000D System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::.cctor()
+extern void NativeWebView__cctor_m320CAA201AA45CECADEC0039C1167B6FABEA7CC1 (void);
+// 0x0000000E System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::.ctor()
+extern void NativeWebView__ctor_mB79D48AA7B0CDD79C0210FACEBBAB2361A414F66 (void);
+// 0x0000000F System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::Finalize()
+extern void NativeWebView_Finalize_mC00979C8E9A2387B7BD02F68BD18EC90761A42BB (void);
+// 0x00000010 System.String VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::GetURL()
+extern void NativeWebView_GetURL_m3011BF103970D9FE4CD57C6A393E75A287956C69 (void);
+// 0x00000011 System.String VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::GetTitle()
+extern void NativeWebView_GetTitle_m13293C2A13EF84C4D1DB8AF4854F1AB18701F9F7 (void);
+// 0x00000012 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::SetFrame(UnityEngine.Rect)
+extern void NativeWebView_SetFrame_m888F5A6E0A079DF06DD57ADC454E379CC2656481 (void);
+// 0x00000013 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::SetStyle(VoxelBusters.EssentialKit.WebViewStyle)
+extern void NativeWebView_SetStyle_m347B1BCCE90E6D7E38ED438B233BBD60D058E8D6 (void);
+// 0x00000014 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::SetScalesPageToFit(System.Boolean)
+extern void NativeWebView_SetScalesPageToFit_mA911FB85B8F51750B74F7836FCC65824BEF3AFD4 (void);
+// 0x00000015 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::SetCanBounce(System.Boolean)
+extern void NativeWebView_SetCanBounce_mC7A9A70DBA21E76601D2B46D9EB6B6FCF393CB28 (void);
+// 0x00000016 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::SetBackgroundColor(UnityEngine.Color)
+extern void NativeWebView_SetBackgroundColor_m0F1EE73373E1730A76B32F27A408CE07432714E1 (void);
+// 0x00000017 System.Double VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::GetProgress()
+extern void NativeWebView_GetProgress_mD30F8C3672BD076D37AF207CFD89740657B1AF7B (void);
+// 0x00000018 System.Boolean VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::GetIsLoading()
+extern void NativeWebView_GetIsLoading_mA0CB148EBBD77217196723C50C3096604EE1EFF9 (void);
+// 0x00000019 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::SetJavaScriptEnabled(System.Boolean)
+extern void NativeWebView_SetJavaScriptEnabled_m977448EE64BC32C48D3DA2CF1CC97CF491E8AF81 (void);
+// 0x0000001A System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::Show()
+extern void NativeWebView_Show_mA5FB4CE43DD11FB19CB9E1B8C819C2AD02A76A7F (void);
+// 0x0000001B System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::Hide()
+extern void NativeWebView_Hide_m98EB120B61DF843E23BDB7D622499BB5DF9C1EB5 (void);
+// 0x0000001C System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::LoadURL(System.String)
+extern void NativeWebView_LoadURL_m4C024DBC5AB3649699FCE5D99CEDDFB12D85481E (void);
+// 0x0000001D System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::LoadHtmlString(System.String,System.String)
+extern void NativeWebView_LoadHtmlString_m14BE135352BB22655CE45FE5F674A71BE39132A0 (void);
+// 0x0000001E System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::LoadData(System.Byte[],System.String,System.String,System.String)
+extern void NativeWebView_LoadData_m562D61CFF862B89F55BC0343905F4406209592B9 (void);
+// 0x0000001F System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::Reload()
+extern void NativeWebView_Reload_mF083912902114A45F7C551061CB0299128083C03 (void);
+// 0x00000020 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::StopLoading()
+extern void NativeWebView_StopLoading_m10F771C4DEB313A65066226FB4594B190CAB84DF (void);
+// 0x00000021 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::RunJavaScript(System.String,VoxelBusters.EssentialKit.WebViewCore.RunJavaScriptInternalCallback)
+extern void NativeWebView_RunJavaScript_m1458C67AA5BBCC570F1A8DEE6A536CA4C41326D5 (void);
+// 0x00000022 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::AddURLScheme(System.String)
+extern void NativeWebView_AddURLScheme_mA88451FA45E17BCEDC628F3ADFD3B7E4A6251A48 (void);
+// 0x00000023 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::ClearCache()
+extern void NativeWebView_ClearCache_m15106024585FBCB22513C9661B628AE7F11247A6 (void);
+// 0x00000024 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::Dispose(System.Boolean)
+extern void NativeWebView_Dispose_m070D8F68D87C3245900670DEB99D50DB1A332AD9 (void);
+// 0x00000025 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::HandleOnShowNativeCallback(System.IntPtr,System.String)
+extern void NativeWebView_HandleOnShowNativeCallback_m4D9EBA005D5CE70CF06E2C87B907DD0CDDF44CDF (void);
+// 0x00000026 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::HandleOnHideNativeCallback(System.IntPtr,System.String)
+extern void NativeWebView_HandleOnHideNativeCallback_m0991C9B4558A69B0620C7AD44E8B8E830D82C16A (void);
+// 0x00000027 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::HandleLoadStartNativeCallback(System.IntPtr,System.String)
+extern void NativeWebView_HandleLoadStartNativeCallback_m1653467843D5FF4C76CDF5E06730F19760A58383 (void);
+// 0x00000028 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::HandleLoadFinishNativeCallback(System.IntPtr,System.String)
+extern void NativeWebView_HandleLoadFinishNativeCallback_m35BAC891099CD5DAE245C0B13470F3FAEA8A277B (void);
+// 0x00000029 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::HandleRunJavaScriptNativeCallback(System.IntPtr,System.String,System.String,System.IntPtr)
+extern void NativeWebView_HandleRunJavaScriptNativeCallback_m215024C684D92D5898479EF047C53C1AA3D0E11C (void);
+// 0x0000002A System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.NativeWebView::HandleURLSchemeMatchFoundNativeCallback(System.IntPtr,System.String)
+extern void NativeWebView_HandleURLSchemeMatchFoundNativeCallback_mE32C28EE586AD7B0333504BA0D27E8BE246191B3 (void);
+// 0x0000002B System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewRegisterCallbacks(VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewNativeCallback,VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewNativeCallback,VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewNativeCallback,VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewNativeCallback,VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewRunJavaScriptNativeCallback,VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewURLSchemeMatchFoundNativeCallback)
+extern void WebViewBinding_NPWebViewRegisterCallbacks_m99BA9D0499F322CD83139CE014A05EF9CC7350D5 (void);
+// 0x0000002C System.IntPtr VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewCreate()
+extern void WebViewBinding_NPWebViewCreate_mB4C9DC68BA5B83289CE25F177AE7151A828AB714 (void);
+// 0x0000002D System.String VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewGetURL(System.IntPtr)
+extern void WebViewBinding_NPWebViewGetURL_mCCD6CFB0A001F745E96D6B0E47079E41F1223F24 (void);
+// 0x0000002E System.String VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewGetTitle(System.IntPtr)
+extern void WebViewBinding_NPWebViewGetTitle_mE02EEE4066A984C9BADE3B787F298CC0A41DCC64 (void);
+// 0x0000002F VoxelBusters.CoreLibrary.NativePlugins.UnityRect VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewGetNormalizedRect(System.IntPtr)
+extern void WebViewBinding_NPWebViewGetNormalizedRect_mBF06DD7088F107289045F687C3E7C69B9A0911C2 (void);
+// 0x00000030 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewSetNormalizedRect(System.IntPtr,VoxelBusters.CoreLibrary.NativePlugins.UnityRect)
+extern void WebViewBinding_NPWebViewSetNormalizedRect_mD4CD28F4AEEE93E462B6C279623E613B457ED35A (void);
+// 0x00000031 VoxelBusters.EssentialKit.WebViewStyle VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewGetStyle(System.IntPtr)
+extern void WebViewBinding_NPWebViewGetStyle_m8C42073BE3D2E0EADCC58CA21EFF20F27E795A94 (void);
+// 0x00000032 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewSetStyle(System.IntPtr,VoxelBusters.EssentialKit.WebViewStyle)
+extern void WebViewBinding_NPWebViewSetStyle_m5C0AC0C235A41BFCB9AAE1F9C5DFE905C61FFD33 (void);
+// 0x00000033 System.Boolean VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewGetScalesPageToFit(System.IntPtr)
+extern void WebViewBinding_NPWebViewGetScalesPageToFit_mB8A2774BD7A2EDC4505AFA9034F116C52C9D5431 (void);
+// 0x00000034 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewSetScalesPageToFit(System.IntPtr,System.Boolean)
+extern void WebViewBinding_NPWebViewSetScalesPageToFit_m1E9D399707E6CC83C4E116FCB9AFE2677D810900 (void);
+// 0x00000035 System.Boolean VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewGetCanBounce(System.IntPtr)
+extern void WebViewBinding_NPWebViewGetCanBounce_m3D838040C4D2D00298D1CE02E8D9379255376924 (void);
+// 0x00000036 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewSetCanBounce(System.IntPtr,System.Boolean)
+extern void WebViewBinding_NPWebViewSetCanBounce_m2792286D54C3B34E5399B5A93D117E60C0CCBEA4 (void);
+// 0x00000037 VoxelBusters.CoreLibrary.NativePlugins.UnityColor VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewGetBackgroundColor(System.IntPtr)
+extern void WebViewBinding_NPWebViewGetBackgroundColor_mBCB9167D92BB374783C0C6709184455355665FDC (void);
+// 0x00000038 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewSetBackgroundColor(System.IntPtr,VoxelBusters.CoreLibrary.NativePlugins.UnityColor)
+extern void WebViewBinding_NPWebViewSetBackgroundColor_mFF3B10A48E3376EAE9B77452BBB75D356CD23625 (void);
+// 0x00000039 System.Double VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewGetProgress(System.IntPtr)
+extern void WebViewBinding_NPWebViewGetProgress_m2EA021316E9C8F378A6D4200199057BC442FD487 (void);
+// 0x0000003A System.Boolean VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewGetIsLoading(System.IntPtr)
+extern void WebViewBinding_NPWebViewGetIsLoading_mF87795EF48974C094BF11977E225AB3D0B617BBA (void);
+// 0x0000003B System.Boolean VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewGetJavaScriptEnabled(System.IntPtr)
+extern void WebViewBinding_NPWebViewGetJavaScriptEnabled_m56951F99336899821CC9D6E52C087C6B12597F35 (void);
+// 0x0000003C System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewSetJavaScriptEnabled(System.IntPtr,System.Boolean)
+extern void WebViewBinding_NPWebViewSetJavaScriptEnabled_m4D873FAC1035762C8D06014D454ADA607DB082E9 (void);
+// 0x0000003D System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewShow(System.IntPtr)
+extern void WebViewBinding_NPWebViewShow_mD8899C4BC76FCFCA079F0A503A544B875DC86DA5 (void);
+// 0x0000003E System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewHide(System.IntPtr)
+extern void WebViewBinding_NPWebViewHide_m83E393124E9B263D637A276AFF56D495398ED782 (void);
+// 0x0000003F System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewLoadURL(System.IntPtr,System.String)
+extern void WebViewBinding_NPWebViewLoadURL_m216595ABB41CCF43D55A385CB1BE29861E551866 (void);
+// 0x00000040 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewLoadHtmlString(System.IntPtr,System.String,System.String)
+extern void WebViewBinding_NPWebViewLoadHtmlString_m2DE7F0EF5426C6E6BC01A17CABFB28B7509E63EB (void);
+// 0x00000041 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewLoadData(System.IntPtr,VoxelBusters.CoreLibrary.NativePlugins.UnityAttachment,System.String,System.String)
+extern void WebViewBinding_NPWebViewLoadData_m95C4C3BCECC3EA09B793F464F6882FBDE2325A12 (void);
+// 0x00000042 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewReload(System.IntPtr)
+extern void WebViewBinding_NPWebViewReload_m961E1F492C3ACF754227ADDC6599C035F42A3458 (void);
+// 0x00000043 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewStopLoading(System.IntPtr)
+extern void WebViewBinding_NPWebViewStopLoading_m433291770D7C2FF1E1F9E502D67C338B4BA2990F (void);
+// 0x00000044 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewRunJavaScript(System.IntPtr,System.String,System.IntPtr)
+extern void WebViewBinding_NPWebViewRunJavaScript_mAEA357D366B177E16AA584E0410388785E99C108 (void);
+// 0x00000045 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewAddURLScheme(System.IntPtr,System.String)
+extern void WebViewBinding_NPWebViewAddURLScheme_m8C68F2589AF32176C3ECDC7CD67945D9BFCE8E2C (void);
+// 0x00000046 System.Void VoxelBusters.EssentialKit.WebViewCore.iOS.WebViewBinding::NPWebViewClearCache()
+extern void WebViewBinding_NPWebViewClearCache_mEFF60AD3CB707368F7CE4E3FBFA3187D2F96D5FF (void);
+// 0x00000047 System.Boolean VoxelBusters.EssentialKit.SharingServicesCore.iOS.MailComposerBinding::NPMailComposerCanSendMail()
+extern void MailComposerBinding_NPMailComposerCanSendMail_mC04317AAA7E55A028D816460FDE14F3D3DC910D0 (void);
+// 0x00000048 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MailComposerBinding::NPMailComposerRegisterCallback(VoxelBusters.EssentialKit.SharingServicesCore.iOS.MailComposerClosedNativeCallback)
+extern void MailComposerBinding_NPMailComposerRegisterCallback_m003188717920BDFC6B6557DF71211E7AC3342833 (void);
+// 0x00000049 System.IntPtr VoxelBusters.EssentialKit.SharingServicesCore.iOS.MailComposerBinding::NPMailComposerCreate()
+extern void MailComposerBinding_NPMailComposerCreate_mFDF607644151385CF767168FBAB984F65CE02620 (void);
+// 0x0000004A System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MailComposerBinding::NPMailComposerShow(System.IntPtr)
+extern void MailComposerBinding_NPMailComposerShow_m42715870E36127F07490602BAEC2C4A57B4EA997 (void);
+// 0x0000004B System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MailComposerBinding::NPMailComposerSetRecipients(System.IntPtr,VoxelBusters.EssentialKit.SharingServicesCore.iOS.MailRecipientType,System.String[],System.Int32)
+extern void MailComposerBinding_NPMailComposerSetRecipients_m5BC78479E7797BF0EC6D97DCB007CA249D9F6449 (void);
+// 0x0000004C System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MailComposerBinding::NPMailComposerSetSubject(System.IntPtr,System.String)
+extern void MailComposerBinding_NPMailComposerSetSubject_mB62B6446CA5352643C9C942AD53EA97935A58116 (void);
+// 0x0000004D System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MailComposerBinding::NPMailComposerSetBody(System.IntPtr,System.String,System.Boolean)
+extern void MailComposerBinding_NPMailComposerSetBody_mEA758793411B51B145077867FE65E9E9A3235A3C (void);
+// 0x0000004E System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MailComposerBinding::NPMailComposerAddScreenshot(System.IntPtr,System.String)
+extern void MailComposerBinding_NPMailComposerAddScreenshot_m74504D0649C215B454573F5A5191FE4841A3A0CA (void);
+// 0x0000004F System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MailComposerBinding::NPMailComposerAddAttachment(System.IntPtr,VoxelBusters.CoreLibrary.NativePlugins.UnityAttachment)
+extern void MailComposerBinding_NPMailComposerAddAttachment_m9A28F582E00D727FD28C552EFAFE46B453B43C19 (void);
+// 0x00000050 System.Boolean VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerBinding::NPMessageComposerCanSendText()
+extern void MessageComposerBinding_NPMessageComposerCanSendText_m9B588BCC00FF9F5186E705960E4E5DC5484CE00E (void);
+// 0x00000051 System.Boolean VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerBinding::NPMessageComposerCanSendAttachments()
+extern void MessageComposerBinding_NPMessageComposerCanSendAttachments_m4E280313B72E40506975DC04DF1F8F0C173787DE (void);
+// 0x00000052 System.Boolean VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerBinding::NPMessageComposerCanSendSubject()
+extern void MessageComposerBinding_NPMessageComposerCanSendSubject_m828A845CE6B3069CBC9F3DCE1101E8C48B0E9B3A (void);
+// 0x00000053 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerBinding::NPMessageComposerRegisterCallback(VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerClosedNativeCallback)
+extern void MessageComposerBinding_NPMessageComposerRegisterCallback_m5302BA1D8C6CCC90CB988BCF367810106906FA8A (void);
+// 0x00000054 System.IntPtr VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerBinding::NPMessageComposerCreate()
+extern void MessageComposerBinding_NPMessageComposerCreate_m5675C04F9839F17D24E05AD0D147B595EC530D1F (void);
+// 0x00000055 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerBinding::NPMessageComposerShow(System.IntPtr)
+extern void MessageComposerBinding_NPMessageComposerShow_m61ECED661D01F9E962E593561844C765272AFBC1 (void);
+// 0x00000056 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerBinding::NPMessageComposerSetRecipients(System.IntPtr,System.String[],System.Int32)
+extern void MessageComposerBinding_NPMessageComposerSetRecipients_m5CF49F544BCABDEB441242C93878EA53C7AC3EDB (void);
+// 0x00000057 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerBinding::NPMessageComposerSetSubject(System.IntPtr,System.String)
+extern void MessageComposerBinding_NPMessageComposerSetSubject_mDCD71F6382FEC8E0786856BD3118E6549CAE8CFA (void);
+// 0x00000058 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerBinding::NPMessageComposerSetBody(System.IntPtr,System.String)
+extern void MessageComposerBinding_NPMessageComposerSetBody_m688771A117319661227E641DAA0B2F7A4981C126 (void);
+// 0x00000059 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerBinding::NPMessageComposerAddScreenshot(System.IntPtr,System.String)
+extern void MessageComposerBinding_NPMessageComposerAddScreenshot_m883474C86314C90BA41C463679A13618DAE2F042 (void);
+// 0x0000005A System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerBinding::NPMessageComposerAddAttachment(System.IntPtr,VoxelBusters.CoreLibrary.NativePlugins.UnityAttachment)
+extern void MessageComposerBinding_NPMessageComposerAddAttachment_mA83037ED45225E2704EE969E264902E9746B1AD1 (void);
+// 0x0000005B System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerBinding::.ctor()
+extern void MessageComposerBinding__ctor_m9D298B119B72B906531AF078D7F40FEAB2E40F18 (void);
+// 0x0000005C System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MailComposerClosedNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void MailComposerClosedNativeCallback__ctor_mD9B54C64CB059DDDB167AB6BD4B7EF306BFF3CFB (void);
+// 0x0000005D System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MailComposerClosedNativeCallback::Invoke(System.IntPtr,VoxelBusters.EssentialKit.SharingServicesCore.iOS.MFMailComposeResult,System.String)
+extern void MailComposerClosedNativeCallback_Invoke_mB15B1B6E74BD1F862577A9A6CA2F8A71A46ED344 (void);
+// 0x0000005E System.IAsyncResult VoxelBusters.EssentialKit.SharingServicesCore.iOS.MailComposerClosedNativeCallback::BeginInvoke(System.IntPtr,VoxelBusters.EssentialKit.SharingServicesCore.iOS.MFMailComposeResult,System.String,System.AsyncCallback,System.Object)
+extern void MailComposerClosedNativeCallback_BeginInvoke_m421B7EDB2B76C4BE8E45AEEB4B081EE344AB5207 (void);
+// 0x0000005F System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MailComposerClosedNativeCallback::EndInvoke(System.IAsyncResult)
+extern void MailComposerClosedNativeCallback_EndInvoke_m9E347ED8BA6EA064EDFAD029ADA36604ACBA805A (void);
+// 0x00000060 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerClosedNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void MessageComposerClosedNativeCallback__ctor_mAB91068EC9BEE2E9DCC5783CEB9DCB1DA437A59E (void);
+// 0x00000061 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerClosedNativeCallback::Invoke(System.IntPtr,VoxelBusters.EssentialKit.SharingServicesCore.iOS.MFMessageComposeResult)
+extern void MessageComposerClosedNativeCallback_Invoke_mF2682FD5E1EC2E5EBBEF9301419F9DC1EC60F602 (void);
+// 0x00000062 System.IAsyncResult VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerClosedNativeCallback::BeginInvoke(System.IntPtr,VoxelBusters.EssentialKit.SharingServicesCore.iOS.MFMessageComposeResult,System.AsyncCallback,System.Object)
+extern void MessageComposerClosedNativeCallback_BeginInvoke_m8CD15F5112AAC11E1BCC1584270C776FF15B4242 (void);
+// 0x00000063 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.MessageComposerClosedNativeCallback::EndInvoke(System.IAsyncResult)
+extern void MessageComposerClosedNativeCallback_EndInvoke_m91B4A9C5F79F3DA41CE10B4DE3B8526059D29A4B (void);
+// 0x00000064 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.ShareSheetClosedNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void ShareSheetClosedNativeCallback__ctor_m0E550D215B3240E628288611F587A3C46719B13E (void);
+// 0x00000065 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.ShareSheetClosedNativeCallback::Invoke(System.IntPtr,System.Boolean,System.String)
+extern void ShareSheetClosedNativeCallback_Invoke_m36349FC9EA563599E98A5D68D73D5575BD270115 (void);
+// 0x00000066 System.IAsyncResult VoxelBusters.EssentialKit.SharingServicesCore.iOS.ShareSheetClosedNativeCallback::BeginInvoke(System.IntPtr,System.Boolean,System.String,System.AsyncCallback,System.Object)
+extern void ShareSheetClosedNativeCallback_BeginInvoke_m6CFCB6BA9D3C9944AA387B7E4762997431F1F0DC (void);
+// 0x00000067 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.ShareSheetClosedNativeCallback::EndInvoke(System.IAsyncResult)
+extern void ShareSheetClosedNativeCallback_EndInvoke_mE3C02A7E02529E3268710B960B2A6EBC61C33BE8 (void);
+// 0x00000068 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.SocialShareComposerClosedNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void SocialShareComposerClosedNativeCallback__ctor_mDD01528BFA25B31EE5E4D3E729E2FF9A888F3E97 (void);
+// 0x00000069 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.SocialShareComposerClosedNativeCallback::Invoke(System.IntPtr,VoxelBusters.EssentialKit.SharingServicesCore.iOS.SLComposeViewControllerResult)
+extern void SocialShareComposerClosedNativeCallback_Invoke_m91970A9C82291E98A46530CC7D19A49E6C7FD3DC (void);
+// 0x0000006A System.IAsyncResult VoxelBusters.EssentialKit.SharingServicesCore.iOS.SocialShareComposerClosedNativeCallback::BeginInvoke(System.IntPtr,VoxelBusters.EssentialKit.SharingServicesCore.iOS.SLComposeViewControllerResult,System.AsyncCallback,System.Object)
+extern void SocialShareComposerClosedNativeCallback_BeginInvoke_mF0BC3AB54CCDD502F73B5645329C3010C28C5E43 (void);
+// 0x0000006B System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.SocialShareComposerClosedNativeCallback::EndInvoke(System.IAsyncResult)
+extern void SocialShareComposerClosedNativeCallback_EndInvoke_m5689579F69652AB0FD3F4C77CFE2E04228C7DDC0 (void);
+// 0x0000006C System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMailComposer::.cctor()
+extern void NativeMailComposer__cctor_m255E6A76493AD5F76617318AB93689C5E07F6D1C (void);
+// 0x0000006D System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMailComposer::.ctor()
+extern void NativeMailComposer__ctor_m664A2C097B78CE4AA0374000F5F8C749185E3A0B (void);
+// 0x0000006E System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMailComposer::Finalize()
+extern void NativeMailComposer_Finalize_m7813A6D72B5C0AC8BB1D7D2C8287A74192052A3A (void);
+// 0x0000006F System.Boolean VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMailComposer::CanSendMail()
+extern void NativeMailComposer_CanSendMail_m238F315E6877DC56B98593B1A07EB255A3205894 (void);
+// 0x00000070 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMailComposer::SetToRecipients(System.String[])
+extern void NativeMailComposer_SetToRecipients_m64790F2FBF58C6BC93B5D9F9F99BCA0483F04340 (void);
+// 0x00000071 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMailComposer::SetCcRecipients(System.String[])
+extern void NativeMailComposer_SetCcRecipients_m5E761DF408842D8750385BDF0F4ED9C620454325 (void);
+// 0x00000072 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMailComposer::SetBccRecipients(System.String[])
+extern void NativeMailComposer_SetBccRecipients_mA01AF87ABD3563B830F2BED1958A9FAEC8D78045 (void);
+// 0x00000073 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMailComposer::SetSubject(System.String)
+extern void NativeMailComposer_SetSubject_m8F34FAAF2ECD135B69F1568992F331E7D8BE346F (void);
+// 0x00000074 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMailComposer::SetBody(System.String,System.Boolean)
+extern void NativeMailComposer_SetBody_mDA7B53036E483006208C8778BF1732760BA9F3E5 (void);
+// 0x00000075 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMailComposer::AddScreenshot(System.String)
+extern void NativeMailComposer_AddScreenshot_mAA92CF188157167CA5B985E466DE1BEC0BE76AFC (void);
+// 0x00000076 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMailComposer::AddAttachmentData(System.Byte[],System.String,System.String)
+extern void NativeMailComposer_AddAttachmentData_m48F72740C0E3DC0058D4CD1D7C23F7E3BF3A9327 (void);
+// 0x00000077 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMailComposer::Show()
+extern void NativeMailComposer_Show_mD7A1389C5A83353F0D5DA0D469656D28A1FFBAF0 (void);
+// 0x00000078 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMailComposer::Dispose(System.Boolean)
+extern void NativeMailComposer_Dispose_m770A6A06C0948B82EB80BE8103922B5A8896763E (void);
+// 0x00000079 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMailComposer::HandleMailComposerClosedCallbackInternal(System.IntPtr,VoxelBusters.EssentialKit.SharingServicesCore.iOS.MFMailComposeResult,System.String)
+extern void NativeMailComposer_HandleMailComposerClosedCallbackInternal_mD6682278CDA21C280FFF2D006BD142FCE4CEFAFB (void);
+// 0x0000007A System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMessageComposer::.cctor()
+extern void NativeMessageComposer__cctor_mA73B2395C3F92F29E795B3E019F8AAECC0858C33 (void);
+// 0x0000007B System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMessageComposer::.ctor()
+extern void NativeMessageComposer__ctor_mB5B52DB315D670B204895918A330D44866CB90B4 (void);
+// 0x0000007C System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMessageComposer::Finalize()
+extern void NativeMessageComposer_Finalize_m6690FCD3D5526AF4B4575569099D31F0FEB0AB23 (void);
+// 0x0000007D System.Boolean VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMessageComposer::CanSendText()
+extern void NativeMessageComposer_CanSendText_m2F7F8C2A1D98AF16CF059212BA5E490EBA6161F1 (void);
+// 0x0000007E System.Boolean VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMessageComposer::CanSendAttachments()
+extern void NativeMessageComposer_CanSendAttachments_mE69CBA4E41B2156B8047DE9468D70276E052D1A7 (void);
+// 0x0000007F System.Boolean VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMessageComposer::CanSendSubject()
+extern void NativeMessageComposer_CanSendSubject_m29CCD47C6BECFEFAED5168348F56FAD68E5C53CE (void);
+// 0x00000080 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMessageComposer::SetRecipients(System.String[])
+extern void NativeMessageComposer_SetRecipients_mE55C8E7E1BCCFEBC5C4D95909CC077FC478FFA39 (void);
+// 0x00000081 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMessageComposer::SetSubject(System.String)
+extern void NativeMessageComposer_SetSubject_m2F6C6C9DB247858D1E1147C156C9AD1C53211281 (void);
+// 0x00000082 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMessageComposer::SetBody(System.String)
+extern void NativeMessageComposer_SetBody_m54BBC2A0EDB666398A817DE45963F17AE0BBF268 (void);
+// 0x00000083 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMessageComposer::AddScreenshot(System.String)
+extern void NativeMessageComposer_AddScreenshot_mED01BC4406B6EE15C4914601CB9BAB6B97A673E8 (void);
+// 0x00000084 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMessageComposer::AddImage(UnityEngine.Texture2D,System.String)
+extern void NativeMessageComposer_AddImage_m3DE3D9E4868D1AA5DA06B281A3FD946AFD8A2FBC (void);
+// 0x00000085 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMessageComposer::AddAttachmentData(System.Byte[],System.String,System.String)
+extern void NativeMessageComposer_AddAttachmentData_mE1579157079DB00A600F6BFD7FB97DFB721B2A35 (void);
+// 0x00000086 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMessageComposer::Show()
+extern void NativeMessageComposer_Show_m2F7FC904EB6D4BF2A1B20B6273D48D9D313DACB9 (void);
+// 0x00000087 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMessageComposer::Dispose(System.Boolean)
+extern void NativeMessageComposer_Dispose_m0390E0D4FF6AE203BA3A4EBCD951299314235D35 (void);
+// 0x00000088 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeMessageComposer::HandleMessageComposerClosedCallbackInternal(System.IntPtr,VoxelBusters.EssentialKit.SharingServicesCore.iOS.MFMessageComposeResult)
+extern void NativeMessageComposer_HandleMessageComposerClosedCallbackInternal_mD350A5B8910CFDECB28D2024F1BEAD637C14879A (void);
+// 0x00000089 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeShareSheet::.cctor()
+extern void NativeShareSheet__cctor_m2229B329B8DCA2D7747CD65D613C2F14051E3EC0 (void);
+// 0x0000008A System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeShareSheet::.ctor()
+extern void NativeShareSheet__ctor_mB348AEFA8F932B14A6500165DB86AB53304D1BD8 (void);
+// 0x0000008B System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeShareSheet::Finalize()
+extern void NativeShareSheet_Finalize_m9BEADA16A7828CCAA83BAF8A52C0BB16658A4951 (void);
+// 0x0000008C System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeShareSheet::AddText(System.String)
+extern void NativeShareSheet_AddText_mD34FBE02697C7E42A641444619CCEAFCA3E0188E (void);
+// 0x0000008D System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeShareSheet::AddScreenshot()
+extern void NativeShareSheet_AddScreenshot_m25EA15156ED6FB21CE0AAB1BFBE33170603359FC (void);
+// 0x0000008E System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeShareSheet::AddImage(System.Byte[],System.String)
+extern void NativeShareSheet_AddImage_mF8AB75AB61CA4A8CDB8E21C6527F61237F8FD52F (void);
+// 0x0000008F System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeShareSheet::AddURL(VoxelBusters.CoreLibrary.URLString)
+extern void NativeShareSheet_AddURL_m04C793F7EB280E86E61CA264F082576D823A0F5C (void);
+// 0x00000090 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeShareSheet::Show(UnityEngine.Vector2)
+extern void NativeShareSheet_Show_mDA6076B9535F9529E25A28F143D6CAD02771611E (void);
+// 0x00000091 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeShareSheet::Dispose(System.Boolean)
+extern void NativeShareSheet_Dispose_m2FFCB35984B22C8D2E60E25782C4B7905497C2FF (void);
+// 0x00000092 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeShareSheet::HandleShareSheetClosedCallbackInternal(System.IntPtr,System.Boolean,System.String)
+extern void NativeShareSheet_HandleShareSheetClosedCallbackInternal_mBDCA2CFFA718B4FF737E1084CE6745F9923D501E (void);
+// 0x00000093 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSharingInterface::.ctor()
+extern void NativeSharingInterface__ctor_m37555B2960BC6079E12636C38A5AD66CFFFF5222 (void);
+// 0x00000094 System.Boolean VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSharingInterface::CanSendMail()
+extern void NativeSharingInterface_CanSendMail_m3D44A98CC6823D5F43AB6DD2319B606080BF82B2 (void);
+// 0x00000095 VoxelBusters.EssentialKit.SharingServicesCore.INativeMailComposer VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSharingInterface::CreateMailComposer()
+extern void NativeSharingInterface_CreateMailComposer_m4CDE11B4B414E2274037A4575D3E750AE66495C6 (void);
+// 0x00000096 System.Boolean VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSharingInterface::CanSendText()
+extern void NativeSharingInterface_CanSendText_m00DEBEEF7E56F9177F280605BDA80609447E13ED (void);
+// 0x00000097 System.Boolean VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSharingInterface::CanSendAttachments()
+extern void NativeSharingInterface_CanSendAttachments_mA7A27700F8D1ACB085E0F0827FE2855E1F5173F5 (void);
+// 0x00000098 System.Boolean VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSharingInterface::CanSendSubject()
+extern void NativeSharingInterface_CanSendSubject_m8CC4258954F88DC7DF7578C842E30FD48AC486E7 (void);
+// 0x00000099 VoxelBusters.EssentialKit.SharingServicesCore.INativeMessageComposer VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSharingInterface::CreateMessageComposer()
+extern void NativeSharingInterface_CreateMessageComposer_mF97B5B84C4BAB79E7DA95195942F197E2C234F00 (void);
+// 0x0000009A VoxelBusters.EssentialKit.SharingServicesCore.INativeShareSheet VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSharingInterface::CreateShareSheet()
+extern void NativeSharingInterface_CreateShareSheet_m7EA087131523CF217C217CB37A8B24B2BE3107D2 (void);
+// 0x0000009B System.Boolean VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSharingInterface::IsSocialShareComposerAvailable(VoxelBusters.EssentialKit.SocialShareComposerType)
+extern void NativeSharingInterface_IsSocialShareComposerAvailable_mA189D91B8A42E9BF1647BB5EA7F5C73745EF61CC (void);
+// 0x0000009C VoxelBusters.EssentialKit.SharingServicesCore.INativeSocialShareComposer VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSharingInterface::CreateSocialShareComposer(VoxelBusters.EssentialKit.SocialShareComposerType)
+extern void NativeSharingInterface_CreateSocialShareComposer_m16FDB4FDEF1CB1F47603F95BD8C22E7F63DF460E (void);
+// 0x0000009D System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSocialShareComposer::.cctor()
+extern void NativeSocialShareComposer__cctor_m054877449E3D4CC389883EC2E026F7CFBC9BDF51 (void);
+// 0x0000009E System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSocialShareComposer::.ctor(VoxelBusters.EssentialKit.SocialShareComposerType)
+extern void NativeSocialShareComposer__ctor_m47FA3126E449CB4F433DD1D7C5C9CB6110CBE236 (void);
+// 0x0000009F System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSocialShareComposer::Finalize()
+extern void NativeSocialShareComposer_Finalize_mD28D80AEFC62300AAFC277D3E866B6F644ADA07A (void);
+// 0x000000A0 System.Boolean VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSocialShareComposer::IsComposerAvailable(VoxelBusters.EssentialKit.SocialShareComposerType)
+extern void NativeSocialShareComposer_IsComposerAvailable_mA8849D826B6662C605CC1EE34001F174E3F7976E (void);
+// 0x000000A1 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSocialShareComposer::SetText(System.String)
+extern void NativeSocialShareComposer_SetText_m91253C41346F8B76F6E26BBA041FB978F08F43AD (void);
+// 0x000000A2 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSocialShareComposer::AddScreenshot()
+extern void NativeSocialShareComposer_AddScreenshot_m6F969D737830573AEC2A1BBDAE1305D1F6EB65CB (void);
+// 0x000000A3 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSocialShareComposer::AddImage(System.Byte[])
+extern void NativeSocialShareComposer_AddImage_m5734205E5CBD2A457D10A2210BC0AF14CAA5EC65 (void);
+// 0x000000A4 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSocialShareComposer::AddURL(VoxelBusters.CoreLibrary.URLString)
+extern void NativeSocialShareComposer_AddURL_m6254DE35A21B92E8E1E5D76ED49B64A85A1CA52A (void);
+// 0x000000A5 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSocialShareComposer::Show(UnityEngine.Vector2)
+extern void NativeSocialShareComposer_Show_mD72E528A62FD0A95E46353291889C4E1FC12D028 (void);
+// 0x000000A6 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSocialShareComposer::Dispose(System.Boolean)
+extern void NativeSocialShareComposer_Dispose_m2B042E5D6939E85B196ADBCEAACA3364044DFB2D (void);
+// 0x000000A7 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.NativeSocialShareComposer::HandleSocialShareComposerClosedCallbackInternal(System.IntPtr,VoxelBusters.EssentialKit.SharingServicesCore.iOS.SLComposeViewControllerResult)
+extern void NativeSocialShareComposer_HandleSocialShareComposerClosedCallbackInternal_mB32D2E49D308E868DAFDCB1CAC52C917FDE09485 (void);
+// 0x000000A8 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.ShareSheetBinding::NPShareSheetRegisterCallback(VoxelBusters.EssentialKit.SharingServicesCore.iOS.ShareSheetClosedNativeCallback)
+extern void ShareSheetBinding_NPShareSheetRegisterCallback_mD8F91361DF78023F8D521E53B9C1F7F948B5756D (void);
+// 0x000000A9 System.IntPtr VoxelBusters.EssentialKit.SharingServicesCore.iOS.ShareSheetBinding::NPShareSheetCreate()
+extern void ShareSheetBinding_NPShareSheetCreate_m66E8C9CD47519A687BA5F8F942430134741D13F3 (void);
+// 0x000000AA System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.ShareSheetBinding::NPShareSheetShow(System.IntPtr,System.Single,System.Single)
+extern void ShareSheetBinding_NPShareSheetShow_mFE8991CE2AC331DEF9935322D859B61DA0059E24 (void);
+// 0x000000AB System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.ShareSheetBinding::NPShareSheetAddText(System.IntPtr,System.String)
+extern void ShareSheetBinding_NPShareSheetAddText_mBFAA55145BAD81149B40CD64C467BCB98B72F8EF (void);
+// 0x000000AC System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.ShareSheetBinding::NPShareSheetAddScreenshot(System.IntPtr)
+extern void ShareSheetBinding_NPShareSheetAddScreenshot_m1C975AE866E63CBC5BB7A57BDE9F59A6A6E992B9 (void);
+// 0x000000AD System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.ShareSheetBinding::NPShareSheetAddImage(System.IntPtr,System.IntPtr,System.Int32)
+extern void ShareSheetBinding_NPShareSheetAddImage_mF33AE2346CEC6776E270FC7241E04F9CE4BC8E66 (void);
+// 0x000000AE System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.ShareSheetBinding::NPShareSheetAddURL(System.IntPtr,System.String)
+extern void ShareSheetBinding_NPShareSheetAddURL_m489E98D9FC96138014AA1738F2731DF277FBA5F1 (void);
+// 0x000000AF VoxelBusters.EssentialKit.MailComposerResultCode VoxelBusters.EssentialKit.SharingServicesCore.iOS.SharingUtility::ConvertToMailComposerResultCode(VoxelBusters.EssentialKit.SharingServicesCore.iOS.MFMailComposeResult)
+extern void SharingUtility_ConvertToMailComposerResultCode_mCFA0A51838B61619A6BF601639B4F8143C2A356C (void);
+// 0x000000B0 VoxelBusters.EssentialKit.MessageComposerResultCode VoxelBusters.EssentialKit.SharingServicesCore.iOS.SharingUtility::ConvertToMessageComposerResultCode(VoxelBusters.EssentialKit.SharingServicesCore.iOS.MFMessageComposeResult)
+extern void SharingUtility_ConvertToMessageComposerResultCode_mF1A6116ABF187A603913865A292223C2592EFC95 (void);
+// 0x000000B1 VoxelBusters.EssentialKit.SocialShareComposerResultCode VoxelBusters.EssentialKit.SharingServicesCore.iOS.SharingUtility::ConvertToShareComposerResultCode(VoxelBusters.EssentialKit.SharingServicesCore.iOS.SLComposeViewControllerResult)
+extern void SharingUtility_ConvertToShareComposerResultCode_m2745E48114AA6271A39A9E8C7F48BF85C0A1D048 (void);
+// 0x000000B2 System.Boolean VoxelBusters.EssentialKit.SharingServicesCore.iOS.SocialShareComposerBinding::NPSocialShareComposerIsComposerAvailable(VoxelBusters.EssentialKit.SocialShareComposerType)
+extern void SocialShareComposerBinding_NPSocialShareComposerIsComposerAvailable_m7A5507073F82C640085FA734D756079FA2BCED17 (void);
+// 0x000000B3 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.SocialShareComposerBinding::NPSocialShareComposerRegisterCallback(VoxelBusters.EssentialKit.SharingServicesCore.iOS.SocialShareComposerClosedNativeCallback)
+extern void SocialShareComposerBinding_NPSocialShareComposerRegisterCallback_m3C5D4DB82DEA9F3A5D5FB5D9D302D2CBDA2367E0 (void);
+// 0x000000B4 System.IntPtr VoxelBusters.EssentialKit.SharingServicesCore.iOS.SocialShareComposerBinding::NPSocialShareComposerCreate(VoxelBusters.EssentialKit.SocialShareComposerType)
+extern void SocialShareComposerBinding_NPSocialShareComposerCreate_m9F1A5E19AA207132CE2A3E1900F86001D33249DD (void);
+// 0x000000B5 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.SocialShareComposerBinding::NPSocialShareComposerShow(System.IntPtr,System.Single,System.Single)
+extern void SocialShareComposerBinding_NPSocialShareComposerShow_mCFFEB0F93292177A90AAF61E1758AFB6ACB0A56A (void);
+// 0x000000B6 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.SocialShareComposerBinding::NPSocialShareComposerAddText(System.IntPtr,System.String)
+extern void SocialShareComposerBinding_NPSocialShareComposerAddText_mF4C0BD21DCBBC56203A11DF7634371488A7EBAA2 (void);
+// 0x000000B7 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.SocialShareComposerBinding::NPSocialShareComposerAddScreenshot(System.IntPtr)
+extern void SocialShareComposerBinding_NPSocialShareComposerAddScreenshot_m4BD1ED3F16FBB1252125FB7D0D209283AC546FB7 (void);
+// 0x000000B8 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.SocialShareComposerBinding::NPSocialShareComposerAddImage(System.IntPtr,System.IntPtr,System.Int32)
+extern void SocialShareComposerBinding_NPSocialShareComposerAddImage_m8C06F37DA5D0705256F25552524210BB7ABE604F (void);
+// 0x000000B9 System.Void VoxelBusters.EssentialKit.SharingServicesCore.iOS.SocialShareComposerBinding::NPSocialShareComposerAddURL(System.IntPtr,System.String)
+extern void SocialShareComposerBinding_NPSocialShareComposerAddURL_m12B78577F0AC22D3C94DD9A09D7136BB2687FBF4 (void);
+// 0x000000BA System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.MutableNotification::.ctor(System.String)
+extern void MutableNotification__ctor_m223E21A4C9888F56B1AB724D555E49DA90E913EE (void);
+// 0x000000BB System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.MutableNotification::Finalize()
+extern void MutableNotification_Finalize_m1108511134207810BDC5C1EDED5B334191176D3E (void);
+// 0x000000BC System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.MutableNotification::SetTitle(System.String)
+extern void MutableNotification_SetTitle_m45FAEF6A73E5213CF30AFE0EE52BB83D72C41641 (void);
+// 0x000000BD System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.MutableNotification::SetSubtitle(System.String)
+extern void MutableNotification_SetSubtitle_m103F7DDADA7377299F8A5CB64EFE1E13111D5AFB (void);
+// 0x000000BE System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.MutableNotification::SetBody(System.String)
+extern void MutableNotification_SetBody_m489417AA3D3BDF495760CDD53AB829B77876C406 (void);
+// 0x000000BF System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.MutableNotification::SetBadge(System.Int32)
+extern void MutableNotification_SetBadge_m2E509DE99D4EF818B55E6BDC335775A8FE104B3B (void);
+// 0x000000C0 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.MutableNotification::SetUserInfo(System.Collections.IDictionary)
+extern void MutableNotification_SetUserInfo_m05A739CC16D4B10E25E53CC85ED14B8934114FC9 (void);
+// 0x000000C1 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.MutableNotification::SetSoundFileName(System.String)
+extern void MutableNotification_SetSoundFileName_m90F90B103B878C4886A9D6FC436B2D2C4292AC7B (void);
+// 0x000000C2 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.MutableNotification::SetIosProperties(VoxelBusters.EssentialKit.NotificationIosProperties)
+extern void MutableNotification_SetIosProperties_mCC1CEE7E55F2DBFFEEC2FAC00BA11BDB97D1450D (void);
+// 0x000000C3 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.MutableNotification::SetAndroidProperties(VoxelBusters.EssentialKit.NotificationAndroidProperties)
+extern void MutableNotification_SetAndroidProperties_m089C2BA81583ED1A25E0C31976A59A9730BB9668 (void);
+// 0x000000C4 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.MutableNotification::SetTrigger(VoxelBusters.EssentialKit.INotificationTrigger)
+extern void MutableNotification_SetTrigger_m1E546935776E1B44E1355CC7362568C6857FBBFD (void);
+// 0x000000C5 System.IntPtr VoxelBusters.EssentialKit.NotificationServicesCore.iOS.MutableNotification::CreateNativeTrigger(VoxelBusters.EssentialKit.INotificationTrigger)
+extern void MutableNotification_CreateNativeTrigger_m9453E714F0E98B9D82E856B1996EC8D12AA239B5 (void);
+// 0x000000C6 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.MutableNotification::SetRequestPtr(System.IntPtr,System.Boolean)
+extern void MutableNotification_SetRequestPtr_mDB63D37DECA67DB2838ED2247ECADE8F52CB71D0 (void);
+// 0x000000C7 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.RequestAuthorizationNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void RequestAuthorizationNativeCallback__ctor_m1AD8001449DF88D34CD124C58B5993AAB4C1D768 (void);
+// 0x000000C8 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.RequestAuthorizationNativeCallback::Invoke(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNAuthorizationStatus,System.String,System.IntPtr)
+extern void RequestAuthorizationNativeCallback_Invoke_m2D2F771DD141268297B107851737941A1F6FE00F (void);
+// 0x000000C9 System.IAsyncResult VoxelBusters.EssentialKit.NotificationServicesCore.iOS.RequestAuthorizationNativeCallback::BeginInvoke(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNAuthorizationStatus,System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void RequestAuthorizationNativeCallback_BeginInvoke_m29D5E05A94E52B34340BC81EA333F22B03F83A6E (void);
+// 0x000000CA System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.RequestAuthorizationNativeCallback::EndInvoke(System.IAsyncResult)
+extern void RequestAuthorizationNativeCallback_EndInvoke_m3CBFA9D138BC952E98E922927D88B94E082A477A (void);
+// 0x000000CB System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.GetSettingsNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void GetSettingsNativeCallback__ctor_m24088BFBC4F02514B502D46B6472338569A6A94F (void);
+// 0x000000CC System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.GetSettingsNativeCallback::Invoke(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData&,System.IntPtr)
+extern void GetSettingsNativeCallback_Invoke_mF33A1F201F082E25EB078D1286AC91F9AB6D6FBB (void);
+// 0x000000CD System.IAsyncResult VoxelBusters.EssentialKit.NotificationServicesCore.iOS.GetSettingsNativeCallback::BeginInvoke(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData&,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GetSettingsNativeCallback_BeginInvoke_mD8CE3728D17F5EF7D053DCEA280E2D45846E4420 (void);
+// 0x000000CE System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.GetSettingsNativeCallback::EndInvoke(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData&,System.IAsyncResult)
+extern void GetSettingsNativeCallback_EndInvoke_m4933093DB25D8419C4616DBAA80D73CECF03D791 (void);
+// 0x000000CF System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.ScheduleNotificationNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void ScheduleNotificationNativeCallback__ctor_mD09C9AD5EB8CD98CA15994C5C5C4115F89D6057D (void);
+// 0x000000D0 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.ScheduleNotificationNativeCallback::Invoke(System.String,System.IntPtr)
+extern void ScheduleNotificationNativeCallback_Invoke_mF8838BB8065E2935D636DB5E618E75409D7E83CA (void);
+// 0x000000D1 System.IAsyncResult VoxelBusters.EssentialKit.NotificationServicesCore.iOS.ScheduleNotificationNativeCallback::BeginInvoke(System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void ScheduleNotificationNativeCallback_BeginInvoke_m7E122432D7F6DE53D5DB29259C539515BB013EF3 (void);
+// 0x000000D2 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.ScheduleNotificationNativeCallback::EndInvoke(System.IAsyncResult)
+extern void ScheduleNotificationNativeCallback_EndInvoke_mE63F97266DF77C29981E7C1925EDD2A0D41F1234 (void);
+// 0x000000D3 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.GetScheduledNotificationsNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void GetScheduledNotificationsNativeCallback__ctor_m2A1E1905D0B69DF33B2C822FF0C706F0EF1FE8FB (void);
+// 0x000000D4 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.GetScheduledNotificationsNativeCallback::Invoke(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.String,System.IntPtr)
+extern void GetScheduledNotificationsNativeCallback_Invoke_m85B5A3C3C3C2F6B4086C7D0FD80B07CDFCD7EDC0 (void);
+// 0x000000D5 System.IAsyncResult VoxelBusters.EssentialKit.NotificationServicesCore.iOS.GetScheduledNotificationsNativeCallback::BeginInvoke(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GetScheduledNotificationsNativeCallback_BeginInvoke_mABC6984A5024E6646DCD1BF0C449D953AF583C04 (void);
+// 0x000000D6 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.GetScheduledNotificationsNativeCallback::EndInvoke(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.IAsyncResult)
+extern void GetScheduledNotificationsNativeCallback_EndInvoke_m7A9D67F50322290B261201BD4A41FAE68C6F14C8 (void);
+// 0x000000D7 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.GetDeliveredNotificationsNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void GetDeliveredNotificationsNativeCallback__ctor_mA8ADA90F80E89707ACAE116E8D12B345871AE362 (void);
+// 0x000000D8 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.GetDeliveredNotificationsNativeCallback::Invoke(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.String,System.IntPtr)
+extern void GetDeliveredNotificationsNativeCallback_Invoke_mF52A7C7B4E8A4641F5449D9A08815FD35DDF2B92 (void);
+// 0x000000D9 System.IAsyncResult VoxelBusters.EssentialKit.NotificationServicesCore.iOS.GetDeliveredNotificationsNativeCallback::BeginInvoke(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GetDeliveredNotificationsNativeCallback_BeginInvoke_m57E81AC64205BA981029B6D006798F5C38876FE9 (void);
+// 0x000000DA System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.GetDeliveredNotificationsNativeCallback::EndInvoke(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.IAsyncResult)
+extern void GetDeliveredNotificationsNativeCallback_EndInvoke_mBF3E07E11D436C8EBBCEB8845E4023A6F051EA8A (void);
+// 0x000000DB System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.RegisterForRemoteNotificationsNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void RegisterForRemoteNotificationsNativeCallback__ctor_m66D8D49356B9E8599BEC80DF3CBD5F898CBA5758 (void);
+// 0x000000DC System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.RegisterForRemoteNotificationsNativeCallback::Invoke(System.String,System.String,System.IntPtr)
+extern void RegisterForRemoteNotificationsNativeCallback_Invoke_mA1AA53643FB224D734C6A11F631259822C63D50F (void);
+// 0x000000DD System.IAsyncResult VoxelBusters.EssentialKit.NotificationServicesCore.iOS.RegisterForRemoteNotificationsNativeCallback::BeginInvoke(System.String,System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void RegisterForRemoteNotificationsNativeCallback_BeginInvoke_m6A2A9BB04045F77246FC633F7A0EB83CE589BE3C (void);
+// 0x000000DE System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.RegisterForRemoteNotificationsNativeCallback::EndInvoke(System.IAsyncResult)
+extern void RegisterForRemoteNotificationsNativeCallback_EndInvoke_mF9CFD9739B5D497EAA9FD8A50ABAD8041DEA8AA3 (void);
+// 0x000000DF System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationReceivedNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void NotificationReceivedNativeCallback__ctor_m0FC97E347E7E7BA06785465D44CAF42940CFDB11 (void);
+// 0x000000E0 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationReceivedNativeCallback::Invoke(System.IntPtr,System.Boolean)
+extern void NotificationReceivedNativeCallback_Invoke_mEE4CB0B6E3AE3628B1817FA08EF2245A347FF036 (void);
+// 0x000000E1 System.IAsyncResult VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationReceivedNativeCallback::BeginInvoke(System.IntPtr,System.Boolean,System.AsyncCallback,System.Object)
+extern void NotificationReceivedNativeCallback_BeginInvoke_m1574827710DC6A6DF07E512E28C901DE28702962 (void);
+// 0x000000E2 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationReceivedNativeCallback::EndInvoke(System.IAsyncResult)
+extern void NotificationReceivedNativeCallback_EndInvoke_m5562FC7BBA01F43D670484404D36A7A5715D100C (void);
+// 0x000000E3 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::.ctor(System.String)
+extern void Notification__ctor_m0CBEE2CB8D0212BEBFDBEC301C0906F1254A44F0 (void);
+// 0x000000E4 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::.ctor(System.IntPtr,System.Boolean)
+extern void Notification__ctor_m83BB8B4F22D383A82F8737BE7A333B03AAF7ECFB (void);
+// 0x000000E5 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::Finalize()
+extern void Notification_Finalize_m29914F44FAA1B0533C0A002E8D7B04126503F1E1 (void);
+// 0x000000E6 System.String VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::GetTitleInternal()
+extern void Notification_GetTitleInternal_m21FAE1CBE8085AB1841742183107A9803FB2A2A5 (void);
+// 0x000000E7 System.String VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::GetSubtitleInternal()
+extern void Notification_GetSubtitleInternal_mB0347F5D9AFDE70E1A1896D7A0F23FD8AA434761 (void);
+// 0x000000E8 System.String VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::GetBodyInternal()
+extern void Notification_GetBodyInternal_m6CCB0E402D9CA2C77B43DA6471A60772BB46215A (void);
+// 0x000000E9 System.Int32 VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::GetBadgeInternal()
+extern void Notification_GetBadgeInternal_m635C11CB2751E89DC03886A48EFE6C6A39770483 (void);
+// 0x000000EA System.Collections.IDictionary VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::GetUserInfoInternal()
+extern void Notification_GetUserInfoInternal_m07D99D82A14DB0B60F52C617ABE738A740EF4985 (void);
+// 0x000000EB System.String VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::GetSoundFileNameInternal()
+extern void Notification_GetSoundFileNameInternal_m108AA98317F1263E526B2F3C38C1EAD5D3FACFA8 (void);
+// 0x000000EC VoxelBusters.EssentialKit.INotificationTrigger VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::GetTriggerInternal()
+extern void Notification_GetTriggerInternal_m64F2ECD7AEA2D23F71F2229574E651B0051F161B (void);
+// 0x000000ED System.Boolean VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::GetIsLaunchNotificationInternal()
+extern void Notification_GetIsLaunchNotificationInternal_m887A359DEBAC71D2F74651CF90DE4608BA4B0122 (void);
+// 0x000000EE VoxelBusters.EssentialKit.NotificationIosProperties VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::GetIosPropertiesInternal()
+extern void Notification_GetIosPropertiesInternal_m1D3A4CFF522A6E0A4EF7434EA60C2938D250EFC0 (void);
+// 0x000000EF VoxelBusters.EssentialKit.NotificationAndroidProperties VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::GetAndroidPropertiesInternal()
+extern void Notification_GetAndroidPropertiesInternal_m9FDF23330261DA3396FF4B35E5A4E786D890FDB9 (void);
+// 0x000000F0 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::Dispose(System.Boolean)
+extern void Notification_Dispose_m8AC0B3EDB7596459F1C29AADEA6252E9E0FBF6F6 (void);
+// 0x000000F1 VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativeObjectRef VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::GetNativeContentInternal()
+extern void Notification_GetNativeContentInternal_m1F33C2DD56C71A7FD0E4AD37C5E5AA4DFBB3431A (void);
+// 0x000000F2 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::SetNativeContentInternal(VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativeObjectRef)
+extern void Notification_SetNativeContentInternal_mC600DD4697092D0BE71264AF78F337775E2A46BD (void);
+// 0x000000F3 VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativeObjectRef VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::GetNativeTriggerInternal()
+extern void Notification_GetNativeTriggerInternal_m9E584CA73C84781E60F4E655B6D0E9E88CC4AD83 (void);
+// 0x000000F4 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::SetTriggerInternal(VoxelBusters.EssentialKit.INotificationTrigger,VoxelBusters.CoreLibrary.NativePlugins.iOS.IosNativeObjectRef)
+extern void Notification_SetTriggerInternal_mCD660203DCC3FCD67DC035462BE83BC5677C2253 (void);
+// 0x000000F5 System.Boolean VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification::CanCreateTrigger()
+extern void Notification_CanCreateTrigger_mB73F85935ACE6E9AEBC3B3907038AF14715A9E80 (void);
+// 0x000000F6 System.IntPtr VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationRequestCreate(System.String,System.IntPtr,System.IntPtr)
+extern void NotificationBinding_NPNotificationRequestCreate_mABB788521E4C7174CE5B6C0AA35BB6341273DDC1 (void);
+// 0x000000F7 System.String VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationRequestGetId(System.IntPtr)
+extern void NotificationBinding_NPNotificationRequestGetId_m3B2F49017142EDEFEE6B8B73CA1BC011944D54E3 (void);
+// 0x000000F8 VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationTriggerType VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationRequestGetTriggerType(System.IntPtr)
+extern void NotificationBinding_NPNotificationRequestGetTriggerType_m06A2EEE7310946A0C6B767AD0C8B1AF7583D9FB7 (void);
+// 0x000000F9 System.IntPtr VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationRequestGetContent(System.IntPtr)
+extern void NotificationBinding_NPNotificationRequestGetContent_m2AA2D18296608AC071442EA061F7260B0B913CA1 (void);
+// 0x000000FA System.IntPtr VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationRequestGetTrigger(System.IntPtr)
+extern void NotificationBinding_NPNotificationRequestGetTrigger_m4E4D303ADFEFAB9595BA0D26957BD04025E75E71 (void);
+// 0x000000FB System.IntPtr VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationContentCreate()
+extern void NotificationBinding_NPNotificationContentCreate_mB61B6D20F161000719536DFD4929DC1218933DEA (void);
+// 0x000000FC System.String VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationContentGetTitle(System.IntPtr)
+extern void NotificationBinding_NPNotificationContentGetTitle_mD91E317B7EF95C7B06654ECCB4429B8511D6FFD1 (void);
+// 0x000000FD System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationContentSetTitle(System.IntPtr,System.String)
+extern void NotificationBinding_NPNotificationContentSetTitle_mED14C641DDCBA47037C5CBFCF23ACE7333E40BAB (void);
+// 0x000000FE System.String VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationContentGetSubtitle(System.IntPtr)
+extern void NotificationBinding_NPNotificationContentGetSubtitle_mC7937B52694B8B80D1466F06157A67EBD84FAD30 (void);
+// 0x000000FF System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationContentSetSubtitle(System.IntPtr,System.String)
+extern void NotificationBinding_NPNotificationContentSetSubtitle_m1BBC3189C6DE98B95BEFB1C68C3C9D78502A93E2 (void);
+// 0x00000100 System.String VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationContentGetBody(System.IntPtr)
+extern void NotificationBinding_NPNotificationContentGetBody_mFA9D1516096002623072778F2CD59EA39C96E954 (void);
+// 0x00000101 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationContentSetBody(System.IntPtr,System.String)
+extern void NotificationBinding_NPNotificationContentSetBody_mB33EE59EA1B984614DBF43A6212062117D059E4A (void);
+// 0x00000102 System.Int32 VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationContentGetBadge(System.IntPtr)
+extern void NotificationBinding_NPNotificationContentGetBadge_m7AB2692F37691581D3CFE36D69D0F082B6D0AADB (void);
+// 0x00000103 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationContentSetBadge(System.IntPtr,System.Int32)
+extern void NotificationBinding_NPNotificationContentSetBadge_m466203A2005956336E11C442EFA44B91A7432E9D (void);
+// 0x00000104 System.String VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationContentGetUserInfo(System.IntPtr)
+extern void NotificationBinding_NPNotificationContentGetUserInfo_mBC23A720887CE2049070C1D6C9EF89C3C7C45D2A (void);
+// 0x00000105 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationContentSetUserInfo(System.IntPtr,System.String)
+extern void NotificationBinding_NPNotificationContentSetUserInfo_mA81359DE129969CCF5FADDE4B2930DBC541A1BB8 (void);
+// 0x00000106 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationContentSetSoundName(System.IntPtr,System.String)
+extern void NotificationBinding_NPNotificationContentSetSoundName_m85334F6F28A6B4A27B965304E3AC5C44A4B00483 (void);
+// 0x00000107 System.String VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationContentGetLaunchImageName(System.IntPtr)
+extern void NotificationBinding_NPNotificationContentGetLaunchImageName_m63DCBB15F90354772E3D8DFBA299BFCE4923CBB1 (void);
+// 0x00000108 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationContentSetLaunchImageName(System.IntPtr,System.String)
+extern void NotificationBinding_NPNotificationContentSetLaunchImageName_m0F94A80CAD8EA31D8FD52E8F229CF4237D3058EF (void);
+// 0x00000109 System.String VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationContentGetCategoryId(System.IntPtr)
+extern void NotificationBinding_NPNotificationContentGetCategoryId_m9A931528DB858709B77C9C0E4F689F38D846A8F9 (void);
+// 0x0000010A System.Boolean VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPNotificationTriggerGetRepeats(System.IntPtr)
+extern void NotificationBinding_NPNotificationTriggerGetRepeats_m9FDCCA16D779DCB80AAD00D9882EA7FF7B3E39E6 (void);
+// 0x0000010B System.IntPtr VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPTimeIntervalNotificationTriggerCreate(System.Double,System.Boolean)
+extern void NotificationBinding_NPTimeIntervalNotificationTriggerCreate_mB8183B71373089091489282606A429882FACB11D (void);
+// 0x0000010C System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPTimeIntervalNotificationTriggerGetProperties(System.IntPtr,System.Double&,System.String&,System.Boolean&)
+extern void NotificationBinding_NPTimeIntervalNotificationTriggerGetProperties_m00421174E78C08AA43C697956D59CC266C7011B0 (void);
+// 0x0000010D System.IntPtr VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPCalendarNotificationTriggerCreate(VoxelBusters.CoreLibrary.NativePlugins.UnityDateComponents,System.Boolean)
+extern void NotificationBinding_NPCalendarNotificationTriggerCreate_m7431D7B053D7CA2F4969F96561970206380B6328 (void);
+// 0x0000010E System.String VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPCalendarNotificationTriggerGetProperties(System.IntPtr,VoxelBusters.CoreLibrary.NativePlugins.UnityDateComponents&,System.String&,System.Boolean&)
+extern void NotificationBinding_NPCalendarNotificationTriggerGetProperties_m3AA6A887221DFF53E22B003D6A366C7C34594C9D (void);
+// 0x0000010F System.IntPtr VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPLocationNotificationTriggerCreate(VoxelBusters.CoreLibrary.NativePlugins.UnityCircularRegion,System.Boolean,System.Boolean,System.Boolean)
+extern void NotificationBinding_NPLocationNotificationTriggerCreate_mBC955FBFE3465CB7C7FBF3E6C5820F2374A512B8 (void);
+// 0x00000110 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationBinding::NPLocationNotificationTriggerGetProperties(System.IntPtr,VoxelBusters.CoreLibrary.NativePlugins.UnityCircularRegion&,System.Boolean&,System.Boolean&,System.Boolean&)
+extern void NotificationBinding_NPLocationNotificationTriggerGetProperties_m0423865E94143B5C7C1A0F00C4495B5BDC75695D (void);
+// 0x00000111 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterBinding::NPNotificationCenterRegisterCallbacks(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.RequestAuthorizationNativeCallback,VoxelBusters.EssentialKit.NotificationServicesCore.iOS.GetSettingsNativeCallback,VoxelBusters.EssentialKit.NotificationServicesCore.iOS.ScheduleNotificationNativeCallback,VoxelBusters.EssentialKit.NotificationServicesCore.iOS.GetScheduledNotificationsNativeCallback,VoxelBusters.EssentialKit.NotificationServicesCore.iOS.GetDeliveredNotificationsNativeCallback,VoxelBusters.EssentialKit.NotificationServicesCore.iOS.RegisterForRemoteNotificationsNativeCallback,VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationReceivedNativeCallback)
+extern void NotificationCenterBinding_NPNotificationCenterRegisterCallbacks_mE8C0F552841CA47F28697D486301B9B829350A2D (void);
+// 0x00000112 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterBinding::NPNotificationCenterInit(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationPresentationOptions)
+extern void NotificationCenterBinding_NPNotificationCenterInit_m952FA9CBF6EFCCDBFFECE3CD0354ACB60ADE0EBA (void);
+// 0x00000113 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterBinding::NPNotificationCenterRequestAuthorization(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNAuthorizationOptions,System.IntPtr)
+extern void NotificationCenterBinding_NPNotificationCenterRequestAuthorization_mC839BB35B1AED9F48726592EA170901D757B2B33 (void);
+// 0x00000114 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterBinding::NPNotificationCenterGetSettings(System.IntPtr)
+extern void NotificationCenterBinding_NPNotificationCenterGetSettings_m526E96D89A8FAC51C58965D54517CA6EBCFC98AA (void);
+// 0x00000115 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterBinding::NPNotificationCenterScheduleLocalNotification(System.IntPtr,System.IntPtr)
+extern void NotificationCenterBinding_NPNotificationCenterScheduleLocalNotification_m43E65C4FDDED53C3C3B0FE5DBDB60FDEED6350FE (void);
+// 0x00000116 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterBinding::NPNotificationCenterGetScheduledNotifications(System.IntPtr)
+extern void NotificationCenterBinding_NPNotificationCenterGetScheduledNotifications_mD68E49840239B44E24964335F10EA1ABD47D485B (void);
+// 0x00000117 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterBinding::NPNotificationCenterRemovePendingNotification(System.String)
+extern void NotificationCenterBinding_NPNotificationCenterRemovePendingNotification_m305CDF06742DCCF43D586940C0F6C3FECE5C97EE (void);
+// 0x00000118 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterBinding::NPNotificationCenterRemoveAllPendingNotifications()
+extern void NotificationCenterBinding_NPNotificationCenterRemoveAllPendingNotifications_m02F2F3987FF18A3BDC11DEABD68D49881222F578 (void);
+// 0x00000119 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterBinding::NPNotificationCenterRemoveAllDeliveredNotifications()
+extern void NotificationCenterBinding_NPNotificationCenterRemoveAllDeliveredNotifications_m17957A65745002D851D20CA9ECC935E4D45CCA1D (void);
+// 0x0000011A System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterBinding::NPNotificationCenterGetDeliveredNotifications(System.IntPtr)
+extern void NotificationCenterBinding_NPNotificationCenterGetDeliveredNotifications_m49C56A124B3C7A1916E5C2FF8AA1FC4AE47B8D7D (void);
+// 0x0000011B System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterBinding::NPNotificationCenterRegisterForRemoteNotifications(System.IntPtr)
+extern void NotificationCenterBinding_NPNotificationCenterRegisterForRemoteNotifications_mC04DAF5C38D04380DBE28473CF3499A54A26295E (void);
+// 0x0000011C System.Boolean VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterBinding::NPNotificationCenterIsRegisteredForRemoteNotifications()
+extern void NotificationCenterBinding_NPNotificationCenterIsRegisteredForRemoteNotifications_m4349D37932B5A12D9D608782CD70DB6CEDDB10CA (void);
+// 0x0000011D System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterBinding::NPNotificationCenterUnregisterForRemoteNotifications()
+extern void NotificationCenterBinding_NPNotificationCenterUnregisterForRemoteNotifications_mB1461496953F1D82472F4C112EDD8B66B646780C (void);
+// 0x0000011E System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterBinding::NPNotificationCenterSetApplicationIconBadgeNumber(System.Int32)
+extern void NotificationCenterBinding_NPNotificationCenterSetApplicationIconBadgeNumber_m347B645AF404B476D6AC58228E7894A9BB02D2AB (void);
+// 0x0000011F System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::.ctor()
+extern void NotificationCenterInterface__ctor_m383FB2FA903A8817796D419ED4877139F3078F58 (void);
+// 0x00000120 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::RequestPermission(VoxelBusters.EssentialKit.NotificationPermissionOptions,VoxelBusters.EssentialKit.NotificationServicesCore.RequestPermissionInternalCallback)
+extern void NotificationCenterInterface_RequestPermission_mD71C98FB163704E0C874B33C541630370F26ED0B (void);
+// 0x00000121 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::GetSettings(VoxelBusters.EssentialKit.NotificationServicesCore.GetSettingsInternalCallback)
+extern void NotificationCenterInterface_GetSettings_mFBE60545154C81AD7DC76E5C38A423A1B4600CD2 (void);
+// 0x00000122 VoxelBusters.EssentialKit.NotificationServicesCore.IMutableNotification VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::CreateMutableNotification(System.String)
+extern void NotificationCenterInterface_CreateMutableNotification_m3921432054F1AB096E62CD42B21EB003F31D38B8 (void);
+// 0x00000123 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::ScheduleNotification(VoxelBusters.EssentialKit.INotification,VoxelBusters.EssentialKit.NotificationServicesCore.ScheduleNotificationInternalCallback)
+extern void NotificationCenterInterface_ScheduleNotification_mA650A075ED8DF00680CC08A57EFBEC4F3ED39C05 (void);
+// 0x00000124 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::GetScheduledNotifications(VoxelBusters.EssentialKit.NotificationServicesCore.GetNotificationsInternalCallback)
+extern void NotificationCenterInterface_GetScheduledNotifications_mF89E9C295D928D0ADB34F5B18CBC56195FFA403A (void);
+// 0x00000125 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::CancelScheduledNotification(System.String)
+extern void NotificationCenterInterface_CancelScheduledNotification_mFFD686B5AF0CF601717A50E3B6E4177C631DA258 (void);
+// 0x00000126 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::CancelAllScheduledNotifications()
+extern void NotificationCenterInterface_CancelAllScheduledNotifications_m1B237436D65CC03EA2A18007BCFACE751201494F (void);
+// 0x00000127 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::GetDeliveredNotifications(VoxelBusters.EssentialKit.NotificationServicesCore.GetNotificationsInternalCallback)
+extern void NotificationCenterInterface_GetDeliveredNotifications_m5759C4046F7BA12F496CB3C2057145729ACAC6B3 (void);
+// 0x00000128 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::RemoveAllDeliveredNotifications()
+extern void NotificationCenterInterface_RemoveAllDeliveredNotifications_m887F0E9D06C2788BE48CA9B013DF86EB09E717EB (void);
+// 0x00000129 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::RegisterForPushNotifications(VoxelBusters.EssentialKit.NotificationServicesCore.RegisterForPushNotificationsInternalCallback)
+extern void NotificationCenterInterface_RegisterForPushNotifications_m0D1D01D0576EFCF876AA4D3382CC12582E099340 (void);
+// 0x0000012A System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::UnregisterForPushNotifications()
+extern void NotificationCenterInterface_UnregisterForPushNotifications_mC58EEA4EE4AEE9C36615FA113286C3CB4E4CA101 (void);
+// 0x0000012B System.Boolean VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::IsRegisteredForPushNotifications()
+extern void NotificationCenterInterface_IsRegisteredForPushNotifications_m14F322895EC802B53E957F20C4C34F39FC9DE765 (void);
+// 0x0000012C System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::SetApplicationIconBadgeNumber(System.Int32)
+extern void NotificationCenterInterface_SetApplicationIconBadgeNumber_mC03D4986FC15EBAD5F6A350D59FA952D84C66185 (void);
+// 0x0000012D System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::HandleRequestAuthorizationCallback(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNAuthorizationStatus,System.String,System.IntPtr)
+extern void NotificationCenterInterface_HandleRequestAuthorizationCallback_m4308D218C567B29C8BFD86699552617CDE99F1FE (void);
+// 0x0000012E System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::HandleGetSettingsCallback(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData&,System.IntPtr)
+extern void NotificationCenterInterface_HandleGetSettingsCallback_m3FF291499E564CFBD71653D2C60354ACB1172C67 (void);
+// 0x0000012F System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::HandleScheduleNotificationCallback(System.String,System.IntPtr)
+extern void NotificationCenterInterface_HandleScheduleNotificationCallback_mB5EE6AA98903B9D92B023ABA798538E12D75694A (void);
+// 0x00000130 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::HandleGetScheduledNotificationsCallback(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.String,System.IntPtr)
+extern void NotificationCenterInterface_HandleGetScheduledNotificationsCallback_m639FE987836E63088B18C2CB2A730DC04D4DBA1F (void);
+// 0x00000131 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::HandleGetDeliveredNotificationsCallback(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.String,System.IntPtr)
+extern void NotificationCenterInterface_HandleGetDeliveredNotificationsCallback_mC484B56AE83B671BE0614608FE914905828AC0DF (void);
+// 0x00000132 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::HandleRegisterForRemoteNotificationsCallback(System.String,System.String,System.IntPtr)
+extern void NotificationCenterInterface_HandleRegisterForRemoteNotificationsCallback_m314EE2F4005A17969975581A6A2837F2D3B3BF67 (void);
+// 0x00000133 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface::HandleNotificationReceivedCallback(System.IntPtr,System.Boolean)
+extern void NotificationCenterInterface_HandleNotificationReceivedCallback_m638EE2EDFD00241808CBEE8B6013F05D5C9D183F (void);
+// 0x00000134 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface/<>c::.cctor()
+extern void U3CU3Ec__cctor_mF555551520652B58C7CF37A003680B66FABCF4C6 (void);
+// 0x00000135 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface/<>c::.ctor()
+extern void U3CU3Ec__ctor_mED9FBB68150A1B4F0DB3AE878FDE8D81AE95BDF8 (void);
+// 0x00000136 VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface/<>c::<HandleGetScheduledNotificationsCallback>b__18_0(System.IntPtr)
+extern void U3CU3Ec_U3CHandleGetScheduledNotificationsCallbackU3Eb__18_0_mB76BEE8B72AC3384DAED9AC150041C42294AFDE6 (void);
+// 0x00000137 VoxelBusters.EssentialKit.NotificationServicesCore.iOS.Notification VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationCenterInterface/<>c::<HandleGetDeliveredNotificationsCallback>b__19_0(System.IntPtr)
+extern void U3CU3Ec_U3CHandleGetDeliveredNotificationsCallbackU3Eb__19_0_m5D3A3FB4255E234032C36543B129D545C1DE98FC (void);
+// 0x00000138 VoxelBusters.EssentialKit.NotificationPermissionStatus VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationServicesUtility::ConvertToNotificationPermissionStatus(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNAuthorizationStatus)
+extern void NotificationServicesUtility_ConvertToNotificationPermissionStatus_mEB3667A87A976A5B144931925AAEAB93D7EDCA04 (void);
+// 0x00000139 VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNAuthorizationOptions VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationServicesUtility::ConvertToUNAuthorizationOptions(VoxelBusters.EssentialKit.NotificationPermissionOptions)
+extern void NotificationServicesUtility_ConvertToUNAuthorizationOptions_m18044F6FE9099AA1B711BA89BB975A5490F21631 (void);
+// 0x0000013A VoxelBusters.EssentialKit.NotificationSettingStatus VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationServicesUtility::ConvertToNotificationSettingStatus(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting)
+extern void NotificationServicesUtility_ConvertToNotificationSettingStatus_m621F34FAE270100714A9959F8CDFDCACFAB3190B (void);
+// 0x0000013B VoxelBusters.EssentialKit.NotificationPreviewStyle VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationServicesUtility::ConvertToNotificationPreviewStyle(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNShowPreviewsSetting)
+extern void NotificationServicesUtility_ConvertToNotificationPreviewStyle_m3BEC5557D66935F0A5C35A923352D5864C104C11 (void);
+// 0x0000013C VoxelBusters.EssentialKit.NotificationAlertStyle VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationServicesUtility::ConvertToNotificationAlertStyle(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNAlertStyle)
+extern void NotificationServicesUtility_ConvertToNotificationAlertStyle_m6664EB44A3F115A78C4BE31FE36186BE2FCA3033 (void);
+// 0x0000013D VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationPresentationOptions VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationServicesUtility::ConvertToUNNotificationPresentationOptions(VoxelBusters.EssentialKit.NotificationPresentationOptions)
+extern void NotificationServicesUtility_ConvertToUNNotificationPresentationOptions_m2D08CDABF68ED42EB0271AFAC2C4C8BEB2A35A11 (void);
+// 0x0000013E System.Boolean VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationServicesUtility::Contains(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting,VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting)
+extern void NotificationServicesUtility_Contains_mEB868AC37096A0C137CA82157DDDC20AF66A49EB (void);
+// 0x0000013F System.Boolean VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationServicesUtility::Contains(VoxelBusters.EssentialKit.NotificationPermissionOptions,VoxelBusters.EssentialKit.NotificationPermissionOptions)
+extern void NotificationServicesUtility_Contains_mA95496E9441AE245046776C8ED854F262A1572D2 (void);
+// 0x00000140 System.Boolean VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationServicesUtility::Contains(VoxelBusters.EssentialKit.NotificationPresentationOptions,VoxelBusters.EssentialKit.NotificationPresentationOptions)
+extern void NotificationServicesUtility_Contains_m7DFCBBE0BCC415D7B8860FD0000F04AA9D324DB4 (void);
+// 0x00000141 VoxelBusters.EssentialKit.INotificationTrigger VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationTrigger::CreateNotificationTrigger(System.IntPtr,System.IntPtr)
+extern void NotificationTrigger_CreateNotificationTrigger_m46CB29ABC27D4EDDD43E099FB63FF2260EB27E0E (void);
+// 0x00000142 VoxelBusters.EssentialKit.TimeIntervalNotificationTrigger VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationTrigger::CreateTimeIntervalNotificationTrigger(System.IntPtr)
+extern void NotificationTrigger_CreateTimeIntervalNotificationTrigger_m29B0C886D3C86C38BA987E05100B3CBDBD5B6664 (void);
+// 0x00000143 VoxelBusters.EssentialKit.CalendarNotificationTrigger VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationTrigger::CreateCalendarNotificationTrigger(System.IntPtr)
+extern void NotificationTrigger_CreateCalendarNotificationTrigger_m53004417CF2CBC52E6946DF70CE20672F9AFCCFA (void);
+// 0x00000144 VoxelBusters.EssentialKit.LocationNotificationTrigger VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationTrigger::CreateLocationNotificationTrigger(System.IntPtr)
+extern void NotificationTrigger_CreateLocationNotificationTrigger_m906A7567B6CF4BF4B26078F54A728CEE0B5C97B8 (void);
+// 0x00000145 VoxelBusters.EssentialKit.PushNotificationTrigger VoxelBusters.EssentialKit.NotificationServicesCore.iOS.NotificationTrigger::CreatePushNotificationTrigger()
+extern void NotificationTrigger_CreatePushNotificationTrigger_m559D827EF561B9D98B4264A1C85A21A2B8688EA5 (void);
+// 0x00000146 VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNAuthorizationStatus VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::get_AuthorizationStatus()
+extern void UNNotificationSettingsData_get_AuthorizationStatus_m692E8DDE1F0D107DA84990F1DA67EA4E45B359A4 (void);
+// 0x00000147 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::set_AuthorizationStatus(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNAuthorizationStatus)
+extern void UNNotificationSettingsData_set_AuthorizationStatus_mB7E7A20CC68E4B9CDFECFFBAAB4E67227C42EF40 (void);
+// 0x00000148 VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::get_AlertSetting()
+extern void UNNotificationSettingsData_get_AlertSetting_mCECF8C449DA1F56E812FC0A3C8BFFEAFED1DD72F (void);
+// 0x00000149 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::set_AlertSetting(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting)
+extern void UNNotificationSettingsData_set_AlertSetting_mD649C73824170252EC217BDE7BCF97BB9EEE9C5A (void);
+// 0x0000014A VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::get_BadgeSetting()
+extern void UNNotificationSettingsData_get_BadgeSetting_m8E9A66503BCED82E58808873D7C59524CEB6D672 (void);
+// 0x0000014B System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::set_BadgeSetting(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting)
+extern void UNNotificationSettingsData_set_BadgeSetting_m429594D70263FEC2162F1F3D6FFFAE0AC949C149 (void);
+// 0x0000014C VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::get_CarPlaySetting()
+extern void UNNotificationSettingsData_get_CarPlaySetting_m7144EDA16CEB44476D9BDC2CC26AA9769E8F8A83 (void);
+// 0x0000014D System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::set_CarPlaySetting(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting)
+extern void UNNotificationSettingsData_set_CarPlaySetting_m7750CCD68E2B23C6C5F5353AF07F35AD45B2B2E4 (void);
+// 0x0000014E VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::get_LockScreenSetting()
+extern void UNNotificationSettingsData_get_LockScreenSetting_mCDCD0F285451CB3D245825E32DBBC24A24010DA0 (void);
+// 0x0000014F System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::set_LockScreenSetting(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting)
+extern void UNNotificationSettingsData_set_LockScreenSetting_m27C9D0F73636BDB18AC4DD7C85523AE1DA980661 (void);
+// 0x00000150 VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::get_NotificationCenterSetting()
+extern void UNNotificationSettingsData_get_NotificationCenterSetting_mFB7D3D9E7904017AE105826B64204CBA7226437F (void);
+// 0x00000151 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::set_NotificationCenterSetting(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting)
+extern void UNNotificationSettingsData_set_NotificationCenterSetting_mB67758ADB9D22EDD69D18A18D02C7AE06702DF14 (void);
+// 0x00000152 VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::get_SoundSetting()
+extern void UNNotificationSettingsData_get_SoundSetting_m38A0191E65710FA2D8ACF54A626BFF1FECCB2226 (void);
+// 0x00000153 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::set_SoundSetting(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting)
+extern void UNNotificationSettingsData_set_SoundSetting_m1A5CDBFA292F080C851C82403D5AD14BEFDD5A6B (void);
+// 0x00000154 VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::get_CriticalAlertSetting()
+extern void UNNotificationSettingsData_get_CriticalAlertSetting_m0B2E8A1334410DF8EB5C629A82BCADA4A2707B7E (void);
+// 0x00000155 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::set_CriticalAlertSetting(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting)
+extern void UNNotificationSettingsData_set_CriticalAlertSetting_m1C3BDB61F2A2B396B543FC0FCE2EECF4344ADE3A (void);
+// 0x00000156 VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::get_AnnouncementSetting()
+extern void UNNotificationSettingsData_get_AnnouncementSetting_m5129F84E10B2D82D99279ED480C3BFB6678F91AB (void);
+// 0x00000157 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::set_AnnouncementSetting(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSetting)
+extern void UNNotificationSettingsData_set_AnnouncementSetting_m4082CBCF70464E177C877DE0BD8E9BC3647C62C6 (void);
+// 0x00000158 VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNAlertStyle VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::get_AlertStyle()
+extern void UNNotificationSettingsData_get_AlertStyle_m63E5B896A1B5FDE5D53DC242DAE546B466060692 (void);
+// 0x00000159 System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::set_AlertStyle(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNAlertStyle)
+extern void UNNotificationSettingsData_set_AlertStyle_m854BAF1C04D5BA08BF274DFD5111D6AB8DA521CF (void);
+// 0x0000015A VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNShowPreviewsSetting VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::get_ShowPreviewsSetting()
+extern void UNNotificationSettingsData_get_ShowPreviewsSetting_m8DAF528D53D65B8305A97DA308F631DDE476E270 (void);
+// 0x0000015B System.Void VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNNotificationSettingsData::set_ShowPreviewsSetting(VoxelBusters.EssentialKit.NotificationServicesCore.iOS.UNShowPreviewsSetting)
+extern void UNNotificationSettingsData_set_ShowPreviewsSetting_mD921027D20FD42FA499B12E6FE7BC017F3C69353 (void);
+// 0x0000015C System.Void VoxelBusters.EssentialKit.NetworkServicesCore.iOS.ReachabilityChangeNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void ReachabilityChangeNativeCallback__ctor_m0A22D1538DA4A1B1B2FEA0CB7FAB03FF281B8CAD (void);
+// 0x0000015D System.Void VoxelBusters.EssentialKit.NetworkServicesCore.iOS.ReachabilityChangeNativeCallback::Invoke(System.Boolean,VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkStatus)
+extern void ReachabilityChangeNativeCallback_Invoke_mFCC10279E5BCFC3BBED29052CBC4FDFDDC3A1C96 (void);
+// 0x0000015E System.IAsyncResult VoxelBusters.EssentialKit.NetworkServicesCore.iOS.ReachabilityChangeNativeCallback::BeginInvoke(System.Boolean,VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkStatus,System.AsyncCallback,System.Object)
+extern void ReachabilityChangeNativeCallback_BeginInvoke_m718213437648F70CC2E047F6033FFE57A0EC2682 (void);
+// 0x0000015F System.Void VoxelBusters.EssentialKit.NetworkServicesCore.iOS.ReachabilityChangeNativeCallback::EndInvoke(System.IAsyncResult)
+extern void ReachabilityChangeNativeCallback_EndInvoke_mC24530FD0EA8480DEB4CC300923A5F825C0E9567 (void);
+// 0x00000160 System.Void VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkServicesBinding::NPNetworkServicesRegisterCallbacks(VoxelBusters.EssentialKit.NetworkServicesCore.iOS.ReachabilityChangeNativeCallback,VoxelBusters.EssentialKit.NetworkServicesCore.iOS.ReachabilityChangeNativeCallback)
+extern void NetworkServicesBinding_NPNetworkServicesRegisterCallbacks_m50B190E852C0E73122B93A61991A96A1C2B0DE18 (void);
+// 0x00000161 System.Void VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkServicesBinding::NPNetworkServicesInit(System.String)
+extern void NetworkServicesBinding_NPNetworkServicesInit_m75EF7276E722227F240B7360EC788A25CEF76477 (void);
+// 0x00000162 System.Void VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkServicesBinding::NPNetworkServicesStartReachabilityNotifier()
+extern void NetworkServicesBinding_NPNetworkServicesStartReachabilityNotifier_m25DD81A3A575BEE0E1D86BA0EC0DD2D99A33C857 (void);
+// 0x00000163 System.Void VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkServicesBinding::NPNetworkServicesStopReachabilityNotifier()
+extern void NetworkServicesBinding_NPNetworkServicesStopReachabilityNotifier_m5053BD4457D18B6A2119910E3475E06A49805636 (void);
+// 0x00000164 VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkStatus VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkServicesBinding::NPNetworkServicesGetInternetReachabilityStatus()
+extern void NetworkServicesBinding_NPNetworkServicesGetInternetReachabilityStatus_m219D8449B308EDB78295960E85F95690BFEF3A59 (void);
+// 0x00000165 VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkStatus VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkServicesBinding::NPNetworkServicesGetHostReachabilityStatus()
+extern void NetworkServicesBinding_NPNetworkServicesGetHostReachabilityStatus_mFCD85CB81DBB7FE365CB3871F6D077312096F908 (void);
+// 0x00000166 System.Void VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkServicesInterface::.ctor()
+extern void NetworkServicesInterface__ctor_m89A2A44A08A423E487D3BA2F10AF3E1E7BEBA2FF (void);
+// 0x00000167 System.Void VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkServicesInterface::StartNotifier()
+extern void NetworkServicesInterface_StartNotifier_mCB7DED0CD934E8187826554143A2F3BDD4AFB89D (void);
+// 0x00000168 System.Void VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkServicesInterface::StopNotifier()
+extern void NetworkServicesInterface_StopNotifier_m0586C642461837B49E20FDEFC0B8414F35A77BA5 (void);
+// 0x00000169 System.Void VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkServicesInterface::HandleInternetReachabilityChangeNativeCallback(System.Boolean,VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkStatus)
+extern void NetworkServicesInterface_HandleInternetReachabilityChangeNativeCallback_m690E3CBE594FD3A928EEE2EFEFF80214B6A89CAD (void);
+// 0x0000016A System.Void VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkServicesInterface::HandleHostReachabilityChangeNativeCallback(System.Boolean,VoxelBusters.EssentialKit.NetworkServicesCore.iOS.NetworkStatus)
+extern void NetworkServicesInterface_HandleHostReachabilityChangeNativeCallback_mA68D8241CDBF15720B063E9E53DE98355A7D3422 (void);
+// 0x0000016B System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.AlertControllerBinding::NPAlertControllerRegisterCallback(VoxelBusters.EssentialKit.NativeUICore.iOS.AlertActionSelectNativeCallback)
+extern void AlertControllerBinding_NPAlertControllerRegisterCallback_mB15C0100661DBBEF142275CA34F4614FCE603B6E (void);
+// 0x0000016C System.IntPtr VoxelBusters.EssentialKit.NativeUICore.iOS.AlertControllerBinding::NPAlertControllerCreate(System.String,System.String,VoxelBusters.EssentialKit.NativeUICore.iOS.UIAlertControllerStyle)
+extern void AlertControllerBinding_NPAlertControllerCreate_m28F769FF13CFC849A579FADA61694DAA30332D46 (void);
+// 0x0000016D System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.AlertControllerBinding::NPAlertControllerShow(System.IntPtr)
+extern void AlertControllerBinding_NPAlertControllerShow_m30D6A80D22532AC5A2851605E14B5A783C1CBA39 (void);
+// 0x0000016E System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.AlertControllerBinding::NPAlertControllerDismiss(System.IntPtr)
+extern void AlertControllerBinding_NPAlertControllerDismiss_m03AA12CF1CAF15F71CAB9135FE505DB66A09BAEB (void);
+// 0x0000016F System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.AlertControllerBinding::NPAlertControllerSetTitle(System.IntPtr,System.String)
+extern void AlertControllerBinding_NPAlertControllerSetTitle_mD1410CEF10F0EC15413BD89E9B9DB6D08FE8C297 (void);
+// 0x00000170 System.String VoxelBusters.EssentialKit.NativeUICore.iOS.AlertControllerBinding::NPAlertControllerGetTitle(System.IntPtr)
+extern void AlertControllerBinding_NPAlertControllerGetTitle_mC2E1CF7553E282CE4E056B21900222C5038277D0 (void);
+// 0x00000171 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.AlertControllerBinding::NPAlertControllerSetMessage(System.IntPtr,System.String)
+extern void AlertControllerBinding_NPAlertControllerSetMessage_m219B86C5413B6190B1F0D0B009D8F6DE2C364F26 (void);
+// 0x00000172 System.String VoxelBusters.EssentialKit.NativeUICore.iOS.AlertControllerBinding::NPAlertControllerGetMessage(System.IntPtr)
+extern void AlertControllerBinding_NPAlertControllerGetMessage_m00A08A66443A68405DC95B044ADCD24CF29C5040 (void);
+// 0x00000173 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.AlertControllerBinding::NPAlertControllerAddAction(System.IntPtr,System.String,System.Boolean)
+extern void AlertControllerBinding_NPAlertControllerAddAction_m39A5D28BE3A9D1768C1E75CF31CCDAB35BDD6D5F (void);
+// 0x00000174 VoxelBusters.EssentialKit.NativeUICore.iOS.UIAlertControllerStyle VoxelBusters.EssentialKit.NativeUICore.iOS.AlertControllerUtility::ConvertToUIAlertControllerStyle(VoxelBusters.EssentialKit.AlertDialogStyle)
+extern void AlertControllerUtility_ConvertToUIAlertControllerStyle_mF8444FA9A42D833BDE9CEDA2CE5C4F298595A8C9 (void);
+// 0x00000175 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.DatePickerControllerBinding::NPDatePickerControllerRegisterCallback(VoxelBusters.EssentialKit.NativeUICore.iOS.DatePickerControllerNativeCallback)
+extern void DatePickerControllerBinding_NPDatePickerControllerRegisterCallback_m270B2331B5C90C8CE1E63C8085DD6C952A816CD0 (void);
+// 0x00000176 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.DatePickerControllerBinding::NPDatePickerControllerShow(VoxelBusters.EssentialKit.NativeUICore.iOS.UIDatePickerMode,System.Int64,System.Int64,System.Int64,System.IntPtr)
+extern void DatePickerControllerBinding_NPDatePickerControllerShow_mB6D6D67AA9A72FBCB4F1D0E6ABFB7C4F93A430B2 (void);
+// 0x00000177 VoxelBusters.EssentialKit.NativeUICore.iOS.UIDatePickerMode VoxelBusters.EssentialKit.NativeUICore.iOS.DatePickerUtility::ConvertToUIDatePickerMode(VoxelBusters.EssentialKit.DatePickerMode)
+extern void DatePickerUtility_ConvertToUIDatePickerMode_m9579CE214A3BD8083144E1E3B5977CC01285F5AF (void);
+// 0x00000178 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeAlertDialog::.cctor()
+extern void NativeAlertDialog__cctor_m3CB33A93FBA91BB507CDB9975A14DD75FECA7F19 (void);
+// 0x00000179 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeAlertDialog::.ctor(VoxelBusters.EssentialKit.AlertDialogStyle)
+extern void NativeAlertDialog__ctor_m1D8EB2060E4E57ADA5DBBF94C4A8C8D964145EAF (void);
+// 0x0000017A System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeAlertDialog::Finalize()
+extern void NativeAlertDialog_Finalize_m0EC8A5AC354CE6A346012486DF9D3BC9695EFC10 (void);
+// 0x0000017B System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeAlertDialog::SetTitle(System.String)
+extern void NativeAlertDialog_SetTitle_mDF060A1BB78627111CB1D8E18302CC03B5B90127 (void);
+// 0x0000017C System.String VoxelBusters.EssentialKit.NativeUICore.iOS.NativeAlertDialog::GetTitle()
+extern void NativeAlertDialog_GetTitle_m072CEC65F961207A1A2AFB1E886FE5970800603C (void);
+// 0x0000017D System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeAlertDialog::SetMessage(System.String)
+extern void NativeAlertDialog_SetMessage_m355E2CD8913E8B204DBFCBB6910602C280048E05 (void);
+// 0x0000017E System.String VoxelBusters.EssentialKit.NativeUICore.iOS.NativeAlertDialog::GetMessage()
+extern void NativeAlertDialog_GetMessage_m44D2223A75351F2B3575B5F341E6D1C53BE7F725 (void);
+// 0x0000017F System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeAlertDialog::AddButton(System.String,System.Boolean)
+extern void NativeAlertDialog_AddButton_m3877ED9709D6F1FC93044B5FC2B4F0EF637A8376 (void);
+// 0x00000180 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeAlertDialog::Show()
+extern void NativeAlertDialog_Show_m8E55FA0DD709B19E7C5EAF49BEDB1E571F114727 (void);
+// 0x00000181 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeAlertDialog::Dismiss()
+extern void NativeAlertDialog_Dismiss_m0CA7223D434EE4B77E705FB2DF3E18F64FE4F8C1 (void);
+// 0x00000182 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeAlertDialog::Dispose(System.Boolean)
+extern void NativeAlertDialog_Dispose_m343DF0EF609E7399EA82359B14BEF6A65BE5222E (void);
+// 0x00000183 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeAlertDialog::HandleAlertActionSelectCallbackInternal(System.IntPtr,System.Int32)
+extern void NativeAlertDialog_HandleAlertActionSelectCallbackInternal_m2CBD957C5AD2A0AF628824F8F2820DC448672C05 (void);
+// 0x00000184 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeDatePicker::.cctor()
+extern void NativeDatePicker__cctor_mFBFF299759180E41DC7884E65403F953D725C14B (void);
+// 0x00000185 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeDatePicker::.ctor(VoxelBusters.EssentialKit.DatePickerMode)
+extern void NativeDatePicker__ctor_m002C18305533759FDC30D75DD80F68B39A41F4BD (void);
+// 0x00000186 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeDatePicker::Finalize()
+extern void NativeDatePicker_Finalize_mB68A467022F1A0DD3CD2636EA14C771F6651227A (void);
+// 0x00000187 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeDatePicker::SetKind(System.DateTimeKind)
+extern void NativeDatePicker_SetKind_m28F59CF9D91D0F0A4C0A4AF48C4BAC0FC91DA324 (void);
+// 0x00000188 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeDatePicker::SetMinimumDate(System.Nullable`1<System.DateTime>)
+extern void NativeDatePicker_SetMinimumDate_m319E0F76474F2FDE2E973F79F71D884023195B57 (void);
+// 0x00000189 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeDatePicker::SetMaximumDate(System.Nullable`1<System.DateTime>)
+extern void NativeDatePicker_SetMaximumDate_m0CF40320F6C77AC9C760E1AB4D32D7662B20DF65 (void);
+// 0x0000018A System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeDatePicker::SetInitialDate(System.Nullable`1<System.DateTime>)
+extern void NativeDatePicker_SetInitialDate_mCF203B6EF233638FB589DD406CFA77E7434EBB4E (void);
+// 0x0000018B System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeDatePicker::Show()
+extern void NativeDatePicker_Show_m93DD49521050830FD1EBC5AE37C13FB22605292F (void);
+// 0x0000018C System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeDatePicker::Dispose(System.Boolean)
+extern void NativeDatePicker_Dispose_m70BC61FD3B440E49F66DD80B3696FB52A9638D2D (void);
+// 0x0000018D System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeDatePicker::HandleDatePickerControllerCallbackInternal(System.Int64,System.IntPtr)
+extern void NativeDatePicker_HandleDatePickerControllerCallbackInternal_m79EEAC25E61E9EED0E77DE5B6E967773538C39FB (void);
+// 0x0000018E System.Int64 VoxelBusters.EssentialKit.NativeUICore.iOS.NativeDatePicker::GetEpochInSeconds(System.Nullable`1<System.DateTime>,System.Int64)
+extern void NativeDatePicker_GetEpochInSeconds_m972C88D60A69764410D152961DFF871D1FE4B42E (void);
+// 0x0000018F System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeDatePicker::<Show>b__11_0(System.Nullable`1<System.DateTime>,VoxelBusters.CoreLibrary.Error)
+extern void NativeDatePicker_U3CShowU3Eb__11_0_m3F97D9EF0626D1BF3BC746C65695B12C8889CC57 (void);
+// 0x00000190 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.AlertActionSelectNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void AlertActionSelectNativeCallback__ctor_m45C1757DF5ADB53DBFCEDB81848A5870787403D1 (void);
+// 0x00000191 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.AlertActionSelectNativeCallback::Invoke(System.IntPtr,System.Int32)
+extern void AlertActionSelectNativeCallback_Invoke_m20DF36D5ADBFA091023E8A5F9E2C25941D9FD56C (void);
+// 0x00000192 System.IAsyncResult VoxelBusters.EssentialKit.NativeUICore.iOS.AlertActionSelectNativeCallback::BeginInvoke(System.IntPtr,System.Int32,System.AsyncCallback,System.Object)
+extern void AlertActionSelectNativeCallback_BeginInvoke_m2CC339DA2A069DCF58B7BDDDBBD3A3CB3AAE69A3 (void);
+// 0x00000193 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.AlertActionSelectNativeCallback::EndInvoke(System.IAsyncResult)
+extern void AlertActionSelectNativeCallback_EndInvoke_m0FB33E2239D12A90FD650451B44DC22427B9FEF8 (void);
+// 0x00000194 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.DatePickerControllerNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void DatePickerControllerNativeCallback__ctor_m91333D2B2E59891AD5E34D6797F84955137123A0 (void);
+// 0x00000195 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.DatePickerControllerNativeCallback::Invoke(System.Int64,System.IntPtr)
+extern void DatePickerControllerNativeCallback_Invoke_mCF338B526B213BBF8C0BF39D2327F3146CC547E1 (void);
+// 0x00000196 System.IAsyncResult VoxelBusters.EssentialKit.NativeUICore.iOS.DatePickerControllerNativeCallback::BeginInvoke(System.Int64,System.IntPtr,System.AsyncCallback,System.Object)
+extern void DatePickerControllerNativeCallback_BeginInvoke_mA37378913CAC9F89752A53F6952713022AE5E611 (void);
+// 0x00000197 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.DatePickerControllerNativeCallback::EndInvoke(System.IAsyncResult)
+extern void DatePickerControllerNativeCallback_EndInvoke_mFEC59862AF4C870DCE09A4DC0FC370C86D552945 (void);
+// 0x00000198 System.Void VoxelBusters.EssentialKit.NativeUICore.iOS.NativeUIInterface::.ctor()
+extern void NativeUIInterface__ctor_m9B65175B4BFA47F68140C3A45A6AD6F7021C97D6 (void);
+// 0x00000199 VoxelBusters.EssentialKit.NativeUICore.INativeAlertDialogInterface VoxelBusters.EssentialKit.NativeUICore.iOS.NativeUIInterface::CreateAlertDialog(VoxelBusters.EssentialKit.AlertDialogStyle)
+extern void NativeUIInterface_CreateAlertDialog_m549DDED666A484D243CA863024C012A6508D41DB (void);
+// 0x0000019A VoxelBusters.EssentialKit.NativeUICore.INativeDatePickerInterface VoxelBusters.EssentialKit.NativeUICore.iOS.NativeUIInterface::CreateDatePicker(VoxelBusters.EssentialKit.DatePickerMode)
+extern void NativeUIInterface_CreateDatePicker_m58AC19CF960D181F8A3386D4EBA4F26C5BED0265 (void);
+// 0x0000019B System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesBinding::NPMediaServicesRegisterCallbacks(VoxelBusters.EssentialKit.MediaServicesCore.iOS.RequestPhotoLibraryAccessNativeCallback,VoxelBusters.EssentialKit.MediaServicesCore.iOS.RequestCameraAccessNativeCallback,VoxelBusters.EssentialKit.MediaServicesCore.iOS.PickImageNativeCallback,VoxelBusters.EssentialKit.MediaServicesCore.iOS.SaveImageToAlbumNativeCallback)
+extern void MediaServicesBinding_NPMediaServicesRegisterCallbacks_mCD25AD619B27CFED742311126CC0C206B89DC2F7 (void);
+// 0x0000019C System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesBinding::NPMediaServicesRequestPhotoLibraryAccess(System.IntPtr)
+extern void MediaServicesBinding_NPMediaServicesRequestPhotoLibraryAccess_m6F28ABEAB2E8E904689605F349C7A7805E7DF78C (void);
+// 0x0000019D VoxelBusters.EssentialKit.MediaServicesCore.iOS.PHAuthorizationStatus VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesBinding::NPMediaServicesGetPhotoLibraryAccessStatus()
+extern void MediaServicesBinding_NPMediaServicesGetPhotoLibraryAccessStatus_m4459ABCD38B279D0001ADF5F53F8FBE15ABD7DCC (void);
+// 0x0000019E System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesBinding::NPMediaServicesRequestCameraAccess(System.IntPtr)
+extern void MediaServicesBinding_NPMediaServicesRequestCameraAccess_mF1AAD5FDE2A4439AF1A92AC772E82EF114391DFB (void);
+// 0x0000019F VoxelBusters.EssentialKit.MediaServicesCore.iOS.AVAuthorizationStatus VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesBinding::NPMediaServicesGetCameraAccessStatus()
+extern void MediaServicesBinding_NPMediaServicesGetCameraAccessStatus_m033BC79EB1764565C2B118A2D9FC7FC0D77AFD58 (void);
+// 0x000001A0 System.Boolean VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesBinding::NPMediaServicesCanPickImageFromGallery()
+extern void MediaServicesBinding_NPMediaServicesCanPickImageFromGallery_mD8463CB6849C3BA0FBB9D4CCF4AE15CB5FEA985F (void);
+// 0x000001A1 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesBinding::NPMediaServicesPickImageFromGallery(System.Boolean,System.IntPtr)
+extern void MediaServicesBinding_NPMediaServicesPickImageFromGallery_m8890A840FF22FD7DC0C846880A88FAAE079878BD (void);
+// 0x000001A2 System.Boolean VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesBinding::NPMediaServicesCanPickImageFromCamera()
+extern void MediaServicesBinding_NPMediaServicesCanPickImageFromCamera_m37CEFB29C682C63378A8FB62309432E8F4B10A41 (void);
+// 0x000001A3 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesBinding::NPMediaServicesPickImageFromCamera(System.Boolean,System.IntPtr)
+extern void MediaServicesBinding_NPMediaServicesPickImageFromCamera_m8C6CF967029F4A451446BFFFA5EA8ECD0EDC507D (void);
+// 0x000001A4 System.Boolean VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesBinding::NPMediaServicesCanSaveImageToAlbum()
+extern void MediaServicesBinding_NPMediaServicesCanSaveImageToAlbum_mF45DA0B9407898077E9E67A941C3BC8F737F3050 (void);
+// 0x000001A5 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesBinding::NPMediaServicesSaveImageToAlbum(System.String,System.IntPtr,System.Int32,System.IntPtr)
+extern void MediaServicesBinding_NPMediaServicesSaveImageToAlbum_mB9E7A8ADD667ABBAF598CC061B9FA954C1544F3E (void);
+// 0x000001A6 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::.cctor()
+extern void MediaServicesInterface__cctor_mD3273FD78B08DEA540B2C826BFE4CFECB38374BA (void);
+// 0x000001A7 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::.ctor()
+extern void MediaServicesInterface__ctor_mB62684B0124E7782B700C604350783D602A8F481 (void);
+// 0x000001A8 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::RequestGalleryAccess(VoxelBusters.EssentialKit.GalleryAccessMode,VoxelBusters.EssentialKit.MediaServicesCore.RequestGalleryAccessInternalCallback)
+extern void MediaServicesInterface_RequestGalleryAccess_mAF31763C385F2ABD08495BA6408D2B23930D91E4 (void);
+// 0x000001A9 VoxelBusters.EssentialKit.GalleryAccessStatus VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::GetGalleryAccessStatus(VoxelBusters.EssentialKit.GalleryAccessMode)
+extern void MediaServicesInterface_GetGalleryAccessStatus_m83473A8F7E2EE370D77B84DF54DBF2765FEC733C (void);
+// 0x000001AA System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::RequestCameraAccess(VoxelBusters.EssentialKit.MediaServicesCore.RequestCameraAccessInternalCallback)
+extern void MediaServicesInterface_RequestCameraAccess_m6FCE95DC3235C003AE7E0ACE0FEA5473C71CD5E7 (void);
+// 0x000001AB VoxelBusters.EssentialKit.CameraAccessStatus VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::GetCameraAccessStatus()
+extern void MediaServicesInterface_GetCameraAccessStatus_m23E7CE57B54AEE76CDCEF4E28CE7728BFC5A8485 (void);
+// 0x000001AC System.Boolean VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::CanSelectImageFromGallery()
+extern void MediaServicesInterface_CanSelectImageFromGallery_mE5B9D827AF26F96EA191A3C00766D95AC47BB4AE (void);
+// 0x000001AD System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::SelectImageFromGallery(System.Boolean,VoxelBusters.EssentialKit.MediaServicesCore.SelectImageInternalCallback)
+extern void MediaServicesInterface_SelectImageFromGallery_m2CDEB989E8F5050C2DC3236F464A8A929614FB12 (void);
+// 0x000001AE System.Boolean VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::CanCaptureImageFromCamera()
+extern void MediaServicesInterface_CanCaptureImageFromCamera_m2E80B8C28A22C769D4989F3121BA6EA4E64DCFA5 (void);
+// 0x000001AF System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::CaptureImageFromCamera(System.Boolean,VoxelBusters.EssentialKit.MediaServicesCore.SelectImageInternalCallback)
+extern void MediaServicesInterface_CaptureImageFromCamera_m2981B2038B81A85217D6C5305870130A04704783 (void);
+// 0x000001B0 System.Boolean VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::CanSaveImageToGallery()
+extern void MediaServicesInterface_CanSaveImageToGallery_mA2B25F9968901DD0CCDC77F57D466B51D96E7466 (void);
+// 0x000001B1 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::SaveImageToGallery(System.String,UnityEngine.Texture2D,VoxelBusters.EssentialKit.MediaServicesCore.SaveImageToGalleryInternalCallback)
+extern void MediaServicesInterface_SaveImageToGallery_m83F593AEE1EAB434435A121EF6BC757EE5FE7BBF (void);
+// 0x000001B2 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::HandleRequestPhotoLibraryAccessNativeCallback(VoxelBusters.EssentialKit.MediaServicesCore.iOS.PHAuthorizationStatus,System.String,System.IntPtr)
+extern void MediaServicesInterface_HandleRequestPhotoLibraryAccessNativeCallback_m7539F3AD6217D45FA2FEA1408994CC0A955D852B (void);
+// 0x000001B3 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::HandleRequestCameraAccessNativeCallback(VoxelBusters.EssentialKit.MediaServicesCore.iOS.AVAuthorizationStatus,System.String,System.IntPtr)
+extern void MediaServicesInterface_HandleRequestCameraAccessNativeCallback_m9B7F07C07F9E205570FB0C111C1D32BDB45BDAA4 (void);
+// 0x000001B4 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::HandlePickImageFromPhotoLibraryNativeCallback(System.IntPtr,VoxelBusters.EssentialKit.MediaServicesCore.iOS.PickImageFinishReason,System.IntPtr)
+extern void MediaServicesInterface_HandlePickImageFromPhotoLibraryNativeCallback_mED7EE60AEFED3C8417AE612E78A29437BAB51FA3 (void);
+// 0x000001B5 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface::HandleSaveImageToAlbumNativeCallback(System.Boolean,System.String,System.IntPtr)
+extern void MediaServicesInterface_HandleSaveImageToAlbumNativeCallback_m6AD880AD39B5836F115D8E24DD2ADAEE39D821A7 (void);
+// 0x000001B6 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface/<>c__DisplayClass14_0::.ctor()
+extern void U3CU3Ec__DisplayClass14_0__ctor_m6FEB8219B65AAF0DE7C2AB7E7D00F435EA870D8E (void);
+// 0x000001B7 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesInterface/<>c__DisplayClass14_0::<HandlePickImageFromPhotoLibraryNativeCallback>b__0(System.Byte[],VoxelBusters.CoreLibrary.Error)
+extern void U3CU3Ec__DisplayClass14_0_U3CHandlePickImageFromPhotoLibraryNativeCallbackU3Eb__0_mA0788A69E16C144A6594A31EB81301E2AC9C080C (void);
+// 0x000001B8 VoxelBusters.EssentialKit.GalleryAccessStatus VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesUtility::ConvertToGalleryAccessStatus(VoxelBusters.EssentialKit.MediaServicesCore.iOS.PHAuthorizationStatus)
+extern void MediaServicesUtility_ConvertToGalleryAccessStatus_mBA79925F21E3C7DBA07DC417E7B95D8772C247A8 (void);
+// 0x000001B9 VoxelBusters.EssentialKit.CameraAccessStatus VoxelBusters.EssentialKit.MediaServicesCore.iOS.MediaServicesUtility::ConvertToCameraAccessStatus(VoxelBusters.EssentialKit.MediaServicesCore.iOS.AVAuthorizationStatus)
+extern void MediaServicesUtility_ConvertToCameraAccessStatus_mF871E729B125CD11D72C3964D7718C1C0DC4B3C0 (void);
+// 0x000001BA System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.RequestPhotoLibraryAccessNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void RequestPhotoLibraryAccessNativeCallback__ctor_m879A72DB2961CD347F7270753741058D3B2CBFAB (void);
+// 0x000001BB System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.RequestPhotoLibraryAccessNativeCallback::Invoke(VoxelBusters.EssentialKit.MediaServicesCore.iOS.PHAuthorizationStatus,System.String,System.IntPtr)
+extern void RequestPhotoLibraryAccessNativeCallback_Invoke_m71CBF48EEAEA9A964479E2B66015E9A554287201 (void);
+// 0x000001BC System.IAsyncResult VoxelBusters.EssentialKit.MediaServicesCore.iOS.RequestPhotoLibraryAccessNativeCallback::BeginInvoke(VoxelBusters.EssentialKit.MediaServicesCore.iOS.PHAuthorizationStatus,System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void RequestPhotoLibraryAccessNativeCallback_BeginInvoke_mEF6C3C2A24795CA2D7A72F0E36F080881A1A342F (void);
+// 0x000001BD System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.RequestPhotoLibraryAccessNativeCallback::EndInvoke(System.IAsyncResult)
+extern void RequestPhotoLibraryAccessNativeCallback_EndInvoke_mF3CBAF3FFA54CF89E9E946AE73E9EBA85D0682E9 (void);
+// 0x000001BE System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.RequestCameraAccessNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void RequestCameraAccessNativeCallback__ctor_mA600C262B707F7EDA23516A578BE8928AE953869 (void);
+// 0x000001BF System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.RequestCameraAccessNativeCallback::Invoke(VoxelBusters.EssentialKit.MediaServicesCore.iOS.AVAuthorizationStatus,System.String,System.IntPtr)
+extern void RequestCameraAccessNativeCallback_Invoke_mDB625021CA3CA265761D13B9BE74F952B8551435 (void);
+// 0x000001C0 System.IAsyncResult VoxelBusters.EssentialKit.MediaServicesCore.iOS.RequestCameraAccessNativeCallback::BeginInvoke(VoxelBusters.EssentialKit.MediaServicesCore.iOS.AVAuthorizationStatus,System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void RequestCameraAccessNativeCallback_BeginInvoke_m493A4D8D1CA572D3EF14DF87F1B4AE3B54AE5DE9 (void);
+// 0x000001C1 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.RequestCameraAccessNativeCallback::EndInvoke(System.IAsyncResult)
+extern void RequestCameraAccessNativeCallback_EndInvoke_m59CFFA2F8F163E7516221A914BE88B498C54200A (void);
+// 0x000001C2 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.PickImageNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void PickImageNativeCallback__ctor_m264300414189F6AA1E338AC31D0E64CBA5D9B2EA (void);
+// 0x000001C3 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.PickImageNativeCallback::Invoke(System.IntPtr,VoxelBusters.EssentialKit.MediaServicesCore.iOS.PickImageFinishReason,System.IntPtr)
+extern void PickImageNativeCallback_Invoke_m1557149D5E6CF87C87D2E58064BC104DA0CE9D5E (void);
+// 0x000001C4 System.IAsyncResult VoxelBusters.EssentialKit.MediaServicesCore.iOS.PickImageNativeCallback::BeginInvoke(System.IntPtr,VoxelBusters.EssentialKit.MediaServicesCore.iOS.PickImageFinishReason,System.IntPtr,System.AsyncCallback,System.Object)
+extern void PickImageNativeCallback_BeginInvoke_m3CF511B4A272B1A1744B8D9C75D510A0F3A0B9AB (void);
+// 0x000001C5 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.PickImageNativeCallback::EndInvoke(System.IAsyncResult)
+extern void PickImageNativeCallback_EndInvoke_mE96E66416F40F93A3C7F618EB6027114B9EDA14C (void);
+// 0x000001C6 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.SaveImageToAlbumNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void SaveImageToAlbumNativeCallback__ctor_m463EA2A218AAFF780A9A432F211CA057265D74E9 (void);
+// 0x000001C7 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.SaveImageToAlbumNativeCallback::Invoke(System.Boolean,System.String,System.IntPtr)
+extern void SaveImageToAlbumNativeCallback_Invoke_m4AA0ABA88C66094E6D325BA825E9ADE223F20912 (void);
+// 0x000001C8 System.IAsyncResult VoxelBusters.EssentialKit.MediaServicesCore.iOS.SaveImageToAlbumNativeCallback::BeginInvoke(System.Boolean,System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void SaveImageToAlbumNativeCallback_BeginInvoke_m5997E80DCF0A2294596940F3894B10FDC4DBC039 (void);
+// 0x000001C9 System.Void VoxelBusters.EssentialKit.MediaServicesCore.iOS.SaveImageToAlbumNativeCallback::EndInvoke(System.IAsyncResult)
+extern void SaveImageToAlbumNativeCallback_EndInvoke_m490F7BD5C9C59CDCC09BF9F13764EAB984EED71E (void);
+// 0x000001CA System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement::.cctor()
+extern void Achievement__cctor_m76F7347DF28135A525A30BC23BEE5FDE20FD7323 (void);
+// 0x000001CB System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement::.ctor(System.IntPtr,System.String,System.String)
+extern void Achievement__ctor_m21477DFF14E26FFED2CD58974D09A143356D4A77 (void);
+// 0x000001CC System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement::.ctor(System.String,System.String)
+extern void Achievement__ctor_mA589E643B3DF39567FE9CD1E25AC6825538EE04B (void);
+// 0x000001CD System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement::Finalize()
+extern void Achievement_Finalize_m8AA8E1882153CF7DB7D464EA661B1B5B25C3D9B9 (void);
+// 0x000001CE VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement[] VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement::CreateAchievementArray(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&)
+extern void Achievement_CreateAchievementArray_m0FA5727EEF1992574B894872A6CF7E1B432F06FA (void);
+// 0x000001CF System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement::SetCanShowBannerOnCompletion(System.Boolean)
+extern void Achievement_SetCanShowBannerOnCompletion_m8A1CA3F25ECA76A01A1A663D135EB1BA74C4DF87 (void);
+// 0x000001D0 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement::LoadAchievements(VoxelBusters.EssentialKit.GameServicesCore.LoadAchievementsInternalCallback)
+extern void Achievement_LoadAchievements_m6981319C3E8CA0C204B3E356A9D68D7DAC3A1626 (void);
+// 0x000001D1 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement::ShowAchievementView(VoxelBusters.EssentialKit.GameServicesCore.ViewClosedInternalCallback)
+extern void Achievement_ShowAchievementView_m9BA75C80340C948C209913CD59515A692F55B2DD (void);
+// 0x000001D2 System.Double VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement::GetPercentageCompletedInternal()
+extern void Achievement_GetPercentageCompletedInternal_mBF0B95086854598F0E2CCBD7C55CC0D13383A279 (void);
+// 0x000001D3 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement::SetPercentageCompletedInternal(System.Double)
+extern void Achievement_SetPercentageCompletedInternal_m82A9C41C163B95F2C6980B8231D8EF59F33165E9 (void);
+// 0x000001D4 System.Boolean VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement::GetIsCompletedInternal()
+extern void Achievement_GetIsCompletedInternal_m2FF0CD3234B0C44AE074AAA03CA2924F37DD16D9 (void);
+// 0x000001D5 System.DateTime VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement::GetLastReportedDateInternal()
+extern void Achievement_GetLastReportedDateInternal_mF4D21AC5DB6DB867886BEAD10CC68BB71570C522 (void);
+// 0x000001D6 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement::ReportProgressInternal(VoxelBusters.EssentialKit.GameServicesCore.ReportAchievementProgressInternalCallback)
+extern void Achievement_ReportProgressInternal_m51CBF3B3F89ABCBA00730A0D2C7A3885AB864953 (void);
+// 0x000001D7 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement::HandleLoadAchievementsCallbackInternal(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.String,System.IntPtr)
+extern void Achievement_HandleLoadAchievementsCallbackInternal_mCBD1CAC30BD451E773E76E9362898E88E2BB587E (void);
+// 0x000001D8 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement::HandleReportProgressCallbackInternal(System.String,System.IntPtr)
+extern void Achievement_HandleReportProgressCallbackInternal_mE714390B2F083331A49CDB043BF57674F84F13EA (void);
+// 0x000001D9 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement/<>c::.cctor()
+extern void U3CU3Ec__cctor_m2BDBB3DE1C50A7F045D9A6CAD071D6C4231F5C27 (void);
+// 0x000001DA System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement/<>c::.ctor()
+extern void U3CU3Ec__ctor_mB8AF9D8B21FD307116E98F69F85C929B584DEAB0 (void);
+// 0x000001DB VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement VoxelBusters.EssentialKit.GameServicesCore.iOS.Achievement/<>c::<CreateAchievementArray>b__4_0(System.IntPtr)
+extern void U3CU3Ec_U3CCreateAchievementArrayU3Eb__4_0_m455C0B89ABC4A95382DB99C8D8FB7391A1BF68C2 (void);
+// 0x000001DC System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementBinding::NPAchievementRegisterCallbacks(VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadArrayNativeCallback,VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesReportNativeCallback)
+extern void AchievementBinding_NPAchievementRegisterCallbacks_m97D3972F9CE1E74113A1FBF879F60797879DB86C (void);
+// 0x000001DD System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementBinding::NPAchievementSetCanShowBannerOnCompletion(System.Boolean)
+extern void AchievementBinding_NPAchievementSetCanShowBannerOnCompletion_mB93DA941193416CC9FBA7BDDB606A4104234B8EC (void);
+// 0x000001DE System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementBinding::NPAchievementLoadAchievements(System.IntPtr)
+extern void AchievementBinding_NPAchievementLoadAchievements_m3AE7CA66903FBE522B97061402873A37B8F2261C (void);
+// 0x000001DF System.IntPtr VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementBinding::NPAchievementCreate(System.String)
+extern void AchievementBinding_NPAchievementCreate_m0DE9E820A9B6D6D5DE085CD277177D464BD2564C (void);
+// 0x000001E0 System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementBinding::NPAchievementGetId(System.IntPtr)
+extern void AchievementBinding_NPAchievementGetId_m060DD95E092E50F36554CB8FB4563D8EC9AEC682 (void);
+// 0x000001E1 System.Double VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementBinding::NPAchievementGetPercentageCompleted(System.IntPtr)
+extern void AchievementBinding_NPAchievementGetPercentageCompleted_mEE833868EC08E54F0CFDDC14E554328F20BF9696 (void);
+// 0x000001E2 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementBinding::NPAchievementSetPercentageCompleted(System.IntPtr,System.Double)
+extern void AchievementBinding_NPAchievementSetPercentageCompleted_m76F4C51EA2CE7CA58A3A672175D68B163CECE88C (void);
+// 0x000001E3 System.Boolean VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementBinding::NPAchievementGetIsCompleted(System.IntPtr)
+extern void AchievementBinding_NPAchievementGetIsCompleted_m3146EC34B463859367CF70C77DE87CBEE202A4D6 (void);
+// 0x000001E4 System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementBinding::NPAchievementGetLastReportedDate(System.IntPtr)
+extern void AchievementBinding_NPAchievementGetLastReportedDate_mB953ADBE2266E4E323553CA9F2824BAA079FE743 (void);
+// 0x000001E5 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementBinding::NPAchievementReportProgress(System.IntPtr,System.IntPtr)
+extern void AchievementBinding_NPAchievementReportProgress_mD561C50305266E1A97A3A468D156EC01080AB16C (void);
+// 0x000001E6 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementBinding::NPAchievementShowView(System.IntPtr)
+extern void AchievementBinding_NPAchievementShowView_m7929389702FD78A2C9AF6C07F5725B2138315022 (void);
+// 0x000001E7 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription::.cctor()
+extern void AchievementDescription__cctor_mE9B308FA87BD1EE222D7D57CC57F84F16D9D229B (void);
+// 0x000001E8 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription::.ctor(System.IntPtr,System.String,System.String,System.Int32)
+extern void AchievementDescription__ctor_mBE471F2DE7024683534E8F7183F429E7CD4AA3BA (void);
+// 0x000001E9 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription::Finalize()
+extern void AchievementDescription_Finalize_m273C82EA19C009D340B372701E2D6F5DEF7D9016 (void);
+// 0x000001EA VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription[] VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription::CreateAchievementDescriptionArray(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&)
+extern void AchievementDescription_CreateAchievementDescriptionArray_m580207C2E4B52CA8FC031E3C4401454215B54EDE (void);
+// 0x000001EB System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription::LoadAchievementDescriptions(VoxelBusters.EssentialKit.GameServicesCore.LoadAchievementDescriptionsInternalCallback)
+extern void AchievementDescription_LoadAchievementDescriptions_m17A2B69DE2CD4437D75CCDBF207DEB23DF131FD3 (void);
+// 0x000001EC System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription::GetTitleInternal()
+extern void AchievementDescription_GetTitleInternal_m2AF518B8FFBD39359778CBA468636D276194758B (void);
+// 0x000001ED System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription::GetUnachievedDescriptionInternal()
+extern void AchievementDescription_GetUnachievedDescriptionInternal_m616F64D403AE8A2125E8480CDC0579022FF849DD (void);
+// 0x000001EE System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription::GetAchievedDescriptionInternal()
+extern void AchievementDescription_GetAchievedDescriptionInternal_m7D830C6282A33F290CD6D3271DE2CCB7AB3E7EB8 (void);
+// 0x000001EF System.Int64 VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription::GetMaximumPointsInternal()
+extern void AchievementDescription_GetMaximumPointsInternal_m483E58F4845BC5790CF435C9A240652337413AF7 (void);
+// 0x000001F0 System.Boolean VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription::GetIsHiddenInternal()
+extern void AchievementDescription_GetIsHiddenInternal_m3DF7419FD6494A5A67107CB416299BB6C54BBA65 (void);
+// 0x000001F1 System.Boolean VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription::GetIsReplayableInternal()
+extern void AchievementDescription_GetIsReplayableInternal_mAB6A5646C00CDE70AE42F0D36A2E83F65D1CA736 (void);
+// 0x000001F2 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription::LoadIncompleteAchievementImageInternal(VoxelBusters.EssentialKit.LoadImageInternalCallback)
+extern void AchievementDescription_LoadIncompleteAchievementImageInternal_m5CAE401A8274A48DA3B490B93492A8734A929289 (void);
+// 0x000001F3 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription::LoadImageInternal(VoxelBusters.EssentialKit.LoadImageInternalCallback)
+extern void AchievementDescription_LoadImageInternal_m04DAEDE7E9F3C42E8034B39FEB7CF212A3970163 (void);
+// 0x000001F4 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription::HandleLoadAchievementDescriptionsNativeCallback(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.String,System.IntPtr)
+extern void AchievementDescription_HandleLoadAchievementDescriptionsNativeCallback_m502F6BCBAC111DFCD78B7EE3D8AF5F38728538E8 (void);
+// 0x000001F5 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription/<>c::.cctor()
+extern void U3CU3Ec__cctor_m137258C556B84ACB09261604D20E75922E8C1A33 (void);
+// 0x000001F6 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription/<>c::.ctor()
+extern void U3CU3Ec__ctor_m3A4AD4166865E823FD3F1208D11357C1692920EE (void);
+// 0x000001F7 VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescription/<>c::<CreateAchievementDescriptionArray>b__9_0(System.IntPtr)
+extern void U3CU3Ec_U3CCreateAchievementDescriptionArrayU3Eb__9_0_m26FD66380651120CA5E8030AAD3A5C9D00F03D86 (void);
+// 0x000001F8 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescriptionBinding::NPAchievementDescriptionRegisterCallbacks(VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadArrayNativeCallback,VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadImageNativeCallback)
+extern void AchievementDescriptionBinding_NPAchievementDescriptionRegisterCallbacks_m411F5EE0FED80A7701BE14977DF785429DA96CA2 (void);
+// 0x000001F9 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescriptionBinding::NPAchievementDescriptionLoadDescriptions(System.IntPtr)
+extern void AchievementDescriptionBinding_NPAchievementDescriptionLoadDescriptions_mF6280C1AFCDBD1EFF9A2DA76DECE57CEE5101587 (void);
+// 0x000001FA System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescriptionBinding::NPAchievementDescriptionGetId(System.IntPtr)
+extern void AchievementDescriptionBinding_NPAchievementDescriptionGetId_m3C52F76334AFE719406448C6075E51EE1995AEDE (void);
+// 0x000001FB System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescriptionBinding::NPAchievementDescriptionGetTitle(System.IntPtr)
+extern void AchievementDescriptionBinding_NPAchievementDescriptionGetTitle_mFDAE14AF983ED3AE129A91A1F3AE0F17B3B221DB (void);
+// 0x000001FC System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescriptionBinding::NPAchievementDescriptionGetAchievedDescription(System.IntPtr)
+extern void AchievementDescriptionBinding_NPAchievementDescriptionGetAchievedDescription_m988653C3EC89D41D157FFCD02174FA903891D1D1 (void);
+// 0x000001FD System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescriptionBinding::NPAchievementDescriptionGetUnachievedDescription(System.IntPtr)
+extern void AchievementDescriptionBinding_NPAchievementDescriptionGetUnachievedDescription_mA5D093F6AB515B8C2084183E6D266C5EDA2A19A7 (void);
+// 0x000001FE System.Int64 VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescriptionBinding::NPAchievementDescriptionGetMaximumPoints(System.IntPtr)
+extern void AchievementDescriptionBinding_NPAchievementDescriptionGetMaximumPoints_m1C5B748FBFFD7FA7FE807CAAEB6C3A8C1E919ADB (void);
+// 0x000001FF System.Boolean VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescriptionBinding::NPAchievementDescriptionGetHidden(System.IntPtr)
+extern void AchievementDescriptionBinding_NPAchievementDescriptionGetHidden_m995FC109B545139373451BE02186424F1AACC14D (void);
+// 0x00000200 System.Boolean VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescriptionBinding::NPAchievementDescriptionGetReplayable(System.IntPtr)
+extern void AchievementDescriptionBinding_NPAchievementDescriptionGetReplayable_mF0597FE97CEC3A397A3C8E3B947523F396EF3070 (void);
+// 0x00000201 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescriptionBinding::NPAchievementDescriptionLoadIncompleteAchievementImage(System.IntPtr,System.IntPtr)
+extern void AchievementDescriptionBinding_NPAchievementDescriptionLoadIncompleteAchievementImage_m8B88CD1FCF7D30D2A3D3855F60F9DBA559C76872 (void);
+// 0x00000202 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.AchievementDescriptionBinding::NPAchievementDescriptionLoadImage(System.IntPtr,System.IntPtr)
+extern void AchievementDescriptionBinding_NPAchievementDescriptionLoadImage_m4D8D0A397353BE48199E78178A556AD65AB1E20D (void);
+// 0x00000203 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterBinding::NPGameServicesSetViewClosedCallback(VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesViewClosedNativeCallback)
+extern void GameCenterBinding_NPGameServicesSetViewClosedCallback_mED74AB1201FE944523E363D526FE6FC407D2CEBC (void);
+// 0x00000204 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterBinding::NPGameServicesLoadServerCredentials(System.IntPtr)
+extern void GameCenterBinding_NPGameServicesLoadServerCredentials_m73AC6A314E64C94AA60E000E9D0A55DF286887D7 (void);
+// 0x00000205 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterBinding::NPGameServicesLoadServerCredentialsCompleteCallback(VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadServerCredentialsNativeCallback)
+extern void GameCenterBinding_NPGameServicesLoadServerCredentialsCompleteCallback_m1F43011714E28031CAE8EFFEE4FCC3D3E1A5076A (void);
+// 0x00000206 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::.cctor()
+extern void GameCenterInterface__cctor_mDA3A5C21D3C89D776ABADD6CA36F63893AFB91FD (void);
+// 0x00000207 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::.ctor()
+extern void GameCenterInterface__ctor_m5A17394DE7D4A0943AC1E6885BC6F387F9BD096D (void);
+// 0x00000208 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::LoadLeaderboards(VoxelBusters.EssentialKit.GameServicesCore.LoadLeaderboardsInternalCallback)
+extern void GameCenterInterface_LoadLeaderboards_m34A99574085047A0B36F8D29D1B7AFB4844BB0E0 (void);
+// 0x00000209 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::ShowLeaderboard(System.String,System.String,VoxelBusters.EssentialKit.LeaderboardTimeScope,VoxelBusters.EssentialKit.GameServicesCore.ViewClosedInternalCallback)
+extern void GameCenterInterface_ShowLeaderboard_m86D76BC2337C8766CEAE0EC17CC3BA7F51ACEDD9 (void);
+// 0x0000020A VoxelBusters.EssentialKit.ILeaderboard VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::CreateLeaderboard(System.String,System.String)
+extern void GameCenterInterface_CreateLeaderboard_m992985B333DD22BCBFF6E266723E694A66894C31 (void);
+// 0x0000020B System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::LoadAchievementDescriptions(VoxelBusters.EssentialKit.GameServicesCore.LoadAchievementDescriptionsInternalCallback)
+extern void GameCenterInterface_LoadAchievementDescriptions_m71D4DEF2E23B23DB3482CFEC766E4B85CA9A71DA (void);
+// 0x0000020C System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::LoadAchievements(VoxelBusters.EssentialKit.GameServicesCore.LoadAchievementsInternalCallback)
+extern void GameCenterInterface_LoadAchievements_m78F0B26C86B632AD422B16A47829B50361C470CD (void);
+// 0x0000020D System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::ShowAchievements(VoxelBusters.EssentialKit.GameServicesCore.ViewClosedInternalCallback)
+extern void GameCenterInterface_ShowAchievements_m97A3B9FE74042757378196EF95F58E01FF054EF7 (void);
+// 0x0000020E System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::SetCanShowAchievementCompletionBanner(System.Boolean)
+extern void GameCenterInterface_SetCanShowAchievementCompletionBanner_m6554F8AFB08F63B1A78206038EB8C0F78A41A730 (void);
+// 0x0000020F VoxelBusters.EssentialKit.IAchievement VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::CreateAchievement(System.String,System.String)
+extern void GameCenterInterface_CreateAchievement_mCC6075D97A3D04636326F3A1EC63E58DCBA87411 (void);
+// 0x00000210 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::LoadPlayers(System.String[],VoxelBusters.EssentialKit.GameServicesCore.LoadPlayersInternalCallback)
+extern void GameCenterInterface_LoadPlayers_m4325449BCBF3B998D603B51F488CA79FB9ACA152 (void);
+// 0x00000211 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::SetAuthChangeCallback(VoxelBusters.EssentialKit.GameServicesCore.AuthChangeInternalCallback)
+extern void GameCenterInterface_SetAuthChangeCallback_m1E2846008998EBD27F7A601FC4385B859FF974FB (void);
+// 0x00000212 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::Authenticate()
+extern void GameCenterInterface_Authenticate_m1C1D03164D234EB5DA1CB0AAA8556B6809A98316 (void);
+// 0x00000213 VoxelBusters.EssentialKit.ILocalPlayer VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::GetLocalPlayer()
+extern void GameCenterInterface_GetLocalPlayer_m2CB21F8A63AF04E1E2193B1DC0D71939223D932B (void);
+// 0x00000214 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::Signout()
+extern void GameCenterInterface_Signout_m5C4DE11FBC82405611812D437405C1749A20E729 (void);
+// 0x00000215 VoxelBusters.EssentialKit.IScore VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::CreateScore(System.String,System.String)
+extern void GameCenterInterface_CreateScore_mB07C9DA55ACFB17125C1D0918041164521A34EE8 (void);
+// 0x00000216 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterInterface::LoadServerCredentials(VoxelBusters.EssentialKit.GameServicesCore.LoadServerCredentialsInternalCallback)
+extern void GameCenterInterface_LoadServerCredentials_m8CCED0D903A7319AF6D620916E3C9B3D9E8BFD6F (void);
+// 0x00000217 VoxelBusters.EssentialKit.LeaderboardPlayerScope VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterUtility::ConvertToLeaderboardPlayerScope(VoxelBusters.EssentialKit.GameServicesCore.iOS.GKLeaderboardPlayerScope)
+extern void GameCenterUtility_ConvertToLeaderboardPlayerScope_m94119168BBC74163283AD22F1CCAB75C97168D75 (void);
+// 0x00000218 VoxelBusters.EssentialKit.GameServicesCore.iOS.GKLeaderboardPlayerScope VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterUtility::ConvertToGKLeaderboardPlayerScope(VoxelBusters.EssentialKit.LeaderboardPlayerScope)
+extern void GameCenterUtility_ConvertToGKLeaderboardPlayerScope_m75700F7B5B14C0DB56A7DF33D7A165D8F8108ABA (void);
+// 0x00000219 VoxelBusters.EssentialKit.LeaderboardTimeScope VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterUtility::ConvertToLeaderboardTimeScope(VoxelBusters.EssentialKit.GameServicesCore.iOS.GKLeaderboardTimeScope)
+extern void GameCenterUtility_ConvertToLeaderboardTimeScope_mD7775C1F0A5554E3F2DEC7F24CFEC70D10F97588 (void);
+// 0x0000021A VoxelBusters.EssentialKit.GameServicesCore.iOS.GKLeaderboardTimeScope VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterUtility::ConvertToGKLeaderboardTimeScope(VoxelBusters.EssentialKit.LeaderboardTimeScope)
+extern void GameCenterUtility_ConvertToGKLeaderboardTimeScope_m79330973BC38A155A44298728BFF96B8733A55CD (void);
+// 0x0000021B VoxelBusters.EssentialKit.LocalPlayerAuthStatus VoxelBusters.EssentialKit.GameServicesCore.iOS.GameCenterUtility::ConvertToLocalPlayerAuthStatus(VoxelBusters.EssentialKit.GameServicesCore.iOS.GKLocalPlayerAuthState)
+extern void GameCenterUtility_ConvertToLocalPlayerAuthStatus_mDE8A413D9364D0744820D76E7E650AE755DF0403 (void);
+// 0x0000021C System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::.cctor()
+extern void Leaderboard__cctor_m39D60355149CDFD961F34D91F94EFC1338745BD3 (void);
+// 0x0000021D System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::.ctor(System.String,System.String)
+extern void Leaderboard__ctor_mBEF76531BE6148BFECE8DC472412B08170F31302 (void);
+// 0x0000021E System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::.ctor(System.IntPtr,System.String,System.String)
+extern void Leaderboard__ctor_m92A92CAAF05CD9D423C9B6892EECA22584A75B8A (void);
+// 0x0000021F System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::Finalize()
+extern void Leaderboard_Finalize_mF9024FB5E11E0A2E662610AC425684F8A753EBF4 (void);
+// 0x00000220 VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard[] VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::CreateLeaderboardArray(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&)
+extern void Leaderboard_CreateLeaderboardArray_m448150A66EDE76B3D31300895C4214EDB5FB42C6 (void);
+// 0x00000221 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::LoadLeaderboards(VoxelBusters.EssentialKit.GameServicesCore.LoadLeaderboardsInternalCallback)
+extern void Leaderboard_LoadLeaderboards_m6FF8D45B5F6A85A7FB5D1FCD231BC18F79C03C48 (void);
+// 0x00000222 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::ShowLeaderboardView(System.String,VoxelBusters.EssentialKit.LeaderboardTimeScope,VoxelBusters.EssentialKit.GameServicesCore.ViewClosedInternalCallback)
+extern void Leaderboard_ShowLeaderboardView_m2AC5B113CB381A8AB1591F913769396080140C20 (void);
+// 0x00000223 System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::GetTitleInternal()
+extern void Leaderboard_GetTitleInternal_m68AE618EA534BCDC94C8AD2D4C2430EFD897B6B1 (void);
+// 0x00000224 VoxelBusters.EssentialKit.LeaderboardPlayerScope VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::GetPlayerScopeInternal()
+extern void Leaderboard_GetPlayerScopeInternal_mD9D3A6FED8C10297A4D5E63B7E1E5A5E92150CD2 (void);
+// 0x00000225 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::SetPlayerScopeInternal(VoxelBusters.EssentialKit.LeaderboardPlayerScope)
+extern void Leaderboard_SetPlayerScopeInternal_mB2741ACE802E3DCE5FF276B8878BCDD3E0606A7A (void);
+// 0x00000226 VoxelBusters.EssentialKit.LeaderboardTimeScope VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::GetTimeScopeInternal()
+extern void Leaderboard_GetTimeScopeInternal_m389BD38525DAB1B5FE4B4DCAAB4349DCBDF0D730 (void);
+// 0x00000227 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::SetTimeScopeInternal(VoxelBusters.EssentialKit.LeaderboardTimeScope)
+extern void Leaderboard_SetTimeScopeInternal_m88BEC02CBD0CA249E5DF99D61C25A9973C5EC736 (void);
+// 0x00000228 VoxelBusters.EssentialKit.IScore VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::GetLocalPlayerScoreInternal()
+extern void Leaderboard_GetLocalPlayerScoreInternal_mFDD96891C7291779B7D51AA2B361CE3DB1A12F26 (void);
+// 0x00000229 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::LoadTopScoresInternal(VoxelBusters.EssentialKit.GameServicesCore.LoadScoresInternalCallback)
+extern void Leaderboard_LoadTopScoresInternal_m7E725EA92E5C6844DFFB3F92FBD68DF74032C62B (void);
+// 0x0000022A System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::LoadPlayerCenteredScoresInternal(VoxelBusters.EssentialKit.GameServicesCore.LoadScoresInternalCallback)
+extern void Leaderboard_LoadPlayerCenteredScoresInternal_mCFCCAB4476918818E6F4825A075698A0CF440533 (void);
+// 0x0000022B System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::LoadNextInternal(VoxelBusters.EssentialKit.GameServicesCore.LoadScoresInternalCallback)
+extern void Leaderboard_LoadNextInternal_mDD0DF307C744820FC197281F4F52FDA9845FA703 (void);
+// 0x0000022C System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::LoadPreviousInternal(VoxelBusters.EssentialKit.GameServicesCore.LoadScoresInternalCallback)
+extern void Leaderboard_LoadPreviousInternal_m74BD727D4CB096B036EAC136DFD7A16766E4BFFA (void);
+// 0x0000022D System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::LoadImageInternal(VoxelBusters.EssentialKit.LoadImageInternalCallback)
+extern void Leaderboard_LoadImageInternal_mF431588EF80126B7244F7FC59222E010069FB7B7 (void);
+// 0x0000022E System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::LoadScoreInternal(System.Int64,System.Int32,System.Boolean,VoxelBusters.EssentialKit.GameServicesCore.LoadScoresInternalCallback)
+extern void Leaderboard_LoadScoreInternal_mE394C11DDBEEA7F2C5BD618719B4B1162557455B (void);
+// 0x0000022F System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::OnLoadScoreFinished(VoxelBusters.EssentialKit.IScore[],VoxelBusters.CoreLibrary.Error,VoxelBusters.EssentialKit.GameServicesCore.LoadScoresInternalCallback)
+extern void Leaderboard_OnLoadScoreFinished_m94DCD22A3552844B94531FB7FE5095A50AEAC9A6 (void);
+// 0x00000230 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::HandleLoadLeaderboardsNativeCallback(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.String,System.IntPtr)
+extern void Leaderboard_HandleLoadLeaderboardsNativeCallback_mA7B29842F0E1467654ACD4C7C99F6228363B3326 (void);
+// 0x00000231 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard::HandleLoadScoresNativeCallback(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.String,System.IntPtr)
+extern void Leaderboard_HandleLoadScoresNativeCallback_mF7130D740D784A61BD01D4769B46FF905D55468E (void);
+// 0x00000232 System.Int64 VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard/Range::get_StartIndex()
+extern void Range_get_StartIndex_mC1335ABFB021C00F644BBCB2F42EBF65E94BFD0D (void);
+// 0x00000233 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard/Range::set_StartIndex(System.Int64)
+extern void Range_set_StartIndex_m4F40B0F5F7477F6D32480EF0D90CCFFA251C35B3 (void);
+// 0x00000234 System.Int32 VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard/Range::get_Count()
+extern void Range_get_Count_mD8D7761BB1BC59F635485C3B67151B369E94E70B (void);
+// 0x00000235 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard/Range::set_Count(System.Int32)
+extern void Range_set_Count_m178BD376C24730837DB1653293C1DD8A04071259 (void);
+// 0x00000236 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard/Range::.ctor()
+extern void Range__ctor_m3C3F3706499B37D964D661A059D738F5E3214746 (void);
+// 0x00000237 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard/<>c::.cctor()
+extern void U3CU3Ec__cctor_m43A309A2C75E6530EBF9238A1A8EC58B7AB63DD4 (void);
+// 0x00000238 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard/<>c::.ctor()
+extern void U3CU3Ec__ctor_mB588639354117BC921DB2CA91878F216C08D20D8 (void);
+// 0x00000239 VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard/<>c::<CreateLeaderboardArray>b__8_0(System.IntPtr)
+extern void U3CU3Ec_U3CCreateLeaderboardArrayU3Eb__8_0_mBF32891DA9F3FCB54FDE4481298364921A94A573 (void);
+// 0x0000023A VoxelBusters.EssentialKit.GameServicesCore.iOS.Score VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard/<>c::<HandleLoadScoresNativeCallback>b__25_0(System.IntPtr)
+extern void U3CU3Ec_U3CHandleLoadScoresNativeCallbackU3Eb__25_0_m709C3B508D722C4DFC86D1249F6AD34057F343DB (void);
+// 0x0000023B System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard/<>c__DisplayClass18_0::.ctor()
+extern void U3CU3Ec__DisplayClass18_0__ctor_mBB3C4CCF406390318121F03F2EFECF4B36FA62D8 (void);
+// 0x0000023C System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard/<>c__DisplayClass18_0::<LoadPlayerCenteredScoresInternal>b__0(VoxelBusters.EssentialKit.IScore[],VoxelBusters.CoreLibrary.Error)
+extern void U3CU3Ec__DisplayClass18_0_U3CLoadPlayerCenteredScoresInternalU3Eb__0_m0E342EC2D7216C290D2F40F94310FFF2E218C986 (void);
+// 0x0000023D System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard/<>c__DisplayClass22_0::.ctor()
+extern void U3CU3Ec__DisplayClass22_0__ctor_mEB70967C7D58F88FB6A197AFE8D75775865B7DAE (void);
+// 0x0000023E System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Leaderboard/<>c__DisplayClass22_0::<LoadScoreInternal>b__0(VoxelBusters.EssentialKit.IScore[],VoxelBusters.CoreLibrary.Error)
+extern void U3CU3Ec__DisplayClass22_0_U3CLoadScoreInternalU3Eb__0_m7FDF26E0B84F80626C8603FC20057C42879B826B (void);
+// 0x0000023F System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.LeaderboardBinding::NPLeaderboardRegisterCallbacks(VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadArrayNativeCallback,VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadArrayNativeCallback,VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadImageNativeCallback)
+extern void LeaderboardBinding_NPLeaderboardRegisterCallbacks_m1C36201BE8F451E2064D27A4CD844215E3454CF8 (void);
+// 0x00000240 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.LeaderboardBinding::NPLeaderboardLoadLeaderboards(System.IntPtr)
+extern void LeaderboardBinding_NPLeaderboardLoadLeaderboards_mBBC58631783F2A7E782588C88115DD0A5C766B0C (void);
+// 0x00000241 System.IntPtr VoxelBusters.EssentialKit.GameServicesCore.iOS.LeaderboardBinding::NPLeaderboardCreate(System.String)
+extern void LeaderboardBinding_NPLeaderboardCreate_m3F03382FB9F798717C1A43CFAA08D8084E8F6811 (void);
+// 0x00000242 System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.LeaderboardBinding::NPLeaderboardGetId(System.IntPtr)
+extern void LeaderboardBinding_NPLeaderboardGetId_m57C03C7E40F004439B19C9C11D6D9BA9662D2439 (void);
+// 0x00000243 System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.LeaderboardBinding::NPLeaderboardGetTitle(System.IntPtr)
+extern void LeaderboardBinding_NPLeaderboardGetTitle_m63F11B90880E46942CC26E819C79876DF0DF2CF1 (void);
+// 0x00000244 VoxelBusters.EssentialKit.GameServicesCore.iOS.GKLeaderboardPlayerScope VoxelBusters.EssentialKit.GameServicesCore.iOS.LeaderboardBinding::NPLeaderboardGetPlayerScope(System.IntPtr)
+extern void LeaderboardBinding_NPLeaderboardGetPlayerScope_mFCB24B93A310CB97DB4F6166121C64DA33806F60 (void);
+// 0x00000245 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.LeaderboardBinding::NPLeaderboardSetPlayerScope(System.IntPtr,VoxelBusters.EssentialKit.GameServicesCore.iOS.GKLeaderboardPlayerScope)
+extern void LeaderboardBinding_NPLeaderboardSetPlayerScope_m15B4B9A8DA69B61233EED3C5EF319D343C015A8F (void);
+// 0x00000246 VoxelBusters.EssentialKit.GameServicesCore.iOS.GKLeaderboardTimeScope VoxelBusters.EssentialKit.GameServicesCore.iOS.LeaderboardBinding::NPLeaderboardGetTimeScope(System.IntPtr)
+extern void LeaderboardBinding_NPLeaderboardGetTimeScope_mE581817D3AAA64DB6F8A415B31C50373618632EE (void);
+// 0x00000247 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.LeaderboardBinding::NPLeaderboardSetTimeScope(System.IntPtr,VoxelBusters.EssentialKit.GameServicesCore.iOS.GKLeaderboardTimeScope)
+extern void LeaderboardBinding_NPLeaderboardSetTimeScope_mE80714CC0BCBA324E4310E09341FE60E41FCD085 (void);
+// 0x00000248 System.IntPtr VoxelBusters.EssentialKit.GameServicesCore.iOS.LeaderboardBinding::NPLeaderboardGetLocalPlayerScore(System.IntPtr)
+extern void LeaderboardBinding_NPLeaderboardGetLocalPlayerScore_m5A7303F0454ED15C069996AB61B9499E210F04A3 (void);
+// 0x00000249 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.LeaderboardBinding::NPLeaderboardLoadScores(System.IntPtr,System.Int64,System.Int32,System.IntPtr)
+extern void LeaderboardBinding_NPLeaderboardLoadScores_m077648A7819BCFBAC10A305340ADF1584EA2E3A4 (void);
+// 0x0000024A System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.LeaderboardBinding::NPLeaderboardLoadImage(System.IntPtr,System.IntPtr)
+extern void LeaderboardBinding_NPLeaderboardLoadImage_m71383FCEB49F6584D4880A57FE5F16AEF7930AD6 (void);
+// 0x0000024B System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.LeaderboardBinding::NPLeaderboardShowView(System.String,VoxelBusters.EssentialKit.GameServicesCore.iOS.GKLeaderboardTimeScope,System.IntPtr)
+extern void LeaderboardBinding_NPLeaderboardShowView_mD9E562328C9C414672EA6E5E34D4D17DD23E5010 (void);
+// 0x0000024C System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.LocalPlayer::.cctor()
+extern void LocalPlayer__cctor_m2B84754483277F8B628FEE8AE34F8E1A3FF63A54 (void);
+// 0x0000024D System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.LocalPlayer::Finalize()
+extern void LocalPlayer_Finalize_mE93A19F558B3F2531DD7AA48B31A7D8946CFE8C5 (void);
+// 0x0000024E VoxelBusters.EssentialKit.GameServicesCore.iOS.LocalPlayer VoxelBusters.EssentialKit.GameServicesCore.iOS.LocalPlayer::GetLocalPlayer()
+extern void LocalPlayer_GetLocalPlayer_mE34AB0A0DA81096CD67D1770601020F9FFB4EEFE (void);
+// 0x0000024F System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.LocalPlayer::Authenticate()
+extern void LocalPlayer_Authenticate_mCEC1C2E297853D53C8997B439648C50B348BA159 (void);
+// 0x00000250 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.LocalPlayer::SetAuthChangeCallback(VoxelBusters.EssentialKit.GameServicesCore.AuthChangeInternalCallback)
+extern void LocalPlayer_SetAuthChangeCallback_mF159D196B343CFD07D97463DC0264AF1B7F0163F (void);
+// 0x00000251 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.LocalPlayer::UpdateNativeReference()
+extern void LocalPlayer_UpdateNativeReference_mF1370450384A57469913E547CEE2BA206D6D34E2 (void);
+// 0x00000252 System.Boolean VoxelBusters.EssentialKit.GameServicesCore.iOS.LocalPlayer::get_IsAuthenticated()
+extern void LocalPlayer_get_IsAuthenticated_m9DE8584C02623DFB55318A692FCABC394D00EDD7 (void);
+// 0x00000253 System.Boolean VoxelBusters.EssentialKit.GameServicesCore.iOS.LocalPlayer::get_IsUnderAge()
+extern void LocalPlayer_get_IsUnderAge_mE24F574D22291ED31802065E706606049B596F1A (void);
+// 0x00000254 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.LocalPlayer::HandleAuthChangeNativeCallback(VoxelBusters.EssentialKit.GameServicesCore.iOS.GKLocalPlayerAuthState,System.String)
+extern void LocalPlayer_HandleAuthChangeNativeCallback_mB67E04756D8D26E2CE10883808B39B401A3BE960 (void);
+// 0x00000255 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.LocalPlayer::.ctor()
+extern void LocalPlayer__ctor_mED6DEBCC0902794A04C82ADBC083932FEA3A2A5E (void);
+// 0x00000256 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.NativeCallbackResponder::HandleLoadImageNativeCallback(System.IntPtr,System.Int32,System.String,System.IntPtr)
+extern void NativeCallbackResponder_HandleLoadImageNativeCallback_mE3C35CEAF7DEAA5DFD2F9FC96A88FFD5C0E3D6FC (void);
+// 0x00000257 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.NativeCallbackResponder::HandleViewClosedNativeCallback(System.String,System.IntPtr)
+extern void NativeCallbackResponder_HandleViewClosedNativeCallback_m4F4835E469C78317A6B3AA0AB6509174B8070599 (void);
+// 0x00000258 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.NativeCallbackResponder::HandleLoadServerCredentialsNativeCallback(System.String,System.IntPtr,System.Int32,System.IntPtr,System.Int32,System.Int64,System.String,System.IntPtr)
+extern void NativeCallbackResponder_HandleLoadServerCredentialsNativeCallback_mDD58A7B6B4D00C98CC22E2EF76B68323B198A5FF (void);
+// 0x00000259 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadArrayNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void GameServicesLoadArrayNativeCallback__ctor_m1DEB394FC9D4E86E2A9B1CC682B312E520CCEC1B (void);
+// 0x0000025A System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadArrayNativeCallback::Invoke(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.String,System.IntPtr)
+extern void GameServicesLoadArrayNativeCallback_Invoke_m2176A2FE956491D5E6BFB842D984D733FA5640AF (void);
+// 0x0000025B System.IAsyncResult VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadArrayNativeCallback::BeginInvoke(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GameServicesLoadArrayNativeCallback_BeginInvoke_mE6CEFF75CD8AD852C17F4829B6684198D74A922D (void);
+// 0x0000025C System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadArrayNativeCallback::EndInvoke(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.IAsyncResult)
+extern void GameServicesLoadArrayNativeCallback_EndInvoke_mB66D4EAF7C7FA8FE289BD0D04A168510EAC7B476 (void);
+// 0x0000025D System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesReportNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void GameServicesReportNativeCallback__ctor_mF6A2CC2F7F088AECEDA3A8F6BDB0AE21D4600DE6 (void);
+// 0x0000025E System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesReportNativeCallback::Invoke(System.String,System.IntPtr)
+extern void GameServicesReportNativeCallback_Invoke_m4447C7E89FBDF23975E5138E00B1F4EB4BEA8096 (void);
+// 0x0000025F System.IAsyncResult VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesReportNativeCallback::BeginInvoke(System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GameServicesReportNativeCallback_BeginInvoke_m5A074B77E55D7F79D98AA41CD5A6A2D602A9FA8A (void);
+// 0x00000260 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesReportNativeCallback::EndInvoke(System.IAsyncResult)
+extern void GameServicesReportNativeCallback_EndInvoke_m3A721A50530F8C3EC98A126A79331E730B88C852 (void);
+// 0x00000261 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesAuthStateChangeNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void GameServicesAuthStateChangeNativeCallback__ctor_m7A395DFC227B8F0220E513B2E426A609A21B8258 (void);
+// 0x00000262 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesAuthStateChangeNativeCallback::Invoke(VoxelBusters.EssentialKit.GameServicesCore.iOS.GKLocalPlayerAuthState,System.String)
+extern void GameServicesAuthStateChangeNativeCallback_Invoke_m5A738AA67E29AC49D9D24B8D6EAE4DABB7DD1EB4 (void);
+// 0x00000263 System.IAsyncResult VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesAuthStateChangeNativeCallback::BeginInvoke(VoxelBusters.EssentialKit.GameServicesCore.iOS.GKLocalPlayerAuthState,System.String,System.AsyncCallback,System.Object)
+extern void GameServicesAuthStateChangeNativeCallback_BeginInvoke_m6A5EC4D25E28BB7626E9C54905B1F7357361F082 (void);
+// 0x00000264 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesAuthStateChangeNativeCallback::EndInvoke(System.IAsyncResult)
+extern void GameServicesAuthStateChangeNativeCallback_EndInvoke_m393D4AA0202BB9C1CEBA766C299C4E8992581BEE (void);
+// 0x00000265 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadImageNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void GameServicesLoadImageNativeCallback__ctor_mB5C42247FF4E621ECAA3E603ABE0A70F3237C516 (void);
+// 0x00000266 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadImageNativeCallback::Invoke(System.IntPtr,System.Int32,System.String,System.IntPtr)
+extern void GameServicesLoadImageNativeCallback_Invoke_m57B1D05F706A7D76A75E289B75E8112CEA3DFD13 (void);
+// 0x00000267 System.IAsyncResult VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadImageNativeCallback::BeginInvoke(System.IntPtr,System.Int32,System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GameServicesLoadImageNativeCallback_BeginInvoke_m72DA82941812C193100D5E0F272E5F1854C13E0A (void);
+// 0x00000268 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadImageNativeCallback::EndInvoke(System.IAsyncResult)
+extern void GameServicesLoadImageNativeCallback_EndInvoke_m1F68ADA2F3019A3C424F51D523EAAB09EDF723E7 (void);
+// 0x00000269 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesViewClosedNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void GameServicesViewClosedNativeCallback__ctor_mC26D6E5A0FFA50CAB89974DCF16B4E9513FC23B5 (void);
+// 0x0000026A System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesViewClosedNativeCallback::Invoke(System.String,System.IntPtr)
+extern void GameServicesViewClosedNativeCallback_Invoke_mAA7B9FEC6613CF6B1A19EB8D740042C8D38EDBF0 (void);
+// 0x0000026B System.IAsyncResult VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesViewClosedNativeCallback::BeginInvoke(System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GameServicesViewClosedNativeCallback_BeginInvoke_mFEB37A68108D148E05BEEBA69E18AD2A7B618B93 (void);
+// 0x0000026C System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesViewClosedNativeCallback::EndInvoke(System.IAsyncResult)
+extern void GameServicesViewClosedNativeCallback_EndInvoke_mEB2DBE77C9149DFA664BAA7E38921C23BB249CEC (void);
+// 0x0000026D System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadServerCredentialsNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void GameServicesLoadServerCredentialsNativeCallback__ctor_m3D5A0965F65B546047CB04E5E949C2A3C0CBAED9 (void);
+// 0x0000026E System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadServerCredentialsNativeCallback::Invoke(System.String,System.IntPtr,System.Int32,System.IntPtr,System.Int32,System.Int64,System.String,System.IntPtr)
+extern void GameServicesLoadServerCredentialsNativeCallback_Invoke_m05A84A9767F96A9C569E6A9E9C934CED374B4CD3 (void);
+// 0x0000026F System.IAsyncResult VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadServerCredentialsNativeCallback::BeginInvoke(System.String,System.IntPtr,System.Int32,System.IntPtr,System.Int32,System.Int64,System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GameServicesLoadServerCredentialsNativeCallback_BeginInvoke_mAF935D5E54573F766F67A85F50F75A7231810D4F (void);
+// 0x00000270 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadServerCredentialsNativeCallback::EndInvoke(System.IAsyncResult)
+extern void GameServicesLoadServerCredentialsNativeCallback_EndInvoke_m0382E1252BDA02CDD04B4E2B53BE02EAD7B98F1E (void);
+// 0x00000271 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Player::.cctor()
+extern void Player__cctor_mF816B5C60034C1E3613111542BD3B2F2F7380E2B (void);
+// 0x00000272 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Player::.ctor()
+extern void Player__ctor_mF69AA4C86224DC3397FDC0614C089F623C0EAD38 (void);
+// 0x00000273 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Player::.ctor(System.IntPtr,System.Boolean)
+extern void Player__ctor_m833A343847771E1659D59DFC6943293479241ED8 (void);
+// 0x00000274 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Player::Finalize()
+extern void Player_Finalize_mD2E90FB645010519CC7AC679E2FF84FEAE05DAFF (void);
+// 0x00000275 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Player::LoadPlayers(System.String[],VoxelBusters.EssentialKit.GameServicesCore.LoadPlayersInternalCallback)
+extern void Player_LoadPlayers_m0E32F5A6E1F0BA57F07165431116C66DE1E4748C (void);
+// 0x00000276 System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.Player::GetIdInternal()
+extern void Player_GetIdInternal_mC3B858B7F99200FEAAE3920C0152571348108AD5 (void);
+// 0x00000277 System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.Player::GetAliasInternal()
+extern void Player_GetAliasInternal_m0144B3ABB2BF9AEA4BB66485780736C00E371D63 (void);
+// 0x00000278 System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.Player::GetDisplayNameInternal()
+extern void Player_GetDisplayNameInternal_m2399ECD6D66098373E9B1553C00A09B760815E41 (void);
+// 0x00000279 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Player::LoadImageInternal(VoxelBusters.EssentialKit.LoadImageInternalCallback)
+extern void Player_LoadImageInternal_m066B8A8A6F65A465D5C5F77C3CDCF5054047ADE7 (void);
+// 0x0000027A System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Player::HandleLoadPlayersNativeCallback(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.String,System.IntPtr)
+extern void Player_HandleLoadPlayersNativeCallback_m74711BA3472C617A0D469D5CADDF5A51072D97EA (void);
+// 0x0000027B System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Player/<>c::.cctor()
+extern void U3CU3Ec__cctor_mEB17D1279B9B8DB1240F92AB14E41FD824BB14A3 (void);
+// 0x0000027C System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Player/<>c::.ctor()
+extern void U3CU3Ec__ctor_mB95695C780B30CC73F37BECF12C5C28CBE8E89EA (void);
+// 0x0000027D VoxelBusters.EssentialKit.GameServicesCore.iOS.Player VoxelBusters.EssentialKit.GameServicesCore.iOS.Player/<>c::<HandleLoadPlayersNativeCallback>b__9_0(System.IntPtr)
+extern void U3CU3Ec_U3CHandleLoadPlayersNativeCallbackU3Eb__9_0_mAB5BA0C5B97BAA0B7D9E7175055309C63038B72B (void);
+// 0x0000027E System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.PlayerBinding::NPPlayerRegisterCallbacks(VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadArrayNativeCallback,VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesLoadImageNativeCallback)
+extern void PlayerBinding_NPPlayerRegisterCallbacks_m8A0859A3C20190A65B3F97E345D8E66017321F05 (void);
+// 0x0000027F System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.PlayerBinding::NPPlayerLoadPlayers(System.String[],System.Int32,System.IntPtr)
+extern void PlayerBinding_NPPlayerLoadPlayers_m82E3C55011F84DD61C807B527BE12606CCE4E4E6 (void);
+// 0x00000280 System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.PlayerBinding::NPPlayerGetId(System.IntPtr)
+extern void PlayerBinding_NPPlayerGetId_m8331861D8CBEFBFBFE84EE6CD7CE5761241155D8 (void);
+// 0x00000281 System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.PlayerBinding::NPPlayerGetAlias(System.IntPtr)
+extern void PlayerBinding_NPPlayerGetAlias_mBF3535BC6FEAC1E021BD81E91F3207D205A119A2 (void);
+// 0x00000282 System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.PlayerBinding::NPPlayerGetDisplayName(System.IntPtr)
+extern void PlayerBinding_NPPlayerGetDisplayName_mC26882B68F9123777E37CA095026CEAFEE9BEAAD (void);
+// 0x00000283 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.PlayerBinding::NPPlayerLoadImage(System.IntPtr,System.IntPtr)
+extern void PlayerBinding_NPPlayerLoadImage_m712613BF333B076BBD5C21D18E049AF0F1BE32CB (void);
+// 0x00000284 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.PlayerBinding::NPLocalPlayerRegisterCallbacks(VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesAuthStateChangeNativeCallback)
+extern void PlayerBinding_NPLocalPlayerRegisterCallbacks_mEA52C3982EF44DCC18F293DC086A5E7A81B0FE39 (void);
+// 0x00000285 System.IntPtr VoxelBusters.EssentialKit.GameServicesCore.iOS.PlayerBinding::NPLocalPlayerGetLocalPlayer()
+extern void PlayerBinding_NPLocalPlayerGetLocalPlayer_m9851F29B1D643AE87D4F7A42F3A73C83818D64DF (void);
+// 0x00000286 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.PlayerBinding::NPLocalPlayerAuthenticate()
+extern void PlayerBinding_NPLocalPlayerAuthenticate_m1472DCB2B076B6A1DD359DCFCB0D9FEE06510101 (void);
+// 0x00000287 System.Boolean VoxelBusters.EssentialKit.GameServicesCore.iOS.PlayerBinding::NPLocalPlayerIsAuthenticated()
+extern void PlayerBinding_NPLocalPlayerIsAuthenticated_m5ACE72A2753DE721A55B9CE1EE5E2F6C189C7AB1 (void);
+// 0x00000288 System.Boolean VoxelBusters.EssentialKit.GameServicesCore.iOS.PlayerBinding::NPLocalPlayerIsUnderage()
+extern void PlayerBinding_NPLocalPlayerIsUnderage_mD79C427C2AB670E3F7985AE47728612C1DBB1D93 (void);
+// 0x00000289 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Score::.cctor()
+extern void Score__cctor_mC0CD95EC9119BFC371DCC4A1BE992B94A92DF649 (void);
+// 0x0000028A System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Score::.ctor(System.String,System.String)
+extern void Score__ctor_mD4CF29542FEF0654F69903A2773ECD0369FF6C55 (void);
+// 0x0000028B System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Score::.ctor(System.IntPtr)
+extern void Score__ctor_m7361903B62F0ACAD2CC514640C4C14F868DA2D37 (void);
+// 0x0000028C System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Score::Finalize()
+extern void Score_Finalize_m03F56E89FD6861805907E391C0CDCE04C4A066EA (void);
+// 0x0000028D VoxelBusters.EssentialKit.IPlayer VoxelBusters.EssentialKit.GameServicesCore.iOS.Score::GetPlayerInternal()
+extern void Score_GetPlayerInternal_mCF1976F9B9E8ABE4672CE8CA8918F56F29D284D3 (void);
+// 0x0000028E System.Int64 VoxelBusters.EssentialKit.GameServicesCore.iOS.Score::GetRankInternal()
+extern void Score_GetRankInternal_m757A7B4DB33EBE91EADCB5ED381D763FF19AFBBF (void);
+// 0x0000028F System.Int64 VoxelBusters.EssentialKit.GameServicesCore.iOS.Score::GetValueInternal()
+extern void Score_GetValueInternal_mD6F3901857FD565676F99EFCDCF4A05D6567690C (void);
+// 0x00000290 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Score::SetValueInternal(System.Int64)
+extern void Score_SetValueInternal_m1924D652D131AC2E2D68CB29B7DB30F3A8E51C71 (void);
+// 0x00000291 System.DateTime VoxelBusters.EssentialKit.GameServicesCore.iOS.Score::GetLastReportedDateInternal()
+extern void Score_GetLastReportedDateInternal_m9DEDDE1F85606127520D1D4745E63112225AAF55 (void);
+// 0x00000292 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Score::ReportScoreInternal(VoxelBusters.EssentialKit.GameServicesCore.ReportScoreInternalCallback)
+extern void Score_ReportScoreInternal_m07B9181CFBE79215EAF387D790CB7B06EC3C3AA6 (void);
+// 0x00000293 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.Score::HandleReportScoreCallbackInternal(System.String,System.IntPtr)
+extern void Score_HandleReportScoreCallbackInternal_m36385F6E43FE7FF0E40BECDCB61F094D274C8809 (void);
+// 0x00000294 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.ScoreBinding::NPScoreRegisterCallbacks(VoxelBusters.EssentialKit.GameServicesCore.iOS.GameServicesReportNativeCallback)
+extern void ScoreBinding_NPScoreRegisterCallbacks_mE9EF26B8478566C1468C15DA4123C9F2B30BCD79 (void);
+// 0x00000295 System.IntPtr VoxelBusters.EssentialKit.GameServicesCore.iOS.ScoreBinding::NPScoreCreate(System.String)
+extern void ScoreBinding_NPScoreCreate_mC82E15EEE0B1D4C849B8D3719A9BC7F06F143BD1 (void);
+// 0x00000296 System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.ScoreBinding::NPScoreGetLeaderboardId(System.IntPtr)
+extern void ScoreBinding_NPScoreGetLeaderboardId_mED80F14A4699D6D445A0C3DA4B33C231D5863C54 (void);
+// 0x00000297 System.Int64 VoxelBusters.EssentialKit.GameServicesCore.iOS.ScoreBinding::NPScoreGetRank(System.IntPtr)
+extern void ScoreBinding_NPScoreGetRank_m057590AC205CF9622F21EFED6F5378788AA116D0 (void);
+// 0x00000298 System.Int64 VoxelBusters.EssentialKit.GameServicesCore.iOS.ScoreBinding::NPScoreGetValue(System.IntPtr)
+extern void ScoreBinding_NPScoreGetValue_m9120D46DE7D1F3143AA232F70BB59413A136723B (void);
+// 0x00000299 System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.ScoreBinding::NPScoreSetValue(System.IntPtr,System.Int64)
+extern void ScoreBinding_NPScoreSetValue_mEC682740908E916ABA2BC84509B7639B755EAEB5 (void);
+// 0x0000029A System.String VoxelBusters.EssentialKit.GameServicesCore.iOS.ScoreBinding::NPScoreGetLastReportedDate(System.IntPtr)
+extern void ScoreBinding_NPScoreGetLastReportedDate_m40C38E8EC8FFD44CE1481F61A5265D82F50F9243 (void);
+// 0x0000029B System.IntPtr VoxelBusters.EssentialKit.GameServicesCore.iOS.ScoreBinding::NPScoreGetPlayer(System.IntPtr)
+extern void ScoreBinding_NPScoreGetPlayer_mAE4DF3DE52A0795CEF19D02167C318E33A5A71B5 (void);
+// 0x0000029C System.Void VoxelBusters.EssentialKit.GameServicesCore.iOS.ScoreBinding::NPScoreReportScore(System.IntPtr,System.IntPtr)
+extern void ScoreBinding_NPScoreReportScore_mC942756A586149CAA37D0FE172DF1131AAA18F4D (void);
+// 0x0000029D System.Boolean VoxelBusters.EssentialKit.ExtrasCore.iOS.NativeUtilityInterface::NPStoreReviewCanUseDeepLinking()
+extern void NativeUtilityInterface_NPStoreReviewCanUseDeepLinking_mC278CC136D5D80586ABD7999A44046B91B22D21D (void);
+// 0x0000029E System.Void VoxelBusters.EssentialKit.ExtrasCore.iOS.NativeUtilityInterface::NPStoreReviewRequestReview()
+extern void NativeUtilityInterface_NPStoreReviewRequestReview_m9766016A9FBE68E233992C9919123F66F6771F1A (void);
+// 0x0000029F System.Void VoxelBusters.EssentialKit.ExtrasCore.iOS.NativeUtilityInterface::.ctor()
+extern void NativeUtilityInterface__ctor_m44669329C36D5DABCE56AB8723FEF1D8AFAAA46D (void);
+// 0x000002A0 System.Void VoxelBusters.EssentialKit.ExtrasCore.iOS.NativeUtilityInterface::RequestStoreReview()
+extern void NativeUtilityInterface_RequestStoreReview_m1315727DF467C845DB2FDC1C829071FF2AED3BAC (void);
+// 0x000002A1 System.Void VoxelBusters.EssentialKit.ExtrasCore.iOS.NativeUtilityInterface::OpenAppStorePage(System.String)
+extern void NativeUtilityInterface_OpenAppStorePage_mF0A645E6466E0D11044616D15315D22F8D300F0B (void);
+// 0x000002A2 System.Void VoxelBusters.EssentialKit.ExtrasCore.iOS.NativeUtilityInterface::OpenApplicationSettings()
+extern void NativeUtilityInterface_OpenApplicationSettings_mB8E27D45835CE08E907E9FE4EB966E684323B287 (void);
+// 0x000002A3 System.Void VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.DeepLinkServicesBinding::NPDeepLinkServicesRegisterCallbacks(VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.HandleCustomSchemeUrlNativeCallback,VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.HandleUniversalLinkNativeCallback)
+extern void DeepLinkServicesBinding_NPDeepLinkServicesRegisterCallbacks_m57CEF799F1C1CFC37062758B450920DC4E52C588 (void);
+// 0x000002A4 System.Void VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.DeepLinkServicesBinding::NPDeepLinkServicesInit()
+extern void DeepLinkServicesBinding_NPDeepLinkServicesInit_mA025F5487892D32C7BBEBA78BCDFE99C70130F91 (void);
+// 0x000002A5 System.Void VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.DeepLinkServicesInterface::.ctor()
+extern void DeepLinkServicesInterface__ctor_mDD753E3BEDEB76DE999817387F5B34C766E56010 (void);
+// 0x000002A6 System.Void VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.DeepLinkServicesInterface::Init()
+extern void DeepLinkServicesInterface_Init_m4E21A1039DC35E66A5BEA8303119829F6B527FBC (void);
+// 0x000002A7 System.Boolean VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.DeepLinkServicesInterface::HandleCustomSchemeUrl(System.String)
+extern void DeepLinkServicesInterface_HandleCustomSchemeUrl_m65B78807114B0E19DB4DF867637657DC78C9005F (void);
+// 0x000002A8 System.Boolean VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.DeepLinkServicesInterface::HandleUniversalLink(System.String)
+extern void DeepLinkServicesInterface_HandleUniversalLink_m62FDCC19EEA99A1D642182FBE23539AC16620C70 (void);
+// 0x000002A9 System.Void VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.HandleCustomSchemeUrlNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void HandleCustomSchemeUrlNativeCallback__ctor_m4B883AC60C6A18663EF8E9D7C7F3C38BE67DC222 (void);
+// 0x000002AA System.Boolean VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.HandleCustomSchemeUrlNativeCallback::Invoke(System.String)
+extern void HandleCustomSchemeUrlNativeCallback_Invoke_m50071FB666D06AF0F66341CC6D53469B31D91AB8 (void);
+// 0x000002AB System.IAsyncResult VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.HandleCustomSchemeUrlNativeCallback::BeginInvoke(System.String,System.AsyncCallback,System.Object)
+extern void HandleCustomSchemeUrlNativeCallback_BeginInvoke_mB3C6FA36E61C32CD9431C3277FA71E6299478330 (void);
+// 0x000002AC System.Boolean VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.HandleCustomSchemeUrlNativeCallback::EndInvoke(System.IAsyncResult)
+extern void HandleCustomSchemeUrlNativeCallback_EndInvoke_m9321618B8EF339E10B53766FF2FC607A2EF4983C (void);
+// 0x000002AD System.Void VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.HandleUniversalLinkNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void HandleUniversalLinkNativeCallback__ctor_m30A1048E08EC9CA0339A5537E283192CB458BBDC (void);
+// 0x000002AE System.Boolean VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.HandleUniversalLinkNativeCallback::Invoke(System.String)
+extern void HandleUniversalLinkNativeCallback_Invoke_m888F97F857D885E999168BC5F8B45082043EAFBC (void);
+// 0x000002AF System.IAsyncResult VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.HandleUniversalLinkNativeCallback::BeginInvoke(System.String,System.AsyncCallback,System.Object)
+extern void HandleUniversalLinkNativeCallback_BeginInvoke_mA397A313A8D25AA54BE2D8C5D2551F29D51D6634 (void);
+// 0x000002B0 System.Boolean VoxelBusters.EssentialKit.DeepLinkServicesCore.iOS.HandleUniversalLinkNativeCallback::EndInvoke(System.IAsyncResult)
+extern void HandleUniversalLinkNativeCallback_EndInvoke_m0D3ED6E58D069A51459D72D98066E5AACB2B7D2D (void);
+// 0x000002B1 System.IntPtr VoxelBusters.EssentialKit.CloudServicesCore.iOS.CKAccountData::get_AccountIdentifierPtr()
+extern void CKAccountData_get_AccountIdentifierPtr_mC94975540DE7D24108186B3EB6DC09CC636BFA07 (void);
+// 0x000002B2 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CKAccountData::set_AccountIdentifierPtr(System.IntPtr)
+extern void CKAccountData_set_AccountIdentifierPtr_m223C49FAE082E34F9F90614445AD956E97C1A6FA (void);
+// 0x000002B3 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesRegisterCallbacks(VoxelBusters.EssentialKit.CloudServicesCore.iOS.UserChangeNativeCallback,VoxelBusters.EssentialKit.CloudServicesCore.iOS.SavedDataChangeNativeCallback)
+extern void CloudServicesBinding_NPCloudServicesRegisterCallbacks_m583D22D3E1B997FAEEAC804647A0589C00B97A6F (void);
+// 0x000002B4 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesInit()
+extern void CloudServicesBinding_NPCloudServicesInit_m47CD5A395DB7815E73EA29CAFC07F25A50649701 (void);
+// 0x000002B5 System.Boolean VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesGetBool(System.String)
+extern void CloudServicesBinding_NPCloudServicesGetBool_m0242E11F22108C4B5B6164A60BCF2437D86CB4EB (void);
+// 0x000002B6 System.Int64 VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesGetLong(System.String)
+extern void CloudServicesBinding_NPCloudServicesGetLong_mE7BA9810473814632728AA6C497300290102D217 (void);
+// 0x000002B7 System.Double VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesGetDouble(System.String)
+extern void CloudServicesBinding_NPCloudServicesGetDouble_mB8260C8373166358D452AED86DCB9605CD0C9D5D (void);
+// 0x000002B8 System.String VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesGetString(System.String)
+extern void CloudServicesBinding_NPCloudServicesGetString_m773D4EFD1D3A01F5BD1A2BE0444E201445FE880F (void);
+// 0x000002B9 System.IntPtr VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesGetByteArray(System.String,System.Int32&)
+extern void CloudServicesBinding_NPCloudServicesGetByteArray_m9CA477F2485365B9DB8AA9B366C915AD392FD5B8 (void);
+// 0x000002BA System.String VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesGetArray(System.String)
+extern void CloudServicesBinding_NPCloudServicesGetArray_m410E95875E639D163F22C52579AAAF201691AAC2 (void);
+// 0x000002BB System.String VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesGetDictionary(System.String)
+extern void CloudServicesBinding_NPCloudServicesGetDictionary_m7622107C84BDF013736F9201B97BC4A074983351 (void);
+// 0x000002BC System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesSetBool(System.String,System.Boolean)
+extern void CloudServicesBinding_NPCloudServicesSetBool_mF65A11A14295BF8A811190341C0A532F6DC1B64C (void);
+// 0x000002BD System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesSetLong(System.String,System.Int64)
+extern void CloudServicesBinding_NPCloudServicesSetLong_m3BDA6E5BB7D1B23DFC01E5879A801DE153C59C15 (void);
+// 0x000002BE System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesSetDouble(System.String,System.Double)
+extern void CloudServicesBinding_NPCloudServicesSetDouble_m3DFA873C9CA744E1F123BBFC469FD52AE3974916 (void);
+// 0x000002BF System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesSetString(System.String,System.String)
+extern void CloudServicesBinding_NPCloudServicesSetString_m40BE7E79ABB80D1D0689D5F1277DD363276FA0A7 (void);
+// 0x000002C0 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesSetByteArray(System.String,System.Byte[],System.Int32)
+extern void CloudServicesBinding_NPCloudServicesSetByteArray_mD85EA4822E28A46217E251D3EEA3BBC0438C7E66 (void);
+// 0x000002C1 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesSetArray(System.String,System.String)
+extern void CloudServicesBinding_NPCloudServicesSetArray_m70E8CF042ABE67641BE264ACE6E17F70D2C2BC7E (void);
+// 0x000002C2 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesSetDictionary(System.String,System.String)
+extern void CloudServicesBinding_NPCloudServicesSetDictionary_mB6E70FE2E248F40CC6CDE36CF8968E787927709D (void);
+// 0x000002C3 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesRemoveKey(System.String)
+extern void CloudServicesBinding_NPCloudServicesRemoveKey_mFAEFB854E594AAAF25690623250E74509040769D (void);
+// 0x000002C4 System.Boolean VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesSynchronize()
+extern void CloudServicesBinding_NPCloudServicesSynchronize_m4076F21D85F4E555A20F3D186B9A58D6FD94C6D9 (void);
+// 0x000002C5 System.String VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesBinding::NPCloudServicesSnapshot()
+extern void CloudServicesBinding_NPCloudServicesSnapshot_m889AC4B8E9AD67A42D500FD19C85259DA0B5F9C7 (void);
+// 0x000002C6 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::.cctor()
+extern void CloudServicesInterface__cctor_m9082A69F27E3B668C99B061128082B387E31F0A3 (void);
+// 0x000002C7 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::.ctor()
+extern void CloudServicesInterface__ctor_mD68ED9F282307D8B495051ABB1B5871E89F35759 (void);
+// 0x000002C8 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::Finalize()
+extern void CloudServicesInterface_Finalize_mC0A8F177DB4444E5C1E5045A1F0C4629A9E477F5 (void);
+// 0x000002C9 System.Boolean VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::GetBool(System.String)
+extern void CloudServicesInterface_GetBool_m71D928DA866D894EF2777DF455490B1455692223 (void);
+// 0x000002CA System.Int64 VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::GetLong(System.String)
+extern void CloudServicesInterface_GetLong_m076198BC5B34DF512BF8499D7338D5A75A337014 (void);
+// 0x000002CB System.Double VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::GetDouble(System.String)
+extern void CloudServicesInterface_GetDouble_mA89E7F5181CFC31DB898DBDBA033C3FACEA8E266 (void);
+// 0x000002CC System.String VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::GetString(System.String)
+extern void CloudServicesInterface_GetString_m82EB19ACB346610D584F35DDC74801BD78C113D9 (void);
+// 0x000002CD System.Byte[] VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::GetByteArray(System.String)
+extern void CloudServicesInterface_GetByteArray_m386C402241CBC2BBD9F36397FA30E984D6491041 (void);
+// 0x000002CE System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::SetBool(System.String,System.Boolean)
+extern void CloudServicesInterface_SetBool_mF6224142C39BE2C3E6155F2D317267279ED3679A (void);
+// 0x000002CF System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::SetLong(System.String,System.Int64)
+extern void CloudServicesInterface_SetLong_mDDDB3FB8E7B0D052E8C1DE21BDA767B8CD6EA5E0 (void);
+// 0x000002D0 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::SetDouble(System.String,System.Double)
+extern void CloudServicesInterface_SetDouble_m2299EBBC2F6FCA775C630290B3659B962FC57B86 (void);
+// 0x000002D1 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::SetString(System.String,System.String)
+extern void CloudServicesInterface_SetString_m7B9C4DA5E39DF17365E422726F5D76B6FD927507 (void);
+// 0x000002D2 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::SetByteArray(System.String,System.Byte[])
+extern void CloudServicesInterface_SetByteArray_m43F214E463D5974AE30F2F20898955A802C4021C (void);
+// 0x000002D3 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::RemoveKey(System.String)
+extern void CloudServicesInterface_RemoveKey_m3CBBBE843F4F7DDD8D4D12A372DF513C8F205F63 (void);
+// 0x000002D4 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::Synchronize(VoxelBusters.EssentialKit.CloudServicesCore.SynchronizeInternalCallback)
+extern void CloudServicesInterface_Synchronize_mF036AE704594B84A2F55DAD391B9139AE71A5A6B (void);
+// 0x000002D5 System.Collections.IDictionary VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::GetSnapshot()
+extern void CloudServicesInterface_GetSnapshot_m695C3C907C366C951744AB6EAF27E6E0BF19EF3C (void);
+// 0x000002D6 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::Dispose(System.Boolean)
+extern void CloudServicesInterface_Dispose_m40E282DDE55952284CEA10EB108AD061B58DD306 (void);
+// 0x000002D7 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::HandleUserChangeNativeCallback(VoxelBusters.EssentialKit.CloudServicesCore.iOS.CKAccountData&,System.String)
+extern void CloudServicesInterface_HandleUserChangeNativeCallback_m190142192112FAC1ED5F013185AFFFD19E0C1BEC (void);
+// 0x000002D8 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesInterface::HandleSavedDataChangeNativeCallback(System.Int32,VoxelBusters.CoreLibrary.NativePlugins.NativeArray&)
+extern void CloudServicesInterface_HandleSavedDataChangeNativeCallback_m0A0745F745EDEA2DCBDCA51004FFB9F3183DDEBC (void);
+// 0x000002D9 VoxelBusters.EssentialKit.CloudUserAccountStatus VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesUtility::ConvertToCloudUserAccountStatus(VoxelBusters.EssentialKit.CloudServicesCore.iOS.CKAccountStatus)
+extern void CloudServicesUtility_ConvertToCloudUserAccountStatus_m84AB1221BA2942BDB8EF9D6F936C29128E53A0BC (void);
+// 0x000002DA VoxelBusters.EssentialKit.CloudSavedDataChangeReasonCode VoxelBusters.EssentialKit.CloudServicesCore.iOS.CloudServicesUtility::ConvertToCloudSavedDataChangeReasonCode(VoxelBusters.EssentialKit.CloudServicesCore.iOS.NSUbiquitousKeyValueStoreChange)
+extern void CloudServicesUtility_ConvertToCloudSavedDataChangeReasonCode_m0A4B20200EF170E0A6601FE4BD8D16B9EA00584D (void);
+// 0x000002DB System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.UserChangeNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void UserChangeNativeCallback__ctor_m55239B35A2BF237D5982BDF9B6AA3037FDD5F2F5 (void);
+// 0x000002DC System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.UserChangeNativeCallback::Invoke(VoxelBusters.EssentialKit.CloudServicesCore.iOS.CKAccountData&,System.String)
+extern void UserChangeNativeCallback_Invoke_m851852101F5B9FD7BBC72AA64C19E9BE05302FEC (void);
+// 0x000002DD System.IAsyncResult VoxelBusters.EssentialKit.CloudServicesCore.iOS.UserChangeNativeCallback::BeginInvoke(VoxelBusters.EssentialKit.CloudServicesCore.iOS.CKAccountData&,System.String,System.AsyncCallback,System.Object)
+extern void UserChangeNativeCallback_BeginInvoke_mDE1909C328664E866109E6BADEFFAF36BC57FF82 (void);
+// 0x000002DE System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.UserChangeNativeCallback::EndInvoke(VoxelBusters.EssentialKit.CloudServicesCore.iOS.CKAccountData&,System.IAsyncResult)
+extern void UserChangeNativeCallback_EndInvoke_mC0984D830A83764A148FF80C4972D886593597FD (void);
+// 0x000002DF System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.SavedDataChangeNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void SavedDataChangeNativeCallback__ctor_m096AA8F1B54E143F6CF6514A41184D7BB3A08AE9 (void);
+// 0x000002E0 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.SavedDataChangeNativeCallback::Invoke(System.Int32,VoxelBusters.CoreLibrary.NativePlugins.NativeArray&)
+extern void SavedDataChangeNativeCallback_Invoke_m1E60F662084D88A8E9A208E7DA63A7A9B5AFFC9E (void);
+// 0x000002E1 System.IAsyncResult VoxelBusters.EssentialKit.CloudServicesCore.iOS.SavedDataChangeNativeCallback::BeginInvoke(System.Int32,VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.AsyncCallback,System.Object)
+extern void SavedDataChangeNativeCallback_BeginInvoke_m8DBC0CDD2EF309F34E6B1EA710FA9F581E052571 (void);
+// 0x000002E2 System.Void VoxelBusters.EssentialKit.CloudServicesCore.iOS.SavedDataChangeNativeCallback::EndInvoke(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.IAsyncResult)
+extern void SavedDataChangeNativeCallback_EndInvoke_mAB24A38D2AB9A84476696138FF23FE75B7B02ED6 (void);
+// 0x000002E3 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingProduct::.ctor(System.IntPtr,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)
+extern void BillingProduct__ctor_m1AD65AFF454F8E3C144457D04BEDE8F1399E4982 (void);
+// 0x000002E4 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingProduct::Finalize()
+extern void BillingProduct_Finalize_m13BDA32096AE64D9C70C8734B0EAE5E8C802CC2C (void);
+// 0x000002E5 System.String VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingProduct::GetLocalizedTitleInternal()
+extern void BillingProduct_GetLocalizedTitleInternal_m7F190FFEEC9E894A1547D86898D50AA94D71B56D (void);
+// 0x000002E6 System.String VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingProduct::GetLocalizedDescriptionInternal()
+extern void BillingProduct_GetLocalizedDescriptionInternal_mB93BED1E549CC981832E4BDA377BDA318A446C28 (void);
+// 0x000002E7 System.String VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingProduct::GetPriceInternal()
+extern void BillingProduct_GetPriceInternal_m9AEB3A4BB8692306A07C127005EF0B4824ED3678 (void);
+// 0x000002E8 System.String VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingProduct::GetLocalizedPriceInternal()
+extern void BillingProduct_GetLocalizedPriceInternal_m6FCAEF29B874F6104A0C0397747C482B885D3952 (void);
+// 0x000002E9 System.String VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingProduct::GetPriceCurrencyCodeInternal()
+extern void BillingProduct_GetPriceCurrencyCodeInternal_m46DD00D20D2D56B8D5B94C66A196E1D255078E8C (void);
+// 0x000002EA System.Boolean VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesBinding::NPBillingServicesCanMakePayments()
+extern void BillingServicesBinding_NPBillingServicesCanMakePayments_m5230ACC8B6F09744CBBA6C6C5D0E179ED6C0751E (void);
+// 0x000002EB System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesBinding::NPBillingServicesRegisterCallbacks(VoxelBusters.EssentialKit.BillingServicesCore.iOS.RequestForProductsNativeCallback,VoxelBusters.EssentialKit.BillingServicesCore.iOS.TransactionStateChangeNativeCallback,VoxelBusters.EssentialKit.BillingServicesCore.iOS.RestorePurchasesNativeCallback)
+extern void BillingServicesBinding_NPBillingServicesRegisterCallbacks_m138DEE6494E5DF0AF9665DD6F84E91DE0F5D927C (void);
+// 0x000002EC System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesBinding::NPBillingServicesInit(System.Boolean,System.String)
+extern void BillingServicesBinding_NPBillingServicesInit_mF511A4999A6A07949066C764ECE427FCF214402A (void);
+// 0x000002ED System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesBinding::NPBillingServicesRequestForBillingProducts(System.String[],System.Int32)
+extern void BillingServicesBinding_NPBillingServicesRequestForBillingProducts_mE933316B7FB8713DFAD8AA75AC6650AFB7EC85F5 (void);
+// 0x000002EE System.Boolean VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesBinding::NPBillingServicesBuyProduct(System.String,System.Int32,System.String)
+extern void BillingServicesBinding_NPBillingServicesBuyProduct_m7262305571A8ED832089BAA56DD32BE8C38D5F94 (void);
+// 0x000002EF System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesBinding::NPBillingServicesGetTransactions(System.Int32&)
+extern void BillingServicesBinding_NPBillingServicesGetTransactions_mA4BBACC773B5435ADA05844F272FD36A293CF271 (void);
+// 0x000002F0 VoxelBusters.EssentialKit.BillingServicesCore.iOS.NPStoreReceiptVerificationState VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesBinding::NPBillingServicesGetReceiptVerificationState(System.IntPtr)
+extern void BillingServicesBinding_NPBillingServicesGetReceiptVerificationState_m9B6FA4895C93C658B4D17E11AAA7A7189F87FCEC (void);
+// 0x000002F1 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesBinding::NPBillingServicesRestorePurchases(System.String)
+extern void BillingServicesBinding_NPBillingServicesRestorePurchases_mE4ADAF77A450783EA88E7542569ED18692211731 (void);
+// 0x000002F2 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesBinding::NPBillingServicesFinishTransactions(System.IntPtr,System.Int32)
+extern void BillingServicesBinding_NPBillingServicesFinishTransactions_mFD497E24853D2F45E1206FC08F7020718CB4F70F (void);
+// 0x000002F3 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesBinding::NPBillingServicesGetOriginalTransaction(System.IntPtr,VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData&)
+extern void BillingServicesBinding_NPBillingServicesGetOriginalTransaction_mB1F55197385C4780543E78E05348E7844F131D69 (void);
+// 0x000002F4 System.Boolean VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesBinding::NPBillingServicesTryClearingUnfinishedTransactions()
+extern void BillingServicesBinding_NPBillingServicesTryClearingUnfinishedTransactions_m351F8641723556B7BF304FFD5D78DFFF6EC18AE2 (void);
+// 0x000002F5 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface::.cctor()
+extern void BillingServicesInterface__cctor_m47A2CBAB42B443ECB269351DC0DDD09019ACFC16 (void);
+// 0x000002F6 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface::.ctor()
+extern void BillingServicesInterface__ctor_mF058F5F833CA16D28FCD75A26A7AE54DD16C38DC (void);
+// 0x000002F7 System.Boolean VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface::CanMakePayments()
+extern void BillingServicesInterface_CanMakePayments_m06EBE3D1294685A8EC29A9ED61D6C8933466976A (void);
+// 0x000002F8 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface::RetrieveProducts(VoxelBusters.EssentialKit.BillingProductDefinition[])
+extern void BillingServicesInterface_RetrieveProducts_m92B754F94207B5FF14BEEEE810229E1489BE8289 (void);
+// 0x000002F9 System.Boolean VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface::StartPayment(VoxelBusters.EssentialKit.IBillingPayment,VoxelBusters.CoreLibrary.Error&)
+extern void BillingServicesInterface_StartPayment_mCC27414BAA6631B0214D6C28CB657FDCA23624F8 (void);
+// 0x000002FA VoxelBusters.EssentialKit.IBillingTransaction[] VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface::GetTransactions()
+extern void BillingServicesInterface_GetTransactions_m1BCF5AA486EBE13F3F0402517DE4BCAA5B291865 (void);
+// 0x000002FB System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface::FinishTransactions(VoxelBusters.EssentialKit.IBillingTransaction[])
+extern void BillingServicesInterface_FinishTransactions_m50B37765DD7B95D256F107681B90016D4621E684 (void);
+// 0x000002FC System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface::RestorePurchases(System.String)
+extern void BillingServicesInterface_RestorePurchases_m4D7904334F9B0505A83C2460B4382AA4235D57BD (void);
+// 0x000002FD System.Boolean VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface::TryClearingUnfinishedTransactions()
+extern void BillingServicesInterface_TryClearingUnfinishedTransactions_m2277D11406EB20F7F27E603C816ADD8C94C941E1 (void);
+// 0x000002FE System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface::HandleRequestForProductsCallbackInternal(System.IntPtr,System.Int32,System.String,VoxelBusters.CoreLibrary.NativePlugins.NativeArray&)
+extern void BillingServicesInterface_HandleRequestForProductsCallbackInternal_m1505F702D6F8AA6E350004B6F392C5BDA93E17E2 (void);
+// 0x000002FF System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface::HandlePaymentStateChangeCallbackInternal(System.IntPtr,System.Int32)
+extern void BillingServicesInterface_HandlePaymentStateChangeCallbackInternal_m841AEF90F9935AFDBCF86ACD457786A9EE24F45B (void);
+// 0x00000300 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface::HandleRestorePurchasesCallbackInternal(System.IntPtr,System.Int32,System.String)
+extern void BillingServicesInterface_HandleRestorePurchasesCallbackInternal_mED170030D942FDA2CCF714A5D9CC94C1B5457EBD (void);
+// 0x00000301 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface/<>c::.cctor()
+extern void U3CU3Ec__cctor_mEAC490C2D180B01D4F0B18421AAA1B3F8D6F5798 (void);
+// 0x00000302 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface/<>c::.ctor()
+extern void U3CU3Ec__ctor_m2E796AEEA70D795C2B145E0B2E1B0D323BF6FE04 (void);
+// 0x00000303 System.String VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface/<>c::<RetrieveProducts>b__4_0(VoxelBusters.EssentialKit.BillingProductDefinition)
+extern void U3CU3Ec_U3CRetrieveProductsU3Eb__4_0_m40B8784278606D9EB98C1195D9B28AB24D6023D7 (void);
+// 0x00000304 System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesInterface/<>c::<FinishTransactions>b__7_0(VoxelBusters.EssentialKit.IBillingTransaction)
+extern void U3CU3Ec_U3CFinishTransactionsU3Eb__7_0_m9D2637882E0E08A9004DF320134C2DB8DA7D57FD (void);
+// 0x00000305 VoxelBusters.EssentialKit.BillingTransactionState VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesUtility::ConvertToBillingTransactionState(VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionState)
+extern void BillingServicesUtility_ConvertToBillingTransactionState_m864BB9B61FB803E50480C66BA2800851D54D934E (void);
+// 0x00000306 VoxelBusters.EssentialKit.BillingReceiptVerificationState VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesUtility::ConvertToBillingReceiptVerificationState(VoxelBusters.EssentialKit.BillingServicesCore.iOS.NPStoreReceiptVerificationState)
+extern void BillingServicesUtility_ConvertToBillingReceiptVerificationState_m1BDA2E277C76CF101925AC78038ED7A8A36CEC37 (void);
+// 0x00000307 VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingProduct[] VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesUtility::CreateProductArray(System.IntPtr,System.Int32)
+extern void BillingServicesUtility_CreateProductArray_mCE83AE59AAC5A3207C2E7BAC4B7F4DB053C8242F (void);
+// 0x00000308 VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingTransaction[] VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesUtility::CreateTransactionArray(System.IntPtr,System.Int32)
+extern void BillingServicesUtility_CreateTransactionArray_m43294C48C5E1887444AD919D611FFB5FE25EE6AA (void);
+// 0x00000309 VoxelBusters.EssentialKit.IBillingPayment VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesUtility::CreatePayment(VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentData)
+extern void BillingServicesUtility_CreatePayment_m4DD7EB1F13E7CEA6CE02BCE311DACBC2001FC9BE (void);
+// 0x0000030A System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesUtility/<>c::.cctor()
+extern void U3CU3Ec__cctor_m4542C6E50AC13C9AA5A06A6282DA2E52ACCF7D79 (void);
+// 0x0000030B System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesUtility/<>c::.ctor()
+extern void U3CU3Ec__ctor_m43E5119FCB22C2BE3EB38FB9565FF1E8686D395B (void);
+// 0x0000030C VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingProduct VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesUtility/<>c::<CreateProductArray>b__2_0(VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData)
+extern void U3CU3Ec_U3CCreateProductArrayU3Eb__2_0_mBE85FDAADA59FABD93180FDABF1F6934EDF5ACFE (void);
+// 0x0000030D VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingTransaction VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingServicesUtility/<>c::<CreateTransactionArray>b__3_0(VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData)
+extern void U3CU3Ec_U3CCreateTransactionArrayU3Eb__3_0_m34CD979F058E4733C0EB427F3A16A272BE4C8559 (void);
+// 0x0000030E System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingTransaction::.ctor(System.IntPtr,System.String,VoxelBusters.EssentialKit.IBillingPayment,VoxelBusters.EssentialKit.BillingTransactionState,VoxelBusters.EssentialKit.BillingReceiptVerificationState,System.DateTime,System.String,VoxelBusters.CoreLibrary.Error)
+extern void BillingTransaction__ctor_mB713C8AD42730228D3968BB22FF61E002DD5DC4B (void);
+// 0x0000030F System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingTransaction::Finalize()
+extern void BillingTransaction_Finalize_mD48814E5462CD083038539A1337879B76D8C0A4A (void);
+// 0x00000310 System.DateTime VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingTransaction::GetTransactionDateUTCInternal()
+extern void BillingTransaction_GetTransactionDateUTCInternal_m51CC0FE87DB69817005E6E544ECEEB28B14AC294 (void);
+// 0x00000311 VoxelBusters.EssentialKit.BillingTransactionState VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingTransaction::GetTransactionStateInternal()
+extern void BillingTransaction_GetTransactionStateInternal_mB5B8510DF68F1BD9C40A8F3AACF7919146C58C9D (void);
+// 0x00000312 VoxelBusters.EssentialKit.BillingReceiptVerificationState VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingTransaction::GetReceiptVerificationStateInternal()
+extern void BillingTransaction_GetReceiptVerificationStateInternal_mEFA77BFEFFD7234646903B7D67140E793B454A00 (void);
+// 0x00000313 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingTransaction::SetReceiptVerificationStateInternal(VoxelBusters.EssentialKit.BillingReceiptVerificationState)
+extern void BillingTransaction_SetReceiptVerificationStateInternal_m72586EB08600659DD0D067B9F334055D2794E056 (void);
+// 0x00000314 System.String VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingTransaction::GetReceiptInternal()
+extern void BillingTransaction_GetReceiptInternal_m618949B3E311315DCC7A657C992624EF1F08AC80 (void);
+// 0x00000315 VoxelBusters.CoreLibrary.Error VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingTransaction::GetErrorInternal()
+extern void BillingTransaction_GetErrorInternal_mB28AEB2E0AF4FBA9186A10C502E0B00AC5147D76 (void);
+// 0x00000316 VoxelBusters.EssentialKit.BillingTransactionAndroidProperties VoxelBusters.EssentialKit.BillingServicesCore.iOS.BillingTransaction::GetAndroidPropertiesInternal()
+extern void BillingTransaction_GetAndroidPropertiesInternal_mA5514C8F48B460485D1CD73D8C0EB3C4161881F2 (void);
+// 0x00000317 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.RequestForProductsNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void RequestForProductsNativeCallback__ctor_m5502C3CC2E36665903271937A04F8D57404483EA (void);
+// 0x00000318 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.RequestForProductsNativeCallback::Invoke(System.IntPtr,System.Int32,System.String,VoxelBusters.CoreLibrary.NativePlugins.NativeArray&)
+extern void RequestForProductsNativeCallback_Invoke_mD517B062CFB7D24F7C0BECAE63CD2AF07212B4C6 (void);
+// 0x00000319 System.IAsyncResult VoxelBusters.EssentialKit.BillingServicesCore.iOS.RequestForProductsNativeCallback::BeginInvoke(System.IntPtr,System.Int32,System.String,VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.AsyncCallback,System.Object)
+extern void RequestForProductsNativeCallback_BeginInvoke_mCB61EB6F5663F860BCCDB907A42B673E173A4C5E (void);
+// 0x0000031A System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.RequestForProductsNativeCallback::EndInvoke(VoxelBusters.CoreLibrary.NativePlugins.NativeArray&,System.IAsyncResult)
+extern void RequestForProductsNativeCallback_EndInvoke_mF632ACB93B4664CA92A51728696E2467D88BD8D2 (void);
+// 0x0000031B System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.TransactionStateChangeNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void TransactionStateChangeNativeCallback__ctor_m3BCAD3D2EECE0BF5D960ECB305DE0709AB946C6D (void);
+// 0x0000031C System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.TransactionStateChangeNativeCallback::Invoke(System.IntPtr,System.Int32)
+extern void TransactionStateChangeNativeCallback_Invoke_m0B63CD75E097C0B148A8341F24F57994173FDC95 (void);
+// 0x0000031D System.IAsyncResult VoxelBusters.EssentialKit.BillingServicesCore.iOS.TransactionStateChangeNativeCallback::BeginInvoke(System.IntPtr,System.Int32,System.AsyncCallback,System.Object)
+extern void TransactionStateChangeNativeCallback_BeginInvoke_mFE6A78A3BBB8E6FFCD5B6357B62B7B320D934088 (void);
+// 0x0000031E System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.TransactionStateChangeNativeCallback::EndInvoke(System.IAsyncResult)
+extern void TransactionStateChangeNativeCallback_EndInvoke_m997E37FBA20C01CE40A83676A3ABE6A3B91D01C0 (void);
+// 0x0000031F System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.RestorePurchasesNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void RestorePurchasesNativeCallback__ctor_m5D7D0273F55BD87B3F724D5823A7A4A4D81DA89A (void);
+// 0x00000320 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.RestorePurchasesNativeCallback::Invoke(System.IntPtr,System.Int32,System.String)
+extern void RestorePurchasesNativeCallback_Invoke_mE262F50C7A9BD3551BD0785B973CDB35E56A27B4 (void);
+// 0x00000321 System.IAsyncResult VoxelBusters.EssentialKit.BillingServicesCore.iOS.RestorePurchasesNativeCallback::BeginInvoke(System.IntPtr,System.Int32,System.String,System.AsyncCallback,System.Object)
+extern void RestorePurchasesNativeCallback_BeginInvoke_m0B3F6251211189F3880CB97312DEC5A76EEDD0B3 (void);
+// 0x00000322 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.RestorePurchasesNativeCallback::EndInvoke(System.IAsyncResult)
+extern void RestorePurchasesNativeCallback_EndInvoke_mAA96FDAAB8F7C30E95838DEDF1786CCD220D1048 (void);
+// 0x00000323 System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentData::get_NativeObjectPtr()
+extern void SKPaymentData_get_NativeObjectPtr_m6A5ADFF6A4502FC9BF0C94FA6604F4B6C2236BF2 (void);
+// 0x00000324 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentData::set_NativeObjectPtr(System.IntPtr)
+extern void SKPaymentData_set_NativeObjectPtr_m7794EFBE4ACAF3C8C5F55950CA85FD9E82823D29 (void);
+// 0x00000325 System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentData::get_ProductIdentifierPtr()
+extern void SKPaymentData_get_ProductIdentifierPtr_mF6BFF899D8108071F873FC30146C11F4781ADF3D (void);
+// 0x00000326 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentData::set_ProductIdentifierPtr(System.IntPtr)
+extern void SKPaymentData_set_ProductIdentifierPtr_mC8F3070456C5AA77ADE007E8D3AD5EA8163BEC4C (void);
+// 0x00000327 System.Int32 VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentData::get_Quantity()
+extern void SKPaymentData_get_Quantity_mFD621305116304247D903D227DD2B2C5677A5E5F (void);
+// 0x00000328 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentData::set_Quantity(System.Int32)
+extern void SKPaymentData_set_Quantity_m80E8F9FF1768D62289F0F8A00E63C7D21A24EBB5 (void);
+// 0x00000329 System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentData::get_ApplicationUsernamePtr()
+extern void SKPaymentData_get_ApplicationUsernamePtr_m21D393FB5AEE8ACEA49B10CB53B3462F7441DF54 (void);
+// 0x0000032A System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentData::set_ApplicationUsernamePtr(System.IntPtr)
+extern void SKPaymentData_set_ApplicationUsernamePtr_mC3B7DE52D148BB439099CF3E62B86CC9958C7C69 (void);
+// 0x0000032B System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData::get_NativeObjectPtr()
+extern void SKPaymentTransactionData_get_NativeObjectPtr_mA22DC0C0D9AF4601BC591EEEF2571C713F82ACEF (void);
+// 0x0000032C System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData::set_NativeObjectPtr(System.IntPtr)
+extern void SKPaymentTransactionData_set_NativeObjectPtr_mC118CC0A1992CE066E225C0F852B6CF6221C6528 (void);
+// 0x0000032D System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData::get_IdentifierPtr()
+extern void SKPaymentTransactionData_get_IdentifierPtr_m7AC1E02758838DB5169A55600865CE54A87AA72C (void);
+// 0x0000032E System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData::set_IdentifierPtr(System.IntPtr)
+extern void SKPaymentTransactionData_set_IdentifierPtr_mC538D693F1F991EC6231C67D80B90E5DB6DBD8CC (void);
+// 0x0000032F VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentData VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData::get_PaymentData()
+extern void SKPaymentTransactionData_get_PaymentData_mE79101A909944A161A781CD9D6A711685BAC2650 (void);
+// 0x00000330 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData::set_PaymentData(VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentData)
+extern void SKPaymentTransactionData_set_PaymentData_mB1B8B154782FB2D57559C51F5C2EF2C5B346527D (void);
+// 0x00000331 System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData::get_DatePtr()
+extern void SKPaymentTransactionData_get_DatePtr_m8A723FA3C1AFF07D5753A144A7D30E360627B893 (void);
+// 0x00000332 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData::set_DatePtr(System.IntPtr)
+extern void SKPaymentTransactionData_set_DatePtr_m2C47AA8C036DCD33F3830A8A4ED409BA8328C81D (void);
+// 0x00000333 VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionState VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData::get_TransactionState()
+extern void SKPaymentTransactionData_get_TransactionState_mCDDA6166AD0BDBF60253509F197A6E1A6CB6FF9A (void);
+// 0x00000334 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData::set_TransactionState(VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionState)
+extern void SKPaymentTransactionData_set_TransactionState_m0D87AA7F781F409F8A6CAB40CE8A1F956D873B91 (void);
+// 0x00000335 System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData::get_ReceiptDataPtr()
+extern void SKPaymentTransactionData_get_ReceiptDataPtr_mBDC8A38C34F1B06C842AC28AF064292E58654327 (void);
+// 0x00000336 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData::set_ReceiptDataPtr(System.IntPtr)
+extern void SKPaymentTransactionData_set_ReceiptDataPtr_m2FD91BE86B3FDA2DB8AB55A4F891B425C19BD143 (void);
+// 0x00000337 System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData::get_ErrorPtr()
+extern void SKPaymentTransactionData_get_ErrorPtr_m8256EA2B1CE3FF1C73AEF3A6B5864C248993EDA4 (void);
+// 0x00000338 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKPaymentTransactionData::set_ErrorPtr(System.IntPtr)
+extern void SKPaymentTransactionData_set_ErrorPtr_m54746B8162DC8857C7FAB8CAEA41BBBD3B850BE0 (void);
+// 0x00000339 System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::get_NativeObjectPtr()
+extern void SKProductData_get_NativeObjectPtr_m0EAC58726FC4244DAD7A5E959F9AAE80B4AF346B (void);
+// 0x0000033A System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::set_NativeObjectPtr(System.IntPtr)
+extern void SKProductData_set_NativeObjectPtr_m07097A3078C8E8502E4913C0C28F8AFEC3BEC2F5 (void);
+// 0x0000033B System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::get_IdentifierPtr()
+extern void SKProductData_get_IdentifierPtr_m70806FD577F347C6262E2BE1599816EE1D7AE539 (void);
+// 0x0000033C System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::set_IdentifierPtr(System.IntPtr)
+extern void SKProductData_set_IdentifierPtr_mB050DCF137BA7665094D8B3BAEBF22DF6669B8B5 (void);
+// 0x0000033D System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::get_LocalizedTitlePtr()
+extern void SKProductData_get_LocalizedTitlePtr_m46F759443BA476D3CB01369B5A2F0997AB68E312 (void);
+// 0x0000033E System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::set_LocalizedTitlePtr(System.IntPtr)
+extern void SKProductData_set_LocalizedTitlePtr_mCA04991CE35C594CB321C941652383E95E96A516 (void);
+// 0x0000033F System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::get_LocalizedDescriptionPtr()
+extern void SKProductData_get_LocalizedDescriptionPtr_m3F72427F80E6903041693B740F030C216C25568C (void);
+// 0x00000340 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::set_LocalizedDescriptionPtr(System.IntPtr)
+extern void SKProductData_set_LocalizedDescriptionPtr_mFCB784A5798BAD90189826D7D26A7FC1A5FD72C3 (void);
+// 0x00000341 System.Double VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::get_Price()
+extern void SKProductData_get_Price_m446CE0E3361E02204FA0A273E752AB241EA7351F (void);
+// 0x00000342 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::set_Price(System.Double)
+extern void SKProductData_set_Price_mC1425633407AD7AED633A1905ABCA7792EA6BA66 (void);
+// 0x00000343 System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::get_LocalizedPricePtr()
+extern void SKProductData_get_LocalizedPricePtr_mEB48590D1980A1D990107A735C834D0379C5F45E (void);
+// 0x00000344 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::set_LocalizedPricePtr(System.IntPtr)
+extern void SKProductData_set_LocalizedPricePtr_m3D51BD1030C9A2A2031332CE8D22775DD99794C9 (void);
+// 0x00000345 System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::get_CurrencyCodePtr()
+extern void SKProductData_get_CurrencyCodePtr_m3F14D56543B9E04501059D6B83AFFED37CF413CD (void);
+// 0x00000346 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::set_CurrencyCodePtr(System.IntPtr)
+extern void SKProductData_set_CurrencyCodePtr_mEC2D9F235119F978D88B50E6D121D45F2A3F8DC0 (void);
+// 0x00000347 System.IntPtr VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::get_CurrencySymbolPtr()
+extern void SKProductData_get_CurrencySymbolPtr_m7363B68DF2180B16824261ED642AA04290B4AA65 (void);
+// 0x00000348 System.Void VoxelBusters.EssentialKit.BillingServicesCore.iOS.SKProductData::set_CurrencySymbolPtr(System.IntPtr)
+extern void SKProductData_set_CurrencySymbolPtr_mF3AD399F1CF0ACA8CB8866398457E210F3B9FF8E (void);
+// 0x00000349 System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookBinding::NPAddressBookRegisterCallbacks(VoxelBusters.EssentialKit.AddressBookCore.iOS.RequestContactsAccessNativeCallback,VoxelBusters.EssentialKit.AddressBookCore.iOS.ReadContactsNativeCallback)
+extern void AddressBookBinding_NPAddressBookRegisterCallbacks_mE5D4E3A43C2CF4D6A6D4E664E50AF399ABD5BF08 (void);
+// 0x0000034A VoxelBusters.EssentialKit.AddressBookCore.iOS.CNAuthorizationStatus VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookBinding::NPAddressBookGetAuthorizationStatus()
+extern void AddressBookBinding_NPAddressBookGetAuthorizationStatus_m746ABBAB152C54C9C8C05452BBD9AFAF9E154F6F (void);
+// 0x0000034B System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookBinding::NPAddressBookRequestContactsAccess(System.IntPtr)
+extern void AddressBookBinding_NPAddressBookRequestContactsAccess_m4935F7FBF15975C02FFD8AB43A94565BCB5C953A (void);
+// 0x0000034C System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookBinding::NPAddressBookReadContacts(System.IntPtr)
+extern void AddressBookBinding_NPAddressBookReadContacts_mF40D3D938D6D9ABE04F52CA2CB740A4E7B3329FD (void);
+// 0x0000034D System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookBinding::NPAddressBookReset()
+extern void AddressBookBinding_NPAddressBookReset_mE003B91F40074C5103797B20BFE92CE06BD53312 (void);
+// 0x0000034E System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookContact::.ctor(VoxelBusters.EssentialKit.AddressBookCore.NativeAddressBookContactData)
+extern void AddressBookContact__ctor_mA7F26F6783BF154244FB072C0427C6DE8A3E7CD5 (void);
+// 0x0000034F System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookContact::Finalize()
+extern void AddressBookContact_Finalize_mFAAB25997486F09F2D44CA3FADA08E1439971B0C (void);
+// 0x00000350 System.String VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookContact::GetFirstNameInternal()
+extern void AddressBookContact_GetFirstNameInternal_mB77AD6E81ED13237F42F068608E83BC5D66B58A7 (void);
+// 0x00000351 System.String VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookContact::GetMiddleNameInternal()
+extern void AddressBookContact_GetMiddleNameInternal_mEA30B16B252F695A88ADC7FBEDF3C9324CD1AAEF (void);
+// 0x00000352 System.String VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookContact::GetLastNameInternal()
+extern void AddressBookContact_GetLastNameInternal_mBF724333E8B53F635E7E3E7D479B6A5708344CA9 (void);
+// 0x00000353 System.String[] VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookContact::GetPhoneNumbersInternal()
+extern void AddressBookContact_GetPhoneNumbersInternal_m5EED3D9B5DE9BD39386C9B02C6D2273196DEF268 (void);
+// 0x00000354 System.String[] VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookContact::GetEmailAddressesInternal()
+extern void AddressBookContact_GetEmailAddressesInternal_mC6EE37E87BE1EB891407E218F201A52594B6272B (void);
+// 0x00000355 System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookContact::LoadImageInternal(VoxelBusters.EssentialKit.LoadImageInternalCallback)
+extern void AddressBookContact_LoadImageInternal_mB24E0F62FE494EB66F59EF53A1BA4929A29A343B (void);
+// 0x00000356 System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookContact::Dispose(System.Boolean)
+extern void AddressBookContact_Dispose_mEAC64CEF037D15408593BB195B2B19A4FCBAA9F2 (void);
+// 0x00000357 System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookContact/<>c__DisplayClass13_0::.ctor()
+extern void U3CU3Ec__DisplayClass13_0__ctor_mA5046C6DDC0717F421D8697BBBEB4DC9F0E260BB (void);
+// 0x00000358 System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookContact/<>c__DisplayClass13_0::<LoadImageInternal>b__0(System.Byte[],VoxelBusters.CoreLibrary.Error)
+extern void U3CU3Ec__DisplayClass13_0_U3CLoadImageInternalU3Eb__0_mA9933E6C2C8DCBE2A6124B7C9FA2248C71B32413 (void);
+// 0x00000359 System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookInterface::.cctor()
+extern void AddressBookInterface__cctor_m721BE58C6A1AF39073D73493F518AC2BA0F34219 (void);
+// 0x0000035A System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookInterface::.ctor()
+extern void AddressBookInterface__ctor_m7F474148C48BC1FD963C0F55D4A1E3134577447F (void);
+// 0x0000035B VoxelBusters.EssentialKit.AddressBookContactsAccessStatus VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookInterface::GetContactsAccessStatus()
+extern void AddressBookInterface_GetContactsAccessStatus_mBCB0C373298197320ACE1214F0B2536EAD2A4E9B (void);
+// 0x0000035C System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookInterface::RequestContactsAccess(VoxelBusters.EssentialKit.AddressBookCore.RequestContactsAccessInternalCallback)
+extern void AddressBookInterface_RequestContactsAccess_m9A61940DDDF10A55533AA0183B04C83091A2CD21 (void);
+// 0x0000035D System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookInterface::ReadContacts(VoxelBusters.EssentialKit.AddressBookCore.ReadContactsInternalCallback)
+extern void AddressBookInterface_ReadContacts_m55ADD453842D562C5D0EC956856297F709679206 (void);
+// 0x0000035E System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookInterface::HandleRequestContactsAccessCallbackInternal(VoxelBusters.EssentialKit.AddressBookCore.iOS.CNAuthorizationStatus,System.String,System.IntPtr)
+extern void AddressBookInterface_HandleRequestContactsAccessCallbackInternal_mC68A861D3014FAD19E317A9BDCA7ECED7FAFF572 (void);
+// 0x0000035F System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookInterface::HandleReadContactsCallbackInternal(System.IntPtr,System.Int32,System.String,System.IntPtr)
+extern void AddressBookInterface_HandleReadContactsCallbackInternal_mF89348C1C2235EEE87CA0DE614E1CA15EAEFDB7C (void);
+// 0x00000360 VoxelBusters.EssentialKit.AddressBookContactsAccessStatus VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookUtility::ConvertToAddressBookContactsAccessStatus(VoxelBusters.EssentialKit.AddressBookCore.iOS.CNAuthorizationStatus)
+extern void AddressBookUtility_ConvertToAddressBookContactsAccessStatus_m15253F595C2981B797285E031922E718D9661EFB (void);
+// 0x00000361 VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookContact[] VoxelBusters.EssentialKit.AddressBookCore.iOS.AddressBookUtility::ConvertNativeDataArrayToContactsArray(System.IntPtr,System.Int32)
+extern void AddressBookUtility_ConvertNativeDataArrayToContactsArray_mF9C4F5C0E976D42EF698A68E5A74FAB4E256D67A (void);
+// 0x00000362 System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.RequestContactsAccessNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void RequestContactsAccessNativeCallback__ctor_mCD937AD9EB6E1D1575BB8ABCF80DEE2436AC321B (void);
+// 0x00000363 System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.RequestContactsAccessNativeCallback::Invoke(VoxelBusters.EssentialKit.AddressBookCore.iOS.CNAuthorizationStatus,System.String,System.IntPtr)
+extern void RequestContactsAccessNativeCallback_Invoke_mA8684B852FDF417F5BFB07CDF395D59916451BD3 (void);
+// 0x00000364 System.IAsyncResult VoxelBusters.EssentialKit.AddressBookCore.iOS.RequestContactsAccessNativeCallback::BeginInvoke(VoxelBusters.EssentialKit.AddressBookCore.iOS.CNAuthorizationStatus,System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void RequestContactsAccessNativeCallback_BeginInvoke_m71F33B4F7BE8522F8BC6318A66365B0172A5A1BE (void);
+// 0x00000365 System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.RequestContactsAccessNativeCallback::EndInvoke(System.IAsyncResult)
+extern void RequestContactsAccessNativeCallback_EndInvoke_mC03D6AD53734D3177AF181A18425ACCD11CF111B (void);
+// 0x00000366 System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.ReadContactsNativeCallback::.ctor(System.Object,System.IntPtr)
+extern void ReadContactsNativeCallback__ctor_mF52E8A65203BC3A0B3003D1DD76D00F1635D82CF (void);
+// 0x00000367 System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.ReadContactsNativeCallback::Invoke(System.IntPtr,System.Int32,System.String,System.IntPtr)
+extern void ReadContactsNativeCallback_Invoke_m3E9A4F46E2A276C519A5BC7C3E5BA6DD10C63328 (void);
+// 0x00000368 System.IAsyncResult VoxelBusters.EssentialKit.AddressBookCore.iOS.ReadContactsNativeCallback::BeginInvoke(System.IntPtr,System.Int32,System.String,System.IntPtr,System.AsyncCallback,System.Object)
+extern void ReadContactsNativeCallback_BeginInvoke_mD6A326DA321702CEF02B000F3C499AB23C084EBC (void);
+// 0x00000369 System.Void VoxelBusters.EssentialKit.AddressBookCore.iOS.ReadContactsNativeCallback::EndInvoke(System.IAsyncResult)
+extern void ReadContactsNativeCallback_EndInvoke_m46A86F9C996EFE506407C17071F532D9C86EB475 (void);
+static Il2CppMethodPointer s_methodPointers[873] = 
+{
+	WebViewNativeCallback__ctor_mAD011038972E0E354FD25E446DD6B43EAD93717D,
+	WebViewNativeCallback_Invoke_mCB5DC5FBC2CAAF1C5F43A63D2E6F61670C6599C7,
+	WebViewNativeCallback_BeginInvoke_mEAE47D8D72D340DCA3C2C636ED0CB693C49AEE02,
+	WebViewNativeCallback_EndInvoke_mDB1BE750F63C813D2B88508B3BCD6829FEA08AC9,
+	WebViewRunJavaScriptNativeCallback__ctor_m1BB91FB1C93AD9DE279A52FB250D93A6CDE5C978,
+	WebViewRunJavaScriptNativeCallback_Invoke_m83550751446AFCF0D02352DFC0E92C468215301E,
+	WebViewRunJavaScriptNativeCallback_BeginInvoke_m9AD8E01AC2801EA7F9543B345288E94C816C9FB1,
+	WebViewRunJavaScriptNativeCallback_EndInvoke_m0F1B637ADBD72D525DF8FC9E17B12DDEBB29B0DD,
+	WebViewURLSchemeMatchFoundNativeCallback__ctor_mD7EE0EDD2DBE4454DB6EA07CF3B40BECD8E23B57,
+	WebViewURLSchemeMatchFoundNativeCallback_Invoke_mE539579BDC9782D9E1FFBAD0D55ABD7DCDFDE351,
+	WebViewURLSchemeMatchFoundNativeCallback_BeginInvoke_mABF12233DA87E523101A62956BB6B9E755EF6E8A,
+	WebViewURLSchemeMatchFoundNativeCallback_EndInvoke_mF19309AD3847284D066B6C4025FE0C4FCB08817D,
+	NativeWebView__cctor_m320CAA201AA45CECADEC0039C1167B6FABEA7CC1,
+	NativeWebView__ctor_mB79D48AA7B0CDD79C0210FACEBBAB2361A414F66,
+	NativeWebView_Finalize_mC00979C8E9A2387B7BD02F68BD18EC90761A42BB,
+	NativeWebView_GetURL_m3011BF103970D9FE4CD57C6A393E75A287956C69,
+	NativeWebView_GetTitle_m13293C2A13EF84C4D1DB8AF4854F1AB18701F9F7,
+	NativeWebView_SetFrame_m888F5A6E0A079DF06DD57ADC454E379CC2656481,
+	NativeWebView_SetStyle_m347B1BCCE90E6D7E38ED438B233BBD60D058E8D6,
+	NativeWebView_SetScalesPageToFit_mA911FB85B8F51750B74F7836FCC65824BEF3AFD4,
+	NativeWebView_SetCanBounce_mC7A9A70DBA21E76601D2B46D9EB6B6FCF393CB28,
+	NativeWebView_SetBackgroundColor_m0F1EE73373E1730A76B32F27A408CE07432714E1,
+	NativeWebView_GetProgress_mD30F8C3672BD076D37AF207CFD89740657B1AF7B,
+	NativeWebView_GetIsLoading_mA0CB148EBBD77217196723C50C3096604EE1EFF9,
+	NativeWebView_SetJavaScriptEnabled_m977448EE64BC32C48D3DA2CF1CC97CF491E8AF81,
+	NativeWebView_Show_mA5FB4CE43DD11FB19CB9E1B8C819C2AD02A76A7F,
+	NativeWebView_Hide_m98EB120B61DF843E23BDB7D622499BB5DF9C1EB5,
+	NativeWebView_LoadURL_m4C024DBC5AB3649699FCE5D99CEDDFB12D85481E,
+	NativeWebView_LoadHtmlString_m14BE135352BB22655CE45FE5F674A71BE39132A0,
+	NativeWebView_LoadData_m562D61CFF862B89F55BC0343905F4406209592B9,
+	NativeWebView_Reload_mF083912902114A45F7C551061CB0299128083C03,
+	NativeWebView_StopLoading_m10F771C4DEB313A65066226FB4594B190CAB84DF,
+	NativeWebView_RunJavaScript_m1458C67AA5BBCC570F1A8DEE6A536CA4C41326D5,
+	NativeWebView_AddURLScheme_mA88451FA45E17BCEDC628F3ADFD3B7E4A6251A48,
+	NativeWebView_ClearCache_m15106024585FBCB22513C9661B628AE7F11247A6,
+	NativeWebView_Dispose_m070D8F68D87C3245900670DEB99D50DB1A332AD9,
+	NativeWebView_HandleOnShowNativeCallback_m4D9EBA005D5CE70CF06E2C87B907DD0CDDF44CDF,
+	NativeWebView_HandleOnHideNativeCallback_m0991C9B4558A69B0620C7AD44E8B8E830D82C16A,
+	NativeWebView_HandleLoadStartNativeCallback_m1653467843D5FF4C76CDF5E06730F19760A58383,
+	NativeWebView_HandleLoadFinishNativeCallback_m35BAC891099CD5DAE245C0B13470F3FAEA8A277B,
+	NativeWebView_HandleRunJavaScriptNativeCallback_m215024C684D92D5898479EF047C53C1AA3D0E11C,
+	NativeWebView_HandleURLSchemeMatchFoundNativeCallback_mE32C28EE586AD7B0333504BA0D27E8BE246191B3,
+	WebViewBinding_NPWebViewRegisterCallbacks_m99BA9D0499F322CD83139CE014A05EF9CC7350D5,
+	WebViewBinding_NPWebViewCreate_mB4C9DC68BA5B83289CE25F177AE7151A828AB714,
+	WebViewBinding_NPWebViewGetURL_mCCD6CFB0A001F745E96D6B0E47079E41F1223F24,
+	WebViewBinding_NPWebViewGetTitle_mE02EEE4066A984C9BADE3B787F298CC0A41DCC64,
+	WebViewBinding_NPWebViewGetNormalizedRect_mBF06DD7088F107289045F687C3E7C69B9A0911C2,
+	WebViewBinding_NPWebViewSetNormalizedRect_mD4CD28F4AEEE93E462B6C279623E613B457ED35A,
+	WebViewBinding_NPWebViewGetStyle_m8C42073BE3D2E0EADCC58CA21EFF20F27E795A94,
+	WebViewBinding_NPWebViewSetStyle_m5C0AC0C235A41BFCB9AAE1F9C5DFE905C61FFD33,
+	WebViewBinding_NPWebViewGetScalesPageToFit_mB8A2774BD7A2EDC4505AFA9034F116C52C9D5431,
+	WebViewBinding_NPWebViewSetScalesPageToFit_m1E9D399707E6CC83C4E116FCB9AFE2677D810900,
+	WebViewBinding_NPWebViewGetCanBounce_m3D838040C4D2D00298D1CE02E8D9379255376924,
+	WebViewBinding_NPWebViewSetCanBounce_m2792286D54C3B34E5399B5A93D117E60C0CCBEA4,
+	WebViewBinding_NPWebViewGetBackgroundColor_mBCB9167D92BB374783C0C6709184455355665FDC,
+	WebViewBinding_NPWebViewSetBackgroundColor_mFF3B10A48E3376EAE9B77452BBB75D356CD23625,
+	WebViewBinding_NPWebViewGetProgress_m2EA021316E9C8F378A6D4200199057BC442FD487,
+	WebViewBinding_NPWebViewGetIsLoading_mF87795EF48974C094BF11977E225AB3D0B617BBA,
+	WebViewBinding_NPWebViewGetJavaScriptEnabled_m56951F99336899821CC9D6E52C087C6B12597F35,
+	WebViewBinding_NPWebViewSetJavaScriptEnabled_m4D873FAC1035762C8D06014D454ADA607DB082E9,
+	WebViewBinding_NPWebViewShow_mD8899C4BC76FCFCA079F0A503A544B875DC86DA5,
+	WebViewBinding_NPWebViewHide_m83E393124E9B263D637A276AFF56D495398ED782,
+	WebViewBinding_NPWebViewLoadURL_m216595ABB41CCF43D55A385CB1BE29861E551866,
+	WebViewBinding_NPWebViewLoadHtmlString_m2DE7F0EF5426C6E6BC01A17CABFB28B7509E63EB,
+	WebViewBinding_NPWebViewLoadData_m95C4C3BCECC3EA09B793F464F6882FBDE2325A12,
+	WebViewBinding_NPWebViewReload_m961E1F492C3ACF754227ADDC6599C035F42A3458,
+	WebViewBinding_NPWebViewStopLoading_m433291770D7C2FF1E1F9E502D67C338B4BA2990F,
+	WebViewBinding_NPWebViewRunJavaScript_mAEA357D366B177E16AA584E0410388785E99C108,
+	WebViewBinding_NPWebViewAddURLScheme_m8C68F2589AF32176C3ECDC7CD67945D9BFCE8E2C,
+	WebViewBinding_NPWebViewClearCache_mEFF60AD3CB707368F7CE4E3FBFA3187D2F96D5FF,
+	MailComposerBinding_NPMailComposerCanSendMail_mC04317AAA7E55A028D816460FDE14F3D3DC910D0,
+	MailComposerBinding_NPMailComposerRegisterCallback_m003188717920BDFC6B6557DF71211E7AC3342833,
+	MailComposerBinding_NPMailComposerCreate_mFDF607644151385CF767168FBAB984F65CE02620,
+	MailComposerBinding_NPMailComposerShow_m42715870E36127F07490602BAEC2C4A57B4EA997,
+	MailComposerBinding_NPMailComposerSetRecipients_m5BC78479E7797BF0EC6D97DCB007CA249D9F6449,
+	MailComposerBinding_NPMailComposerSetSubject_mB62B6446CA5352643C9C942AD53EA97935A58116,
+	MailComposerBinding_NPMailComposerSetBody_mEA758793411B51B145077867FE65E9E9A3235A3C,
+	MailComposerBinding_NPMailComposerAddScreenshot_m74504D0649C215B454573F5A5191FE4841A3A0CA,
+	MailComposerBinding_NPMailComposerAddAttachment_m9A28F582E00D727FD28C552EFAFE46B453B43C19,
+	MessageComposerBinding_NPMessageComposerCanSendText_m9B588BCC00FF9F5186E705960E4E5DC5484CE00E,
+	MessageComposerBinding_NPMessageComposerCanSendAttachments_m4E280313B72E40506975DC04DF1F8F0C173787DE,
+	MessageComposerBinding_NPMessageComposerCanSendSubject_m828A845CE6B3069CBC9F3DCE1101E8C48B0E9B3A,
+	MessageComposerBinding_NPMessageComposerRegisterCallback_m5302BA1D8C6CCC90CB988BCF367810106906FA8A,
+	MessageComposerBinding_NPMessageComposerCreate_m5675C04F9839F17D24E05AD0D147B595EC530D1F,
+	MessageComposerBinding_NPMessageComposerShow_m61ECED661D01F9E962E593561844C765272AFBC1,
+	MessageComposerBinding_NPMessageComposerSetRecipients_m5CF49F544BCABDEB441242C93878EA53C7AC3EDB,
+	MessageComposerBinding_NPMessageComposerSetSubject_mDCD71F6382FEC8E0786856BD3118E6549CAE8CFA,
+	MessageComposerBinding_NPMessageComposerSetBody_m688771A117319661227E641DAA0B2F7A4981C126,
+	MessageComposerBinding_NPMessageComposerAddScreenshot_m883474C86314C90BA41C463679A13618DAE2F042,
+	MessageComposerBinding_NPMessageComposerAddAttachment_mA83037ED45225E2704EE969E264902E9746B1AD1,
+	MessageComposerBinding__ctor_m9D298B119B72B906531AF078D7F40FEAB2E40F18,
+	MailComposerClosedNativeCallback__ctor_mD9B54C64CB059DDDB167AB6BD4B7EF306BFF3CFB,
+	MailComposerClosedNativeCallback_Invoke_mB15B1B6E74BD1F862577A9A6CA2F8A71A46ED344,
+	MailComposerClosedNativeCallback_BeginInvoke_m421B7EDB2B76C4BE8E45AEEB4B081EE344AB5207,
+	MailComposerClosedNativeCallback_EndInvoke_m9E347ED8BA6EA064EDFAD029ADA36604ACBA805A,
+	MessageComposerClosedNativeCallback__ctor_mAB91068EC9BEE2E9DCC5783CEB9DCB1DA437A59E,
+	MessageComposerClosedNativeCallback_Invoke_mF2682FD5E1EC2E5EBBEF9301419F9DC1EC60F602,
+	MessageComposerClosedNativeCallback_BeginInvoke_m8CD15F5112AAC11E1BCC1584270C776FF15B4242,
+	MessageComposerClosedNativeCallback_EndInvoke_m91B4A9C5F79F3DA41CE10B4DE3B8526059D29A4B,
+	ShareSheetClosedNativeCallback__ctor_m0E550D215B3240E628288611F587A3C46719B13E,
+	ShareSheetClosedNativeCallback_Invoke_m36349FC9EA563599E98A5D68D73D5575BD270115,
+	ShareSheetClosedNativeCallback_BeginInvoke_m6CFCB6BA9D3C9944AA387B7E4762997431F1F0DC,
+	ShareSheetClosedNativeCallback_EndInvoke_mE3C02A7E02529E3268710B960B2A6EBC61C33BE8,
+	SocialShareComposerClosedNativeCallback__ctor_mDD01528BFA25B31EE5E4D3E729E2FF9A888F3E97,
+	SocialShareComposerClosedNativeCallback_Invoke_m91970A9C82291E98A46530CC7D19A49E6C7FD3DC,
+	SocialShareComposerClosedNativeCallback_BeginInvoke_mF0BC3AB54CCDD502F73B5645329C3010C28C5E43,
+	SocialShareComposerClosedNativeCallback_EndInvoke_m5689579F69652AB0FD3F4C77CFE2E04228C7DDC0,
+	NativeMailComposer__cctor_m255E6A76493AD5F76617318AB93689C5E07F6D1C,
+	NativeMailComposer__ctor_m664A2C097B78CE4AA0374000F5F8C749185E3A0B,
+	NativeMailComposer_Finalize_m7813A6D72B5C0AC8BB1D7D2C8287A74192052A3A,
+	NativeMailComposer_CanSendMail_m238F315E6877DC56B98593B1A07EB255A3205894,
+	NativeMailComposer_SetToRecipients_m64790F2FBF58C6BC93B5D9F9F99BCA0483F04340,
+	NativeMailComposer_SetCcRecipients_m5E761DF408842D8750385BDF0F4ED9C620454325,
+	NativeMailComposer_SetBccRecipients_mA01AF87ABD3563B830F2BED1958A9FAEC8D78045,
+	NativeMailComposer_SetSubject_m8F34FAAF2ECD135B69F1568992F331E7D8BE346F,
+	NativeMailComposer_SetBody_mDA7B53036E483006208C8778BF1732760BA9F3E5,
+	NativeMailComposer_AddScreenshot_mAA92CF188157167CA5B985E466DE1BEC0BE76AFC,
+	NativeMailComposer_AddAttachmentData_m48F72740C0E3DC0058D4CD1D7C23F7E3BF3A9327,
+	NativeMailComposer_Show_mD7A1389C5A83353F0D5DA0D469656D28A1FFBAF0,
+	NativeMailComposer_Dispose_m770A6A06C0948B82EB80BE8103922B5A8896763E,
+	NativeMailComposer_HandleMailComposerClosedCallbackInternal_mD6682278CDA21C280FFF2D006BD142FCE4CEFAFB,
+	NativeMessageComposer__cctor_mA73B2395C3F92F29E795B3E019F8AAECC0858C33,
+	NativeMessageComposer__ctor_mB5B52DB315D670B204895918A330D44866CB90B4,
+	NativeMessageComposer_Finalize_m6690FCD3D5526AF4B4575569099D31F0FEB0AB23,
+	NativeMessageComposer_CanSendText_m2F7F8C2A1D98AF16CF059212BA5E490EBA6161F1,
+	NativeMessageComposer_CanSendAttachments_mE69CBA4E41B2156B8047DE9468D70276E052D1A7,
+	NativeMessageComposer_CanSendSubject_m29CCD47C6BECFEFAED5168348F56FAD68E5C53CE,
+	NativeMessageComposer_SetRecipients_mE55C8E7E1BCCFEBC5C4D95909CC077FC478FFA39,
+	NativeMessageComposer_SetSubject_m2F6C6C9DB247858D1E1147C156C9AD1C53211281,
+	NativeMessageComposer_SetBody_m54BBC2A0EDB666398A817DE45963F17AE0BBF268,
+	NativeMessageComposer_AddScreenshot_mED01BC4406B6EE15C4914601CB9BAB6B97A673E8,
+	NativeMessageComposer_AddImage_m3DE3D9E4868D1AA5DA06B281A3FD946AFD8A2FBC,
+	NativeMessageComposer_AddAttachmentData_mE1579157079DB00A600F6BFD7FB97DFB721B2A35,
+	NativeMessageComposer_Show_m2F7FC904EB6D4BF2A1B20B6273D48D9D313DACB9,
+	NativeMessageComposer_Dispose_m0390E0D4FF6AE203BA3A4EBCD951299314235D35,
+	NativeMessageComposer_HandleMessageComposerClosedCallbackInternal_mD350A5B8910CFDECB28D2024F1BEAD637C14879A,
+	NativeShareSheet__cctor_m2229B329B8DCA2D7747CD65D613C2F14051E3EC0,
+	NativeShareSheet__ctor_mB348AEFA8F932B14A6500165DB86AB53304D1BD8,
+	NativeShareSheet_Finalize_m9BEADA16A7828CCAA83BAF8A52C0BB16658A4951,
+	NativeShareSheet_AddText_mD34FBE02697C7E42A641444619CCEAFCA3E0188E,
+	NativeShareSheet_AddScreenshot_m25EA15156ED6FB21CE0AAB1BFBE33170603359FC,
+	NativeShareSheet_AddImage_mF8AB75AB61CA4A8CDB8E21C6527F61237F8FD52F,
+	NativeShareSheet_AddURL_m04C793F7EB280E86E61CA264F082576D823A0F5C,
+	NativeShareSheet_Show_mDA6076B9535F9529E25A28F143D6CAD02771611E,
+	NativeShareSheet_Dispose_m2FFCB35984B22C8D2E60E25782C4B7905497C2FF,
+	NativeShareSheet_HandleShareSheetClosedCallbackInternal_mBDCA2CFFA718B4FF737E1084CE6745F9923D501E,
+	NativeSharingInterface__ctor_m37555B2960BC6079E12636C38A5AD66CFFFF5222,
+	NativeSharingInterface_CanSendMail_m3D44A98CC6823D5F43AB6DD2319B606080BF82B2,
+	NativeSharingInterface_CreateMailComposer_m4CDE11B4B414E2274037A4575D3E750AE66495C6,
+	NativeSharingInterface_CanSendText_m00DEBEEF7E56F9177F280605BDA80609447E13ED,
+	NativeSharingInterface_CanSendAttachments_mA7A27700F8D1ACB085E0F0827FE2855E1F5173F5,
+	NativeSharingInterface_CanSendSubject_m8CC4258954F88DC7DF7578C842E30FD48AC486E7,
+	NativeSharingInterface_CreateMessageComposer_mF97B5B84C4BAB79E7DA95195942F197E2C234F00,
+	NativeSharingInterface_CreateShareSheet_m7EA087131523CF217C217CB37A8B24B2BE3107D2,
+	NativeSharingInterface_IsSocialShareComposerAvailable_mA189D91B8A42E9BF1647BB5EA7F5C73745EF61CC,
+	NativeSharingInterface_CreateSocialShareComposer_m16FDB4FDEF1CB1F47603F95BD8C22E7F63DF460E,
+	NativeSocialShareComposer__cctor_m054877449E3D4CC389883EC2E026F7CFBC9BDF51,
+	NativeSocialShareComposer__ctor_m47FA3126E449CB4F433DD1D7C5C9CB6110CBE236,
+	NativeSocialShareComposer_Finalize_mD28D80AEFC62300AAFC277D3E866B6F644ADA07A,
+	NativeSocialShareComposer_IsComposerAvailable_mA8849D826B6662C605CC1EE34001F174E3F7976E,
+	NativeSocialShareComposer_SetText_m91253C41346F8B76F6E26BBA041FB978F08F43AD,
+	NativeSocialShareComposer_AddScreenshot_m6F969D737830573AEC2A1BBDAE1305D1F6EB65CB,
+	NativeSocialShareComposer_AddImage_m5734205E5CBD2A457D10A2210BC0AF14CAA5EC65,
+	NativeSocialShareComposer_AddURL_m6254DE35A21B92E8E1E5D76ED49B64A85A1CA52A,
+	NativeSocialShareComposer_Show_mD72E528A62FD0A95E46353291889C4E1FC12D028,
+	NativeSocialShareComposer_Dispose_m2B042E5D6939E85B196ADBCEAACA3364044DFB2D,
+	NativeSocialShareComposer_HandleSocialShareComposerClosedCallbackInternal_mB32D2E49D308E868DAFDCB1CAC52C917FDE09485,
+	ShareSheetBinding_NPShareSheetRegisterCallback_mD8F91361DF78023F8D521E53B9C1F7F948B5756D,
+	ShareSheetBinding_NPShareSheetCreate_m66E8C9CD47519A687BA5F8F942430134741D13F3,
+	ShareSheetBinding_NPShareSheetShow_mFE8991CE2AC331DEF9935322D859B61DA0059E24,
+	ShareSheetBinding_NPShareSheetAddText_mBFAA55145BAD81149B40CD64C467BCB98B72F8EF,
+	ShareSheetBinding_NPShareSheetAddScreenshot_m1C975AE866E63CBC5BB7A57BDE9F59A6A6E992B9,
+	ShareSheetBinding_NPShareSheetAddImage_mF33AE2346CEC6776E270FC7241E04F9CE4BC8E66,
+	ShareSheetBinding_NPShareSheetAddURL_m489E98D9FC96138014AA1738F2731DF277FBA5F1,
+	SharingUtility_ConvertToMailComposerResultCode_mCFA0A51838B61619A6BF601639B4F8143C2A356C,
+	SharingUtility_ConvertToMessageComposerResultCode_mF1A6116ABF187A603913865A292223C2592EFC95,
+	SharingUtility_ConvertToShareComposerResultCode_m2745E48114AA6271A39A9E8C7F48BF85C0A1D048,
+	SocialShareComposerBinding_NPSocialShareComposerIsComposerAvailable_m7A5507073F82C640085FA734D756079FA2BCED17,
+	SocialShareComposerBinding_NPSocialShareComposerRegisterCallback_m3C5D4DB82DEA9F3A5D5FB5D9D302D2CBDA2367E0,
+	SocialShareComposerBinding_NPSocialShareComposerCreate_m9F1A5E19AA207132CE2A3E1900F86001D33249DD,
+	SocialShareComposerBinding_NPSocialShareComposerShow_mCFFEB0F93292177A90AAF61E1758AFB6ACB0A56A,
+	SocialShareComposerBinding_NPSocialShareComposerAddText_mF4C0BD21DCBBC56203A11DF7634371488A7EBAA2,
+	SocialShareComposerBinding_NPSocialShareComposerAddScreenshot_m4BD1ED3F16FBB1252125FB7D0D209283AC546FB7,
+	SocialShareComposerBinding_NPSocialShareComposerAddImage_m8C06F37DA5D0705256F25552524210BB7ABE604F,
+	SocialShareComposerBinding_NPSocialShareComposerAddURL_m12B78577F0AC22D3C94DD9A09D7136BB2687FBF4,
+	MutableNotification__ctor_m223E21A4C9888F56B1AB724D555E49DA90E913EE,
+	MutableNotification_Finalize_m1108511134207810BDC5C1EDED5B334191176D3E,
+	MutableNotification_SetTitle_m45FAEF6A73E5213CF30AFE0EE52BB83D72C41641,
+	MutableNotification_SetSubtitle_m103F7DDADA7377299F8A5CB64EFE1E13111D5AFB,
+	MutableNotification_SetBody_m489417AA3D3BDF495760CDD53AB829B77876C406,
+	MutableNotification_SetBadge_m2E509DE99D4EF818B55E6BDC335775A8FE104B3B,
+	MutableNotification_SetUserInfo_m05A739CC16D4B10E25E53CC85ED14B8934114FC9,
+	MutableNotification_SetSoundFileName_m90F90B103B878C4886A9D6FC436B2D2C4292AC7B,
+	MutableNotification_SetIosProperties_mCC1CEE7E55F2DBFFEEC2FAC00BA11BDB97D1450D,
+	MutableNotification_SetAndroidProperties_m089C2BA81583ED1A25E0C31976A59A9730BB9668,
+	MutableNotification_SetTrigger_m1E546935776E1B44E1355CC7362568C6857FBBFD,
+	MutableNotification_CreateNativeTrigger_m9453E714F0E98B9D82E856B1996EC8D12AA239B5,
+	MutableNotification_SetRequestPtr_mDB63D37DECA67DB2838ED2247ECADE8F52CB71D0,
+	RequestAuthorizationNativeCallback__ctor_m1AD8001449DF88D34CD124C58B5993AAB4C1D768,
+	RequestAuthorizationNativeCallback_Invoke_m2D2F771DD141268297B107851737941A1F6FE00F,
+	RequestAuthorizationNativeCallback_BeginInvoke_m29D5E05A94E52B34340BC81EA333F22B03F83A6E,
+	RequestAuthorizationNativeCallback_EndInvoke_m3CBFA9D138BC952E98E922927D88B94E082A477A,
+	GetSettingsNativeCallback__ctor_m24088BFBC4F02514B502D46B6472338569A6A94F,
+	GetSettingsNativeCallback_Invoke_mF33A1F201F082E25EB078D1286AC91F9AB6D6FBB,
+	GetSettingsNativeCallback_BeginInvoke_mD8CE3728D17F5EF7D053DCEA280E2D45846E4420,
+	GetSettingsNativeCallback_EndInvoke_m4933093DB25D8419C4616DBAA80D73CECF03D791,
+	ScheduleNotificationNativeCallback__ctor_mD09C9AD5EB8CD98CA15994C5C5C4115F89D6057D,
+	ScheduleNotificationNativeCallback_Invoke_mF8838BB8065E2935D636DB5E618E75409D7E83CA,
+	ScheduleNotificationNativeCallback_BeginInvoke_m7E122432D7F6DE53D5DB29259C539515BB013EF3,
+	ScheduleNotificationNativeCallback_EndInvoke_mE63F97266DF77C29981E7C1925EDD2A0D41F1234,
+	GetScheduledNotificationsNativeCallback__ctor_m2A1E1905D0B69DF33B2C822FF0C706F0EF1FE8FB,
+	GetScheduledNotificationsNativeCallback_Invoke_m85B5A3C3C3C2F6B4086C7D0FD80B07CDFCD7EDC0,
+	GetScheduledNotificationsNativeCallback_BeginInvoke_mABC6984A5024E6646DCD1BF0C449D953AF583C04,
+	GetScheduledNotificationsNativeCallback_EndInvoke_m7A9D67F50322290B261201BD4A41FAE68C6F14C8,
+	GetDeliveredNotificationsNativeCallback__ctor_mA8ADA90F80E89707ACAE116E8D12B345871AE362,
+	GetDeliveredNotificationsNativeCallback_Invoke_mF52A7C7B4E8A4641F5449D9A08815FD35DDF2B92,
+	GetDeliveredNotificationsNativeCallback_BeginInvoke_m57E81AC64205BA981029B6D006798F5C38876FE9,
+	GetDeliveredNotificationsNativeCallback_EndInvoke_mBF3E07E11D436C8EBBCEB8845E4023A6F051EA8A,
+	RegisterForRemoteNotificationsNativeCallback__ctor_m66D8D49356B9E8599BEC80DF3CBD5F898CBA5758,
+	RegisterForRemoteNotificationsNativeCallback_Invoke_mA1AA53643FB224D734C6A11F631259822C63D50F,
+	RegisterForRemoteNotificationsNativeCallback_BeginInvoke_m6A2A9BB04045F77246FC633F7A0EB83CE589BE3C,
+	RegisterForRemoteNotificationsNativeCallback_EndInvoke_mF9CFD9739B5D497EAA9FD8A50ABAD8041DEA8AA3,
+	NotificationReceivedNativeCallback__ctor_m0FC97E347E7E7BA06785465D44CAF42940CFDB11,
+	NotificationReceivedNativeCallback_Invoke_mEE4CB0B6E3AE3628B1817FA08EF2245A347FF036,
+	NotificationReceivedNativeCallback_BeginInvoke_m1574827710DC6A6DF07E512E28C901DE28702962,
+	NotificationReceivedNativeCallback_EndInvoke_m5562FC7BBA01F43D670484404D36A7A5715D100C,
+	Notification__ctor_m0CBEE2CB8D0212BEBFDBEC301C0906F1254A44F0,
+	Notification__ctor_m83BB8B4F22D383A82F8737BE7A333B03AAF7ECFB,
+	Notification_Finalize_m29914F44FAA1B0533C0A002E8D7B04126503F1E1,
+	Notification_GetTitleInternal_m21FAE1CBE8085AB1841742183107A9803FB2A2A5,
+	Notification_GetSubtitleInternal_mB0347F5D9AFDE70E1A1896D7A0F23FD8AA434761,
+	Notification_GetBodyInternal_m6CCB0E402D9CA2C77B43DA6471A60772BB46215A,
+	Notification_GetBadgeInternal_m635C11CB2751E89DC03886A48EFE6C6A39770483,
+	Notification_GetUserInfoInternal_m07D99D82A14DB0B60F52C617ABE738A740EF4985,
+	Notification_GetSoundFileNameInternal_m108AA98317F1263E526B2F3C38C1EAD5D3FACFA8,
+	Notification_GetTriggerInternal_m64F2ECD7AEA2D23F71F2229574E651B0051F161B,
+	Notification_GetIsLaunchNotificationInternal_m887A359DEBAC71D2F74651CF90DE4608BA4B0122,
+	Notification_GetIosPropertiesInternal_m1D3A4CFF522A6E0A4EF7434EA60C2938D250EFC0,
+	Notification_GetAndroidPropertiesInternal_m9FDF23330261DA3396FF4B35E5A4E786D890FDB9,
+	Notification_Dispose_m8AC0B3EDB7596459F1C29AADEA6252E9E0FBF6F6,
+	Notification_GetNativeContentInternal_m1F33C2DD56C71A7FD0E4AD37C5E5AA4DFBB3431A,
+	Notification_SetNativeContentInternal_mC600DD4697092D0BE71264AF78F337775E2A46BD,
+	Notification_GetNativeTriggerInternal_m9E584CA73C84781E60F4E655B6D0E9E88CC4AD83,
+	Notification_SetTriggerInternal_mCD660203DCC3FCD67DC035462BE83BC5677C2253,
+	Notification_CanCreateTrigger_mB73F85935ACE6E9AEBC3B3907038AF14715A9E80,
+	NotificationBinding_NPNotificationRequestCreate_mABB788521E4C7174CE5B6C0AA35BB6341273DDC1,
+	NotificationBinding_NPNotificationRequestGetId_m3B2F49017142EDEFEE6B8B73CA1BC011944D54E3,
+	NotificationBinding_NPNotificationRequestGetTriggerType_m06A2EEE7310946A0C6B767AD0C8B1AF7583D9FB7,
+	NotificationBinding_NPNotificationRequestGetContent_m2AA2D18296608AC071442EA061F7260B0B913CA1,
+	NotificationBinding_NPNotificationRequestGetTrigger_m4E4D303ADFEFAB9595BA0D26957BD04025E75E71,
+	NotificationBinding_NPNotificationContentCreate_mB61B6D20F161000719536DFD4929DC1218933DEA,
+	NotificationBinding_NPNotificationContentGetTitle_mD91E317B7EF95C7B06654ECCB4429B8511D6FFD1,
+	NotificationBinding_NPNotificationContentSetTitle_mED14C641DDCBA47037C5CBFCF23ACE7333E40BAB,
+	NotificationBinding_NPNotificationContentGetSubtitle_mC7937B52694B8B80D1466F06157A67EBD84FAD30,
+	NotificationBinding_NPNotificationContentSetSubtitle_m1BBC3189C6DE98B95BEFB1C68C3C9D78502A93E2,
+	NotificationBinding_NPNotificationContentGetBody_mFA9D1516096002623072778F2CD59EA39C96E954,
+	NotificationBinding_NPNotificationContentSetBody_mB33EE59EA1B984614DBF43A6212062117D059E4A,
+	NotificationBinding_NPNotificationContentGetBadge_m7AB2692F37691581D3CFE36D69D0F082B6D0AADB,
+	NotificationBinding_NPNotificationContentSetBadge_m466203A2005956336E11C442EFA44B91A7432E9D,
+	NotificationBinding_NPNotificationContentGetUserInfo_mBC23A720887CE2049070C1D6C9EF89C3C7C45D2A,
+	NotificationBinding_NPNotificationContentSetUserInfo_mA81359DE129969CCF5FADDE4B2930DBC541A1BB8,
+	NotificationBinding_NPNotificationContentSetSoundName_m85334F6F28A6B4A27B965304E3AC5C44A4B00483,
+	NotificationBinding_NPNotificationContentGetLaunchImageName_m63DCBB15F90354772E3D8DFBA299BFCE4923CBB1,
+	NotificationBinding_NPNotificationContentSetLaunchImageName_m0F94A80CAD8EA31D8FD52E8F229CF4237D3058EF,
+	NotificationBinding_NPNotificationContentGetCategoryId_m9A931528DB858709B77C9C0E4F689F38D846A8F9,
+	NotificationBinding_NPNotificationTriggerGetRepeats_m9FDCCA16D779DCB80AAD00D9882EA7FF7B3E39E6,
+	NotificationBinding_NPTimeIntervalNotificationTriggerCreate_mB8183B71373089091489282606A429882FACB11D,
+	NotificationBinding_NPTimeIntervalNotificationTriggerGetProperties_m00421174E78C08AA43C697956D59CC266C7011B0,
+	NotificationBinding_NPCalendarNotificationTriggerCreate_m7431D7B053D7CA2F4969F96561970206380B6328,
+	NotificationBinding_NPCalendarNotificationTriggerGetProperties_m3AA6A887221DFF53E22B003D6A366C7C34594C9D,
+	NotificationBinding_NPLocationNotificationTriggerCreate_mBC955FBFE3465CB7C7FBF3E6C5820F2374A512B8,
+	NotificationBinding_NPLocationNotificationTriggerGetProperties_m0423865E94143B5C7C1A0F00C4495B5BDC75695D,
+	NotificationCenterBinding_NPNotificationCenterRegisterCallbacks_mE8C0F552841CA47F28697D486301B9B829350A2D,
+	NotificationCenterBinding_NPNotificationCenterInit_m952FA9CBF6EFCCDBFFECE3CD0354ACB60ADE0EBA,
+	NotificationCenterBinding_NPNotificationCenterRequestAuthorization_mC839BB35B1AED9F48726592EA170901D757B2B33,
+	NotificationCenterBinding_NPNotificationCenterGetSettings_m526E96D89A8FAC51C58965D54517CA6EBCFC98AA,
+	NotificationCenterBinding_NPNotificationCenterScheduleLocalNotification_m43E65C4FDDED53C3C3B0FE5DBDB60FDEED6350FE,
+	NotificationCenterBinding_NPNotificationCenterGetScheduledNotifications_mD68E49840239B44E24964335F10EA1ABD47D485B,
+	NotificationCenterBinding_NPNotificationCenterRemovePendingNotification_m305CDF06742DCCF43D586940C0F6C3FECE5C97EE,
+	NotificationCenterBinding_NPNotificationCenterRemoveAllPendingNotifications_m02F2F3987FF18A3BDC11DEABD68D49881222F578,
+	NotificationCenterBinding_NPNotificationCenterRemoveAllDeliveredNotifications_m17957A65745002D851D20CA9ECC935E4D45CCA1D,
+	NotificationCenterBinding_NPNotificationCenterGetDeliveredNotifications_m49C56A124B3C7A1916E5C2FF8AA1FC4AE47B8D7D,
+	NotificationCenterBinding_NPNotificationCenterRegisterForRemoteNotifications_mC04DAF5C38D04380DBE28473CF3499A54A26295E,
+	NotificationCenterBinding_NPNotificationCenterIsRegisteredForRemoteNotifications_m4349D37932B5A12D9D608782CD70DB6CEDDB10CA,
+	NotificationCenterBinding_NPNotificationCenterUnregisterForRemoteNotifications_mB1461496953F1D82472F4C112EDD8B66B646780C,
+	NotificationCenterBinding_NPNotificationCenterSetApplicationIconBadgeNumber_m347B645AF404B476D6AC58228E7894A9BB02D2AB,
+	NotificationCenterInterface__ctor_m383FB2FA903A8817796D419ED4877139F3078F58,
+	NotificationCenterInterface_RequestPermission_mD71C98FB163704E0C874B33C541630370F26ED0B,
+	NotificationCenterInterface_GetSettings_mFBE60545154C81AD7DC76E5C38A423A1B4600CD2,
+	NotificationCenterInterface_CreateMutableNotification_m3921432054F1AB096E62CD42B21EB003F31D38B8,
+	NotificationCenterInterface_ScheduleNotification_mA650A075ED8DF00680CC08A57EFBEC4F3ED39C05,
+	NotificationCenterInterface_GetScheduledNotifications_mF89E9C295D928D0ADB34F5B18CBC56195FFA403A,
+	NotificationCenterInterface_CancelScheduledNotification_mFFD686B5AF0CF601717A50E3B6E4177C631DA258,
+	NotificationCenterInterface_CancelAllScheduledNotifications_m1B237436D65CC03EA2A18007BCFACE751201494F,
+	NotificationCenterInterface_GetDeliveredNotifications_m5759C4046F7BA12F496CB3C2057145729ACAC6B3,
+	NotificationCenterInterface_RemoveAllDeliveredNotifications_m887F0E9D06C2788BE48CA9B013DF86EB09E717EB,
+	NotificationCenterInterface_RegisterForPushNotifications_m0D1D01D0576EFCF876AA4D3382CC12582E099340,
+	NotificationCenterInterface_UnregisterForPushNotifications_mC58EEA4EE4AEE9C36615FA113286C3CB4E4CA101,
+	NotificationCenterInterface_IsRegisteredForPushNotifications_m14F322895EC802B53E957F20C4C34F39FC9DE765,
+	NotificationCenterInterface_SetApplicationIconBadgeNumber_mC03D4986FC15EBAD5F6A350D59FA952D84C66185,
+	NotificationCenterInterface_HandleRequestAuthorizationCallback_m4308D218C567B29C8BFD86699552617CDE99F1FE,
+	NotificationCenterInterface_HandleGetSettingsCallback_m3FF291499E564CFBD71653D2C60354ACB1172C67,
+	NotificationCenterInterface_HandleScheduleNotificationCallback_mB5EE6AA98903B9D92B023ABA798538E12D75694A,
+	NotificationCenterInterface_HandleGetScheduledNotificationsCallback_m639FE987836E63088B18C2CB2A730DC04D4DBA1F,
+	NotificationCenterInterface_HandleGetDeliveredNotificationsCallback_mC484B56AE83B671BE0614608FE914905828AC0DF,
+	NotificationCenterInterface_HandleRegisterForRemoteNotificationsCallback_m314EE2F4005A17969975581A6A2837F2D3B3BF67,
+	NotificationCenterInterface_HandleNotificationReceivedCallback_m638EE2EDFD00241808CBEE8B6013F05D5C9D183F,
+	U3CU3Ec__cctor_mF555551520652B58C7CF37A003680B66FABCF4C6,
+	U3CU3Ec__ctor_mED9FBB68150A1B4F0DB3AE878FDE8D81AE95BDF8,
+	U3CU3Ec_U3CHandleGetScheduledNotificationsCallbackU3Eb__18_0_mB76BEE8B72AC3384DAED9AC150041C42294AFDE6,
+	U3CU3Ec_U3CHandleGetDeliveredNotificationsCallbackU3Eb__19_0_m5D3A3FB4255E234032C36543B129D545C1DE98FC,
+	NotificationServicesUtility_ConvertToNotificationPermissionStatus_mEB3667A87A976A5B144931925AAEAB93D7EDCA04,
+	NotificationServicesUtility_ConvertToUNAuthorizationOptions_m18044F6FE9099AA1B711BA89BB975A5490F21631,
+	NotificationServicesUtility_ConvertToNotificationSettingStatus_m621F34FAE270100714A9959F8CDFDCACFAB3190B,
+	NotificationServicesUtility_ConvertToNotificationPreviewStyle_m3BEC5557D66935F0A5C35A923352D5864C104C11,
+	NotificationServicesUtility_ConvertToNotificationAlertStyle_m6664EB44A3F115A78C4BE31FE36186BE2FCA3033,
+	NotificationServicesUtility_ConvertToUNNotificationPresentationOptions_m2D08CDABF68ED42EB0271AFAC2C4C8BEB2A35A11,
+	NotificationServicesUtility_Contains_mEB868AC37096A0C137CA82157DDDC20AF66A49EB,
+	NotificationServicesUtility_Contains_mA95496E9441AE245046776C8ED854F262A1572D2,
+	NotificationServicesUtility_Contains_m7DFCBBE0BCC415D7B8860FD0000F04AA9D324DB4,
+	NotificationTrigger_CreateNotificationTrigger_m46CB29ABC27D4EDDD43E099FB63FF2260EB27E0E,
+	NotificationTrigger_CreateTimeIntervalNotificationTrigger_m29B0C886D3C86C38BA987E05100B3CBDBD5B6664,
+	NotificationTrigger_CreateCalendarNotificationTrigger_m53004417CF2CBC52E6946DF70CE20672F9AFCCFA,
+	NotificationTrigger_CreateLocationNotificationTrigger_m906A7567B6CF4BF4B26078F54A728CEE0B5C97B8,
+	NotificationTrigger_CreatePushNotificationTrigger_m559D827EF561B9D98B4264A1C85A21A2B8688EA5,
+	UNNotificationSettingsData_get_AuthorizationStatus_m692E8DDE1F0D107DA84990F1DA67EA4E45B359A4,
+	UNNotificationSettingsData_set_AuthorizationStatus_mB7E7A20CC68E4B9CDFECFFBAAB4E67227C42EF40,
+	UNNotificationSettingsData_get_AlertSetting_mCECF8C449DA1F56E812FC0A3C8BFFEAFED1DD72F,
+	UNNotificationSettingsData_set_AlertSetting_mD649C73824170252EC217BDE7BCF97BB9EEE9C5A,
+	UNNotificationSettingsData_get_BadgeSetting_m8E9A66503BCED82E58808873D7C59524CEB6D672,
+	UNNotificationSettingsData_set_BadgeSetting_m429594D70263FEC2162F1F3D6FFFAE0AC949C149,
+	UNNotificationSettingsData_get_CarPlaySetting_m7144EDA16CEB44476D9BDC2CC26AA9769E8F8A83,
+	UNNotificationSettingsData_set_CarPlaySetting_m7750CCD68E2B23C6C5F5353AF07F35AD45B2B2E4,
+	UNNotificationSettingsData_get_LockScreenSetting_mCDCD0F285451CB3D245825E32DBBC24A24010DA0,
+	UNNotificationSettingsData_set_LockScreenSetting_m27C9D0F73636BDB18AC4DD7C85523AE1DA980661,
+	UNNotificationSettingsData_get_NotificationCenterSetting_mFB7D3D9E7904017AE105826B64204CBA7226437F,
+	UNNotificationSettingsData_set_NotificationCenterSetting_mB67758ADB9D22EDD69D18A18D02C7AE06702DF14,
+	UNNotificationSettingsData_get_SoundSetting_m38A0191E65710FA2D8ACF54A626BFF1FECCB2226,
+	UNNotificationSettingsData_set_SoundSetting_m1A5CDBFA292F080C851C82403D5AD14BEFDD5A6B,
+	UNNotificationSettingsData_get_CriticalAlertSetting_m0B2E8A1334410DF8EB5C629A82BCADA4A2707B7E,
+	UNNotificationSettingsData_set_CriticalAlertSetting_m1C3BDB61F2A2B396B543FC0FCE2EECF4344ADE3A,
+	UNNotificationSettingsData_get_AnnouncementSetting_m5129F84E10B2D82D99279ED480C3BFB6678F91AB,
+	UNNotificationSettingsData_set_AnnouncementSetting_m4082CBCF70464E177C877DE0BD8E9BC3647C62C6,
+	UNNotificationSettingsData_get_AlertStyle_m63E5B896A1B5FDE5D53DC242DAE546B466060692,
+	UNNotificationSettingsData_set_AlertStyle_m854BAF1C04D5BA08BF274DFD5111D6AB8DA521CF,
+	UNNotificationSettingsData_get_ShowPreviewsSetting_m8DAF528D53D65B8305A97DA308F631DDE476E270,
+	UNNotificationSettingsData_set_ShowPreviewsSetting_mD921027D20FD42FA499B12E6FE7BC017F3C69353,
+	ReachabilityChangeNativeCallback__ctor_m0A22D1538DA4A1B1B2FEA0CB7FAB03FF281B8CAD,
+	ReachabilityChangeNativeCallback_Invoke_mFCC10279E5BCFC3BBED29052CBC4FDFDDC3A1C96,
+	ReachabilityChangeNativeCallback_BeginInvoke_m718213437648F70CC2E047F6033FFE57A0EC2682,
+	ReachabilityChangeNativeCallback_EndInvoke_mC24530FD0EA8480DEB4CC300923A5F825C0E9567,
+	NetworkServicesBinding_NPNetworkServicesRegisterCallbacks_m50B190E852C0E73122B93A61991A96A1C2B0DE18,
+	NetworkServicesBinding_NPNetworkServicesInit_m75EF7276E722227F240B7360EC788A25CEF76477,
+	NetworkServicesBinding_NPNetworkServicesStartReachabilityNotifier_m25DD81A3A575BEE0E1D86BA0EC0DD2D99A33C857,
+	NetworkServicesBinding_NPNetworkServicesStopReachabilityNotifier_m5053BD4457D18B6A2119910E3475E06A49805636,
+	NetworkServicesBinding_NPNetworkServicesGetInternetReachabilityStatus_m219D8449B308EDB78295960E85F95690BFEF3A59,
+	NetworkServicesBinding_NPNetworkServicesGetHostReachabilityStatus_mFCD85CB81DBB7FE365CB3871F6D077312096F908,
+	NetworkServicesInterface__ctor_m89A2A44A08A423E487D3BA2F10AF3E1E7BEBA2FF,
+	NetworkServicesInterface_StartNotifier_mCB7DED0CD934E8187826554143A2F3BDD4AFB89D,
+	NetworkServicesInterface_StopNotifier_m0586C642461837B49E20FDEFC0B8414F35A77BA5,
+	NetworkServicesInterface_HandleInternetReachabilityChangeNativeCallback_m690E3CBE594FD3A928EEE2EFEFF80214B6A89CAD,
+	NetworkServicesInterface_HandleHostReachabilityChangeNativeCallback_mA68D8241CDBF15720B063E9E53DE98355A7D3422,
+	AlertControllerBinding_NPAlertControllerRegisterCallback_mB15C0100661DBBEF142275CA34F4614FCE603B6E,
+	AlertControllerBinding_NPAlertControllerCreate_m28F769FF13CFC849A579FADA61694DAA30332D46,
+	AlertControllerBinding_NPAlertControllerShow_m30D6A80D22532AC5A2851605E14B5A783C1CBA39,
+	AlertControllerBinding_NPAlertControllerDismiss_m03AA12CF1CAF15F71CAB9135FE505DB66A09BAEB,
+	AlertControllerBinding_NPAlertControllerSetTitle_mD1410CEF10F0EC15413BD89E9B9DB6D08FE8C297,
+	AlertControllerBinding_NPAlertControllerGetTitle_mC2E1CF7553E282CE4E056B21900222C5038277D0,
+	AlertControllerBinding_NPAlertControllerSetMessage_m219B86C5413B6190B1F0D0B009D8F6DE2C364F26,
+	AlertControllerBinding_NPAlertControllerGetMessage_m00A08A66443A68405DC95B044ADCD24CF29C5040,
+	AlertControllerBinding_NPAlertControllerAddAction_m39A5D28BE3A9D1768C1E75CF31CCDAB35BDD6D5F,
+	AlertControllerUtility_ConvertToUIAlertControllerStyle_mF8444FA9A42D833BDE9CEDA2CE5C4F298595A8C9,
+	DatePickerControllerBinding_NPDatePickerControllerRegisterCallback_m270B2331B5C90C8CE1E63C8085DD6C952A816CD0,
+	DatePickerControllerBinding_NPDatePickerControllerShow_mB6D6D67AA9A72FBCB4F1D0E6ABFB7C4F93A430B2,
+	DatePickerUtility_ConvertToUIDatePickerMode_m9579CE214A3BD8083144E1E3B5977CC01285F5AF,
+	NativeAlertDialog__cctor_m3CB33A93FBA91BB507CDB9975A14DD75FECA7F19,
+	NativeAlertDialog__ctor_m1D8EB2060E4E57ADA5DBBF94C4A8C8D964145EAF,
+	NativeAlertDialog_Finalize_m0EC8A5AC354CE6A346012486DF9D3BC9695EFC10,
+	NativeAlertDialog_SetTitle_mDF060A1BB78627111CB1D8E18302CC03B5B90127,
+	NativeAlertDialog_GetTitle_m072CEC65F961207A1A2AFB1E886FE5970800603C,
+	NativeAlertDialog_SetMessage_m355E2CD8913E8B204DBFCBB6910602C280048E05,
+	NativeAlertDialog_GetMessage_m44D2223A75351F2B3575B5F341E6D1C53BE7F725,
+	NativeAlertDialog_AddButton_m3877ED9709D6F1FC93044B5FC2B4F0EF637A8376,
+	NativeAlertDialog_Show_m8E55FA0DD709B19E7C5EAF49BEDB1E571F114727,
+	NativeAlertDialog_Dismiss_m0CA7223D434EE4B77E705FB2DF3E18F64FE4F8C1,
+	NativeAlertDialog_Dispose_m343DF0EF609E7399EA82359B14BEF6A65BE5222E,
+	NativeAlertDialog_HandleAlertActionSelectCallbackInternal_m2CBD957C5AD2A0AF628824F8F2820DC448672C05,
+	NativeDatePicker__cctor_mFBFF299759180E41DC7884E65403F953D725C14B,
+	NativeDatePicker__ctor_m002C18305533759FDC30D75DD80F68B39A41F4BD,
+	NativeDatePicker_Finalize_mB68A467022F1A0DD3CD2636EA14C771F6651227A,
+	NativeDatePicker_SetKind_m28F59CF9D91D0F0A4C0A4AF48C4BAC0FC91DA324,
+	NativeDatePicker_SetMinimumDate_m319E0F76474F2FDE2E973F79F71D884023195B57,
+	NativeDatePicker_SetMaximumDate_m0CF40320F6C77AC9C760E1AB4D32D7662B20DF65,
+	NativeDatePicker_SetInitialDate_mCF203B6EF233638FB589DD406CFA77E7434EBB4E,
+	NativeDatePicker_Show_m93DD49521050830FD1EBC5AE37C13FB22605292F,
+	NativeDatePicker_Dispose_m70BC61FD3B440E49F66DD80B3696FB52A9638D2D,
+	NativeDatePicker_HandleDatePickerControllerCallbackInternal_m79EEAC25E61E9EED0E77DE5B6E967773538C39FB,
+	NativeDatePicker_GetEpochInSeconds_m972C88D60A69764410D152961DFF871D1FE4B42E,
+	NativeDatePicker_U3CShowU3Eb__11_0_m3F97D9EF0626D1BF3BC746C65695B12C8889CC57,
+	AlertActionSelectNativeCallback__ctor_m45C1757DF5ADB53DBFCEDB81848A5870787403D1,
+	AlertActionSelectNativeCallback_Invoke_m20DF36D5ADBFA091023E8A5F9E2C25941D9FD56C,
+	AlertActionSelectNativeCallback_BeginInvoke_m2CC339DA2A069DCF58B7BDDDBBD3A3CB3AAE69A3,
+	AlertActionSelectNativeCallback_EndInvoke_m0FB33E2239D12A90FD650451B44DC22427B9FEF8,
+	DatePickerControllerNativeCallback__ctor_m91333D2B2E59891AD5E34D6797F84955137123A0,
+	DatePickerControllerNativeCallback_Invoke_mCF338B526B213BBF8C0BF39D2327F3146CC547E1,
+	DatePickerControllerNativeCallback_BeginInvoke_mA37378913CAC9F89752A53F6952713022AE5E611,
+	DatePickerControllerNativeCallback_EndInvoke_mFEC59862AF4C870DCE09A4DC0FC370C86D552945,
+	NativeUIInterface__ctor_m9B65175B4BFA47F68140C3A45A6AD6F7021C97D6,
+	NativeUIInterface_CreateAlertDialog_m549DDED666A484D243CA863024C012A6508D41DB,
+	NativeUIInterface_CreateDatePicker_m58AC19CF960D181F8A3386D4EBA4F26C5BED0265,
+	MediaServicesBinding_NPMediaServicesRegisterCallbacks_mCD25AD619B27CFED742311126CC0C206B89DC2F7,
+	MediaServicesBinding_NPMediaServicesRequestPhotoLibraryAccess_m6F28ABEAB2E8E904689605F349C7A7805E7DF78C,
+	MediaServicesBinding_NPMediaServicesGetPhotoLibraryAccessStatus_m4459ABCD38B279D0001ADF5F53F8FBE15ABD7DCC,
+	MediaServicesBinding_NPMediaServicesRequestCameraAccess_mF1AAD5FDE2A4439AF1A92AC772E82EF114391DFB,
+	MediaServicesBinding_NPMediaServicesGetCameraAccessStatus_m033BC79EB1764565C2B118A2D9FC7FC0D77AFD58,
+	MediaServicesBinding_NPMediaServicesCanPickImageFromGallery_mD8463CB6849C3BA0FBB9D4CCF4AE15CB5FEA985F,
+	MediaServicesBinding_NPMediaServicesPickImageFromGallery_m8890A840FF22FD7DC0C846880A88FAAE079878BD,
+	MediaServicesBinding_NPMediaServicesCanPickImageFromCamera_m37CEFB29C682C63378A8FB62309432E8F4B10A41,
+	MediaServicesBinding_NPMediaServicesPickImageFromCamera_m8C6CF967029F4A451446BFFFA5EA8ECD0EDC507D,
+	MediaServicesBinding_NPMediaServicesCanSaveImageToAlbum_mF45DA0B9407898077E9E67A941C3BC8F737F3050,
+	MediaServicesBinding_NPMediaServicesSaveImageToAlbum_mB9E7A8ADD667ABBAF598CC061B9FA954C1544F3E,
+	MediaServicesInterface__cctor_mD3273FD78B08DEA540B2C826BFE4CFECB38374BA,
+	MediaServicesInterface__ctor_mB62684B0124E7782B700C604350783D602A8F481,
+	MediaServicesInterface_RequestGalleryAccess_mAF31763C385F2ABD08495BA6408D2B23930D91E4,
+	MediaServicesInterface_GetGalleryAccessStatus_m83473A8F7E2EE370D77B84DF54DBF2765FEC733C,
+	MediaServicesInterface_RequestCameraAccess_m6FCE95DC3235C003AE7E0ACE0FEA5473C71CD5E7,
+	MediaServicesInterface_GetCameraAccessStatus_m23E7CE57B54AEE76CDCEF4E28CE7728BFC5A8485,
+	MediaServicesInterface_CanSelectImageFromGallery_mE5B9D827AF26F96EA191A3C00766D95AC47BB4AE,
+	MediaServicesInterface_SelectImageFromGallery_m2CDEB989E8F5050C2DC3236F464A8A929614FB12,
+	MediaServicesInterface_CanCaptureImageFromCamera_m2E80B8C28A22C769D4989F3121BA6EA4E64DCFA5,
+	MediaServicesInterface_CaptureImageFromCamera_m2981B2038B81A85217D6C5305870130A04704783,
+	MediaServicesInterface_CanSaveImageToGallery_mA2B25F9968901DD0CCDC77F57D466B51D96E7466,
+	MediaServicesInterface_SaveImageToGallery_m83F593AEE1EAB434435A121EF6BC757EE5FE7BBF,
+	MediaServicesInterface_HandleRequestPhotoLibraryAccessNativeCallback_m7539F3AD6217D45FA2FEA1408994CC0A955D852B,
+	MediaServicesInterface_HandleRequestCameraAccessNativeCallback_m9B7F07C07F9E205570FB0C111C1D32BDB45BDAA4,
+	MediaServicesInterface_HandlePickImageFromPhotoLibraryNativeCallback_mED7EE60AEFED3C8417AE612E78A29437BAB51FA3,
+	MediaServicesInterface_HandleSaveImageToAlbumNativeCallback_m6AD880AD39B5836F115D8E24DD2ADAEE39D821A7,
+	U3CU3Ec__DisplayClass14_0__ctor_m6FEB8219B65AAF0DE7C2AB7E7D00F435EA870D8E,
+	U3CU3Ec__DisplayClass14_0_U3CHandlePickImageFromPhotoLibraryNativeCallbackU3Eb__0_mA0788A69E16C144A6594A31EB81301E2AC9C080C,
+	MediaServicesUtility_ConvertToGalleryAccessStatus_mBA79925F21E3C7DBA07DC417E7B95D8772C247A8,
+	MediaServicesUtility_ConvertToCameraAccessStatus_mF871E729B125CD11D72C3964D7718C1C0DC4B3C0,
+	RequestPhotoLibraryAccessNativeCallback__ctor_m879A72DB2961CD347F7270753741058D3B2CBFAB,
+	RequestPhotoLibraryAccessNativeCallback_Invoke_m71CBF48EEAEA9A964479E2B66015E9A554287201,
+	RequestPhotoLibraryAccessNativeCallback_BeginInvoke_mEF6C3C2A24795CA2D7A72F0E36F080881A1A342F,
+	RequestPhotoLibraryAccessNativeCallback_EndInvoke_mF3CBAF3FFA54CF89E9E946AE73E9EBA85D0682E9,
+	RequestCameraAccessNativeCallback__ctor_mA600C262B707F7EDA23516A578BE8928AE953869,
+	RequestCameraAccessNativeCallback_Invoke_mDB625021CA3CA265761D13B9BE74F952B8551435,
+	RequestCameraAccessNativeCallback_BeginInvoke_m493A4D8D1CA572D3EF14DF87F1B4AE3B54AE5DE9,
+	RequestCameraAccessNativeCallback_EndInvoke_m59CFFA2F8F163E7516221A914BE88B498C54200A,
+	PickImageNativeCallback__ctor_m264300414189F6AA1E338AC31D0E64CBA5D9B2EA,
+	PickImageNativeCallback_Invoke_m1557149D5E6CF87C87D2E58064BC104DA0CE9D5E,
+	PickImageNativeCallback_BeginInvoke_m3CF511B4A272B1A1744B8D9C75D510A0F3A0B9AB,
+	PickImageNativeCallback_EndInvoke_mE96E66416F40F93A3C7F618EB6027114B9EDA14C,
+	SaveImageToAlbumNativeCallback__ctor_m463EA2A218AAFF780A9A432F211CA057265D74E9,
+	SaveImageToAlbumNativeCallback_Invoke_m4AA0ABA88C66094E6D325BA825E9ADE223F20912,
+	SaveImageToAlbumNativeCallback_BeginInvoke_m5997E80DCF0A2294596940F3894B10FDC4DBC039,
+	SaveImageToAlbumNativeCallback_EndInvoke_m490F7BD5C9C59CDCC09BF9F13764EAB984EED71E,
+	Achievement__cctor_m76F7347DF28135A525A30BC23BEE5FDE20FD7323,
+	Achievement__ctor_m21477DFF14E26FFED2CD58974D09A143356D4A77,
+	Achievement__ctor_mA589E643B3DF39567FE9CD1E25AC6825538EE04B,
+	Achievement_Finalize_m8AA8E1882153CF7DB7D464EA661B1B5B25C3D9B9,
+	Achievement_CreateAchievementArray_m0FA5727EEF1992574B894872A6CF7E1B432F06FA,
+	Achievement_SetCanShowBannerOnCompletion_m8A1CA3F25ECA76A01A1A663D135EB1BA74C4DF87,
+	Achievement_LoadAchievements_m6981319C3E8CA0C204B3E356A9D68D7DAC3A1626,
+	Achievement_ShowAchievementView_m9BA75C80340C948C209913CD59515A692F55B2DD,
+	Achievement_GetPercentageCompletedInternal_mBF0B95086854598F0E2CCBD7C55CC0D13383A279,
+	Achievement_SetPercentageCompletedInternal_m82A9C41C163B95F2C6980B8231D8EF59F33165E9,
+	Achievement_GetIsCompletedInternal_m2FF0CD3234B0C44AE074AAA03CA2924F37DD16D9,
+	Achievement_GetLastReportedDateInternal_mF4D21AC5DB6DB867886BEAD10CC68BB71570C522,
+	Achievement_ReportProgressInternal_m51CBF3B3F89ABCBA00730A0D2C7A3885AB864953,
+	Achievement_HandleLoadAchievementsCallbackInternal_mCBD1CAC30BD451E773E76E9362898E88E2BB587E,
+	Achievement_HandleReportProgressCallbackInternal_mE714390B2F083331A49CDB043BF57674F84F13EA,
+	U3CU3Ec__cctor_m2BDBB3DE1C50A7F045D9A6CAD071D6C4231F5C27,
+	U3CU3Ec__ctor_mB8AF9D8B21FD307116E98F69F85C929B584DEAB0,
+	U3CU3Ec_U3CCreateAchievementArrayU3Eb__4_0_m455C0B89ABC4A95382DB99C8D8FB7391A1BF68C2,
+	AchievementBinding_NPAchievementRegisterCallbacks_m97D3972F9CE1E74113A1FBF879F60797879DB86C,
+	AchievementBinding_NPAchievementSetCanShowBannerOnCompletion_mB93DA941193416CC9FBA7BDDB606A4104234B8EC,
+	AchievementBinding_NPAchievementLoadAchievements_m3AE7CA66903FBE522B97061402873A37B8F2261C,
+	AchievementBinding_NPAchievementCreate_m0DE9E820A9B6D6D5DE085CD277177D464BD2564C,
+	AchievementBinding_NPAchievementGetId_m060DD95E092E50F36554CB8FB4563D8EC9AEC682,
+	AchievementBinding_NPAchievementGetPercentageCompleted_mEE833868EC08E54F0CFDDC14E554328F20BF9696,
+	AchievementBinding_NPAchievementSetPercentageCompleted_m76F4C51EA2CE7CA58A3A672175D68B163CECE88C,
+	AchievementBinding_NPAchievementGetIsCompleted_m3146EC34B463859367CF70C77DE87CBEE202A4D6,
+	AchievementBinding_NPAchievementGetLastReportedDate_mB953ADBE2266E4E323553CA9F2824BAA079FE743,
+	AchievementBinding_NPAchievementReportProgress_mD561C50305266E1A97A3A468D156EC01080AB16C,
+	AchievementBinding_NPAchievementShowView_m7929389702FD78A2C9AF6C07F5725B2138315022,
+	AchievementDescription__cctor_mE9B308FA87BD1EE222D7D57CC57F84F16D9D229B,
+	AchievementDescription__ctor_mBE471F2DE7024683534E8F7183F429E7CD4AA3BA,
+	AchievementDescription_Finalize_m273C82EA19C009D340B372701E2D6F5DEF7D9016,
+	AchievementDescription_CreateAchievementDescriptionArray_m580207C2E4B52CA8FC031E3C4401454215B54EDE,
+	AchievementDescription_LoadAchievementDescriptions_m17A2B69DE2CD4437D75CCDBF207DEB23DF131FD3,
+	AchievementDescription_GetTitleInternal_m2AF518B8FFBD39359778CBA468636D276194758B,
+	AchievementDescription_GetUnachievedDescriptionInternal_m616F64D403AE8A2125E8480CDC0579022FF849DD,
+	AchievementDescription_GetAchievedDescriptionInternal_m7D830C6282A33F290CD6D3271DE2CCB7AB3E7EB8,
+	AchievementDescription_GetMaximumPointsInternal_m483E58F4845BC5790CF435C9A240652337413AF7,
+	AchievementDescription_GetIsHiddenInternal_m3DF7419FD6494A5A67107CB416299BB6C54BBA65,
+	AchievementDescription_GetIsReplayableInternal_mAB6A5646C00CDE70AE42F0D36A2E83F65D1CA736,
+	AchievementDescription_LoadIncompleteAchievementImageInternal_m5CAE401A8274A48DA3B490B93492A8734A929289,
+	AchievementDescription_LoadImageInternal_m04DAEDE7E9F3C42E8034B39FEB7CF212A3970163,
+	AchievementDescription_HandleLoadAchievementDescriptionsNativeCallback_m502F6BCBAC111DFCD78B7EE3D8AF5F38728538E8,
+	U3CU3Ec__cctor_m137258C556B84ACB09261604D20E75922E8C1A33,
+	U3CU3Ec__ctor_m3A4AD4166865E823FD3F1208D11357C1692920EE,
+	U3CU3Ec_U3CCreateAchievementDescriptionArrayU3Eb__9_0_m26FD66380651120CA5E8030AAD3A5C9D00F03D86,
+	AchievementDescriptionBinding_NPAchievementDescriptionRegisterCallbacks_m411F5EE0FED80A7701BE14977DF785429DA96CA2,
+	AchievementDescriptionBinding_NPAchievementDescriptionLoadDescriptions_mF6280C1AFCDBD1EFF9A2DA76DECE57CEE5101587,
+	AchievementDescriptionBinding_NPAchievementDescriptionGetId_m3C52F76334AFE719406448C6075E51EE1995AEDE,
+	AchievementDescriptionBinding_NPAchievementDescriptionGetTitle_mFDAE14AF983ED3AE129A91A1F3AE0F17B3B221DB,
+	AchievementDescriptionBinding_NPAchievementDescriptionGetAchievedDescription_m988653C3EC89D41D157FFCD02174FA903891D1D1,
+	AchievementDescriptionBinding_NPAchievementDescriptionGetUnachievedDescription_mA5D093F6AB515B8C2084183E6D266C5EDA2A19A7,
+	AchievementDescriptionBinding_NPAchievementDescriptionGetMaximumPoints_m1C5B748FBFFD7FA7FE807CAAEB6C3A8C1E919ADB,
+	AchievementDescriptionBinding_NPAchievementDescriptionGetHidden_m995FC109B545139373451BE02186424F1AACC14D,
+	AchievementDescriptionBinding_NPAchievementDescriptionGetReplayable_mF0597FE97CEC3A397A3C8E3B947523F396EF3070,
+	AchievementDescriptionBinding_NPAchievementDescriptionLoadIncompleteAchievementImage_m8B88CD1FCF7D30D2A3D3855F60F9DBA559C76872,
+	AchievementDescriptionBinding_NPAchievementDescriptionLoadImage_m4D8D0A397353BE48199E78178A556AD65AB1E20D,
+	GameCenterBinding_NPGameServicesSetViewClosedCallback_mED74AB1201FE944523E363D526FE6FC407D2CEBC,
+	GameCenterBinding_NPGameServicesLoadServerCredentials_m73AC6A314E64C94AA60E000E9D0A55DF286887D7,
+	GameCenterBinding_NPGameServicesLoadServerCredentialsCompleteCallback_m1F43011714E28031CAE8EFFEE4FCC3D3E1A5076A,
+	GameCenterInterface__cctor_mDA3A5C21D3C89D776ABADD6CA36F63893AFB91FD,
+	GameCenterInterface__ctor_m5A17394DE7D4A0943AC1E6885BC6F387F9BD096D,
+	GameCenterInterface_LoadLeaderboards_m34A99574085047A0B36F8D29D1B7AFB4844BB0E0,
+	GameCenterInterface_ShowLeaderboard_m86D76BC2337C8766CEAE0EC17CC3BA7F51ACEDD9,
+	GameCenterInterface_CreateLeaderboard_m992985B333DD22BCBFF6E266723E694A66894C31,
+	GameCenterInterface_LoadAchievementDescriptions_m71D4DEF2E23B23DB3482CFEC766E4B85CA9A71DA,
+	GameCenterInterface_LoadAchievements_m78F0B26C86B632AD422B16A47829B50361C470CD,
+	GameCenterInterface_ShowAchievements_m97A3B9FE74042757378196EF95F58E01FF054EF7,
+	GameCenterInterface_SetCanShowAchievementCompletionBanner_m6554F8AFB08F63B1A78206038EB8C0F78A41A730,
+	GameCenterInterface_CreateAchievement_mCC6075D97A3D04636326F3A1EC63E58DCBA87411,
+	GameCenterInterface_LoadPlayers_m4325449BCBF3B998D603B51F488CA79FB9ACA152,
+	GameCenterInterface_SetAuthChangeCallback_m1E2846008998EBD27F7A601FC4385B859FF974FB,
+	GameCenterInterface_Authenticate_m1C1D03164D234EB5DA1CB0AAA8556B6809A98316,
+	GameCenterInterface_GetLocalPlayer_m2CB21F8A63AF04E1E2193B1DC0D71939223D932B,
+	GameCenterInterface_Signout_m5C4DE11FBC82405611812D437405C1749A20E729,
+	GameCenterInterface_CreateScore_mB07C9DA55ACFB17125C1D0918041164521A34EE8,
+	GameCenterInterface_LoadServerCredentials_m8CCED0D903A7319AF6D620916E3C9B3D9E8BFD6F,
+	GameCenterUtility_ConvertToLeaderboardPlayerScope_m94119168BBC74163283AD22F1CCAB75C97168D75,
+	GameCenterUtility_ConvertToGKLeaderboardPlayerScope_m75700F7B5B14C0DB56A7DF33D7A165D8F8108ABA,
+	GameCenterUtility_ConvertToLeaderboardTimeScope_mD7775C1F0A5554E3F2DEC7F24CFEC70D10F97588,
+	GameCenterUtility_ConvertToGKLeaderboardTimeScope_m79330973BC38A155A44298728BFF96B8733A55CD,
+	GameCenterUtility_ConvertToLocalPlayerAuthStatus_mDE8A413D9364D0744820D76E7E650AE755DF0403,
+	Leaderboard__cctor_m39D60355149CDFD961F34D91F94EFC1338745BD3,
+	Leaderboard__ctor_mBEF76531BE6148BFECE8DC472412B08170F31302,
+	Leaderboard__ctor_m92A92CAAF05CD9D423C9B6892EECA22584A75B8A,
+	Leaderboard_Finalize_mF9024FB5E11E0A2E662610AC425684F8A753EBF4,
+	Leaderboard_CreateLeaderboardArray_m448150A66EDE76B3D31300895C4214EDB5FB42C6,
+	Leaderboard_LoadLeaderboards_m6FF8D45B5F6A85A7FB5D1FCD231BC18F79C03C48,
+	Leaderboard_ShowLeaderboardView_m2AC5B113CB381A8AB1591F913769396080140C20,
+	Leaderboard_GetTitleInternal_m68AE618EA534BCDC94C8AD2D4C2430EFD897B6B1,
+	Leaderboard_GetPlayerScopeInternal_mD9D3A6FED8C10297A4D5E63B7E1E5A5E92150CD2,
+	Leaderboard_SetPlayerScopeInternal_mB2741ACE802E3DCE5FF276B8878BCDD3E0606A7A,
+	Leaderboard_GetTimeScopeInternal_m389BD38525DAB1B5FE4B4DCAAB4349DCBDF0D730,
+	Leaderboard_SetTimeScopeInternal_m88BEC02CBD0CA249E5DF99D61C25A9973C5EC736,
+	Leaderboard_GetLocalPlayerScoreInternal_mFDD96891C7291779B7D51AA2B361CE3DB1A12F26,
+	Leaderboard_LoadTopScoresInternal_m7E725EA92E5C6844DFFB3F92FBD68DF74032C62B,
+	Leaderboard_LoadPlayerCenteredScoresInternal_mCFCCAB4476918818E6F4825A075698A0CF440533,
+	Leaderboard_LoadNextInternal_mDD0DF307C744820FC197281F4F52FDA9845FA703,
+	Leaderboard_LoadPreviousInternal_m74BD727D4CB096B036EAC136DFD7A16766E4BFFA,
+	Leaderboard_LoadImageInternal_mF431588EF80126B7244F7FC59222E010069FB7B7,
+	Leaderboard_LoadScoreInternal_mE394C11DDBEEA7F2C5BD618719B4B1162557455B,
+	Leaderboard_OnLoadScoreFinished_m94DCD22A3552844B94531FB7FE5095A50AEAC9A6,
+	Leaderboard_HandleLoadLeaderboardsNativeCallback_mA7B29842F0E1467654ACD4C7C99F6228363B3326,
+	Leaderboard_HandleLoadScoresNativeCallback_mF7130D740D784A61BD01D4769B46FF905D55468E,
+	Range_get_StartIndex_mC1335ABFB021C00F644BBCB2F42EBF65E94BFD0D,
+	Range_set_StartIndex_m4F40B0F5F7477F6D32480EF0D90CCFFA251C35B3,
+	Range_get_Count_mD8D7761BB1BC59F635485C3B67151B369E94E70B,
+	Range_set_Count_m178BD376C24730837DB1653293C1DD8A04071259,
+	Range__ctor_m3C3F3706499B37D964D661A059D738F5E3214746,
+	U3CU3Ec__cctor_m43A309A2C75E6530EBF9238A1A8EC58B7AB63DD4,
+	U3CU3Ec__ctor_mB588639354117BC921DB2CA91878F216C08D20D8,
+	U3CU3Ec_U3CCreateLeaderboardArrayU3Eb__8_0_mBF32891DA9F3FCB54FDE4481298364921A94A573,
+	U3CU3Ec_U3CHandleLoadScoresNativeCallbackU3Eb__25_0_m709C3B508D722C4DFC86D1249F6AD34057F343DB,
+	U3CU3Ec__DisplayClass18_0__ctor_mBB3C4CCF406390318121F03F2EFECF4B36FA62D8,
+	U3CU3Ec__DisplayClass18_0_U3CLoadPlayerCenteredScoresInternalU3Eb__0_m0E342EC2D7216C290D2F40F94310FFF2E218C986,
+	U3CU3Ec__DisplayClass22_0__ctor_mEB70967C7D58F88FB6A197AFE8D75775865B7DAE,
+	U3CU3Ec__DisplayClass22_0_U3CLoadScoreInternalU3Eb__0_m7FDF26E0B84F80626C8603FC20057C42879B826B,
+	LeaderboardBinding_NPLeaderboardRegisterCallbacks_m1C36201BE8F451E2064D27A4CD844215E3454CF8,
+	LeaderboardBinding_NPLeaderboardLoadLeaderboards_mBBC58631783F2A7E782588C88115DD0A5C766B0C,
+	LeaderboardBinding_NPLeaderboardCreate_m3F03382FB9F798717C1A43CFAA08D8084E8F6811,
+	LeaderboardBinding_NPLeaderboardGetId_m57C03C7E40F004439B19C9C11D6D9BA9662D2439,
+	LeaderboardBinding_NPLeaderboardGetTitle_m63F11B90880E46942CC26E819C79876DF0DF2CF1,
+	LeaderboardBinding_NPLeaderboardGetPlayerScope_mFCB24B93A310CB97DB4F6166121C64DA33806F60,
+	LeaderboardBinding_NPLeaderboardSetPlayerScope_m15B4B9A8DA69B61233EED3C5EF319D343C015A8F,
+	LeaderboardBinding_NPLeaderboardGetTimeScope_mE581817D3AAA64DB6F8A415B31C50373618632EE,
+	LeaderboardBinding_NPLeaderboardSetTimeScope_mE80714CC0BCBA324E4310E09341FE60E41FCD085,
+	LeaderboardBinding_NPLeaderboardGetLocalPlayerScore_m5A7303F0454ED15C069996AB61B9499E210F04A3,
+	LeaderboardBinding_NPLeaderboardLoadScores_m077648A7819BCFBAC10A305340ADF1584EA2E3A4,
+	LeaderboardBinding_NPLeaderboardLoadImage_m71383FCEB49F6584D4880A57FE5F16AEF7930AD6,
+	LeaderboardBinding_NPLeaderboardShowView_mD9E562328C9C414672EA6E5E34D4D17DD23E5010,
+	LocalPlayer__cctor_m2B84754483277F8B628FEE8AE34F8E1A3FF63A54,
+	LocalPlayer_Finalize_mE93A19F558B3F2531DD7AA48B31A7D8946CFE8C5,
+	LocalPlayer_GetLocalPlayer_mE34AB0A0DA81096CD67D1770601020F9FFB4EEFE,
+	LocalPlayer_Authenticate_mCEC1C2E297853D53C8997B439648C50B348BA159,
+	LocalPlayer_SetAuthChangeCallback_mF159D196B343CFD07D97463DC0264AF1B7F0163F,
+	LocalPlayer_UpdateNativeReference_mF1370450384A57469913E547CEE2BA206D6D34E2,
+	LocalPlayer_get_IsAuthenticated_m9DE8584C02623DFB55318A692FCABC394D00EDD7,
+	LocalPlayer_get_IsUnderAge_mE24F574D22291ED31802065E706606049B596F1A,
+	LocalPlayer_HandleAuthChangeNativeCallback_mB67E04756D8D26E2CE10883808B39B401A3BE960,
+	LocalPlayer__ctor_mED6DEBCC0902794A04C82ADBC083932FEA3A2A5E,
+	NativeCallbackResponder_HandleLoadImageNativeCallback_mE3C35CEAF7DEAA5DFD2F9FC96A88FFD5C0E3D6FC,
+	NativeCallbackResponder_HandleViewClosedNativeCallback_m4F4835E469C78317A6B3AA0AB6509174B8070599,
+	NativeCallbackResponder_HandleLoadServerCredentialsNativeCallback_mDD58A7B6B4D00C98CC22E2EF76B68323B198A5FF,
+	GameServicesLoadArrayNativeCallback__ctor_m1DEB394FC9D4E86E2A9B1CC682B312E520CCEC1B,
+	GameServicesLoadArrayNativeCallback_Invoke_m2176A2FE956491D5E6BFB842D984D733FA5640AF,
+	GameServicesLoadArrayNativeCallback_BeginInvoke_mE6CEFF75CD8AD852C17F4829B6684198D74A922D,
+	GameServicesLoadArrayNativeCallback_EndInvoke_mB66D4EAF7C7FA8FE289BD0D04A168510EAC7B476,
+	GameServicesReportNativeCallback__ctor_mF6A2CC2F7F088AECEDA3A8F6BDB0AE21D4600DE6,
+	GameServicesReportNativeCallback_Invoke_m4447C7E89FBDF23975E5138E00B1F4EB4BEA8096,
+	GameServicesReportNativeCallback_BeginInvoke_m5A074B77E55D7F79D98AA41CD5A6A2D602A9FA8A,
+	GameServicesReportNativeCallback_EndInvoke_m3A721A50530F8C3EC98A126A79331E730B88C852,
+	GameServicesAuthStateChangeNativeCallback__ctor_m7A395DFC227B8F0220E513B2E426A609A21B8258,
+	GameServicesAuthStateChangeNativeCallback_Invoke_m5A738AA67E29AC49D9D24B8D6EAE4DABB7DD1EB4,
+	GameServicesAuthStateChangeNativeCallback_BeginInvoke_m6A5EC4D25E28BB7626E9C54905B1F7357361F082,
+	GameServicesAuthStateChangeNativeCallback_EndInvoke_m393D4AA0202BB9C1CEBA766C299C4E8992581BEE,
+	GameServicesLoadImageNativeCallback__ctor_mB5C42247FF4E621ECAA3E603ABE0A70F3237C516,
+	GameServicesLoadImageNativeCallback_Invoke_m57B1D05F706A7D76A75E289B75E8112CEA3DFD13,
+	GameServicesLoadImageNativeCallback_BeginInvoke_m72DA82941812C193100D5E0F272E5F1854C13E0A,
+	GameServicesLoadImageNativeCallback_EndInvoke_m1F68ADA2F3019A3C424F51D523EAAB09EDF723E7,
+	GameServicesViewClosedNativeCallback__ctor_mC26D6E5A0FFA50CAB89974DCF16B4E9513FC23B5,
+	GameServicesViewClosedNativeCallback_Invoke_mAA7B9FEC6613CF6B1A19EB8D740042C8D38EDBF0,
+	GameServicesViewClosedNativeCallback_BeginInvoke_mFEB37A68108D148E05BEEBA69E18AD2A7B618B93,
+	GameServicesViewClosedNativeCallback_EndInvoke_mEB2DBE77C9149DFA664BAA7E38921C23BB249CEC,
+	GameServicesLoadServerCredentialsNativeCallback__ctor_m3D5A0965F65B546047CB04E5E949C2A3C0CBAED9,
+	GameServicesLoadServerCredentialsNativeCallback_Invoke_m05A84A9767F96A9C569E6A9E9C934CED374B4CD3,
+	GameServicesLoadServerCredentialsNativeCallback_BeginInvoke_mAF935D5E54573F766F67A85F50F75A7231810D4F,
+	GameServicesLoadServerCredentialsNativeCallback_EndInvoke_m0382E1252BDA02CDD04B4E2B53BE02EAD7B98F1E,
+	Player__cctor_mF816B5C60034C1E3613111542BD3B2F2F7380E2B,
+	Player__ctor_mF69AA4C86224DC3397FDC0614C089F623C0EAD38,
+	Player__ctor_m833A343847771E1659D59DFC6943293479241ED8,
+	Player_Finalize_mD2E90FB645010519CC7AC679E2FF84FEAE05DAFF,
+	Player_LoadPlayers_m0E32F5A6E1F0BA57F07165431116C66DE1E4748C,
+	Player_GetIdInternal_mC3B858B7F99200FEAAE3920C0152571348108AD5,
+	Player_GetAliasInternal_m0144B3ABB2BF9AEA4BB66485780736C00E371D63,
+	Player_GetDisplayNameInternal_m2399ECD6D66098373E9B1553C00A09B760815E41,
+	Player_LoadImageInternal_m066B8A8A6F65A465D5C5F77C3CDCF5054047ADE7,
+	Player_HandleLoadPlayersNativeCallback_m74711BA3472C617A0D469D5CADDF5A51072D97EA,
+	U3CU3Ec__cctor_mEB17D1279B9B8DB1240F92AB14E41FD824BB14A3,
+	U3CU3Ec__ctor_mB95695C780B30CC73F37BECF12C5C28CBE8E89EA,
+	U3CU3Ec_U3CHandleLoadPlayersNativeCallbackU3Eb__9_0_mAB5BA0C5B97BAA0B7D9E7175055309C63038B72B,
+	PlayerBinding_NPPlayerRegisterCallbacks_m8A0859A3C20190A65B3F97E345D8E66017321F05,
+	PlayerBinding_NPPlayerLoadPlayers_m82E3C55011F84DD61C807B527BE12606CCE4E4E6,
+	PlayerBinding_NPPlayerGetId_m8331861D8CBEFBFBFE84EE6CD7CE5761241155D8,
+	PlayerBinding_NPPlayerGetAlias_mBF3535BC6FEAC1E021BD81E91F3207D205A119A2,
+	PlayerBinding_NPPlayerGetDisplayName_mC26882B68F9123777E37CA095026CEAFEE9BEAAD,
+	PlayerBinding_NPPlayerLoadImage_m712613BF333B076BBD5C21D18E049AF0F1BE32CB,
+	PlayerBinding_NPLocalPlayerRegisterCallbacks_mEA52C3982EF44DCC18F293DC086A5E7A81B0FE39,
+	PlayerBinding_NPLocalPlayerGetLocalPlayer_m9851F29B1D643AE87D4F7A42F3A73C83818D64DF,
+	PlayerBinding_NPLocalPlayerAuthenticate_m1472DCB2B076B6A1DD359DCFCB0D9FEE06510101,
+	PlayerBinding_NPLocalPlayerIsAuthenticated_m5ACE72A2753DE721A55B9CE1EE5E2F6C189C7AB1,
+	PlayerBinding_NPLocalPlayerIsUnderage_mD79C427C2AB670E3F7985AE47728612C1DBB1D93,
+	Score__cctor_mC0CD95EC9119BFC371DCC4A1BE992B94A92DF649,
+	Score__ctor_mD4CF29542FEF0654F69903A2773ECD0369FF6C55,
+	Score__ctor_m7361903B62F0ACAD2CC514640C4C14F868DA2D37,
+	Score_Finalize_m03F56E89FD6861805907E391C0CDCE04C4A066EA,
+	Score_GetPlayerInternal_mCF1976F9B9E8ABE4672CE8CA8918F56F29D284D3,
+	Score_GetRankInternal_m757A7B4DB33EBE91EADCB5ED381D763FF19AFBBF,
+	Score_GetValueInternal_mD6F3901857FD565676F99EFCDCF4A05D6567690C,
+	Score_SetValueInternal_m1924D652D131AC2E2D68CB29B7DB30F3A8E51C71,
+	Score_GetLastReportedDateInternal_m9DEDDE1F85606127520D1D4745E63112225AAF55,
+	Score_ReportScoreInternal_m07B9181CFBE79215EAF387D790CB7B06EC3C3AA6,
+	Score_HandleReportScoreCallbackInternal_m36385F6E43FE7FF0E40BECDCB61F094D274C8809,
+	ScoreBinding_NPScoreRegisterCallbacks_mE9EF26B8478566C1468C15DA4123C9F2B30BCD79,
+	ScoreBinding_NPScoreCreate_mC82E15EEE0B1D4C849B8D3719A9BC7F06F143BD1,
+	ScoreBinding_NPScoreGetLeaderboardId_mED80F14A4699D6D445A0C3DA4B33C231D5863C54,
+	ScoreBinding_NPScoreGetRank_m057590AC205CF9622F21EFED6F5378788AA116D0,
+	ScoreBinding_NPScoreGetValue_m9120D46DE7D1F3143AA232F70BB59413A136723B,
+	ScoreBinding_NPScoreSetValue_mEC682740908E916ABA2BC84509B7639B755EAEB5,
+	ScoreBinding_NPScoreGetLastReportedDate_m40C38E8EC8FFD44CE1481F61A5265D82F50F9243,
+	ScoreBinding_NPScoreGetPlayer_mAE4DF3DE52A0795CEF19D02167C318E33A5A71B5,
+	ScoreBinding_NPScoreReportScore_mC942756A586149CAA37D0FE172DF1131AAA18F4D,
+	NativeUtilityInterface_NPStoreReviewCanUseDeepLinking_mC278CC136D5D80586ABD7999A44046B91B22D21D,
+	NativeUtilityInterface_NPStoreReviewRequestReview_m9766016A9FBE68E233992C9919123F66F6771F1A,
+	NativeUtilityInterface__ctor_m44669329C36D5DABCE56AB8723FEF1D8AFAAA46D,
+	NativeUtilityInterface_RequestStoreReview_m1315727DF467C845DB2FDC1C829071FF2AED3BAC,
+	NativeUtilityInterface_OpenAppStorePage_mF0A645E6466E0D11044616D15315D22F8D300F0B,
+	NativeUtilityInterface_OpenApplicationSettings_mB8E27D45835CE08E907E9FE4EB966E684323B287,
+	DeepLinkServicesBinding_NPDeepLinkServicesRegisterCallbacks_m57CEF799F1C1CFC37062758B450920DC4E52C588,
+	DeepLinkServicesBinding_NPDeepLinkServicesInit_mA025F5487892D32C7BBEBA78BCDFE99C70130F91,
+	DeepLinkServicesInterface__ctor_mDD753E3BEDEB76DE999817387F5B34C766E56010,
+	DeepLinkServicesInterface_Init_m4E21A1039DC35E66A5BEA8303119829F6B527FBC,
+	DeepLinkServicesInterface_HandleCustomSchemeUrl_m65B78807114B0E19DB4DF867637657DC78C9005F,
+	DeepLinkServicesInterface_HandleUniversalLink_m62FDCC19EEA99A1D642182FBE23539AC16620C70,
+	HandleCustomSchemeUrlNativeCallback__ctor_m4B883AC60C6A18663EF8E9D7C7F3C38BE67DC222,
+	HandleCustomSchemeUrlNativeCallback_Invoke_m50071FB666D06AF0F66341CC6D53469B31D91AB8,
+	HandleCustomSchemeUrlNativeCallback_BeginInvoke_mB3C6FA36E61C32CD9431C3277FA71E6299478330,
+	HandleCustomSchemeUrlNativeCallback_EndInvoke_m9321618B8EF339E10B53766FF2FC607A2EF4983C,
+	HandleUniversalLinkNativeCallback__ctor_m30A1048E08EC9CA0339A5537E283192CB458BBDC,
+	HandleUniversalLinkNativeCallback_Invoke_m888F97F857D885E999168BC5F8B45082043EAFBC,
+	HandleUniversalLinkNativeCallback_BeginInvoke_mA397A313A8D25AA54BE2D8C5D2551F29D51D6634,
+	HandleUniversalLinkNativeCallback_EndInvoke_m0D3ED6E58D069A51459D72D98066E5AACB2B7D2D,
+	CKAccountData_get_AccountIdentifierPtr_mC94975540DE7D24108186B3EB6DC09CC636BFA07,
+	CKAccountData_set_AccountIdentifierPtr_m223C49FAE082E34F9F90614445AD956E97C1A6FA,
+	CloudServicesBinding_NPCloudServicesRegisterCallbacks_m583D22D3E1B997FAEEAC804647A0589C00B97A6F,
+	CloudServicesBinding_NPCloudServicesInit_m47CD5A395DB7815E73EA29CAFC07F25A50649701,
+	CloudServicesBinding_NPCloudServicesGetBool_m0242E11F22108C4B5B6164A60BCF2437D86CB4EB,
+	CloudServicesBinding_NPCloudServicesGetLong_mE7BA9810473814632728AA6C497300290102D217,
+	CloudServicesBinding_NPCloudServicesGetDouble_mB8260C8373166358D452AED86DCB9605CD0C9D5D,
+	CloudServicesBinding_NPCloudServicesGetString_m773D4EFD1D3A01F5BD1A2BE0444E201445FE880F,
+	CloudServicesBinding_NPCloudServicesGetByteArray_m9CA477F2485365B9DB8AA9B366C915AD392FD5B8,
+	CloudServicesBinding_NPCloudServicesGetArray_m410E95875E639D163F22C52579AAAF201691AAC2,
+	CloudServicesBinding_NPCloudServicesGetDictionary_m7622107C84BDF013736F9201B97BC4A074983351,
+	CloudServicesBinding_NPCloudServicesSetBool_mF65A11A14295BF8A811190341C0A532F6DC1B64C,
+	CloudServicesBinding_NPCloudServicesSetLong_m3BDA6E5BB7D1B23DFC01E5879A801DE153C59C15,
+	CloudServicesBinding_NPCloudServicesSetDouble_m3DFA873C9CA744E1F123BBFC469FD52AE3974916,
+	CloudServicesBinding_NPCloudServicesSetString_m40BE7E79ABB80D1D0689D5F1277DD363276FA0A7,
+	CloudServicesBinding_NPCloudServicesSetByteArray_mD85EA4822E28A46217E251D3EEA3BBC0438C7E66,
+	CloudServicesBinding_NPCloudServicesSetArray_m70E8CF042ABE67641BE264ACE6E17F70D2C2BC7E,
+	CloudServicesBinding_NPCloudServicesSetDictionary_mB6E70FE2E248F40CC6CDE36CF8968E787927709D,
+	CloudServicesBinding_NPCloudServicesRemoveKey_mFAEFB854E594AAAF25690623250E74509040769D,
+	CloudServicesBinding_NPCloudServicesSynchronize_m4076F21D85F4E555A20F3D186B9A58D6FD94C6D9,
+	CloudServicesBinding_NPCloudServicesSnapshot_m889AC4B8E9AD67A42D500FD19C85259DA0B5F9C7,
+	CloudServicesInterface__cctor_m9082A69F27E3B668C99B061128082B387E31F0A3,
+	CloudServicesInterface__ctor_mD68ED9F282307D8B495051ABB1B5871E89F35759,
+	CloudServicesInterface_Finalize_mC0A8F177DB4444E5C1E5045A1F0C4629A9E477F5,
+	CloudServicesInterface_GetBool_m71D928DA866D894EF2777DF455490B1455692223,
+	CloudServicesInterface_GetLong_m076198BC5B34DF512BF8499D7338D5A75A337014,
+	CloudServicesInterface_GetDouble_mA89E7F5181CFC31DB898DBDBA033C3FACEA8E266,
+	CloudServicesInterface_GetString_m82EB19ACB346610D584F35DDC74801BD78C113D9,
+	CloudServicesInterface_GetByteArray_m386C402241CBC2BBD9F36397FA30E984D6491041,
+	CloudServicesInterface_SetBool_mF6224142C39BE2C3E6155F2D317267279ED3679A,
+	CloudServicesInterface_SetLong_mDDDB3FB8E7B0D052E8C1DE21BDA767B8CD6EA5E0,
+	CloudServicesInterface_SetDouble_m2299EBBC2F6FCA775C630290B3659B962FC57B86,
+	CloudServicesInterface_SetString_m7B9C4DA5E39DF17365E422726F5D76B6FD927507,
+	CloudServicesInterface_SetByteArray_m43F214E463D5974AE30F2F20898955A802C4021C,
+	CloudServicesInterface_RemoveKey_m3CBBBE843F4F7DDD8D4D12A372DF513C8F205F63,
+	CloudServicesInterface_Synchronize_mF036AE704594B84A2F55DAD391B9139AE71A5A6B,
+	CloudServicesInterface_GetSnapshot_m695C3C907C366C951744AB6EAF27E6E0BF19EF3C,
+	CloudServicesInterface_Dispose_m40E282DDE55952284CEA10EB108AD061B58DD306,
+	CloudServicesInterface_HandleUserChangeNativeCallback_m190142192112FAC1ED5F013185AFFFD19E0C1BEC,
+	CloudServicesInterface_HandleSavedDataChangeNativeCallback_m0A0745F745EDEA2DCBDCA51004FFB9F3183DDEBC,
+	CloudServicesUtility_ConvertToCloudUserAccountStatus_m84AB1221BA2942BDB8EF9D6F936C29128E53A0BC,
+	CloudServicesUtility_ConvertToCloudSavedDataChangeReasonCode_m0A4B20200EF170E0A6601FE4BD8D16B9EA00584D,
+	UserChangeNativeCallback__ctor_m55239B35A2BF237D5982BDF9B6AA3037FDD5F2F5,
+	UserChangeNativeCallback_Invoke_m851852101F5B9FD7BBC72AA64C19E9BE05302FEC,
+	UserChangeNativeCallback_BeginInvoke_mDE1909C328664E866109E6BADEFFAF36BC57FF82,
+	UserChangeNativeCallback_EndInvoke_mC0984D830A83764A148FF80C4972D886593597FD,
+	SavedDataChangeNativeCallback__ctor_m096AA8F1B54E143F6CF6514A41184D7BB3A08AE9,
+	SavedDataChangeNativeCallback_Invoke_m1E60F662084D88A8E9A208E7DA63A7A9B5AFFC9E,
+	SavedDataChangeNativeCallback_BeginInvoke_m8DBC0CDD2EF309F34E6B1EA710FA9F581E052571,
+	SavedDataChangeNativeCallback_EndInvoke_mAB24A38D2AB9A84476696138FF23FE75B7B02ED6,
+	BillingProduct__ctor_m1AD65AFF454F8E3C144457D04BEDE8F1399E4982,
+	BillingProduct_Finalize_m13BDA32096AE64D9C70C8734B0EAE5E8C802CC2C,
+	BillingProduct_GetLocalizedTitleInternal_m7F190FFEEC9E894A1547D86898D50AA94D71B56D,
+	BillingProduct_GetLocalizedDescriptionInternal_mB93BED1E549CC981832E4BDA377BDA318A446C28,
+	BillingProduct_GetPriceInternal_m9AEB3A4BB8692306A07C127005EF0B4824ED3678,
+	BillingProduct_GetLocalizedPriceInternal_m6FCAEF29B874F6104A0C0397747C482B885D3952,
+	BillingProduct_GetPriceCurrencyCodeInternal_m46DD00D20D2D56B8D5B94C66A196E1D255078E8C,
+	BillingServicesBinding_NPBillingServicesCanMakePayments_m5230ACC8B6F09744CBBA6C6C5D0E179ED6C0751E,
+	BillingServicesBinding_NPBillingServicesRegisterCallbacks_m138DEE6494E5DF0AF9665DD6F84E91DE0F5D927C,
+	BillingServicesBinding_NPBillingServicesInit_mF511A4999A6A07949066C764ECE427FCF214402A,
+	BillingServicesBinding_NPBillingServicesRequestForBillingProducts_mE933316B7FB8713DFAD8AA75AC6650AFB7EC85F5,
+	BillingServicesBinding_NPBillingServicesBuyProduct_m7262305571A8ED832089BAA56DD32BE8C38D5F94,
+	BillingServicesBinding_NPBillingServicesGetTransactions_mA4BBACC773B5435ADA05844F272FD36A293CF271,
+	BillingServicesBinding_NPBillingServicesGetReceiptVerificationState_m9B6FA4895C93C658B4D17E11AAA7A7189F87FCEC,
+	BillingServicesBinding_NPBillingServicesRestorePurchases_mE4ADAF77A450783EA88E7542569ED18692211731,
+	BillingServicesBinding_NPBillingServicesFinishTransactions_mFD497E24853D2F45E1206FC08F7020718CB4F70F,
+	BillingServicesBinding_NPBillingServicesGetOriginalTransaction_mB1F55197385C4780543E78E05348E7844F131D69,
+	BillingServicesBinding_NPBillingServicesTryClearingUnfinishedTransactions_m351F8641723556B7BF304FFD5D78DFFF6EC18AE2,
+	BillingServicesInterface__cctor_m47A2CBAB42B443ECB269351DC0DDD09019ACFC16,
+	BillingServicesInterface__ctor_mF058F5F833CA16D28FCD75A26A7AE54DD16C38DC,
+	BillingServicesInterface_CanMakePayments_m06EBE3D1294685A8EC29A9ED61D6C8933466976A,
+	BillingServicesInterface_RetrieveProducts_m92B754F94207B5FF14BEEEE810229E1489BE8289,
+	BillingServicesInterface_StartPayment_mCC27414BAA6631B0214D6C28CB657FDCA23624F8,
+	BillingServicesInterface_GetTransactions_m1BCF5AA486EBE13F3F0402517DE4BCAA5B291865,
+	BillingServicesInterface_FinishTransactions_m50B37765DD7B95D256F107681B90016D4621E684,
+	BillingServicesInterface_RestorePurchases_m4D7904334F9B0505A83C2460B4382AA4235D57BD,
+	BillingServicesInterface_TryClearingUnfinishedTransactions_m2277D11406EB20F7F27E603C816ADD8C94C941E1,
+	BillingServicesInterface_HandleRequestForProductsCallbackInternal_m1505F702D6F8AA6E350004B6F392C5BDA93E17E2,
+	BillingServicesInterface_HandlePaymentStateChangeCallbackInternal_m841AEF90F9935AFDBCF86ACD457786A9EE24F45B,
+	BillingServicesInterface_HandleRestorePurchasesCallbackInternal_mED170030D942FDA2CCF714A5D9CC94C1B5457EBD,
+	U3CU3Ec__cctor_mEAC490C2D180B01D4F0B18421AAA1B3F8D6F5798,
+	U3CU3Ec__ctor_m2E796AEEA70D795C2B145E0B2E1B0D323BF6FE04,
+	U3CU3Ec_U3CRetrieveProductsU3Eb__4_0_m40B8784278606D9EB98C1195D9B28AB24D6023D7,
+	U3CU3Ec_U3CFinishTransactionsU3Eb__7_0_m9D2637882E0E08A9004DF320134C2DB8DA7D57FD,
+	BillingServicesUtility_ConvertToBillingTransactionState_m864BB9B61FB803E50480C66BA2800851D54D934E,
+	BillingServicesUtility_ConvertToBillingReceiptVerificationState_m1BDA2E277C76CF101925AC78038ED7A8A36CEC37,
+	BillingServicesUtility_CreateProductArray_mCE83AE59AAC5A3207C2E7BAC4B7F4DB053C8242F,
+	BillingServicesUtility_CreateTransactionArray_m43294C48C5E1887444AD919D611FFB5FE25EE6AA,
+	BillingServicesUtility_CreatePayment_m4DD7EB1F13E7CEA6CE02BCE311DACBC2001FC9BE,
+	U3CU3Ec__cctor_m4542C6E50AC13C9AA5A06A6282DA2E52ACCF7D79,
+	U3CU3Ec__ctor_m43E5119FCB22C2BE3EB38FB9565FF1E8686D395B,
+	U3CU3Ec_U3CCreateProductArrayU3Eb__2_0_mBE85FDAADA59FABD93180FDABF1F6934EDF5ACFE,
+	U3CU3Ec_U3CCreateTransactionArrayU3Eb__3_0_m34CD979F058E4733C0EB427F3A16A272BE4C8559,
+	BillingTransaction__ctor_mB713C8AD42730228D3968BB22FF61E002DD5DC4B,
+	BillingTransaction_Finalize_mD48814E5462CD083038539A1337879B76D8C0A4A,
+	BillingTransaction_GetTransactionDateUTCInternal_m51CC0FE87DB69817005E6E544ECEEB28B14AC294,
+	BillingTransaction_GetTransactionStateInternal_mB5B8510DF68F1BD9C40A8F3AACF7919146C58C9D,
+	BillingTransaction_GetReceiptVerificationStateInternal_mEFA77BFEFFD7234646903B7D67140E793B454A00,
+	BillingTransaction_SetReceiptVerificationStateInternal_m72586EB08600659DD0D067B9F334055D2794E056,
+	BillingTransaction_GetReceiptInternal_m618949B3E311315DCC7A657C992624EF1F08AC80,
+	BillingTransaction_GetErrorInternal_mB28AEB2E0AF4FBA9186A10C502E0B00AC5147D76,
+	BillingTransaction_GetAndroidPropertiesInternal_mA5514C8F48B460485D1CD73D8C0EB3C4161881F2,
+	RequestForProductsNativeCallback__ctor_m5502C3CC2E36665903271937A04F8D57404483EA,
+	RequestForProductsNativeCallback_Invoke_mD517B062CFB7D24F7C0BECAE63CD2AF07212B4C6,
+	RequestForProductsNativeCallback_BeginInvoke_mCB61EB6F5663F860BCCDB907A42B673E173A4C5E,
+	RequestForProductsNativeCallback_EndInvoke_mF632ACB93B4664CA92A51728696E2467D88BD8D2,
+	TransactionStateChangeNativeCallback__ctor_m3BCAD3D2EECE0BF5D960ECB305DE0709AB946C6D,
+	TransactionStateChangeNativeCallback_Invoke_m0B63CD75E097C0B148A8341F24F57994173FDC95,
+	TransactionStateChangeNativeCallback_BeginInvoke_mFE6A78A3BBB8E6FFCD5B6357B62B7B320D934088,
+	TransactionStateChangeNativeCallback_EndInvoke_m997E37FBA20C01CE40A83676A3ABE6A3B91D01C0,
+	RestorePurchasesNativeCallback__ctor_m5D7D0273F55BD87B3F724D5823A7A4A4D81DA89A,
+	RestorePurchasesNativeCallback_Invoke_mE262F50C7A9BD3551BD0785B973CDB35E56A27B4,
+	RestorePurchasesNativeCallback_BeginInvoke_m0B3F6251211189F3880CB97312DEC5A76EEDD0B3,
+	RestorePurchasesNativeCallback_EndInvoke_mAA96FDAAB8F7C30E95838DEDF1786CCD220D1048,
+	SKPaymentData_get_NativeObjectPtr_m6A5ADFF6A4502FC9BF0C94FA6604F4B6C2236BF2,
+	SKPaymentData_set_NativeObjectPtr_m7794EFBE4ACAF3C8C5F55950CA85FD9E82823D29,
+	SKPaymentData_get_ProductIdentifierPtr_mF6BFF899D8108071F873FC30146C11F4781ADF3D,
+	SKPaymentData_set_ProductIdentifierPtr_mC8F3070456C5AA77ADE007E8D3AD5EA8163BEC4C,
+	SKPaymentData_get_Quantity_mFD621305116304247D903D227DD2B2C5677A5E5F,
+	SKPaymentData_set_Quantity_m80E8F9FF1768D62289F0F8A00E63C7D21A24EBB5,
+	SKPaymentData_get_ApplicationUsernamePtr_m21D393FB5AEE8ACEA49B10CB53B3462F7441DF54,
+	SKPaymentData_set_ApplicationUsernamePtr_mC3B7DE52D148BB439099CF3E62B86CC9958C7C69,
+	SKPaymentTransactionData_get_NativeObjectPtr_mA22DC0C0D9AF4601BC591EEEF2571C713F82ACEF,
+	SKPaymentTransactionData_set_NativeObjectPtr_mC118CC0A1992CE066E225C0F852B6CF6221C6528,
+	SKPaymentTransactionData_get_IdentifierPtr_m7AC1E02758838DB5169A55600865CE54A87AA72C,
+	SKPaymentTransactionData_set_IdentifierPtr_mC538D693F1F991EC6231C67D80B90E5DB6DBD8CC,
+	SKPaymentTransactionData_get_PaymentData_mE79101A909944A161A781CD9D6A711685BAC2650,
+	SKPaymentTransactionData_set_PaymentData_mB1B8B154782FB2D57559C51F5C2EF2C5B346527D,
+	SKPaymentTransactionData_get_DatePtr_m8A723FA3C1AFF07D5753A144A7D30E360627B893,
+	SKPaymentTransactionData_set_DatePtr_m2C47AA8C036DCD33F3830A8A4ED409BA8328C81D,
+	SKPaymentTransactionData_get_TransactionState_mCDDA6166AD0BDBF60253509F197A6E1A6CB6FF9A,
+	SKPaymentTransactionData_set_TransactionState_m0D87AA7F781F409F8A6CAB40CE8A1F956D873B91,
+	SKPaymentTransactionData_get_ReceiptDataPtr_mBDC8A38C34F1B06C842AC28AF064292E58654327,
+	SKPaymentTransactionData_set_ReceiptDataPtr_m2FD91BE86B3FDA2DB8AB55A4F891B425C19BD143,
+	SKPaymentTransactionData_get_ErrorPtr_m8256EA2B1CE3FF1C73AEF3A6B5864C248993EDA4,
+	SKPaymentTransactionData_set_ErrorPtr_m54746B8162DC8857C7FAB8CAEA41BBBD3B850BE0,
+	SKProductData_get_NativeObjectPtr_m0EAC58726FC4244DAD7A5E959F9AAE80B4AF346B,
+	SKProductData_set_NativeObjectPtr_m07097A3078C8E8502E4913C0C28F8AFEC3BEC2F5,
+	SKProductData_get_IdentifierPtr_m70806FD577F347C6262E2BE1599816EE1D7AE539,
+	SKProductData_set_IdentifierPtr_mB050DCF137BA7665094D8B3BAEBF22DF6669B8B5,
+	SKProductData_get_LocalizedTitlePtr_m46F759443BA476D3CB01369B5A2F0997AB68E312,
+	SKProductData_set_LocalizedTitlePtr_mCA04991CE35C594CB321C941652383E95E96A516,
+	SKProductData_get_LocalizedDescriptionPtr_m3F72427F80E6903041693B740F030C216C25568C,
+	SKProductData_set_LocalizedDescriptionPtr_mFCB784A5798BAD90189826D7D26A7FC1A5FD72C3,
+	SKProductData_get_Price_m446CE0E3361E02204FA0A273E752AB241EA7351F,
+	SKProductData_set_Price_mC1425633407AD7AED633A1905ABCA7792EA6BA66,
+	SKProductData_get_LocalizedPricePtr_mEB48590D1980A1D990107A735C834D0379C5F45E,
+	SKProductData_set_LocalizedPricePtr_m3D51BD1030C9A2A2031332CE8D22775DD99794C9,
+	SKProductData_get_CurrencyCodePtr_m3F14D56543B9E04501059D6B83AFFED37CF413CD,
+	SKProductData_set_CurrencyCodePtr_mEC2D9F235119F978D88B50E6D121D45F2A3F8DC0,
+	SKProductData_get_CurrencySymbolPtr_m7363B68DF2180B16824261ED642AA04290B4AA65,
+	SKProductData_set_CurrencySymbolPtr_mF3AD399F1CF0ACA8CB8866398457E210F3B9FF8E,
+	AddressBookBinding_NPAddressBookRegisterCallbacks_mE5D4E3A43C2CF4D6A6D4E664E50AF399ABD5BF08,
+	AddressBookBinding_NPAddressBookGetAuthorizationStatus_m746ABBAB152C54C9C8C05452BBD9AFAF9E154F6F,
+	AddressBookBinding_NPAddressBookRequestContactsAccess_m4935F7FBF15975C02FFD8AB43A94565BCB5C953A,
+	AddressBookBinding_NPAddressBookReadContacts_mF40D3D938D6D9ABE04F52CA2CB740A4E7B3329FD,
+	AddressBookBinding_NPAddressBookReset_mE003B91F40074C5103797B20BFE92CE06BD53312,
+	AddressBookContact__ctor_mA7F26F6783BF154244FB072C0427C6DE8A3E7CD5,
+	AddressBookContact_Finalize_mFAAB25997486F09F2D44CA3FADA08E1439971B0C,
+	AddressBookContact_GetFirstNameInternal_mB77AD6E81ED13237F42F068608E83BC5D66B58A7,
+	AddressBookContact_GetMiddleNameInternal_mEA30B16B252F695A88ADC7FBEDF3C9324CD1AAEF,
+	AddressBookContact_GetLastNameInternal_mBF724333E8B53F635E7E3E7D479B6A5708344CA9,
+	AddressBookContact_GetPhoneNumbersInternal_m5EED3D9B5DE9BD39386C9B02C6D2273196DEF268,
+	AddressBookContact_GetEmailAddressesInternal_mC6EE37E87BE1EB891407E218F201A52594B6272B,
+	AddressBookContact_LoadImageInternal_mB24E0F62FE494EB66F59EF53A1BA4929A29A343B,
+	AddressBookContact_Dispose_mEAC64CEF037D15408593BB195B2B19A4FCBAA9F2,
+	U3CU3Ec__DisplayClass13_0__ctor_mA5046C6DDC0717F421D8697BBBEB4DC9F0E260BB,
+	U3CU3Ec__DisplayClass13_0_U3CLoadImageInternalU3Eb__0_mA9933E6C2C8DCBE2A6124B7C9FA2248C71B32413,
+	AddressBookInterface__cctor_m721BE58C6A1AF39073D73493F518AC2BA0F34219,
+	AddressBookInterface__ctor_m7F474148C48BC1FD963C0F55D4A1E3134577447F,
+	AddressBookInterface_GetContactsAccessStatus_mBCB0C373298197320ACE1214F0B2536EAD2A4E9B,
+	AddressBookInterface_RequestContactsAccess_m9A61940DDDF10A55533AA0183B04C83091A2CD21,
+	AddressBookInterface_ReadContacts_m55ADD453842D562C5D0EC956856297F709679206,
+	AddressBookInterface_HandleRequestContactsAccessCallbackInternal_mC68A861D3014FAD19E317A9BDCA7ECED7FAFF572,
+	AddressBookInterface_HandleReadContactsCallbackInternal_mF89348C1C2235EEE87CA0DE614E1CA15EAEFDB7C,
+	AddressBookUtility_ConvertToAddressBookContactsAccessStatus_m15253F595C2981B797285E031922E718D9661EFB,
+	AddressBookUtility_ConvertNativeDataArrayToContactsArray_mF9C4F5C0E976D42EF698A68E5A74FAB4E256D67A,
+	RequestContactsAccessNativeCallback__ctor_mCD937AD9EB6E1D1575BB8ABCF80DEE2436AC321B,
+	RequestContactsAccessNativeCallback_Invoke_mA8684B852FDF417F5BFB07CDF395D59916451BD3,
+	RequestContactsAccessNativeCallback_BeginInvoke_m71F33B4F7BE8522F8BC6318A66365B0172A5A1BE,
+	RequestContactsAccessNativeCallback_EndInvoke_mC03D6AD53734D3177AF181A18425ACCD11CF111B,
+	ReadContactsNativeCallback__ctor_mF52E8A65203BC3A0B3003D1DD76D00F1635D82CF,
+	ReadContactsNativeCallback_Invoke_m3E9A4F46E2A276C519A5BC7C3E5BA6DD10C63328,
+	ReadContactsNativeCallback_BeginInvoke_mD6A326DA321702CEF02B000F3C499AB23C084EBC,
+	ReadContactsNativeCallback_EndInvoke_m46A86F9C996EFE506407C17071F532D9C86EB475,
+};
+extern void UNNotificationSettingsData_get_AuthorizationStatus_m692E8DDE1F0D107DA84990F1DA67EA4E45B359A4_AdjustorThunk (void);
+extern void UNNotificationSettingsData_set_AuthorizationStatus_mB7E7A20CC68E4B9CDFECFFBAAB4E67227C42EF40_AdjustorThunk (void);
+extern void UNNotificationSettingsData_get_AlertSetting_mCECF8C449DA1F56E812FC0A3C8BFFEAFED1DD72F_AdjustorThunk (void);
+extern void UNNotificationSettingsData_set_AlertSetting_mD649C73824170252EC217BDE7BCF97BB9EEE9C5A_AdjustorThunk (void);
+extern void UNNotificationSettingsData_get_BadgeSetting_m8E9A66503BCED82E58808873D7C59524CEB6D672_AdjustorThunk (void);
+extern void UNNotificationSettingsData_set_BadgeSetting_m429594D70263FEC2162F1F3D6FFFAE0AC949C149_AdjustorThunk (void);
+extern void UNNotificationSettingsData_get_CarPlaySetting_m7144EDA16CEB44476D9BDC2CC26AA9769E8F8A83_AdjustorThunk (void);
+extern void UNNotificationSettingsData_set_CarPlaySetting_m7750CCD68E2B23C6C5F5353AF07F35AD45B2B2E4_AdjustorThunk (void);
+extern void UNNotificationSettingsData_get_LockScreenSetting_mCDCD0F285451CB3D245825E32DBBC24A24010DA0_AdjustorThunk (void);
+extern void UNNotificationSettingsData_set_LockScreenSetting_m27C9D0F73636BDB18AC4DD7C85523AE1DA980661_AdjustorThunk (void);
+extern void UNNotificationSettingsData_get_NotificationCenterSetting_mFB7D3D9E7904017AE105826B64204CBA7226437F_AdjustorThunk (void);
+extern void UNNotificationSettingsData_set_NotificationCenterSetting_mB67758ADB9D22EDD69D18A18D02C7AE06702DF14_AdjustorThunk (void);
+extern void UNNotificationSettingsData_get_SoundSetting_m38A0191E65710FA2D8ACF54A626BFF1FECCB2226_AdjustorThunk (void);
+extern void UNNotificationSettingsData_set_SoundSetting_m1A5CDBFA292F080C851C82403D5AD14BEFDD5A6B_AdjustorThunk (void);
+extern void UNNotificationSettingsData_get_CriticalAlertSetting_m0B2E8A1334410DF8EB5C629A82BCADA4A2707B7E_AdjustorThunk (void);
+extern void UNNotificationSettingsData_set_CriticalAlertSetting_m1C3BDB61F2A2B396B543FC0FCE2EECF4344ADE3A_AdjustorThunk (void);
+extern void UNNotificationSettingsData_get_AnnouncementSetting_m5129F84E10B2D82D99279ED480C3BFB6678F91AB_AdjustorThunk (void);
+extern void UNNotificationSettingsData_set_AnnouncementSetting_m4082CBCF70464E177C877DE0BD8E9BC3647C62C6_AdjustorThunk (void);
+extern void UNNotificationSettingsData_get_AlertStyle_m63E5B896A1B5FDE5D53DC242DAE546B466060692_AdjustorThunk (void);
+extern void UNNotificationSettingsData_set_AlertStyle_m854BAF1C04D5BA08BF274DFD5111D6AB8DA521CF_AdjustorThunk (void);
+extern void UNNotificationSettingsData_get_ShowPreviewsSetting_m8DAF528D53D65B8305A97DA308F631DDE476E270_AdjustorThunk (void);
+extern void UNNotificationSettingsData_set_ShowPreviewsSetting_mD921027D20FD42FA499B12E6FE7BC017F3C69353_AdjustorThunk (void);
+extern void CKAccountData_get_AccountIdentifierPtr_mC94975540DE7D24108186B3EB6DC09CC636BFA07_AdjustorThunk (void);
+extern void CKAccountData_set_AccountIdentifierPtr_m223C49FAE082E34F9F90614445AD956E97C1A6FA_AdjustorThunk (void);
+extern void SKPaymentData_get_NativeObjectPtr_m6A5ADFF6A4502FC9BF0C94FA6604F4B6C2236BF2_AdjustorThunk (void);
+extern void SKPaymentData_set_NativeObjectPtr_m7794EFBE4ACAF3C8C5F55950CA85FD9E82823D29_AdjustorThunk (void);
+extern void SKPaymentData_get_ProductIdentifierPtr_mF6BFF899D8108071F873FC30146C11F4781ADF3D_AdjustorThunk (void);
+extern void SKPaymentData_set_ProductIdentifierPtr_mC8F3070456C5AA77ADE007E8D3AD5EA8163BEC4C_AdjustorThunk (void);
+extern void SKPaymentData_get_Quantity_mFD621305116304247D903D227DD2B2C5677A5E5F_AdjustorThunk (void);
+extern void SKPaymentData_set_Quantity_m80E8F9FF1768D62289F0F8A00E63C7D21A24EBB5_AdjustorThunk (void);
+extern void SKPaymentData_get_ApplicationUsernamePtr_m21D393FB5AEE8ACEA49B10CB53B3462F7441DF54_AdjustorThunk (void);
+extern void SKPaymentData_set_ApplicationUsernamePtr_mC3B7DE52D148BB439099CF3E62B86CC9958C7C69_AdjustorThunk (void);
+extern void SKPaymentTransactionData_get_NativeObjectPtr_mA22DC0C0D9AF4601BC591EEEF2571C713F82ACEF_AdjustorThunk (void);
+extern void SKPaymentTransactionData_set_NativeObjectPtr_mC118CC0A1992CE066E225C0F852B6CF6221C6528_AdjustorThunk (void);
+extern void SKPaymentTransactionData_get_IdentifierPtr_m7AC1E02758838DB5169A55600865CE54A87AA72C_AdjustorThunk (void);
+extern void SKPaymentTransactionData_set_IdentifierPtr_mC538D693F1F991EC6231C67D80B90E5DB6DBD8CC_AdjustorThunk (void);
+extern void SKPaymentTransactionData_get_PaymentData_mE79101A909944A161A781CD9D6A711685BAC2650_AdjustorThunk (void);
+extern void SKPaymentTransactionData_set_PaymentData_mB1B8B154782FB2D57559C51F5C2EF2C5B346527D_AdjustorThunk (void);
+extern void SKPaymentTransactionData_get_DatePtr_m8A723FA3C1AFF07D5753A144A7D30E360627B893_AdjustorThunk (void);
+extern void SKPaymentTransactionData_set_DatePtr_m2C47AA8C036DCD33F3830A8A4ED409BA8328C81D_AdjustorThunk (void);
+extern void SKPaymentTransactionData_get_TransactionState_mCDDA6166AD0BDBF60253509F197A6E1A6CB6FF9A_AdjustorThunk (void);
+extern void SKPaymentTransactionData_set_TransactionState_m0D87AA7F781F409F8A6CAB40CE8A1F956D873B91_AdjustorThunk (void);
+extern void SKPaymentTransactionData_get_ReceiptDataPtr_mBDC8A38C34F1B06C842AC28AF064292E58654327_AdjustorThunk (void);
+extern void SKPaymentTransactionData_set_ReceiptDataPtr_m2FD91BE86B3FDA2DB8AB55A4F891B425C19BD143_AdjustorThunk (void);
+extern void SKPaymentTransactionData_get_ErrorPtr_m8256EA2B1CE3FF1C73AEF3A6B5864C248993EDA4_AdjustorThunk (void);
+extern void SKPaymentTransactionData_set_ErrorPtr_m54746B8162DC8857C7FAB8CAEA41BBBD3B850BE0_AdjustorThunk (void);
+extern void SKProductData_get_NativeObjectPtr_m0EAC58726FC4244DAD7A5E959F9AAE80B4AF346B_AdjustorThunk (void);
+extern void SKProductData_set_NativeObjectPtr_m07097A3078C8E8502E4913C0C28F8AFEC3BEC2F5_AdjustorThunk (void);
+extern void SKProductData_get_IdentifierPtr_m70806FD577F347C6262E2BE1599816EE1D7AE539_AdjustorThunk (void);
+extern void SKProductData_set_IdentifierPtr_mB050DCF137BA7665094D8B3BAEBF22DF6669B8B5_AdjustorThunk (void);
+extern void SKProductData_get_LocalizedTitlePtr_m46F759443BA476D3CB01369B5A2F0997AB68E312_AdjustorThunk (void);
+extern void SKProductData_set_LocalizedTitlePtr_mCA04991CE35C594CB321C941652383E95E96A516_AdjustorThunk (void);
+extern void SKProductData_get_LocalizedDescriptionPtr_m3F72427F80E6903041693B740F030C216C25568C_AdjustorThunk (void);
+extern void SKProductData_set_LocalizedDescriptionPtr_mFCB784A5798BAD90189826D7D26A7FC1A5FD72C3_AdjustorThunk (void);
+extern void SKProductData_get_Price_m446CE0E3361E02204FA0A273E752AB241EA7351F_AdjustorThunk (void);
+extern void SKProductData_set_Price_mC1425633407AD7AED633A1905ABCA7792EA6BA66_AdjustorThunk (void);
+extern void SKProductData_get_LocalizedPricePtr_mEB48590D1980A1D990107A735C834D0379C5F45E_AdjustorThunk (void);
+extern void SKProductData_set_LocalizedPricePtr_m3D51BD1030C9A2A2031332CE8D22775DD99794C9_AdjustorThunk (void);
+extern void SKProductData_get_CurrencyCodePtr_m3F14D56543B9E04501059D6B83AFFED37CF413CD_AdjustorThunk (void);
+extern void SKProductData_set_CurrencyCodePtr_mEC2D9F235119F978D88B50E6D121D45F2A3F8DC0_AdjustorThunk (void);
+extern void SKProductData_get_CurrencySymbolPtr_m7363B68DF2180B16824261ED642AA04290B4AA65_AdjustorThunk (void);
+extern void SKProductData_set_CurrencySymbolPtr_mF3AD399F1CF0ACA8CB8866398457E210F3B9FF8E_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[62] = 
+{
+	{ 0x06000146, UNNotificationSettingsData_get_AuthorizationStatus_m692E8DDE1F0D107DA84990F1DA67EA4E45B359A4_AdjustorThunk },
+	{ 0x06000147, UNNotificationSettingsData_set_AuthorizationStatus_mB7E7A20CC68E4B9CDFECFFBAAB4E67227C42EF40_AdjustorThunk },
+	{ 0x06000148, UNNotificationSettingsData_get_AlertSetting_mCECF8C449DA1F56E812FC0A3C8BFFEAFED1DD72F_AdjustorThunk },
+	{ 0x06000149, UNNotificationSettingsData_set_AlertSetting_mD649C73824170252EC217BDE7BCF97BB9EEE9C5A_AdjustorThunk },
+	{ 0x0600014A, UNNotificationSettingsData_get_BadgeSetting_m8E9A66503BCED82E58808873D7C59524CEB6D672_AdjustorThunk },
+	{ 0x0600014B, UNNotificationSettingsData_set_BadgeSetting_m429594D70263FEC2162F1F3D6FFFAE0AC949C149_AdjustorThunk },
+	{ 0x0600014C, UNNotificationSettingsData_get_CarPlaySetting_m7144EDA16CEB44476D9BDC2CC26AA9769E8F8A83_AdjustorThunk },
+	{ 0x0600014D, UNNotificationSettingsData_set_CarPlaySetting_m7750CCD68E2B23C6C5F5353AF07F35AD45B2B2E4_AdjustorThunk },
+	{ 0x0600014E, UNNotificationSettingsData_get_LockScreenSetting_mCDCD0F285451CB3D245825E32DBBC24A24010DA0_AdjustorThunk },
+	{ 0x0600014F, UNNotificationSettingsData_set_LockScreenSetting_m27C9D0F73636BDB18AC4DD7C85523AE1DA980661_AdjustorThunk },
+	{ 0x06000150, UNNotificationSettingsData_get_NotificationCenterSetting_mFB7D3D9E7904017AE105826B64204CBA7226437F_AdjustorThunk },
+	{ 0x06000151, UNNotificationSettingsData_set_NotificationCenterSetting_mB67758ADB9D22EDD69D18A18D02C7AE06702DF14_AdjustorThunk },
+	{ 0x06000152, UNNotificationSettingsData_get_SoundSetting_m38A0191E65710FA2D8ACF54A626BFF1FECCB2226_AdjustorThunk },
+	{ 0x06000153, UNNotificationSettingsData_set_SoundSetting_m1A5CDBFA292F080C851C82403D5AD14BEFDD5A6B_AdjustorThunk },
+	{ 0x06000154, UNNotificationSettingsData_get_CriticalAlertSetting_m0B2E8A1334410DF8EB5C629A82BCADA4A2707B7E_AdjustorThunk },
+	{ 0x06000155, UNNotificationSettingsData_set_CriticalAlertSetting_m1C3BDB61F2A2B396B543FC0FCE2EECF4344ADE3A_AdjustorThunk },
+	{ 0x06000156, UNNotificationSettingsData_get_AnnouncementSetting_m5129F84E10B2D82D99279ED480C3BFB6678F91AB_AdjustorThunk },
+	{ 0x06000157, UNNotificationSettingsData_set_AnnouncementSetting_m4082CBCF70464E177C877DE0BD8E9BC3647C62C6_AdjustorThunk },
+	{ 0x06000158, UNNotificationSettingsData_get_AlertStyle_m63E5B896A1B5FDE5D53DC242DAE546B466060692_AdjustorThunk },
+	{ 0x06000159, UNNotificationSettingsData_set_AlertStyle_m854BAF1C04D5BA08BF274DFD5111D6AB8DA521CF_AdjustorThunk },
+	{ 0x0600015A, UNNotificationSettingsData_get_ShowPreviewsSetting_m8DAF528D53D65B8305A97DA308F631DDE476E270_AdjustorThunk },
+	{ 0x0600015B, UNNotificationSettingsData_set_ShowPreviewsSetting_mD921027D20FD42FA499B12E6FE7BC017F3C69353_AdjustorThunk },
+	{ 0x060002B1, CKAccountData_get_AccountIdentifierPtr_mC94975540DE7D24108186B3EB6DC09CC636BFA07_AdjustorThunk },
+	{ 0x060002B2, CKAccountData_set_AccountIdentifierPtr_m223C49FAE082E34F9F90614445AD956E97C1A6FA_AdjustorThunk },
+	{ 0x06000323, SKPaymentData_get_NativeObjectPtr_m6A5ADFF6A4502FC9BF0C94FA6604F4B6C2236BF2_AdjustorThunk },
+	{ 0x06000324, SKPaymentData_set_NativeObjectPtr_m7794EFBE4ACAF3C8C5F55950CA85FD9E82823D29_AdjustorThunk },
+	{ 0x06000325, SKPaymentData_get_ProductIdentifierPtr_mF6BFF899D8108071F873FC30146C11F4781ADF3D_AdjustorThunk },
+	{ 0x06000326, SKPaymentData_set_ProductIdentifierPtr_mC8F3070456C5AA77ADE007E8D3AD5EA8163BEC4C_AdjustorThunk },
+	{ 0x06000327, SKPaymentData_get_Quantity_mFD621305116304247D903D227DD2B2C5677A5E5F_AdjustorThunk },
+	{ 0x06000328, SKPaymentData_set_Quantity_m80E8F9FF1768D62289F0F8A00E63C7D21A24EBB5_AdjustorThunk },
+	{ 0x06000329, SKPaymentData_get_ApplicationUsernamePtr_m21D393FB5AEE8ACEA49B10CB53B3462F7441DF54_AdjustorThunk },
+	{ 0x0600032A, SKPaymentData_set_ApplicationUsernamePtr_mC3B7DE52D148BB439099CF3E62B86CC9958C7C69_AdjustorThunk },
+	{ 0x0600032B, SKPaymentTransactionData_get_NativeObjectPtr_mA22DC0C0D9AF4601BC591EEEF2571C713F82ACEF_AdjustorThunk },
+	{ 0x0600032C, SKPaymentTransactionData_set_NativeObjectPtr_mC118CC0A1992CE066E225C0F852B6CF6221C6528_AdjustorThunk },
+	{ 0x0600032D, SKPaymentTransactionData_get_IdentifierPtr_m7AC1E02758838DB5169A55600865CE54A87AA72C_AdjustorThunk },
+	{ 0x0600032E, SKPaymentTransactionData_set_IdentifierPtr_mC538D693F1F991EC6231C67D80B90E5DB6DBD8CC_AdjustorThunk },
+	{ 0x0600032F, SKPaymentTransactionData_get_PaymentData_mE79101A909944A161A781CD9D6A711685BAC2650_AdjustorThunk },
+	{ 0x06000330, SKPaymentTransactionData_set_PaymentData_mB1B8B154782FB2D57559C51F5C2EF2C5B346527D_AdjustorThunk },
+	{ 0x06000331, SKPaymentTransactionData_get_DatePtr_m8A723FA3C1AFF07D5753A144A7D30E360627B893_AdjustorThunk },
+	{ 0x06000332, SKPaymentTransactionData_set_DatePtr_m2C47AA8C036DCD33F3830A8A4ED409BA8328C81D_AdjustorThunk },
+	{ 0x06000333, SKPaymentTransactionData_get_TransactionState_mCDDA6166AD0BDBF60253509F197A6E1A6CB6FF9A_AdjustorThunk },
+	{ 0x06000334, SKPaymentTransactionData_set_TransactionState_m0D87AA7F781F409F8A6CAB40CE8A1F956D873B91_AdjustorThunk },
+	{ 0x06000335, SKPaymentTransactionData_get_ReceiptDataPtr_mBDC8A38C34F1B06C842AC28AF064292E58654327_AdjustorThunk },
+	{ 0x06000336, SKPaymentTransactionData_set_ReceiptDataPtr_m2FD91BE86B3FDA2DB8AB55A4F891B425C19BD143_AdjustorThunk },
+	{ 0x06000337, SKPaymentTransactionData_get_ErrorPtr_m8256EA2B1CE3FF1C73AEF3A6B5864C248993EDA4_AdjustorThunk },
+	{ 0x06000338, SKPaymentTransactionData_set_ErrorPtr_m54746B8162DC8857C7FAB8CAEA41BBBD3B850BE0_AdjustorThunk },
+	{ 0x06000339, SKProductData_get_NativeObjectPtr_m0EAC58726FC4244DAD7A5E959F9AAE80B4AF346B_AdjustorThunk },
+	{ 0x0600033A, SKProductData_set_NativeObjectPtr_m07097A3078C8E8502E4913C0C28F8AFEC3BEC2F5_AdjustorThunk },
+	{ 0x0600033B, SKProductData_get_IdentifierPtr_m70806FD577F347C6262E2BE1599816EE1D7AE539_AdjustorThunk },
+	{ 0x0600033C, SKProductData_set_IdentifierPtr_mB050DCF137BA7665094D8B3BAEBF22DF6669B8B5_AdjustorThunk },
+	{ 0x0600033D, SKProductData_get_LocalizedTitlePtr_m46F759443BA476D3CB01369B5A2F0997AB68E312_AdjustorThunk },
+	{ 0x0600033E, SKProductData_set_LocalizedTitlePtr_mCA04991CE35C594CB321C941652383E95E96A516_AdjustorThunk },
+	{ 0x0600033F, SKProductData_get_LocalizedDescriptionPtr_m3F72427F80E6903041693B740F030C216C25568C_AdjustorThunk },
+	{ 0x06000340, SKProductData_set_LocalizedDescriptionPtr_mFCB784A5798BAD90189826D7D26A7FC1A5FD72C3_AdjustorThunk },
+	{ 0x06000341, SKProductData_get_Price_m446CE0E3361E02204FA0A273E752AB241EA7351F_AdjustorThunk },
+	{ 0x06000342, SKProductData_set_Price_mC1425633407AD7AED633A1905ABCA7792EA6BA66_AdjustorThunk },
+	{ 0x06000343, SKProductData_get_LocalizedPricePtr_mEB48590D1980A1D990107A735C834D0379C5F45E_AdjustorThunk },
+	{ 0x06000344, SKProductData_set_LocalizedPricePtr_m3D51BD1030C9A2A2031332CE8D22775DD99794C9_AdjustorThunk },
+	{ 0x06000345, SKProductData_get_CurrencyCodePtr_m3F14D56543B9E04501059D6B83AFFED37CF413CD_AdjustorThunk },
+	{ 0x06000346, SKProductData_set_CurrencyCodePtr_mEC2D9F235119F978D88B50E6D121D45F2A3F8DC0_AdjustorThunk },
+	{ 0x06000347, SKProductData_get_CurrencySymbolPtr_m7363B68DF2180B16824261ED642AA04290B4AA65_AdjustorThunk },
+	{ 0x06000348, SKProductData_set_CurrencySymbolPtr_mF3AD399F1CF0ACA8CB8866398457E210F3B9FF8E_AdjustorThunk },
+};
+static const int32_t s_InvokerIndices[873] = 
+{
+	2221,
+	2201,
+	763,
+	3861,
+	2221,
+	862,
+	217,
+	3861,
+	2221,
+	2201,
+	763,
+	3861,
+	7175,
+	4739,
+	4739,
+	4626,
+	4626,
+	3880,
+	3839,
+	3786,
+	3786,
+	3789,
+	4571,
+	4553,
+	3786,
+	4739,
+	4739,
+	3861,
+	2223,
+	930,
+	4739,
+	4739,
+	2223,
+	3861,
+	4739,
+	3786,
+	6455,
+	6455,
+	6455,
+	6455,
+	5550,
+	6455,
+	5008,
+	7145,
+	6819,
+	6819,
+	7029,
+	6459,
+	6726,
+	6452,
+	6627,
+	6450,
+	6627,
+	6450,
+	7027,
+	6458,
+	6685,
+	6627,
+	6627,
+	6450,
+	7051,
+	7051,
+	6455,
+	5940,
+	5553,
+	7051,
+	7051,
+	5939,
+	6455,
+	7175,
+	7129,
+	7053,
+	7145,
+	7051,
+	5547,
+	6455,
+	5937,
+	6455,
+	6457,
+	7129,
+	7129,
+	7129,
+	7053,
+	7145,
+	7051,
+	5938,
+	6455,
+	6455,
+	6455,
+	6457,
+	4739,
+	2221,
+	1249,
+	417,
+	3861,
+	2221,
+	2200,
+	762,
+	3861,
+	2221,
+	1245,
+	413,
+	3861,
+	2221,
+	2200,
+	762,
+	3861,
+	7175,
+	4739,
+	4739,
+	7129,
+	3861,
+	3861,
+	3861,
+	3861,
+	2212,
+	3861,
+	1293,
+	4739,
+	3786,
+	5932,
+	7175,
+	4739,
+	4739,
+	7129,
+	7129,
+	7129,
+	3861,
+	3861,
+	3861,
+	3861,
+	2223,
+	1293,
+	4739,
+	3786,
+	6453,
+	7175,
+	4739,
+	4739,
+	3861,
+	4739,
+	2223,
+	3951,
+	3953,
+	3786,
+	5924,
+	4739,
+	4553,
+	4626,
+	4553,
+	4553,
+	4553,
+	4626,
+	4626,
+	2745,
+	3423,
+	7175,
+	3839,
+	4739,
+	6625,
+	3861,
+	4739,
+	3861,
+	3951,
+	3953,
+	3786,
+	6453,
+	7053,
+	7145,
+	5941,
+	6455,
+	7051,
+	5933,
+	6455,
+	6725,
+	6725,
+	6725,
+	6625,
+	7053,
+	6753,
+	5941,
+	6455,
+	7051,
+	5933,
+	6455,
+	3861,
+	4739,
+	3861,
+	3861,
+	3861,
+	3839,
+	3861,
+	3861,
+	3861,
+	3861,
+	3861,
+	3379,
+	2198,
+	2221,
+	1243,
+	412,
+	3861,
+	2221,
+	1835,
+	748,
+	1836,
+	2221,
+	2221,
+	777,
+	3861,
+	2221,
+	1172,
+	402,
+	1836,
+	2221,
+	1172,
+	402,
+	1836,
+	2221,
+	1292,
+	429,
+	3861,
+	2221,
+	2198,
+	760,
+	3861,
+	3861,
+	2198,
+	4739,
+	4626,
+	4626,
+	4626,
+	4602,
+	4626,
+	4626,
+	4626,
+	4553,
+	4626,
+	4626,
+	3786,
+	4626,
+	3861,
+	4626,
+	2223,
+	4553,
+	5762,
+	6819,
+	6744,
+	6755,
+	6755,
+	7145,
+	6819,
+	6455,
+	6819,
+	6455,
+	6819,
+	6455,
+	6726,
+	6452,
+	6819,
+	6455,
+	6455,
+	6819,
+	6455,
+	6819,
+	6627,
+	6236,
+	5542,
+	6241,
+	5454,
+	5437,
+	5196,
+	4936,
+	7050,
+	6447,
+	7051,
+	6454,
+	7051,
+	7053,
+	7175,
+	7175,
+	7051,
+	7051,
+	7129,
+	7175,
+	7049,
+	4739,
+	2047,
+	3861,
+	3426,
+	2223,
+	3861,
+	3861,
+	4739,
+	3861,
+	4739,
+	3861,
+	4739,
+	4553,
+	3839,
+	5920,
+	6424,
+	6484,
+	5901,
+	5901,
+	5970,
+	6450,
+	7175,
+	4739,
+	3425,
+	3425,
+	6725,
+	6742,
+	6725,
+	6725,
+	6725,
+	6742,
+	6080,
+	6075,
+	6075,
+	6267,
+	6819,
+	6819,
+	6819,
+	7150,
+	4603,
+	3840,
+	4603,
+	3840,
+	4603,
+	3840,
+	4603,
+	3840,
+	4603,
+	3840,
+	4603,
+	3840,
+	4603,
+	3840,
+	4603,
+	3840,
+	4603,
+	3840,
+	4603,
+	3840,
+	4603,
+	3840,
+	2221,
+	1848,
+	752,
+	3861,
+	6487,
+	7053,
+	7175,
+	7175,
+	7144,
+	7144,
+	4739,
+	4739,
+	4739,
+	6430,
+	6430,
+	7053,
+	5763,
+	7051,
+	7051,
+	6455,
+	6819,
+	6455,
+	6819,
+	5937,
+	6742,
+	7053,
+	5195,
+	6742,
+	7175,
+	3839,
+	4739,
+	3861,
+	4626,
+	3861,
+	4626,
+	2212,
+	4739,
+	4739,
+	3786,
+	6452,
+	7175,
+	3839,
+	4739,
+	3839,
+	3690,
+	3690,
+	3690,
+	4739,
+	3786,
+	6447,
+	1724,
+	1816,
+	2221,
+	2199,
+	761,
+	3861,
+	2221,
+	2195,
+	758,
+	3861,
+	4739,
+	3423,
+	3423,
+	5580,
+	7051,
+	7144,
+	7051,
+	7144,
+	7129,
+	6431,
+	7129,
+	6431,
+	7129,
+	5567,
+	7175,
+	4739,
+	2047,
+	3209,
+	3861,
+	4602,
+	4553,
+	1849,
+	4553,
+	1849,
+	4553,
+	1293,
+	5920,
+	5920,
+	5931,
+	5908,
+	4739,
+	2223,
+	6725,
+	6725,
+	2221,
+	1243,
+	412,
+	3861,
+	2221,
+	1243,
+	412,
+	3861,
+	2221,
+	1248,
+	416,
+	3861,
+	2221,
+	1183,
+	404,
+	3861,
+	7175,
+	1251,
+	2223,
+	4739,
+	6804,
+	7046,
+	7053,
+	7053,
+	4571,
+	3808,
+	4553,
+	4566,
+	3861,
+	5901,
+	6484,
+	7175,
+	4739,
+	3425,
+	6487,
+	7046,
+	7051,
+	6756,
+	6819,
+	6685,
+	6451,
+	6627,
+	6819,
+	6454,
+	7051,
+	7175,
+	861,
+	4739,
+	6804,
+	7053,
+	4626,
+	4626,
+	4626,
+	4603,
+	4553,
+	4553,
+	3861,
+	3861,
+	5901,
+	7175,
+	4739,
+	3425,
+	6487,
+	7051,
+	6819,
+	6819,
+	6819,
+	6819,
+	6744,
+	6627,
+	6627,
+	6454,
+	6454,
+	7053,
+	7051,
+	7053,
+	7175,
+	4739,
+	3861,
+	923,
+	1770,
+	3861,
+	3861,
+	3861,
+	3786,
+	1770,
+	2223,
+	3861,
+	4739,
+	4626,
+	4739,
+	1770,
+	3861,
+	6725,
+	6742,
+	6725,
+	6742,
+	6725,
+	7175,
+	2223,
+	1251,
+	4739,
+	6804,
+	7053,
+	5958,
+	4626,
+	4602,
+	3839,
+	4602,
+	3839,
+	4626,
+	3861,
+	3861,
+	3861,
+	3861,
+	3861,
+	857,
+	1293,
+	5901,
+	5901,
+	4603,
+	3840,
+	4602,
+	3839,
+	4739,
+	7175,
+	4739,
+	3425,
+	3425,
+	4739,
+	2223,
+	4739,
+	2223,
+	5971,
+	7051,
+	6756,
+	6819,
+	6819,
+	6744,
+	6453,
+	6744,
+	6453,
+	6755,
+	5546,
+	6454,
+	5960,
+	7175,
+	4739,
+	7150,
+	7175,
+	7053,
+	4739,
+	4553,
+	4553,
+	6448,
+	4739,
+	5545,
+	6484,
+	4884,
+	2221,
+	1172,
+	402,
+	1836,
+	2221,
+	2221,
+	777,
+	3861,
+	2221,
+	2196,
+	759,
+	3861,
+	2221,
+	859,
+	216,
+	3861,
+	2221,
+	2221,
+	777,
+	3861,
+	2221,
+	103,
+	25,
+	3861,
+	7175,
+	4739,
+	2198,
+	4739,
+	6487,
+	4626,
+	4626,
+	4626,
+	3861,
+	5901,
+	7175,
+	4739,
+	3425,
+	6487,
+	5957,
+	6819,
+	6819,
+	6819,
+	6454,
+	7053,
+	7145,
+	7175,
+	7129,
+	7129,
+	7175,
+	2223,
+	3841,
+	4739,
+	4626,
+	4603,
+	4603,
+	3840,
+	4566,
+	3861,
+	6484,
+	7053,
+	6756,
+	6819,
+	6744,
+	6744,
+	6453,
+	6819,
+	6755,
+	6454,
+	7129,
+	7175,
+	4739,
+	4739,
+	3861,
+	4739,
+	6487,
+	7175,
+	4739,
+	4739,
+	6628,
+	6628,
+	2221,
+	2767,
+	1121,
+	2767,
+	2221,
+	2767,
+	1121,
+	2767,
+	4604,
+	3841,
+	6487,
+	7175,
+	6628,
+	6745,
+	6686,
+	6820,
+	6238,
+	6820,
+	6820,
+	6478,
+	6483,
+	6480,
+	6487,
+	5968,
+	6487,
+	6487,
+	7053,
+	7129,
+	7150,
+	7175,
+	4739,
+	4739,
+	2767,
+	3377,
+	2999,
+	3426,
+	3426,
+	2212,
+	2220,
+	2217,
+	2223,
+	2223,
+	3861,
+	3861,
+	4626,
+	3786,
+	6425,
+	6438,
+	6725,
+	6725,
+	2221,
+	1836,
+	750,
+	1836,
+	2221,
+	1992,
+	755,
+	1836,
+	43,
+	4739,
+	4626,
+	4626,
+	4626,
+	4626,
+	4626,
+	7129,
+	5971,
+	6432,
+	6482,
+	5655,
+	6751,
+	6744,
+	7053,
+	6452,
+	6449,
+	7129,
+	7175,
+	4739,
+	4553,
+	3861,
+	1436,
+	4626,
+	3861,
+	3861,
+	4553,
+	5543,
+	6452,
+	5929,
+	7175,
+	4739,
+	3426,
+	3379,
+	6725,
+	6725,
+	6266,
+	6266,
+	6827,
+	7175,
+	4739,
+	3430,
+	3429,
+	99,
+	4739,
+	4566,
+	4602,
+	4602,
+	3839,
+	4626,
+	4626,
+	4626,
+	2221,
+	858,
+	215,
+	1836,
+	2221,
+	2199,
+	761,
+	3861,
+	2221,
+	1247,
+	415,
+	3861,
+	4604,
+	3841,
+	4604,
+	3841,
+	4602,
+	3839,
+	4604,
+	3841,
+	4604,
+	3841,
+	4604,
+	3841,
+	4661,
+	3892,
+	4604,
+	3841,
+	4603,
+	3840,
+	4604,
+	3841,
+	4604,
+	3841,
+	4604,
+	3841,
+	4604,
+	3841,
+	4604,
+	3841,
+	4604,
+	3841,
+	4571,
+	3808,
+	4604,
+	3841,
+	4604,
+	3841,
+	4604,
+	3841,
+	6487,
+	7144,
+	7051,
+	7051,
+	7175,
+	3859,
+	4739,
+	4626,
+	4626,
+	4626,
+	4626,
+	4626,
+	3861,
+	3786,
+	4739,
+	2223,
+	7175,
+	4739,
+	4602,
+	3861,
+	3861,
+	5920,
+	5545,
+	6725,
+	6266,
+	2221,
+	1243,
+	412,
+	3861,
+	2221,
+	859,
+	216,
+	3861,
+};
+static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[45] = 
+{
+	{ 0x06000025, 43,  (void**)&NativeWebView_HandleOnShowNativeCallback_m4D9EBA005D5CE70CF06E2C87B907DD0CDDF44CDF_RuntimeMethod_var, 0 },
+	{ 0x06000026, 42,  (void**)&NativeWebView_HandleOnHideNativeCallback_m0991C9B4558A69B0620C7AD44E8B8E830D82C16A_RuntimeMethod_var, 0 },
+	{ 0x06000027, 41,  (void**)&NativeWebView_HandleLoadStartNativeCallback_m1653467843D5FF4C76CDF5E06730F19760A58383_RuntimeMethod_var, 0 },
+	{ 0x06000028, 40,  (void**)&NativeWebView_HandleLoadFinishNativeCallback_m35BAC891099CD5DAE245C0B13470F3FAEA8A277B_RuntimeMethod_var, 0 },
+	{ 0x06000029, 44,  (void**)&NativeWebView_HandleRunJavaScriptNativeCallback_m215024C684D92D5898479EF047C53C1AA3D0E11C_RuntimeMethod_var, 0 },
+	{ 0x0600002A, 45,  (void**)&NativeWebView_HandleURLSchemeMatchFoundNativeCallback_mE32C28EE586AD7B0333504BA0D27E8BE246191B3_RuntimeMethod_var, 0 },
+	{ 0x06000079, 36,  (void**)&NativeMailComposer_HandleMailComposerClosedCallbackInternal_mD6682278CDA21C280FFF2D006BD142FCE4CEFAFB_RuntimeMethod_var, 0 },
+	{ 0x06000088, 37,  (void**)&NativeMessageComposer_HandleMessageComposerClosedCallbackInternal_mD350A5B8910CFDECB28D2024F1BEAD637C14879A_RuntimeMethod_var, 0 },
+	{ 0x06000092, 38,  (void**)&NativeShareSheet_HandleShareSheetClosedCallbackInternal_mBDCA2CFFA718B4FF737E1084CE6745F9923D501E_RuntimeMethod_var, 0 },
+	{ 0x060000A7, 39,  (void**)&NativeSocialShareComposer_HandleSocialShareComposerClosedCallbackInternal_mB32D2E49D308E868DAFDCB1CAC52C917FDE09485_RuntimeMethod_var, 0 },
+	{ 0x0600012D, 53,  (void**)&NotificationCenterInterface_HandleRequestAuthorizationCallback_m4308D218C567B29C8BFD86699552617CDE99F1FE_RuntimeMethod_var, 0 },
+	{ 0x0600012E, 50,  (void**)&NotificationCenterInterface_HandleGetSettingsCallback_m3FF291499E564CFBD71653D2C60354ACB1172C67_RuntimeMethod_var, 0 },
+	{ 0x0600012F, 54,  (void**)&NotificationCenterInterface_HandleScheduleNotificationCallback_mB5EE6AA98903B9D92B023ABA798538E12D75694A_RuntimeMethod_var, 0 },
+	{ 0x06000130, 49,  (void**)&NotificationCenterInterface_HandleGetScheduledNotificationsCallback_m639FE987836E63088B18C2CB2A730DC04D4DBA1F_RuntimeMethod_var, 0 },
+	{ 0x06000131, 48,  (void**)&NotificationCenterInterface_HandleGetDeliveredNotificationsCallback_mC484B56AE83B671BE0614608FE914905828AC0DF_RuntimeMethod_var, 0 },
+	{ 0x06000132, 52,  (void**)&NotificationCenterInterface_HandleRegisterForRemoteNotificationsCallback_m314EE2F4005A17969975581A6A2837F2D3B3BF67_RuntimeMethod_var, 0 },
+	{ 0x06000133, 51,  (void**)&NotificationCenterInterface_HandleNotificationReceivedCallback_m638EE2EDFD00241808CBEE8B6013F05D5C9D183F_RuntimeMethod_var, 0 },
+	{ 0x06000169, 47,  (void**)&NetworkServicesInterface_HandleInternetReachabilityChangeNativeCallback_m690E3CBE594FD3A928EEE2EFEFF80214B6A89CAD_RuntimeMethod_var, 0 },
+	{ 0x0600016A, 46,  (void**)&NetworkServicesInterface_HandleHostReachabilityChangeNativeCallback_mA68D8241CDBF15720B063E9E53DE98355A7D3422_RuntimeMethod_var, 0 },
+	{ 0x06000183, 31,  (void**)&NativeAlertDialog_HandleAlertActionSelectCallbackInternal_m2CBD957C5AD2A0AF628824F8F2820DC448672C05_RuntimeMethod_var, 0 },
+	{ 0x0600018D, 35,  (void**)&NativeDatePicker_HandleDatePickerControllerCallbackInternal_m79EEAC25E61E9EED0E77DE5B6E967773538C39FB_RuntimeMethod_var, 0 },
+	{ 0x060001B2, 21,  (void**)&MediaServicesInterface_HandleRequestPhotoLibraryAccessNativeCallback_m7539F3AD6217D45FA2FEA1408994CC0A955D852B_RuntimeMethod_var, 0 },
+	{ 0x060001B3, 20,  (void**)&MediaServicesInterface_HandleRequestCameraAccessNativeCallback_m9B7F07C07F9E205570FB0C111C1D32BDB45BDAA4_RuntimeMethod_var, 0 },
+	{ 0x060001B4, 19,  (void**)&MediaServicesInterface_HandlePickImageFromPhotoLibraryNativeCallback_mED7EE60AEFED3C8417AE612E78A29437BAB51FA3_RuntimeMethod_var, 0 },
+	{ 0x060001B5, 22,  (void**)&MediaServicesInterface_HandleSaveImageToAlbumNativeCallback_m6AD880AD39B5836F115D8E24DD2ADAEE39D821A7_RuntimeMethod_var, 0 },
+	{ 0x060001D7, 0,  (void**)&Achievement_HandleLoadAchievementsCallbackInternal_mCBD1CAC30BD451E773E76E9362898E88E2BB587E_RuntimeMethod_var, 0 },
+	{ 0x060001D8, 1,  (void**)&Achievement_HandleReportProgressCallbackInternal_mE714390B2F083331A49CDB043BF57674F84F13EA_RuntimeMethod_var, 0 },
+	{ 0x060001F4, 2,  (void**)&AchievementDescription_HandleLoadAchievementDescriptionsNativeCallback_m502F6BCBAC111DFCD78B7EE3D8AF5F38728538E8_RuntimeMethod_var, 0 },
+	{ 0x06000230, 16,  (void**)&Leaderboard_HandleLoadLeaderboardsNativeCallback_mA7B29842F0E1467654ACD4C7C99F6228363B3326_RuntimeMethod_var, 0 },
+	{ 0x06000231, 17,  (void**)&Leaderboard_HandleLoadScoresNativeCallback_mF7130D740D784A61BD01D4769B46FF905D55468E_RuntimeMethod_var, 0 },
+	{ 0x06000254, 18,  (void**)&LocalPlayer_HandleAuthChangeNativeCallback_mB67E04756D8D26E2CE10883808B39B401A3BE960_RuntimeMethod_var, 0 },
+	{ 0x06000256, 32,  (void**)&NativeCallbackResponder_HandleLoadImageNativeCallback_mE3C35CEAF7DEAA5DFD2F9FC96A88FFD5C0E3D6FC_RuntimeMethod_var, 0 },
+	{ 0x06000257, 34,  (void**)&NativeCallbackResponder_HandleViewClosedNativeCallback_m4F4835E469C78317A6B3AA0AB6509174B8070599_RuntimeMethod_var, 0 },
+	{ 0x06000258, 33,  (void**)&NativeCallbackResponder_HandleLoadServerCredentialsNativeCallback_mDD58A7B6B4D00C98CC22E2EF76B68323B198A5FF_RuntimeMethod_var, 0 },
+	{ 0x0600027A, 56,  (void**)&Player_HandleLoadPlayersNativeCallback_m74711BA3472C617A0D469D5CADDF5A51072D97EA_RuntimeMethod_var, 0 },
+	{ 0x06000293, 57,  (void**)&Score_HandleReportScoreCallbackInternal_m36385F6E43FE7FF0E40BECDCB61F094D274C8809_RuntimeMethod_var, 0 },
+	{ 0x060002A7, 11,  (void**)&DeepLinkServicesInterface_HandleCustomSchemeUrl_m65B78807114B0E19DB4DF867637657DC78C9005F_RuntimeMethod_var, 0 },
+	{ 0x060002A8, 12,  (void**)&DeepLinkServicesInterface_HandleUniversalLink_m62FDCC19EEA99A1D642182FBE23539AC16620C70_RuntimeMethod_var, 0 },
+	{ 0x060002D7, 9,  (void**)&CloudServicesInterface_HandleUserChangeNativeCallback_m190142192112FAC1ED5F013185AFFFD19E0C1BEC_RuntimeMethod_var, 0 },
+	{ 0x060002D8, 8,  (void**)&CloudServicesInterface_HandleSavedDataChangeNativeCallback_m0A0745F745EDEA2DCBDCA51004FFB9F3183DDEBC_RuntimeMethod_var, 0 },
+	{ 0x060002FE, 6,  (void**)&BillingServicesInterface_HandleRequestForProductsCallbackInternal_m1505F702D6F8AA6E350004B6F392C5BDA93E17E2_RuntimeMethod_var, 0 },
+	{ 0x060002FF, 5,  (void**)&BillingServicesInterface_HandlePaymentStateChangeCallbackInternal_m841AEF90F9935AFDBCF86ACD457786A9EE24F45B_RuntimeMethod_var, 0 },
+	{ 0x06000300, 7,  (void**)&BillingServicesInterface_HandleRestorePurchasesCallbackInternal_mED170030D942FDA2CCF714A5D9CC94C1B5457EBD_RuntimeMethod_var, 0 },
+	{ 0x0600035E, 4,  (void**)&AddressBookInterface_HandleRequestContactsAccessCallbackInternal_mC68A861D3014FAD19E317A9BDCA7ECED7FAFF572_RuntimeMethod_var, 0 },
+	{ 0x0600035F, 3,  (void**)&AddressBookInterface_HandleReadContactsCallbackInternal_mF89348C1C2235EEE87CA0DE614E1CA15EAEFDB7C_RuntimeMethod_var, 0 },
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_VoxelBusters_EssentialKit_iOSModule_CodeGenModule;
+const Il2CppCodeGenModule g_VoxelBusters_EssentialKit_iOSModule_CodeGenModule = 
+{
+	"VoxelBusters.EssentialKit.iOSModule.dll",
+	873,
+	s_methodPointers,
+	62,
+	s_adjustorThunks,
+	s_InvokerIndices,
+	45,
+	s_reversePInvokeIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

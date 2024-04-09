@@ -61,7 +61,7 @@ public class DrinkWaterController : MonoBehaviour
 
         //saving all the data into json
         SaveDataIntoJsonCalender(calenderDataHolder);
-        updateCalenderData.Invoke();
+        //updateCalenderData.Invoke();
 
     }
     public void SaveDataIntoJsonCalender(CalenderRoot data)
@@ -336,6 +336,11 @@ public class DrinkWaterController : MonoBehaviour
             number = number + consumed;
             PlayerPrefsHandler.WaterLimit = number.ToString() + unit;
             UIReferenceContainer.Instance.waterLimit.text = PlayerPrefsHandler.WaterLimit;
+
+
+            UIReferenceContainer.Instance.lastIntake.text = "Done Todays Goals";
+            UIReferenceContainer.Instance.mainScreenText.text = "You've reached today's goal";
+
         }
     }
     public void FillSprite()

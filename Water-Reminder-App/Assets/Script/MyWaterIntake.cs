@@ -51,6 +51,10 @@ public class MyWaterIntake : MonoBehaviour
         int waterLimit = int.Parse(PlayerPrefsHandler.WaterLimit.Replace("ml","").Replace("oz",""));
         int LatestGoal = int.Parse(PlayerPrefsHandler.WaterGoal.Replace("ml", "").Replace("oz", ""));
         int intakeAmount = previousGoal - waterLimit;
+        if (intakeAmount == 0)
+        {
+            intakeAmount = previousGoal;
+        }
         int latestAmount = LatestGoal - intakeAmount;
         if (latestAmount > 0)
         {
